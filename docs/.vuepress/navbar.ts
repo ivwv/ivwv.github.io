@@ -3,7 +3,53 @@ import { navbar } from "vuepress-theme-hope";
 export default navbar([
   "/",
   "/home",
-  // { text: "使用指南", icon: "creative", link: "/guide/" },
+  /**
+   * 导航栏
+   * 分类
+   * 没增加分类需要添加到这里
+   */
+  {
+    text: "文章分类",
+    icon: "note",
+    prefix: "category/",
+    children: [
+      {
+        text: "Node",
+        icon: "note",
+        prefix: "ode/",
+        link: "Node/",
+      },
+      {
+        text: "javascript",
+        icon: "note",
+        prefix: "javascript/",
+        link: "javascript/",
+      },
+      {
+        text: "PDF书籍",
+        icon: "note",
+        prefix: "PDF书籍/",
+        link: "PDF书籍/",
+      },
+    ],
+  },
+
+  {
+    text: "个人项目展示",
+    icon: "creative",
+    children: [
+      {
+        text: "电商后台管理项目",
+        icon: "creative",
+        link: "https://client-vue-shop.herokuapp.com/",
+      },
+      {
+        text: "新闻门户网站(前后端项目)",
+        icon: "creative",
+        link: "https://client-vue-shop.herokuapp.com/",
+      },
+    ],
+  },
   // {
   //   text: "文章",
   //   icon: "edit",

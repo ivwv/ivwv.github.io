@@ -2,10 +2,11 @@
 icon: edit
 date: 2022-07-30
 category:
-  - node
+  - Node
 tag:
   - express
   - jwt
+star: true
 ---
 
 # Express中jwt验证的简单使用
