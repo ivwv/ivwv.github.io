@@ -7,6 +7,7 @@ export default sidebar([
   {
     text: "如何使用",
     icon: "creative",
+    collapsable: true,
     prefix: "/guide/",
     link: "/guide/",
     children: "structure",
@@ -17,27 +18,39 @@ export default sidebar([
     prefix: "/posts/",
     children: [
       {
-        text: "文章 1-4",
+        text: "Node",
         icon: "note",
         collapsable: true,
-        prefix: "article/",
-        children: ["article1", "article2", "article3", "article4"],
-      },
-      {
-        text: "文章 5-12",
-        icon: "note",
+        prefix: "node/",
         children: [
           {
-            text: "文章 5-8",
+            text: "Express",
+            icon: "note",
+            prefix: "express/",
+            collapsable: true,
+            children: ["Express中jwt验证的简单使用"],
+          },
+          "process.env环境变量配置",
+        ],
+      },
+      {
+        text: "javascript",
+        icon: "note",
+        collapsable: true,
+        prefix: "javascript/",
+        children: [
+          {
+            text: "ES6",
             icon: "note",
             collapsable: true,
-            prefix: "article/",
-            children: ["article5", "article6", "article7", "article8"],
-          },
-          {
-            text: "文章 9-12",
-            icon: "note",
-            children: ["article9", "article10", "article11", "article12"],
+            prefix: "es6/",
+            children: [
+              "Javascript面对对象编程.md",
+              "原型",
+              "类的本质",
+              "对象方法：Object.defineProperty",
+              "ES6在前端的模块导入与导出",
+            ],
           },
         ],
       },
