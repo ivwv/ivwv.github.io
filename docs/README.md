@@ -4,9 +4,9 @@ layout: Blog
 icon: home
 title: 博客主页
 heroImage: /logo.svg
-heroText: 你博客的名称
+heroText: SY's Blog
 heroFullScreen: true
-tagline: 你可以在这里放置你的口号与标语
+tagline: 努力提升自己!
 projects:
   - icon: project
     name: 项目名称
