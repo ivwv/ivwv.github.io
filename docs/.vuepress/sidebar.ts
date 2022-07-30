@@ -1,9 +1,9 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export default sidebar([
-  "/",
-  "/home",
-  "/slide",
+  // "/",
+  // "/home",
+  // "/slide",
   {
     text: "PDF",
     icon: "creative",

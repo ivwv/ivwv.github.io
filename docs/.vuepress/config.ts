@@ -11,6 +11,7 @@ export default defineUserConfig({
   description: "SY's Blog",
 
   base: "/",
+  head: [["link", { rel: "icon", href: "/logo.png" }]],
 
   theme,
   plugins: [
@@ -19,11 +20,5 @@ export default defineUserConfig({
       // 你的选项
       getExtraFields: (page): any => page.frontmatter.tags ?? [],
     }),
-    // 组件插件注册
-    // componentsPlugin({
-    //   // 插件选项
-    //   ["PDF"]
-
-    // }),
   ],
 });
