@@ -37,7 +37,7 @@ export default hopeTheme({
   // sidebar
   sidebar: sidebar,
 
-  footer: "默认页脚",
+  footer: "SY's Blog",
 
   displayFooter: true,
 
@@ -45,7 +45,7 @@ export default hopeTheme({
 
   blog: {
     description: "一个前端开发者",
-    intro: "/intro.html",
+    // intro: "/intro.html",
     medias: {
       Gitee: "https://www.gitee.com/isyv/",
       GitHub: "https://www.github.com/ivwv",

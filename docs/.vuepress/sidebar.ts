@@ -4,14 +4,6 @@ export default sidebar([
   "/",
   "/home",
   "/slide",
-  // {
-  //   text: "如何使用",
-  //   icon: "creative",
-  //   collapsable: true,
-  //   prefix: "/guide/",
-  //   link: "/guide/",
-  //   children: "structure",
-  // },
   {
     text: "PDF",
     icon: "creative",

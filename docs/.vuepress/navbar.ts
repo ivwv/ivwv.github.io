@@ -11,25 +11,23 @@ export default navbar([
   {
     text: "文章分类",
     icon: "note",
-    prefix: "category/",
     children: [
       {
         text: "Node",
         icon: "note",
-        prefix: "ode/",
-        link: "Node/",
+
+        link: "/category/node/",
       },
       {
         text: "javascript",
         icon: "note",
-        prefix: "javascript/",
-        link: "javascript/",
+
+        link: "/category/javascript/",
       },
       {
         text: "PDF书籍",
         icon: "note",
-        prefix: "PDF书籍/",
-        link: "PDF书籍/",
+        link: "/category/PDF书籍/",
       },
     ],
   },
@@ -46,10 +44,11 @@ export default navbar([
       {
         text: "新闻门户网站(前后端项目)",
         icon: "creative",
-        link: "https://client-vue-shop.herokuapp.com/",
+        link: "https://client--news.herokuapp.com/",
       },
     ],
   },
+  
   // {
   //   text: "文章",
   //   icon: "edit",
