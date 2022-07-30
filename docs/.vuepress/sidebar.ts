@@ -15,6 +15,7 @@ export default sidebar([
     text: "文章",
     icon: "note",
     prefix: "/posts/",
+    collapsable: true,
     children: [
       {
         text: "node",

@@ -29,7 +29,7 @@ export default hopeTheme({
 
   repo: "ivwv/ivwv.github.io",
 
-  docsDir: "demo/src",
+  docsDir: "docs",
 
   // navbar
   navbar: navbar,
@@ -76,18 +76,6 @@ export default hopeTheme({
       repoId: "R_kgDOHvHOZQ",
       category: "Announcements",
       categoryId: "DIC_kwDOHvHOZc4CQgMY",
-
-      /**
-       * Using Twikoo
-       */
-      // provider: "Twikoo",
-      // envId: "https://twikoo.ccknbc.vercel.app",
-
-      /**
-       * Using Waline
-       */
-      // provider: "Waline",
-      // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
     },
 
     mdEnhance: {

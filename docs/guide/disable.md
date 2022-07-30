@@ -9,6 +9,7 @@ tag:
 
 navbar: false
 sidebar: false
+date: 2022-07-29
 
 breadcrumb: false
 pageInfo: false
