@@ -3,6 +3,8 @@ import { defineUserConfig } from "vuepress";
 import { searchPlugin } from "@vuepress/plugin-search";
 // 组件
 import { componentsPlugin } from "vuepress-plugin-components";
+// 图片预览
+import { photoSwipePlugin } from "vuepress-plugin-photo-swipe";
 import theme from "./theme";
 
 export default defineUserConfig({
@@ -19,6 +21,10 @@ export default defineUserConfig({
     searchPlugin({
       // 你的选项
       getExtraFields: (page): any => page.frontmatter.tags ?? [],
+    }),
+    // 图片预览
+    photoSwipePlugin({
+      delay: 500,
     }),
   ],
 });
