@@ -2,6 +2,7 @@
 title: 幻灯片页
 icon: slides
 layout: Slide
+date: 2020-07-29
 ---
 
 <!-- markdownlint-disable MD024 MD033 -->

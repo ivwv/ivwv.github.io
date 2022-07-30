@@ -1,5 +1,6 @@
 ---
 title: 主要功能与配置演示
+date: 2020-07-29
 index: false
 icon: creative
 category:
