@@ -1,0 +1,6 @@
+- 😄 `:smile:`
+- 😆 `:laughing:`
+- 😊 `:blush:`
+- 😃 `:smiley:`
+- 😏 `:smirk:`
+- 😍 `:heart_eyes:`

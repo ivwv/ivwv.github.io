@@ -6,7 +6,7 @@ title: 博客主页
 heroImage: /logo.svg
 heroText: SY's Blog
 heroFullScreen: true
-tagline: 努力提升自己!
+tagline: ❤永远爱着我的宝贝婷婷❤
 projects:
   # - icon: project
   #   name: 项目名称
