@@ -13,6 +13,13 @@ export default sidebar([
     children: "structure",
   },
   {
+    text: "PDF",
+    icon: "creative",
+    collapsable: true,
+    prefix: "/posts/PDF书籍/",
+    children: ["ES6-in-depth"],
+  },
+  {
     text: "文章",
     icon: "note",
     prefix: "/posts/",

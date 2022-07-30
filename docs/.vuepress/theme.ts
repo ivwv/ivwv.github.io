@@ -1,6 +1,8 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar";
 import sidebar from "./sidebar";
+// 组件
+import { componentsPlugin } from "vuepress-plugin-components";
 
 export default hopeTheme({
   hostname: "https://ivwv.github.io",
@@ -57,6 +59,7 @@ export default hopeTheme({
   },
 
   plugins: {
+    components: ["Badge", "CodePen", "PDF", "StackBlitz", "YouTube"],
     blog: {
       autoExcerpt: true,
     },
