@@ -2,7 +2,7 @@
 home: true
 layout: Blog
 icon: home
-title: 博客主页
+title: ❤努力提升自己❤
 heroImage: /logo.svg
 heroText: SY's Blog
 heroFullScreen: true
