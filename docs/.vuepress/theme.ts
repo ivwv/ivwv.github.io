@@ -104,20 +104,20 @@ export default hopeTheme({
       // 改配置仅用于演示，不建议使用
       // enableAll: true,
       // 启用图片标记
-      // imageMark: true,
+      imageMark: true,
       // 启用图片大小
       imageSize: true,
       // 启用代码演示
       demo: true,
       // 支持导入文件
-      // include: true,
+      include: true,
       // 属性支持
-      // attrs: true,
+      attrs: true,
       // 是否启用选项卡。
       tabs: true,
       // 是否启用代码选项卡
       codetabs: true,
-      // align: true,
+      align: true,
       // sup: true,
       // sub: true,
       // footnote: true,
