@@ -1,7 +1,7 @@
 {
-  "name": "blog",
+  "name": "Blog",
   "version": "2.0.0",
-  "description": "个人博客",
+  "description": "SY's Blog",
   "license": "MIT",
   "scripts": {
     "docs:build": "vuepress build docs",
