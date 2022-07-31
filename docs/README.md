@@ -1,7 +1,7 @@
 ---
 home: true
 layout: Blog
-icon: home
+# icon: home
 title: ❤努力提升自己❤
 heroImage: /logo.svg
 heroText: SY's Blog
