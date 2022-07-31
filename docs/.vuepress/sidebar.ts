@@ -5,7 +5,7 @@ export default sidebar([
   // "/home",
   // "/slide",
   {
-    text: "PDF",
+    text: "PDF书籍",
     icon: "creative",
     collapsable: true,
     prefix: "/posts/PDF书籍/",

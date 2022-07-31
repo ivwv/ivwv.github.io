@@ -6,7 +6,7 @@ category:
 tag:
   - express
   - jwt
-star: true
+star: false
 ---
 
 # Express中jwt验证的简单使用

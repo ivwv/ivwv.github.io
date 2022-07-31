@@ -7,19 +7,19 @@ heroImage: /logo.svg
 heroText: SY's Blog
 heroFullScreen: true
 tagline: ❤永远爱着我的宝贝婷婷❤
-# bgImage: https://w.wallhaven.cc/full/l3/wallhaven-l3xk6q.jpg
+
 bgImage: /bg/夕阳.png
 
 projects:
-  # - icon: project
-  #   name: 项目名称
-  #   desc: 项目详细描述
-  #   link: https://你的项目链接
+  - icon: project
+    name: 个人项目
+    desc: 个人项目整合
+    link: /posts/project/
 
-  # - icon: link
-  #   name: 链接名称
-  #   desc: 链接详细描述
-  #   link: https://链接地址
+  # - icon: project
+  #   name: 新闻门户网站
+  #   desc: 后端-Node+Express+Jwt+Mysql+Ejs,前端-BootStrap
+  #   link: https://client--news.herokuapp.com/
 
   # - icon: book
   #   name: 书籍名称

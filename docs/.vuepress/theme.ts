@@ -2,7 +2,7 @@ import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar";
 import sidebar from "./sidebar";
 // 组件
-import { componentsPlugin } from "vuepress-plugin-components";
+// import { componentsPlugin } from "vuepress-plugin-components";
 
 export default hopeTheme({
   hostname: "https://ivwv.github.io",
