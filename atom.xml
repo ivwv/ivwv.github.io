@@ -3,17 +3,79 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-07-31T12:40:39.024Z</updated>
+  <updated>2022-07-31T14:22:24.826Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
+  <category term="我的项目整合"/>
   <category term="PDF书籍"/>
   <category term="Node"/>
-  <category term="javascript"/>
+  <category term="Javascript"/>
   <category term="使用指南"/>
   <contributor>
     <name>Ms.Hope</name>
   </contributor>
+  <entry>
+    <title type="html">我的项目整合</title>
+    <id>https://ivwv.github.io/posts/project/</id>
+    <link href="https://ivwv.github.io/posts/project/"/>
+    <updated>2022-07-31T14:21:29.000Z</updated>
+    <summary type="html"><![CDATA[<p>项目介绍</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>项目介绍</p>
+
+<h1 id="我的项目" tabindex="-1"> 我的项目</h1>
+<ol>
+<li><a href="/posts/project/vue-shop/">电商后台管理系统</a></li>
+<li><a href="/posts/project/newsinfo/">新闻门户网站(前后端项目)</a></li>
+<li><a href="/posts/project/socket-chat/"><code>Node+Socket.io</code>聊天程序 </a></li>
+<li><a href="/posts/project/puppeteer-electron-pdf/"><code>puppeteer</code> 爬取 <code>electron</code> 官网文档，保存为 <code>pdf</code> 格式</a></li>
+</ol>
+]]></content>
+    <category term="我的项目整合" scheme=""/>
+    <published>2022-07-31T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">newsinfo</title>
+    <id>https://ivwv.github.io/posts/project/newsinfo/</id>
+    <link href="https://ivwv.github.io/posts/project/newsinfo/"/>
+    <updated>2022-07-31T14:21:29.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="newsinfo" tabindex="-1"> newsinfo</h1>
+]]></content>
+    <published>2022-07-31T14:21:29.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">puppeteer</title>
+    <id>https://ivwv.github.io/posts/project/puppeteer-electron-pdf/</id>
+    <link href="https://ivwv.github.io/posts/project/puppeteer-electron-pdf/"/>
+    <updated>2022-07-31T14:21:29.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="puppeteer" tabindex="-1"> puppeteer</h1>
+]]></content>
+    <published>2022-07-31T14:21:29.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">socket.io</title>
+    <id>https://ivwv.github.io/posts/project/socket-chat/</id>
+    <link href="https://ivwv.github.io/posts/project/socket-chat/"/>
+    <updated>2022-07-31T14:21:29.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="socket-io" tabindex="-1"> <a href="http://socket.io" target="_blank" rel="noopener noreferrer">socket.io</a></h1>
+]]></content>
+    <published>2022-07-31T14:21:29.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">电商后台管理项目</title>
+    <id>https://ivwv.github.io/posts/project/vue-shop/</id>
+    <link href="https://ivwv.github.io/posts/project/vue-shop/"/>
+    <updated>2022-07-31T14:21:29.000Z</updated>
+    <summary type="html"><![CDATA[<p>Vue2+ElementUi+Node+Axios 电商后台管理项目</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>Vue2+ElementUi+Node+Axios 电商后台管理项目</p>
+
+<div><pre><code><span>const</span> a <span>=</span><span>1</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div></div></div>]]></content>
+    <category term="我的项目整合" scheme=""/>
+    <published>2022-07-31T00:00:00.000Z</published>
+  </entry>
   <entry>
     <title type="html">ES6-in-depth</title>
     <id>https://ivwv.github.io/posts/PDF%E4%B9%A6%E7%B1%8D/ES6-in-depth.html</id>
@@ -155,7 +217,7 @@ unset NODE_ENV
     <title type="html">ES6在前端的模块导入与导出</title>
     <id>https://ivwv.github.io/posts/javascript/es6/ES6%E5%9C%A8%E5%89%8D%E7%AB%AF%E7%9A%84%E6%A8%A1%E5%9D%97%E5%AF%BC%E5%85%A5%E4%B8%8E%E5%AF%BC%E5%87%BA.html</id>
     <link href="https://ivwv.github.io/posts/javascript/es6/ES6%E5%9C%A8%E5%89%8D%E7%AB%AF%E7%9A%84%E6%A8%A1%E5%9D%97%E5%AF%BC%E5%85%A5%E4%B8%8E%E5%AF%BC%E5%87%BA.html"/>
-    <updated>2022-07-30T08:45:21.000Z</updated>
+    <updated>2022-07-31T14:21:29.000Z</updated>
     <content type="html"><![CDATA[<h1 id="es6在前端的模块导入与导出" tabindex="-1"> ES6在前端的模块导入与导出</h1>
 <h4 id="html文件使用" tabindex="-1"> <code>html</code>文件使用</h4>
 <h5 id="方法一" tabindex="-1"> 方法一</h5>
@@ -251,14 +313,14 @@ unset NODE_ENV
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h5 id="运行结果" tabindex="-1"> 运行结果</h5>
 <p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-22-22:04:13*image-20220722220413190*7.png" alt="image-20220722220413190" loading="lazy"></p>
 ]]></content>
-    <category term="javascript" scheme=""/>
+    <category term="Javascript" scheme=""/>
     <published>2022-07-30T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="html">Javascript面对对象编程</title>
     <id>https://ivwv.github.io/posts/javascript/es6/Javascript%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html</id>
     <link href="https://ivwv.github.io/posts/javascript/es6/Javascript%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html"/>
-    <updated>2022-07-31T03:36:10.000Z</updated>
+    <updated>2022-07-31T14:21:29.000Z</updated>
     <content type="html"><![CDATA[<h1 id="javascript面对对象编程" tabindex="-1"> Javascript面对对象编程</h1>
 <h5 id="使用整合" tabindex="-1"> 使用整合</h5>
 <ul>
@@ -384,14 +446,14 @@ son<span>.</span><span>say</span><span>(</span><span>)</span><span>;</span> <spa
 <p><strong>点击按钮</strong></p>
 <p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-12:49:49*image-20220719124949852*d.png" alt="image-20220719124949852" loading="lazy"></p>
 ]]></content>
-    <category term="javascript" scheme=""/>
+    <category term="Javascript" scheme=""/>
     <published>2022-07-30T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="html">原型</title>
     <id>https://ivwv.github.io/posts/javascript/es6/%E5%8E%9F%E5%9E%8B.html</id>
     <link href="https://ivwv.github.io/posts/javascript/es6/%E5%8E%9F%E5%9E%8B.html"/>
-    <updated>2022-07-30T08:45:21.000Z</updated>
+    <updated>2022-07-31T14:21:29.000Z</updated>
     <content type="html"><![CDATA[<h1 id="原型" tabindex="-1"> 原型</h1>
 <h2 id="prototype原型" tabindex="-1"> prototype原型</h2>
 <p>1.原型是什么？</p>
@@ -681,14 +743,14 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
         console<span>.</span><span>log</span><span>(</span><span>Son</span><span>.</span>prototype <span>===</span> <span>Father</span><span>.</span>prototype<span>)</span><span>;</span>
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-20-13:17:49*image-20220720131749583*6.png" alt="image-20220720131749583" loading="lazy"></p>
 ]]></content>
-    <category term="javascript" scheme=""/>
+    <category term="Javascript" scheme=""/>
     <published>2022-07-30T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="html">对象方法：Object.defineProperty</title>
     <id>https://ivwv.github.io/posts/javascript/es6/%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%9AObject.defineProperty.html</id>
     <link href="https://ivwv.github.io/posts/javascript/es6/%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%9AObject.defineProperty.html"/>
-    <updated>2022-07-30T08:45:21.000Z</updated>
+    <updated>2022-07-31T14:21:29.000Z</updated>
     <content type="html"><![CDATA[<h1 id="对象方法-object-defineproperty" tabindex="-1"> 对象方法：Object.defineProperty</h1>
 <div><pre><code>Object<span>.</span><span>defineProperty</span><span>(</span>obj<span>,</span> prop<span>,</span> descriptor<span>)</span>
 </code></pre><div aria-hidden="true"><div></div></div></div><ul>
@@ -712,14 +774,14 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
 </li>
 </ul>
 ]]></content>
-    <category term="javascript" scheme=""/>
+    <category term="Javascript" scheme=""/>
     <published>2022-07-30T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="html">类的本质</title>
     <id>https://ivwv.github.io/posts/javascript/es6/%E7%B1%BB%E7%9A%84%E6%9C%AC%E8%B4%A8.html</id>
     <link href="https://ivwv.github.io/posts/javascript/es6/%E7%B1%BB%E7%9A%84%E6%9C%AC%E8%B4%A8.html"/>
-    <updated>2022-07-30T08:45:21.000Z</updated>
+    <updated>2022-07-31T14:21:29.000Z</updated>
     <content type="html"><![CDATA[<h1 id="类的本质" tabindex="-1"> 类的本质</h1>
 <ul>
 <li>
@@ -760,14 +822,14 @@ console<span>.</span><span>dir</span><span>(</span>ldh<span>)</span><span>;</spa
 console<span>.</span><span>log</span><span>(</span>ldh<span>.</span>__proto__ <span>===</span> <span>Star</span><span>.</span>prototype<span>)</span><span>;</span>
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-20-13:34:56*image-20220720133456588*9.png" alt="image-20220720133456588" loading="lazy"></p>
 ]]></content>
-    <category term="javascript" scheme=""/>
+    <category term="Javascript" scheme=""/>
     <published>2022-07-30T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="html">Express中jwt验证的简单使用</title>
     <id>https://ivwv.github.io/posts/node/express/Express%E4%B8%ADjwt%E9%AA%8C%E8%AF%81%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8.html</id>
     <link href="https://ivwv.github.io/posts/node/express/Express%E4%B8%ADjwt%E9%AA%8C%E8%AF%81%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8.html"/>
-    <updated>2022-07-30T11:09:26.000Z</updated>
+    <updated>2022-07-31T14:21:29.000Z</updated>
     <content type="html"><![CDATA[<h1 id="express中jwt验证的简单使用" tabindex="-1"> Express中jwt验证的简单使用</h1>
 <h2 id="安装jwt相关包" tabindex="-1"> 安装JWT相关包</h2>
 <div><pre><code>npm install jsonwebtoken express<span>-</span>jwt

@@ -6,14 +6,76 @@
     <link>https://ivwv.github.io/</link>
     <description>SY's Blog</description>
     <language>zh-CN</language>
-    <pubDate>Sun, 31 Jul 2022 12:40:39 GMT</pubDate>
-    <lastBuildDate>Sun, 31 Jul 2022 12:40:39 GMT</lastBuildDate>
+    <pubDate>Sun, 31 Jul 2022 14:22:24 GMT</pubDate>
+    <lastBuildDate>Sun, 31 Jul 2022 14:22:24 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+    <category>我的项目整合</category>
     <category>PDF书籍</category>
     <category>Node</category>
-    <category>javascript</category>
+    <category>Javascript</category>
     <category>使用指南</category>
+    <item>
+      <title>我的项目整合</title>
+      <link>https://ivwv.github.io/posts/project/</link>
+      <guid>https://ivwv.github.io/posts/project/</guid>
+      <source url="https://ivwv.github.io/rss.xml">我的项目整合</source>
+      <description>项目介绍
+</description>
+      <category>我的项目整合</category>
+      <pubDate>Sun, 31 Jul 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>项目介绍</p>
+
+<h1 id="我的项目" tabindex="-1"> 我的项目</h1>
+<ol>
+<li><a href="/posts/project/vue-shop/">电商后台管理系统</a></li>
+<li><a href="/posts/project/newsinfo/">新闻门户网站(前后端项目)</a></li>
+<li><a href="/posts/project/socket-chat/"><code>Node+Socket.io</code>聊天程序 </a></li>
+<li><a href="/posts/project/puppeteer-electron-pdf/"><code>puppeteer</code> 爬取 <code>electron</code> 官网文档，保存为 <code>pdf</code> 格式</a></li>
+</ol>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>newsinfo</title>
+      <link>https://ivwv.github.io/posts/project/newsinfo/</link>
+      <guid>https://ivwv.github.io/posts/project/newsinfo/</guid>
+      <source url="https://ivwv.github.io/rss.xml">newsinfo</source>
+      <pubDate>Sun, 31 Jul 2022 14:21:29 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="newsinfo" tabindex="-1"> newsinfo</h1>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>puppeteer</title>
+      <link>https://ivwv.github.io/posts/project/puppeteer-electron-pdf/</link>
+      <guid>https://ivwv.github.io/posts/project/puppeteer-electron-pdf/</guid>
+      <source url="https://ivwv.github.io/rss.xml">puppeteer</source>
+      <pubDate>Sun, 31 Jul 2022 14:21:29 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="puppeteer" tabindex="-1"> puppeteer</h1>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>socket.io</title>
+      <link>https://ivwv.github.io/posts/project/socket-chat/</link>
+      <guid>https://ivwv.github.io/posts/project/socket-chat/</guid>
+      <source url="https://ivwv.github.io/rss.xml">socket.io</source>
+      <pubDate>Sun, 31 Jul 2022 14:21:29 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="socket-io" tabindex="-1"> <a href="http://socket.io" target="_blank" rel="noopener noreferrer">socket.io</a></h1>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>电商后台管理项目</title>
+      <link>https://ivwv.github.io/posts/project/vue-shop/</link>
+      <guid>https://ivwv.github.io/posts/project/vue-shop/</guid>
+      <source url="https://ivwv.github.io/rss.xml">电商后台管理项目</source>
+      <description>Vue2+ElementUi+Node+Axios 电商后台管理项目
+</description>
+      <category>我的项目整合</category>
+      <pubDate>Sun, 31 Jul 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>Vue2+ElementUi+Node+Axios 电商后台管理项目</p>
+
+<div><pre><code><span>const</span> a <span>=</span><span>1</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div></div></div>]]></content:encoded>
+    </item>
     <item>
       <title>ES6-in-depth</title>
       <link>https://ivwv.github.io/posts/PDF%E4%B9%A6%E7%B1%8D/ES6-in-depth.html</link>
@@ -156,7 +218,7 @@ unset NODE_ENV
       <link>https://ivwv.github.io/posts/javascript/es6/ES6%E5%9C%A8%E5%89%8D%E7%AB%AF%E7%9A%84%E6%A8%A1%E5%9D%97%E5%AF%BC%E5%85%A5%E4%B8%8E%E5%AF%BC%E5%87%BA.html</link>
       <guid>https://ivwv.github.io/posts/javascript/es6/ES6%E5%9C%A8%E5%89%8D%E7%AB%AF%E7%9A%84%E6%A8%A1%E5%9D%97%E5%AF%BC%E5%85%A5%E4%B8%8E%E5%AF%BC%E5%87%BA.html</guid>
       <source url="https://ivwv.github.io/rss.xml">ES6在前端的模块导入与导出</source>
-      <category>javascript</category>
+      <category>Javascript</category>
       <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<h1 id="es6在前端的模块导入与导出" tabindex="-1"> ES6在前端的模块导入与导出</h1>
 <h4 id="html文件使用" tabindex="-1"> <code>html</code>文件使用</h4>
@@ -260,7 +322,7 @@ unset NODE_ENV
       <link>https://ivwv.github.io/posts/javascript/es6/Javascript%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html</link>
       <guid>https://ivwv.github.io/posts/javascript/es6/Javascript%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html</guid>
       <source url="https://ivwv.github.io/rss.xml">Javascript面对对象编程</source>
-      <category>javascript</category>
+      <category>Javascript</category>
       <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<h1 id="javascript面对对象编程" tabindex="-1"> Javascript面对对象编程</h1>
 <h5 id="使用整合" tabindex="-1"> 使用整合</h5>
@@ -393,7 +455,7 @@ son<span>.</span><span>say</span><span>(</span><span>)</span><span>;</span> <spa
       <link>https://ivwv.github.io/posts/javascript/es6/%E5%8E%9F%E5%9E%8B.html</link>
       <guid>https://ivwv.github.io/posts/javascript/es6/%E5%8E%9F%E5%9E%8B.html</guid>
       <source url="https://ivwv.github.io/rss.xml">原型</source>
-      <category>javascript</category>
+      <category>Javascript</category>
       <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<h1 id="原型" tabindex="-1"> 原型</h1>
 <h2 id="prototype原型" tabindex="-1"> prototype原型</h2>
@@ -691,7 +753,7 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
       <link>https://ivwv.github.io/posts/javascript/es6/%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%9AObject.defineProperty.html</link>
       <guid>https://ivwv.github.io/posts/javascript/es6/%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%9AObject.defineProperty.html</guid>
       <source url="https://ivwv.github.io/rss.xml">对象方法：Object.defineProperty</source>
-      <category>javascript</category>
+      <category>Javascript</category>
       <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<h1 id="对象方法-object-defineproperty" tabindex="-1"> 对象方法：Object.defineProperty</h1>
 <div><pre><code>Object<span>.</span><span>defineProperty</span><span>(</span>obj<span>,</span> prop<span>,</span> descriptor<span>)</span>
@@ -722,7 +784,7 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
       <link>https://ivwv.github.io/posts/javascript/es6/%E7%B1%BB%E7%9A%84%E6%9C%AC%E8%B4%A8.html</link>
       <guid>https://ivwv.github.io/posts/javascript/es6/%E7%B1%BB%E7%9A%84%E6%9C%AC%E8%B4%A8.html</guid>
       <source url="https://ivwv.github.io/rss.xml">类的本质</source>
-      <category>javascript</category>
+      <category>Javascript</category>
       <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<h1 id="类的本质" tabindex="-1"> 类的本质</h1>
 <ul>
