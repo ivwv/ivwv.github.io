@@ -3,7 +3,7 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-07-31T03:20:00.888Z</updated>
+  <updated>2022-07-31T03:37:09.700Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
@@ -258,7 +258,7 @@ unset NODE_ENV
     <title type="html">Javascript面对对象编程</title>
     <id>https://ivwv.github.io/posts/javascript/es6/Javascript%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html</id>
     <link href="https://ivwv.github.io/posts/javascript/es6/Javascript%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html"/>
-    <updated>2022-07-30T08:45:21.000Z</updated>
+    <updated>2022-07-31T03:36:10.000Z</updated>
     <content type="html"><![CDATA[<h1 id="javascript面对对象编程" tabindex="-1"> Javascript面对对象编程</h1>
 <h5 id="使用整合" tabindex="-1"> 使用整合</h5>
 <ul>
@@ -326,7 +326,7 @@ console<span>.</span><span>log</span><span>(</span>son<span>.</span><span>mul</s
 son<span>.</span><span>say</span><span>(</span><span>)</span><span>;</span> <span>//我是爸爸的儿子</span>
 
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><strong>运行结果</strong></p>
-<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-12:23:51*image-20220719122351155*a.png" alt="image-20220719122351155" loading="lazy"></p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-12:23:51*image-20220719122351155*a.png" alt="image-20220719122351155" width="400" height="400" loading="lazy"></p>
 <h5 id="this指向问题" tabindex="-1"> this指向问题</h5>
 <div><pre><code> <span><span><span>&lt;</span>script</span><span>></span></span><span><span>
         <span>// 1. 在 ES6 中类没有变量提升，所以必须先定义类，才能通过类实例化对象</span>

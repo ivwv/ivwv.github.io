@@ -6,8 +6,8 @@
     <link>https://ivwv.github.io/</link>
     <description>SY's Blog</description>
     <language>zh-CN</language>
-    <pubDate>Sun, 31 Jul 2022 03:20:00 GMT</pubDate>
-    <lastBuildDate>Sun, 31 Jul 2022 03:20:00 GMT</lastBuildDate>
+    <pubDate>Sun, 31 Jul 2022 03:37:09 GMT</pubDate>
+    <lastBuildDate>Sun, 31 Jul 2022 03:37:09 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>PDF书籍</category>
@@ -329,7 +329,7 @@ console<span>.</span><span>log</span><span>(</span>son<span>.</span><span>mul</s
 son<span>.</span><span>say</span><span>(</span><span>)</span><span>;</span> <span>//我是爸爸的儿子</span>
 
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><strong>运行结果</strong></p>
-<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-12:23:51*image-20220719122351155*a.png" alt="image-20220719122351155" loading="lazy"></p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-12:23:51*image-20220719122351155*a.png" alt="image-20220719122351155" width="400" height="400" loading="lazy"></p>
 <h5 id="this指向问题" tabindex="-1"> this指向问题</h5>
 <div><pre><code> <span><span><span>&lt;</span>script</span><span>></span></span><span><span>
         <span>// 1. 在 ES6 中类没有变量提升，所以必须先定义类，才能通过类实例化对象</span>
@@ -387,7 +387,6 @@ son<span>.</span><span>say</span><span>(</span><span>)</span><span>;</span> <spa
 <p><strong>点击按钮</strong></p>
 <p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-12:49:49*image-20220719124949852*d.png" alt="image-20220719124949852" loading="lazy"></p>
 ]]></content:encoded>
-      <enclosure url="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-12:23:51*image-20220719122351155*a.png" type="image/png"/>
     </item>
     <item>
       <title>原型</title>
