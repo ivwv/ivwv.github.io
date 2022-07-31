@@ -3,7 +3,7 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-07-31T14:22:24.826Z</updated>
+  <updated>2022-07-31T16:15:11.653Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
@@ -19,10 +19,10 @@
     <title type="html">我的项目整合</title>
     <id>https://ivwv.github.io/posts/project/</id>
     <link href="https://ivwv.github.io/posts/project/"/>
-    <updated>2022-07-31T14:21:29.000Z</updated>
-    <summary type="html"><![CDATA[<p>项目介绍</p>
+    <updated>2022-07-31T16:14:17.000Z</updated>
+    <summary type="html"><![CDATA[<p>我的项目介绍</p>
 ]]></summary>
-    <content type="html"><![CDATA[<p>项目介绍</p>
+    <content type="html"><![CDATA[<p>我的项目介绍</p>
 
 <h1 id="我的项目" tabindex="-1"> 我的项目</h1>
 <ol>
@@ -39,7 +39,7 @@
     <title type="html">newsinfo</title>
     <id>https://ivwv.github.io/posts/project/newsinfo/</id>
     <link href="https://ivwv.github.io/posts/project/newsinfo/"/>
-    <updated>2022-07-31T14:21:29.000Z</updated>
+    <updated>2022-07-31T15:11:32.000Z</updated>
     <content type="html"><![CDATA[<h1 id="newsinfo" tabindex="-1"> newsinfo</h1>
 ]]></content>
     <published>2022-07-31T14:21:29.000Z</published>
@@ -48,8 +48,9 @@
     <title type="html">puppeteer</title>
     <id>https://ivwv.github.io/posts/project/puppeteer-electron-pdf/</id>
     <link href="https://ivwv.github.io/posts/project/puppeteer-electron-pdf/"/>
-    <updated>2022-07-31T14:21:29.000Z</updated>
+    <updated>2022-07-31T15:11:32.000Z</updated>
     <content type="html"><![CDATA[<h1 id="puppeteer" tabindex="-1"> puppeteer</h1>
+<h1 id="puppeteer-1" tabindex="-1"> puppeteer</h1>
 ]]></content>
     <published>2022-07-31T14:21:29.000Z</published>
   </entry>
@@ -58,7 +59,7 @@
     <id>https://ivwv.github.io/posts/project/socket-chat/</id>
     <link href="https://ivwv.github.io/posts/project/socket-chat/"/>
     <updated>2022-07-31T14:21:29.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="socket-io" tabindex="-1"> <a href="http://socket.io" target="_blank" rel="noopener noreferrer">socket.io</a></h1>
+    <content type="html"><![CDATA[<h1 id="socket-io" tabindex="-1"> socket.io</h1>
 ]]></content>
     <published>2022-07-31T14:21:29.000Z</published>
   </entry>
@@ -230,12 +231,12 @@ unset NODE_ENV
 <ul>
 <li><code>from</code>路径需要使用<code>/</code>  ,  <code>./</code>  或  <code>../</code>拼接的路径
 <ul>
-<li><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-22-20:00:08*image-20220722200008169*b.png" alt="image-20220722200008169" loading="lazy"></li>
+<li><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-22-20:00:08*image-20220722200008169*b.png" alt="image-20220722200008169"></li>
 </ul>
 </li>
 <li>路径要写全，<code>.js</code>后缀要跟上
 <ul>
-<li><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-22-20:00:38*image-20220722200038659*6.png" alt="image-20220722200038659" loading="lazy"></li>
+<li><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-22-20:00:38*image-20220722200038659*6.png" alt="image-20220722200038659"></li>
 </ul>
 </li>
 </ul>
@@ -252,7 +253,7 @@ unset NODE_ENV
 
   </span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h5 id="两种方法答应输出" tabindex="-1"> 两种方法答应输出</h5>
-<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-22-20:00:54*image-20220722200054843*2.png" alt="image-20220722200054843" loading="lazy"></p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-22-20:00:54*image-20220722200054843*2.png" alt="image-20220722200054843"></p>
 <h4 id="js文件" tabindex="-1"> <code>js</code>文件</h4>
 <h5 id="person-js类" tabindex="-1"> <code>Person.js</code>类</h5>
 <div><pre><code><span>class</span> <span>Person</span> <span>{</span>
@@ -311,7 +312,7 @@ unset NODE_ENV
 
   </span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h5 id="运行结果" tabindex="-1"> 运行结果</h5>
-<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-22-22:04:13*image-20220722220413190*7.png" alt="image-20220722220413190" loading="lazy"></p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-22-22:04:13*image-20220722220413190*7.png" alt="image-20220722220413190"></p>
 ]]></content>
     <category term="Javascript" scheme=""/>
     <published>2022-07-30T00:00:00.000Z</published>
@@ -320,7 +321,7 @@ unset NODE_ENV
     <title type="html">Javascript面对对象编程</title>
     <id>https://ivwv.github.io/posts/javascript/es6/Javascript%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html</id>
     <link href="https://ivwv.github.io/posts/javascript/es6/Javascript%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html"/>
-    <updated>2022-07-31T14:21:29.000Z</updated>
+    <updated>2022-07-31T16:14:17.000Z</updated>
     <content type="html"><![CDATA[<h1 id="javascript面对对象编程" tabindex="-1"> Javascript面对对象编程</h1>
 <h5 id="使用整合" tabindex="-1"> 使用整合</h5>
 <ul>
@@ -388,7 +389,7 @@ console<span>.</span><span>log</span><span>(</span>son<span>.</span><span>mul</s
 son<span>.</span><span>say</span><span>(</span><span>)</span><span>;</span> <span>//我是爸爸的儿子</span>
 
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><strong>运行结果</strong></p>
-<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-12:23:51*image-20220719122351155*a.png" alt="image-20220719122351155" width="400" height="400" loading="lazy"></p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-12:23:51*image-20220719122351155*a.png" alt="image-20220719122351155"></p>
 <h5 id="this指向问题" tabindex="-1"> this指向问题</h5>
 <div><pre><code> <span><span><span>&lt;</span>script</span><span>></span></span><span><span>
         <span>// 1. 在 ES6 中类没有变量提升，所以必须先定义类，才能通过类实例化对象</span>
@@ -442,9 +443,9 @@ son<span>.</span><span>say</span><span>(</span><span>)</span><span>;</span> <spa
 
     </span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><strong>运行结果</strong></p>
-<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-12:48:57*image-20220719124857522*9.png" alt="image-20220719124857522" loading="lazy"></p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-12:48:57*image-20220719124857522*9.png" alt="image-20220719124857522"></p>
 <p><strong>点击按钮</strong></p>
-<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-12:49:49*image-20220719124949852*d.png" alt="image-20220719124949852" loading="lazy"></p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-12:49:49*image-20220719124949852*d.png" alt="image-20220719124949852"></p>
 ]]></content>
     <category term="Javascript" scheme=""/>
     <published>2022-07-30T00:00:00.000Z</published>
@@ -484,7 +485,7 @@ son<span>.</span><span>say</span><span>(</span><span>)</span><span>;</span> <spa
 <li>将Start展开会出现待展开的<code>prototype</code></li>
 <li>再次展开又会出现一个<code>prototype</code></li>
 </ul>
-<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-17:50:30*image-20220719175030567*e.png" alt="image-20220719175030567" loading="lazy"></p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-17:50:30*image-20220719175030567*e.png" alt="image-20220719175030567"></p>
 <p><strong>因为每一个原型上都有一个 prototype ,所以还可以再套娃(目前只是玩玩儿，可用性待发掘)</strong></p>
 <div><pre><code><span>Star</span><span>.</span>prototype<span>.</span>sing<span>.</span>prototype<span>.</span><span>sing2</span> <span>=</span> <span>function</span> <span>(</span><span>)</span> <span>{</span>
             console<span>.</span><span>log</span><span>(</span><span>'我会唱歌2'</span><span>)</span><span>;</span>
@@ -492,7 +493,7 @@ son<span>.</span><span>say</span><span>(</span><span>)</span><span>;</span> <spa
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div></div></div><ul>
 <li>继续打印</li>
 </ul>
-<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-17:59:25*image-20220719175925250*c.png" alt="image-20220719175925250" loading="lazy"></p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-17:59:25*image-20220719175925250*c.png" alt="image-20220719175925250"></p>
 <p><strong>接下来创建实例，调用方法</strong></p>
 <div><pre><code><span>var</span> ldh <span>=</span> <span>new</span> <span>Star</span><span>(</span><span>'刘德华'</span><span>,</span> <span>18</span><span>)</span><span>;</span>
 <span>var</span> zxy <span>=</span> <span>new</span> <span>Star</span><span>(</span><span>'张学友'</span><span>,</span> <span>19</span><span>)</span><span>;</span>
@@ -502,7 +503,7 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div></div></div><ul>
 <li>控制台输出</li>
 </ul>
-<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-18:01:12*image-20220719180112332*0.png" alt="image-20220719180112332" loading="lazy"></p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-18:01:12*image-20220719180112332*0.png" alt="image-20220719180112332"></p>
 <ul>
 <li>所以可以将实例对象都能使用的方法，挂载到实例的<code>prototype</code>上,无论new了多少个实例，都可以实现数据共享</li>
 <li>简单的说就是让他们都指向同一片内存空间，所以<code>ldh.sing === zxy.sing</code>才会为<code>true</code> 是因为都同时指向同一个内存空间</li>
@@ -510,7 +511,7 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
 </ul>
 <p><strong>只有构造函数本身才有 prototype 这个属性</strong></p>
 <div><pre><code>console<span>.</span><span>log</span><span>(</span><span>Star</span><span>.</span>prototype<span>)</span>
-</code></pre><div aria-hidden="true"><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-18:35:50*image-20220719183550578*f.png" alt="image-20220719183550578" loading="lazy"></p>
+</code></pre><div aria-hidden="true"><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-18:35:50*image-20220719183550578*f.png" alt="image-20220719183550578"></p>
 <h2 id="对象原型-proto" tabindex="-1"> 对象原型<code>__proto__</code></h2>
 <p>对象身上系统自己添加一个 <code>__proto__</code> 指向我们构造函数的原型对象 <code>prototype</code></p>
 <p>对象原型只有<code>__proto__</code> 没有 <code>prototype</code></p>
@@ -533,14 +534,14 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
         console<span>.</span><span>log</span><span>(</span>ldh<span>.</span>__proto__ <span>===</span> <span>Star</span><span>.</span>prototype<span>)</span><span>;</span>
         <span>// 方法的查找规则: 首先先看ldh 对象身上是否有 sing 方法,如果有就执行这个对象上的sing</span>
         <span>// 如果么有sing 这个方法,因为有__proto__ 的存在,就去构造函数原型对象prototype身上去查找sing这个方法</span>
-</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-18:42:24*image-20220719184224871*4.png" alt="image-20220719184224871" loading="lazy"></p>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-18:42:24*image-20220719184224871*4.png" alt="image-20220719184224871"></p>
 <h3 id="原型对象和对象原型" tabindex="-1"> 原型对象和对象原型</h3>
 <ul>
 <li>我们称为 <code>prototype</code> 为原型对象，<code>__proto__</code>为对象原型</li>
 <li><code>__proto__</code>对象原型和原型对象 <code>prototype </code>是等价的</li>
 <li><code>__proto__</code>对象原型的意义就在于为对象的查找机制提供一个方向，或者说一条路线，但是它是一个非标准属性，因此实际开发中，不可以使用这个属性，它只是内部指向原型对象 <code>prototype</code></li>
 </ul>
-<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-18:45:48*image-20220719184548457*2.png" alt="image-20220719184548457" loading="lazy"></p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-18:45:48*image-20220719184548457*2.png" alt="image-20220719184548457"></p>
 <h4 id="对象原型" tabindex="-1"> 对象原型</h4>
 <div><pre><code><span>function</span> <span>Star</span><span>(</span><span>uname<span>,</span> age</span><span>)</span> <span>{</span>
             <span>this</span><span>.</span>uname <span>=</span> uname<span>;</span>
@@ -572,7 +573,7 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
         console<span>.</span><span>log</span><span>(</span><span>Star</span><span>.</span>prototype<span>.</span>constructor<span>)</span><span>;</span>
         console<span>.</span><span>log</span><span>(</span>ldh<span>.</span><span>__proto__</span><span>.</span>constructor<span>)</span><span>;</span>
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><strong>最终输出</strong></p>
-<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-21:43:56*image-20220719214356161*3.png" alt="image-20220719214356161" loading="lazy"></p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-21:43:56*image-20220719214356161*3.png" alt="image-20220719214356161"></p>
 <p>如果把<code>constructor: Star</code> 注释掉</p>
 <div><pre><code><span>Star</span><span>.</span>prototype <span>=</span> <span>{</span>
             <span>// 如果我们修改了原来的原型对象,给原型对象赋值的是一个对象,则必须手动的利用constructor指回原来的构造函数</span>
@@ -587,15 +588,15 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
             <span>}</span>
         <span>}</span>
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><strong>打印输出</strong></p>
-<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-21:45:10*image-20220719214510759*8.png" alt="image-20220719214510759" loading="lazy"></p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-21:45:10*image-20220719214510759*8.png" alt="image-20220719214510759"></p>
 <h5 id="结论" tabindex="-1"> 结论：</h5>
 <ul>
 <li>如果我们修改了原来的原型对象,给原型对象赋值的是一个对象,则必须手动的利用constructor指回原来的构造函数</li>
 </ul>
 <h5 id="构造函数、实例、原型对象三者之间的关系" tabindex="-1"> <strong>构造函数、实例、原型对象三者之间的关系</strong></h5>
-<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-21:47:32*image-20220719214732582*8.png" alt="image-20220719214732582" loading="lazy"></p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-21:47:32*image-20220719214732582*8.png" alt="image-20220719214732582"></p>
 <h5 id="原型链" tabindex="-1"> 原型链</h5>
-<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-21:47:53*image-20220719214753030*0.png" alt="image-20220719214753030" loading="lazy"></p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-21:47:53*image-20220719214753030*0.png" alt="image-20220719214753030"></p>
 <h5 id="javascript-的成员查找机制-规则" tabindex="-1"> <strong>JavaScript</strong> 的成员查找机制(规则)</h5>
 <ul>
 <li>当访问一个对象的属性（包括方法）时，首先查找这个对象自身有没有该属性</li>
@@ -618,7 +619,7 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
         console<span>.</span><span>log</span><span>(</span><span>RegExp</span><span>.</span>prototype<span>)</span><span>;</span>
         console<span>.</span><span>log</span><span>(</span><span>Error</span><span>.</span>prototype<span>)</span><span>;</span>
         console<span>.</span><span>log</span><span>(</span><span>Symbol</span><span>.</span>prototype<span>)</span><span>;</span>
-</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-20-11:46:25*image-20220720114625603*b.png" alt="image-20220720114625603" loading="lazy"></p>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-20-11:46:25*image-20220720114625603*b.png" alt="image-20220720114625603"></p>
 <p><strong>我们也可以自定义方法挂载到内置对象的</strong> <code>prototype</code>上</p>
 <div><pre><code>		<span>Array</span><span>.</span>prototype<span>.</span><span>sum</span> <span>=</span> <span>function</span> <span>(</span><span>)</span> <span>{</span>
             <span>var</span> sum <span>=</span> <span>0</span><span>;</span>
@@ -631,7 +632,7 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
 		<span>var</span> arr <span>=</span> <span>[</span><span>1</span><span>,</span> <span>2</span><span>,</span> <span>3</span><span>]</span><span>;</span>
         console<span>.</span><span>log</span><span>(</span>arr<span>.</span><span>sum</span><span>(</span><span>)</span><span>)</span><span>;</span>
         console<span>.</span><span>log</span><span>(</span><span>Array</span><span>.</span>prototype<span>)</span><span>;</span>
-</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-20-11:48:29*image-20220720114829169*7.png" alt="image-20220720114829169" loading="lazy"></p>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-20-11:48:29*image-20220720114829169*7.png" alt="image-20220720114829169"></p>
 <h4 id="call方法" tabindex="-1"> call方法</h4>
 <ul>
 <li><code>call() </code>可以调用函数</li>
@@ -656,7 +657,7 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
         <span>// fn.call();</span>
         <span>// 2. call() 可以改变这个函数的this指向 此时这个函数的this 就指向了o这个对象</span>
         <span>fn</span><span>.</span><span>call</span><span>(</span>o<span>,</span> <span>321</span><span>,</span> <span>2</span><span>)</span>
-</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-20-12:13:57*image-20220720121357273*1.png" alt="image-20220720121357273" loading="lazy"></p>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-20-12:13:57*image-20220720121357273*1.png" alt="image-20220720121357273"></p>
 <ul>
 <li>上图我们可以看到，在使用 <code>fn.call(o, 321, 2)</code>后，将<code>fn</code>的<code>this</code>指向了<code>o</code>这个对象</li>
 <li>我们在<code>o</code>上挂载一个<code>testSum</code>方法，在<code>fn</code>内通过<code>this.testSum()</code>调用，能在控制台中输出结果</li>
@@ -701,7 +702,7 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
 
         <span>}</span><span>)</span><span>;</span>
         console<span>.</span><span>log</span><span>(</span>son<span>)</span><span>;</span>
-</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-20-12:48:40*image-20220720124840693*0.png" alt="image-20220720124840693" loading="lazy"></p>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-20-12:48:40*image-20220720124840693*0.png" alt="image-20220720124840693"></p>
 <h4 id="利用原型对象继承方法" tabindex="-1"> 利用原型对象继承方法</h4>
 <div><pre><code><span>// 借用父构造函数继承属性</span>
         <span>// 1. 父构造函数</span>
@@ -741,7 +742,7 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
          * 如果使用 Son.prototype = new Father(); 下面会输出 false
          */</span>
         console<span>.</span><span>log</span><span>(</span><span>Son</span><span>.</span>prototype <span>===</span> <span>Father</span><span>.</span>prototype<span>)</span><span>;</span>
-</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-20-13:17:49*image-20220720131749583*6.png" alt="image-20220720131749583" loading="lazy"></p>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-20-13:17:49*image-20220720131749583*6.png" alt="image-20220720131749583"></p>
 ]]></content>
     <category term="Javascript" scheme=""/>
     <published>2022-07-30T00:00:00.000Z</published>
@@ -820,7 +821,7 @@ console<span>.</span><span>log</span><span>(</span><span>Star</span><span>.</spa
 console<span>.</span><span>dir</span><span>(</span>ldh<span>)</span><span>;</span>
 <span>// (4) 类创建的实例对象有__proto__ 原型指向 类的原型对象</span>
 console<span>.</span><span>log</span><span>(</span>ldh<span>.</span>__proto__ <span>===</span> <span>Star</span><span>.</span>prototype<span>)</span><span>;</span>
-</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-20-13:34:56*image-20220720133456588*9.png" alt="image-20220720133456588" loading="lazy"></p>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-20-13:34:56*image-20220720133456588*9.png" alt="image-20220720133456588"></p>
 ]]></content>
     <category term="Javascript" scheme=""/>
     <published>2022-07-30T00:00:00.000Z</published>
@@ -862,7 +863,7 @@ console<span>.</span><span>log</span><span>(</span>ldh<span>.</span>__proto__ <s
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><ul>
 <li><strong>用户接收</strong>
 <ul>
-<li><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-14:58:00*01*e.jpg" alt="01" loading="lazy"></li>
+<li><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-14:58:00*01*e.jpg" alt="01"></li>
 </ul>
 </li>
 </ul>
@@ -913,7 +914,7 @@ value为<span><span>`</span><span>Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.ey
 <li>
 <p><strong>用户接收</strong>-<strong>成功</strong></p>
 <ul>
-<li><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-14:58:00*02*3.jpg" alt="02" loading="lazy"></li>
+<li><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-14:58:00*02*3.jpg" alt="02"></li>
 </ul>
 </li>
 </ul>
@@ -922,7 +923,7 @@ value为<span><span>`</span><span>Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.ey
 <ul>
 <li><strong>当用户的token错误时</strong>
 <ul>
-<li><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-14:58:00*03*9.jpg" alt="03" loading="lazy"></li>
+<li><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-14:58:00*03*9.jpg" alt="03"></li>
 <li><strong>会返回一个错误</strong></li>
 <li><strong>此时需要添加一个全局的错误处理中间件</strong></li>
 <li><strong>判断<code>err.name</code>是否为<code>UnauthorizedError</code></strong></li>
@@ -948,7 +949,7 @@ value为<span><span>`</span><span>Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.ey
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><ul>
 <li>
 <ul>
-<li><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-14:58:00*04*3.jpg" alt="04" loading="lazy"></li>
+<li><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-14:58:00*04*3.jpg" alt="04"></li>
 </ul>
 </li>
 </ul>
@@ -1168,9 +1169,9 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 </CodeTabs>
 </div>
 <h4 id="自定义容器" tabindex="-1"> 自定义容器</h4>
-<div>
+<p>:::</p>
 <p>安全的在 Markdown 中使用 {{ variable }}。</p>
-</div>
+<p>:::</p>
 <div><p>自定义标题</p>
 <p>信息容器，包含 <code>代码</code> 与 。</p>
 <div><pre><code><span>const</span> a <span>=</span> <span>1</span><span>;</span>
@@ -1244,35 +1245,37 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/code-tabs.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
 </ul>
 <h4 id="自定义对齐" tabindex="-1"> 自定义对齐</h4>
-<div style="text-align: center"><p>我是居中的</p>
-</div>
-<div style="text-align: right"><p>我在右对齐</p>
-</div>
+<p>::: center</p>
+<p>我是居中的</p>
+<p>:::</p>
+<p>::: right</p>
+<p>我在右对齐</p>
+<p>:::</p>
 <ul>
 <li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/align.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
 </ul>
 <h4 id="上下角标" tabindex="-1"> 上下角标</h4>
-<p>19<sup>th</sup> H<sub>2</sub>O</p>
+<p>19^th^ H~2~O</p>
 <ul>
 <li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/sup-sub.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
 </ul>
 <h4 id="脚注" tabindex="-1"> 脚注</h4>
-<p>此文字有脚注<sup></sup>.</p>
+<p>此文字有脚注<a href="%E8%BF%99%E6%98%AF%E8%84%9A%E6%B3%A8%E5%86%85%E5%AE%B9">^first</a>.</p>
 <ul>
 <li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/footnote.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
 </ul>
 <h4 id="标记" tabindex="-1"> 标记</h4>
-<p>你可以标记 <mark>重要的内容</mark> 。</p>
+<p>你可以标记 ==重要的内容== 。</p>
 <ul>
 <li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/mark.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
 </ul>
 <h4 id="任务列表" tabindex="-1"> 任务列表</h4>
 <ul>
 <li>
-<p><input type="checkbox" id="task-item-0" checked="checked" disabled="disabled"><label for="task-item-0"> 计划 1</label></p>
+<p>[x] 计划 1</p>
 </li>
 <li>
-<p><input type="checkbox" id="task-item-1" disabled="disabled"><label for="task-item-1"> 计划 2</label></p>
+<p>[ ] 计划 2</p>
 </li>
 <li>
 <p><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/tasklist.html" target="_blank" rel="noopener noreferrer">查看详情</a></p>
@@ -1284,40 +1287,70 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 <li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/image.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
 </ul>
 <h4 id="图表" tabindex="-1"> 图表</h4>
-<ChartJS id="chart-64a5691a" config="%7B%0A%20%20%22type%22%3A%20%22scatter%22%2C%0A%20%20%22data%22%3A%20%7B%0A%20%20%20%20%22datasets%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22label%22%3A%20%22%E6%95%A3%E7%82%B9%E6%95%B0%E6%8D%AE%E9%9B%86%22%2C%0A%20%20%20%20%20%20%20%20%22data%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%7B%20%22x%22%3A%20-10%2C%20%22y%22%3A%200%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%20%22x%22%3A%200%2C%20%22y%22%3A%2010%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%20%22x%22%3A%2010%2C%20%22y%22%3A%205%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%20%22x%22%3A%200.5%2C%20%22y%22%3A%205.5%20%7D%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22backgroundColor%22%3A%20%22rgb(255%2C%2099%2C%20132)%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%20%20%7D%2C%0A%20%20%22options%22%3A%20%7B%0A%20%20%20%20%22scales%22%3A%20%7B%0A%20%20%20%20%20%20%22x%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22linear%22%2C%0A%20%20%20%20%20%20%20%20%22position%22%3A%20%22bottom%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A" title="%E4%B8%80%E4%B8%AA%E6%95%A3%E7%82%B9%E5%9B%BE%E6%A1%88%E4%BE%8B" type="json"></ChartJS><ul>
+<ChartJS id="chart-64a568ae" config="%7B%0A%20%20%22type%22%3A%20%22scatter%22%2C%0A%20%20%22data%22%3A%20%7B%0A%20%20%20%20%22datasets%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22label%22%3A%20%22%E6%95%A3%E7%82%B9%E6%95%B0%E6%8D%AE%E9%9B%86%22%2C%0A%20%20%20%20%20%20%20%20%22data%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%7B%20%22x%22%3A%20-10%2C%20%22y%22%3A%200%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%20%22x%22%3A%200%2C%20%22y%22%3A%2010%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%20%22x%22%3A%2010%2C%20%22y%22%3A%205%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%20%22x%22%3A%200.5%2C%20%22y%22%3A%205.5%20%7D%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22backgroundColor%22%3A%20%22rgb(255%2C%2099%2C%20132)%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%20%20%7D%2C%0A%20%20%22options%22%3A%20%7B%0A%20%20%20%20%22scales%22%3A%20%7B%0A%20%20%20%20%20%20%22x%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22linear%22%2C%0A%20%20%20%20%20%20%20%20%22position%22%3A%20%22bottom%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A" title="%E4%B8%80%E4%B8%AA%E6%95%A3%E7%82%B9%E5%9B%BE%E6%A1%88%E4%BE%8B" type="json"></ChartJS><ul>
 <li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/chart.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
 </ul>
 <h4 id="echarts" tabindex="-1"> Echarts</h4>
-<ECharts id="echarts-64a568ac" config="%7B%0A%20%20%22xAxis%22%3A%20%7B%0A%20%20%20%20%22type%22%3A%20%22category%22%2C%0A%20%20%20%20%22data%22%3A%20%5B%22Mon%22%2C%20%22Tue%22%2C%20%22Wed%22%2C%20%22Thu%22%2C%20%22Fri%22%2C%20%22Sat%22%2C%20%22Sun%22%5D%0A%20%20%7D%2C%0A%20%20%22yAxis%22%3A%20%7B%0A%20%20%20%20%22type%22%3A%20%22value%22%0A%20%20%7D%2C%0A%20%20%22series%22%3A%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22data%22%3A%20%5B150%2C%20230%2C%20224%2C%20218%2C%20135%2C%20147%2C%20260%5D%2C%0A%20%20%20%20%20%20%22type%22%3A%20%22line%22%0A%20%20%20%20%7D%0A%20%20%5D%0A%7D%0A" title="%E4%B8%80%E4%B8%AA%E6%8A%98%E7%BA%BF%E5%9B%BE%E6%A1%88%E4%BE%8B" type="json"></ECharts><ul>
+<p>::: echarts 一个折线图案例</p>
+<div><pre><code><span>{</span>
+  <span>"xAxis"</span><span>:</span> <span>{</span>
+    <span>"type"</span><span>:</span> <span>"category"</span><span>,</span>
+    <span>"data"</span><span>:</span> <span>[</span><span>"Mon"</span><span>,</span> <span>"Tue"</span><span>,</span> <span>"Wed"</span><span>,</span> <span>"Thu"</span><span>,</span> <span>"Fri"</span><span>,</span> <span>"Sat"</span><span>,</span> <span>"Sun"</span><span>]</span>
+  <span>}</span><span>,</span>
+  <span>"yAxis"</span><span>:</span> <span>{</span>
+    <span>"type"</span><span>:</span> <span>"value"</span>
+  <span>}</span><span>,</span>
+  <span>"series"</span><span>:</span> <span>[</span>
+    <span>{</span>
+      <span>"data"</span><span>:</span> <span>[</span><span>150</span><span>,</span> <span>230</span><span>,</span> <span>224</span><span>,</span> <span>218</span><span>,</span> <span>135</span><span>,</span> <span>147</span><span>,</span> <span>260</span><span>]</span><span>,</span>
+      <span>"type"</span><span>:</span> <span>"line"</span>
+    <span>}</span>
+  <span>]</span>
+<span>}</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p>:::</p>
+<ul>
 <li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/echarts.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
 </ul>
 <h4 id="流程图" tabindex="-1"> 流程图</h4>
-<FlowChart id="flowchart-64a56868" code="cond%3D%3Econdition%3A%20%E6%98%AF%E5%90%A6%E6%89%A7%E8%A1%8C%E6%93%8D%E4%BD%9C%3F%0Aprocess%3D%3Eoperation%3A%20%E6%93%8D%E4%BD%9C%0Ae%3D%3Eend%3A%20%E7%BB%93%E6%9D%9F%0A%0Acond(yes)-%3Eprocess-%3Ee%0Acond(no)-%3Ee%0A" preset="vue"></FlowChart><ul>
+<div><pre><code>cond<span>=></span>condition<span>:</span> 是否执行操作<span>?</span>
+process<span>=></span>operation<span>:</span> 操作
+e<span>=></span>end<span>:</span> 结束
+
+<span>cond</span><span>(</span>yes<span>)</span><span>-</span><span>></span>process<span>-</span><span>></span>e
+<span>cond</span><span>(</span>no<span>)</span><span>-</span><span>></span>e
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div></div></div><ul>
 <li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/flowchart.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
 </ul>
 <h4 id="mermaid" tabindex="-1"> Mermaid</h4>
-<Mermaid id="mermaid-64a56828" code="flowchart%20TB%0A%20%20%20%20c1--%3Ea2%0A%20%20%20%20subgraph%20one%0A%20%20%20%20a1--%3Ea2%0A%20%20%20%20end%0A%20%20%20%20subgraph%20two%0A%20%20%20%20b1--%3Eb2%0A%20%20%20%20end%0A%20%20%20%20subgraph%20three%0A%20%20%20%20c1--%3Ec2%0A%20%20%20%20end%0A%20%20%20%20one%20--%3E%20two%0A%20%20%20%20three%20--%3E%20two%0A%20%20%20%20two%20--%3E%20c2%0A"></Mermaid><ul>
+<div><pre><code><span>flowchart</span> TB
+    c1<span>--></span>a2
+    <span>subgraph</span> one
+    a1<span>--></span>a2
+    <span>end</span>
+    <span>subgraph</span> two
+    b1<span>--></span>b2
+    <span>end</span>
+    <span>subgraph</span> three
+    c1<span>--></span>c2
+    <span>end</span>
+    one <span>--></span> two
+    three <span>--></span> two
+    two <span>--></span> c2
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><ul>
 <li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/mermaid.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
 </ul>
 <h4 id="tex-语法" tabindex="-1"> Tex 语法</h4>
-<p class='katex-block'><span><span><span><i>Content not supported</i></span><span aria-hidden="true"><span><span style="height:2.4em;vertical-align:-0.95em;"></span><span><span></span><span><span><span><span style="height:1.3714em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span style="margin-right:0.05556em;">∂</span><span><span style="margin-right:0.03588em;">ω</span><span><span><span><span style="height:0.5904em;"><span style="top:-2.989em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span style="margin-right:0.02778em;">r</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.05556em;">∂</span><span><span><span><span style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span style="margin-right:0.02778em;">r</span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="margin-right:0.1667em;"></span><span><span style="top:0em;"><span>(</span></span><span><span></span><span><span><span><span style="height:1.3414em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span style="margin-right:0.03588em;">ω</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.03588em;">y</span><span><span><span><span style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">ω</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="top:0em;"><span>)</span></span></span><span style="margin-right:0.2778em;"></span><span>=</span><span style="margin-right:0.2778em;"></span></span><span><span style="height:3.0277em;vertical-align:-1.2777em;"></span><span><span style="top:0em;"><span>(</span></span><span><span></span><span><span><span><span style="height:1.3414em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span style="margin-right:0.03588em;">ω</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.03588em;">y</span><span><span><span><span style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">ω</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="top:0em;"><span>)</span></span></span><span style="margin-right:0.1667em;"></span><span><span style="top:0em;"><span>{</span></span><span>(</span><span>lo<span style="margin-right:0.01389em;">g</span></span><span style="margin-right:0.1667em;"></span><span style="margin-right:0.03588em;">y</span><span><span>)</span><span><span><span><span style="height:0.7144em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span style="margin-right:0.02778em;">r</span></span></span></span></span></span></span></span><span style="margin-right:0.2222em;"></span><span>+</span><span style="margin-right:0.2222em;"></span><span><span><span><span style="height:1.6514em;"><span style="top:-1.8723em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span>i</span><span>=</span><span>1</span></span></span></span><span style="top:-3.05em;"><span style="height:3.05em;"></span><span><span>∑</span></span></span><span style="top:-4.3em;margin-left:0em;"><span style="height:3.05em;"></span><span><span style="margin-right:0.02778em;">r</span></span></span></span><span>​</span></span><span><span style="height:1.2777em;"><span></span></span></span></span></span><span style="margin-right:0.1667em;"></span><span><span></span><span><span><span><span style="height:1.5017em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.03588em;">ω</span><span><span><span><span style="height:0.7507em;"><span style="top:-2.989em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>i</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span>(</span><span>−</span><span>1</span><span><span>)</span><span><span><span><span style="height:0.8247em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>i</span></span></span></span></span></span></span></span><span style="margin-right:0.02778em;">r</span><span style="margin-right:0.1667em;"></span><span>⋯</span><span style="margin-right:0.1667em;"></span><span>(</span><span style="margin-right:0.02778em;">r</span><span style="margin-right:0.2222em;"></span><span>−</span><span style="margin-right:0.2222em;"></span><span>i</span><span style="margin-right:0.2222em;"></span><span>+</span><span style="margin-right:0.2222em;"></span><span>1</span><span>)</span><span>(</span><span>lo<span style="margin-right:0.01389em;">g</span></span><span style="margin-right:0.1667em;"></span><span style="margin-right:0.03588em;">y</span><span><span>)</span><span><span><span><span style="height:0.8247em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.02778em;">r</span><span>−</span><span>i</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="top:0em;"><span>}</span></span></span></span></span></span></span></p>
+<p>$$
+\frac {\partial^r} {\partial \omega^r} \left(\frac {y^{\omega}} {\omega}\right)
+= \left(\frac {y^{\omega}} {\omega}\right) \left{(\log y)^r + \sum_{i=1}^r \frac {(-1)^i r \cdots (r-i+1) (\log y)^{r-i}} {\omega^i} \right}
+$$</p>
 <ul>
 <li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/tex.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
 </ul>
 <h4 id="导入文件" tabindex="-1"> 导入文件</h4>
+<p>@include(./README.md{11-17})</p>
 <ul>
-<li>
-<p><a href="/guide/markdown.html">Markdown 展示</a></p>
-</li>
-<li>
-<p><a href="/guide/page.html">页面展示</a></p>
-</li>
-<li>
-<p><a href="/guide/disable.html">禁用展示</a></p>
-</li>
-<li>
-<p><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/include.html" target="_blank" rel="noopener noreferrer">查看详情</a></p>
-</li>
+<li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/include.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
 </ul>
 <h4 id="代码演示" tabindex="-1"> 代码演示</h4>
 
@@ -1341,16 +1374,9 @@ module<span>.</span>exports <span>=</span> <span>{</span>
 </ul>
 
 <h4 id="幻灯片" tabindex="-1"> 幻灯片</h4>
-<Presentation id="presentation-64a56128" data-code="%0A%23%23%20%E5%B9%BB%E7%81%AF%E7%89%87%201%0A%0A%E4%B8%80%E4%B8%AA%E6%9C%89%E6%96%87%E5%AD%97%E5%92%8C%20%5B%E9%93%BE%E6%8E%A5%5D(https%3A%2F%2Fmrhope.site)%20%E7%9A%84%E6%AE%B5%E8%90%BD%0A%0A---%0A%0A%23%23%20%E5%B9%BB%E7%81%AF%E7%89%87%202%0A%0A-%20%E9%A1%B9%E7%9B%AE%201%0A-%20%E9%A1%B9%E7%9B%AE%202%0A%0A---%0A%0A%23%23%20%E5%B9%BB%E7%81%AF%E7%89%87%203.1%0A%0A%60%60%60js%0Aconst%20a%20%3D%201%3B%0A%60%60%60%0A%0A--%0A%0A%23%23%20%E5%B9%BB%E7%81%AF%E7%89%87%203.2%0A%0A%24%24%0AJ(%5Ctheta_0%2C%5Ctheta_1)%20%3D%20%5Csum_%7Bi%3D0%7D%0A%24%24%0A" theme="auto"></Presentation><ul>
+<Presentation id="presentation-64a5611c" data-code="%0A%23%23%20%E5%B9%BB%E7%81%AF%E7%89%87%201%0A%0A%E4%B8%80%E4%B8%AA%E6%9C%89%E6%96%87%E5%AD%97%E5%92%8C%20%5B%E9%93%BE%E6%8E%A5%5D(https%3A%2F%2Fmrhope.site)%20%E7%9A%84%E6%AE%B5%E8%90%BD%0A%0A---%0A%0A%23%23%20%E5%B9%BB%E7%81%AF%E7%89%87%202%0A%0A-%20%E9%A1%B9%E7%9B%AE%201%0A-%20%E9%A1%B9%E7%9B%AE%202%0A%0A---%0A%0A%23%23%20%E5%B9%BB%E7%81%AF%E7%89%87%203.1%0A%0A%60%60%60js%0Aconst%20a%20%3D%201%3B%0A%60%60%60%0A%0A--%0A%0A%23%23%20%E5%B9%BB%E7%81%AF%E7%89%87%203.2%0A%0A%24%24%0AJ(%5Ctheta_0%2C%5Ctheta_1)%20%3D%20%5Csum_%7Bi%3D0%7D%0A%24%24%0A" theme="auto"></Presentation><ul>
 <li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/presentation.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
 </ul>
-<hr>
-<section>
-<ol>
-<li id="footnote1"><p>这是脚注内容 </p>
-</li>
-</ol>
-</section>
 ]]></content>
     <category term="使用指南" scheme=""/>
     <published>2022-07-29T00:00:00.000Z</published>
