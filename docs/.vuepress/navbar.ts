@@ -19,7 +19,7 @@ export default navbar([
         link: "/category/node/",
       },
       {
-        text: "javascript",
+        text: "JavaScript",
         icon: "note",
 
         link: "/category/javascript/",
@@ -49,14 +49,19 @@ export default navbar([
     ],
   },
   {
-    text: "本站备用网址",
+    text: "备用网址",
     icon: "creative",
     // link: "https://ivwv.netlify.app/",
     children: [
       {
-        text: "本站备用网址(Netlify支持，速度更快)",
+        text: "Netlify Pages,速度更快",
         icon: "creative",
         link: "https://ivwv.netlify.app/",
+      },
+      {
+        text: "CloudFlare Pages",
+        icon: "creative",
+        link: "https://isyv.tk/",
       },
     ],
   },

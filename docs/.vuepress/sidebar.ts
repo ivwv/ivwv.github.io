@@ -18,13 +18,13 @@ export default sidebar([
     collapsable: true,
     children: [
       {
-        text: "node",
+        text: "Node",
         icon: "note",
         collapsable: true,
         prefix: "node/",
         children: [
           {
-            text: "Express",
+            text: "Express框架",
             icon: "note",
             prefix: "express/",
             collapsable: true,
@@ -34,7 +34,7 @@ export default sidebar([
         ],
       },
       {
-        text: "javascript",
+        text: "JavaScript",
         icon: "note",
         collapsable: true,
         prefix: "javascript/",
