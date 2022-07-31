@@ -1,0 +1,1354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <atom:link href="https://ivwv.github.io/rss.xml" rel="self" type="application/rss+xml"/>
+    <title>SY's Blog</title>
+    <link>https://ivwv.github.io/</link>
+    <description>SY's Blog</description>
+    <language>zh-CN</language>
+    <pubDate>Sun, 31 Jul 2022 02:55:52 GMT</pubDate>
+    <lastBuildDate>Sun, 31 Jul 2022 02:55:52 GMT</lastBuildDate>
+    <generator>vuepress-plugin-feed2</generator>
+    <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+    <category>PDF书籍</category>
+    <category>Node</category>
+    <category>javascript</category>
+    <category>使用指南</category>
+    <item>
+      <title>ES6-in-depth</title>
+      <link>https://ivwv.github.io/posts/PDF%E4%B9%A6%E7%B1%8D/ES6-in-depth.html</link>
+      <guid>https://ivwv.github.io/posts/PDF%E4%B9%A6%E7%B1%8D/ES6-in-depth.html</guid>
+      <source url="https://ivwv.github.io/rss.xml">ES6-in-depth</source>
+      <category>PDF书籍</category>
+      <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="es6-in-depth" tabindex="-1"> ES6-in-depth</h1>
+
+<i>Content not supported</i>]]></content:encoded>
+    </item>
+    <item>
+      <title>process.env环境变量配置</title>
+      <link>https://ivwv.github.io/posts/node/process.env%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html</link>
+      <guid>https://ivwv.github.io/posts/node/process.env%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html</guid>
+      <source url="https://ivwv.github.io/rss.xml">process.env环境变量配置</source>
+      <category>Node</category>
+      <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="process-env环境变量配置" tabindex="-1"> <code>process.env</code>环境变量配置</h1>
+<h3 id="windows-系统" tabindex="-1"> Windows 系统</h3>
+<p>Windows 系统下，最常用的命令行面板就是 <code>CMD</code>（Command的简写） 和 <code>Powershell</code>。它们的操作分别如下：</p>
+<h4 id="cmd-command-或-命令提示符" tabindex="-1"> CMD (Command 或 命令提示符)</h4>
+<div><pre><code># 查看所有环境变量
+set
+
+# 查看单个环境变量（以 NODE_ENV 为例）
+set NODE_ENV
+
+# 设置单个环境变量（以 NODE_ENV 为例）
+set NODE_ENV=production
+
+# 删除单个环境变量（以 NODE_ENV 为例）
+set NODE_ENV=
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p>上面的命令行以 <code>NODE_ENV</code> 变量为例，在 CMD 命令面板的操作中，如果 <code>NODE_ENV</code> 没有设置，则通过 <code>set NODE_ENV</code> 命令查看时，会提示 <code>环境变量 NODE_ENV 没有定义</code>。</p>
+<p>当设置完 <code>NODE_ENV</code>（假设设置值为 <code>production</code>），再通过 <code>set NODE_ENV</code> 命令查看时，会返回 <code>NODE_ENV=production</code>。</p>
+<div><pre><code><span>set</span> <span>DUCK_DUCK_GO_SEARCH</span><span>=</span>哈哈 <span>&amp;&amp;</span> <span>node</span> duck_duck_go.js  
+</code></pre><div aria-hidden="true"><div></div></div></div><h4 id="powershell" tabindex="-1"> Powershell</h4>
+<div><pre><code># 查看所有环境变量
+ls env:
+
+# 查看单个环境变量（以 NODE_ENV 为例）
+$env:NODE_ENV
+
+# 设置单个环境变量（以 NODE_ENV 为例）
+$env:NODE_ENV="production"
+
+# 删除单个环境变量（以 NODE_ENV 为例）
+del env:NODE_ENV
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p>上面的命令行以 <code>NODE_ENV</code> 变量为例，在 Powershell 命令面板的操作中，若 <code>NODE_ENV</code> 没有设置，则通过 <code>set NODE_ENV</code> 命令查看它时，没有任何提示。</p>
+<p>当设置完 <code>NODE_ENV</code>（假设设置值为 <code>production</code>），再通过 <code>set NODE_ENV</code> 命令查看它时，会返回 <code>production</code>。</p>
+<p><strong>注意点</strong></p>
+<p>上面的环境设置只是临时的，即只针对当前运行窗口的环境有效。当CLI运行窗口关闭以后，相关设置都会丢失。</p>
+<p>另外，虽然通过 CMD 和 Powershell 都能修改环境变量，但它们之间设置的环境变量并不会相互影响，即你在 CMD 可以设置 <code>NODE_ENV</code> 为 <code>production</code>，同时也可以在 Powershell 中设置 <code>NODE_ENV</code> 为 <code>development</code>，这也印证了上面的描述，设置只针对当前运行窗口有效 。</p>
+<p>如果你希望设置一直生效（即 本地设置），可通过 <code>控制面板 -&gt; 系统和安全 -&gt; 系统 -&gt; 高级系统设置 -&gt; 高级 -&gt; 环境变量</code> 这样进行设置（Windows10、可能需要重启）。</p>
+<h3 id="mac-系统" tabindex="-1"> Mac 系统</h3>
+<p>相当于 Windows 系统，Mac 系统上的操作就轻松了不少。因为它只集成一种命令行终端，它设置 Nodejs 环境变量的语法如下：</p>
+<div><pre><code># 查看所有环境变量
+env
+
+# 查看单个环境变量（以 NODE_ENV 为例）
+echo $NODE_ENV
+
+# 设置单个环境变量（以 NODE_ENV 为例）
+export NODE_ENV=production
+
+# 删除单个环境变量（以 NODE_ENV 为例）
+unset NODE_ENV
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p>在配置完 Nodejs 环境变量后，你就可以继续运行项目中的打包命令了。</p>
+<h3 id="git" tabindex="-1"> Git</h3>
+<p>Git(Bash)是一款跨平台的命令行终端，我们也可以用它来设置 Nodejs 环境变量，语法如下：</p>
+<div><pre><code># 查看所有环境变量
+env
+
+# 查看单个环境变量（以 NODE_ENV 为例）
+echo $NODE_ENV
+
+# 设置单个环境变量（以 NODE_ENV 为例）
+export NODE_ENV=production
+
+# 删除单个环境变量（以 NODE_ENV 为例）
+unset NODE_ENV
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p>上面的命令行以 <code>NODE_ENV</code> 变量为例，在 Git 命令行操作中，若 <code>NODE_ENV</code> 没有设置，则通过 <code>echo $NODE_ENV</code> 命令查看它时，没有任何提示。</p>
+<p>当设置完 <code>NODE_ENV</code>（假设设置值为 <code>production</code>），再通过 <code>set NODE_ENV</code> 命令查看它时，会返回 <code>production</code>。</p>
+<p><em>需要说明的是，在 Mac 系统下，Git安装后，是集成在系统自带的命令行终端中。</em></p>
+<p>但是，采用 命令行（CLI）设置 的方式来修改 Nodejs 环境变量有一个不好地方。即每次在运行打包命令前，都要先通过 <code>set NODE_ENV=xx</code> 或者 <code>export NODE_ENV=xx</code> 等类似的命令来设置或者切换环境变量（这里指的是重开了命令窗口，或者切换打包环境的情况下），是否觉得这样麻烦？</p>
+<p>幸好，我们还有第二种做法，即 配置 package.json。</p>
+<h2 id="配置-package-json" tabindex="-1"> 配置 package.json</h2>
+<p>在项目配置文件 package.json 中，根据不同的打包命令去设置相应的 Nodejs 环境变量，是一种非常主流的做法。其实本质上来说，只是将在命令行面板设置环境变量的命令语句放到了 <code>package.json</code> 文件中，把 设置环境变量 和 打包 两个命令合并运行而已。</p>
+<p>这种方式，就是将 <code>NODE_ENV</code> 注入到 <code>process.env</code> 对象。不同环境下，设置如下：</p>
+<h3 id="windows-系统-1" tabindex="-1"> Windows 系统</h3>
+<p>在这种方式下，无论你是使用 CMD (命令提示符) 还是 Powershell 命令行工具，你都可以在 <code>package.json</code> 这样配置：</p>
+<div><pre><code>// package.json
+
+{
+  ...
+  "scripts": {
+    "build": "set NODE_ENV=production&amp;&amp; npm run clean &amp;&amp; webpack",
+    "clean": "rimraf ./build &amp;&amp; mkdirp build",
+  }
+}
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p>配置完后（<code>mkdirp</code> 是一个生成文件夹的第三方包），你只需要在命令行面板运行 <code>npm run build</code> 即可完成打包。</p>
+<p><strong>注意点</strong></p>
+<p>在 Windows 系统中，你必须移除环境变量命令与 <code>&amp;&amp;</code> 符号之间的空白。否者，配置的命令不能生效！</p>
+<h3 id="mac-系统-1" tabindex="-1"> Mac 系统</h3>
+<div><pre><code>// package.json
+
+{
+  ...
+  "scripts": {
+    "build": "export NODE_ENV=production &amp;&amp; npm run clean &amp;&amp; webpack",
+    "clean": "rimraf ./build &amp;&amp; mkdirp build",
+  }
+}
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p>从上面描述可以看到，不论是不同的操作系统，还是不同的命令行终端，虽然目的都是设置 Nodejs 环境变量，但它们的语法都不尽相同。这就带来两个问题：</p>
+<ul>
+<li>在 Windows 开发部署的项目，可能在 Mac 系统无法正常打包</li>
+<li>在跨平台开发的项目上，你还得记住每个命令行终端所使用的语法，也麻烦</li>
+</ul>
+<p>为了解决这一问题，有人开发了 <code>cross-env</code>。</p>
+<h3 id="跨平台-cross-env" tabindex="-1"> 跨平台 - cross-env</h3>
+<p><a href="https://www.npmjs.com/package/cross-env" target="_blank" rel="noopener noreferrer">cross-env</a> 是一个跨平台设置环境变量的第三方包，它可以让你只配置一行命令，就能轻松地在多个平台设置环境变量。</p>
+<p>首先，你只需要安装它（由于多个项目在用，所以就全局安装了）：</p>
+<div><pre><code>npm install -g cross-env
+</code></pre><div aria-hidden="true"><div></div></div></div><p>然后，在 <code>package.json</code> 文件中进行设置：</p>
+<div><pre><code>// package.json
+
+{
+  ...
+  "scripts": {
+    "build": "npm run clean &amp;&amp; cross-env NODE_ENV=production webpack",
+    "clean": "rimraf ./build &amp;&amp; mkdirp build",
+  }
+}
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p>这样，不管你的电脑是 Windows 系统还是 Mac 系统 ，不管你用的 Powershell 还是 Git，你都可以正常设置 Nodejs 环境变量了。</p>
+<p>注意，<code>cross-env NODE_ENV=production &amp;&amp; npm run clean &amp;&amp; webpack</code> 此类的设置不能使环境变量生效。原因是 <code>&amp;&amp;</code> 符号把命令语句分离成了多个，每一个命令执行的环境都是隔离的，而 <code>cross-env</code> 无法作用于其他环境的命令。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>ES6在前端的模块导入与导出</title>
+      <link>https://ivwv.github.io/posts/javascript/es6/ES6%E5%9C%A8%E5%89%8D%E7%AB%AF%E7%9A%84%E6%A8%A1%E5%9D%97%E5%AF%BC%E5%85%A5%E4%B8%8E%E5%AF%BC%E5%87%BA.html</link>
+      <guid>https://ivwv.github.io/posts/javascript/es6/ES6%E5%9C%A8%E5%89%8D%E7%AB%AF%E7%9A%84%E6%A8%A1%E5%9D%97%E5%AF%BC%E5%85%A5%E4%B8%8E%E5%AF%BC%E5%87%BA.html</guid>
+      <source url="https://ivwv.github.io/rss.xml">ES6在前端的模块导入与导出</source>
+      <category>javascript</category>
+      <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="es6在前端的模块导入与导出" tabindex="-1"> ES6在前端的模块导入与导出</h1>
+<h4 id="html文件使用" tabindex="-1"> <code>html</code>文件使用</h4>
+<h5 id="方法一" tabindex="-1"> 方法一</h5>
+<ul>
+<li><code>script</code>标签要使用<code>type</code>属性声明<code>module</code></li>
+<li>如果<code>script</code>标签有<code>src</code>属性,则标签内不可书写任何<code>js</code>代码</li>
+</ul>
+<div><pre><code><span><span><span>&lt;</span>script</span> <span>type</span><span><span>=</span><span>"</span>module<span>"</span></span> <span>src</span><span><span>=</span><span>"</span>./index.js<span>"</span></span><span>></span></span><span><span> </span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
+</code></pre><div aria-hidden="true"><div></div></div></div><h5 id="方法二" tabindex="-1"> 方法二</h5>
+<ul>
+<li><code>from</code>路径需要使用<code>/</code>  ,  <code>./</code>  或  <code>../</code>拼接的路径
+<ul>
+<li><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-22-20:00:08*image-20220722200008169*b.png" alt="image-20220722200008169" loading="lazy"></li>
+</ul>
+</li>
+<li>路径要写全，<code>.js</code>后缀要跟上
+<ul>
+<li><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-22-20:00:38*image-20220722200038659*6.png" alt="image-20220722200038659" loading="lazy"></li>
+</ul>
+</li>
+</ul>
+<div><pre><code><span><span><span>&lt;</span>script</span> <span>type</span><span><span>=</span><span>"</span>module<span>"</span></span><span>></span></span><span><span>
+    <span>import</span> Student <span>from</span> <span>"./Student.js"</span><span>;</span>
+    <span>import</span> Teacher <span>from</span> <span>"./Teacher.js"</span><span>;</span>
+    <span>const</span> student <span>=</span> <span>new</span> <span>Student</span><span>(</span><span>)</span><span>;</span>
+    <span>const</span> teacher <span>=</span> <span>new</span> <span>Teacher</span><span>(</span><span>)</span><span>;</span>
+    student<span>.</span><span>who</span><span>(</span><span>)</span><span>;</span>
+    student<span>.</span><span>student</span><span>(</span><span>)</span><span>;</span>
+
+    teacher<span>.</span><span>who</span><span>(</span><span>)</span><span>;</span>
+    teacher<span>.</span><span>teacher</span><span>(</span><span>)</span><span>;</span>
+
+  </span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h5 id="两种方法答应输出" tabindex="-1"> 两种方法答应输出</h5>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-22-20:00:54*image-20220722200054843*2.png" alt="image-20220722200054843" loading="lazy"></p>
+<h4 id="js文件" tabindex="-1"> <code>js</code>文件</h4>
+<h5 id="person-js类" tabindex="-1"> <code>Person.js</code>类</h5>
+<div><pre><code><span>class</span> <span>Person</span> <span>{</span>
+  <span>who</span><span>(</span><span>)</span> <span>{</span>
+    console<span>.</span><span>log</span><span>(</span><span>"I am a person"</span><span>)</span><span>;</span>
+  <span>}</span>
+  <span>person</span><span>(</span><span>)</span> <span>{</span>
+    console<span>.</span><span>log</span><span>(</span><span>"I am a person"</span><span>)</span><span>;</span>
+  <span>}</span>
+<span>}</span>
+<span>export</span> <span>default</span> Person<span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h5 id="student-js类" tabindex="-1"> <code>Student.js</code>类</h5>
+<div><pre><code><span>import</span> Person <span>from</span> <span>"./Person.js"</span><span>;</span>
+
+<span>export</span> <span>default</span> <span>class</span> <span>Student</span> <span>extends</span> <span>Person</span> <span>{</span>
+  <span>who</span><span>(</span><span>)</span> <span>{</span>
+    console<span>.</span><span>log</span><span>(</span><span>"I am a student"</span><span>)</span><span>;</span>
+  <span>}</span>
+  <span>student</span><span>(</span><span>)</span> <span>{</span>
+    console<span>.</span><span>log</span><span>(</span><span>"I am a student"</span><span>)</span><span>;</span>
+  <span>}</span>
+<span>}</span>
+<span>//或直接：</span>
+<span>//export default Student;</span>
+
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h5 id="teacher-js类" tabindex="-1"> <code>Teacher.js</code>类</h5>
+<div><pre><code><span>import</span> Person <span>from</span> <span>"./Person.js"</span><span>;</span>
+
+<span>export</span> <span>default</span> <span>class</span> <span>Teacher</span> <span>extends</span> <span>Person</span> <span>{</span>
+  <span>who</span><span>(</span><span>)</span> <span>{</span>
+    console<span>.</span><span>log</span><span>(</span><span>"I am a Teacher"</span><span>)</span><span>;</span>
+  <span>}</span>
+  <span>teacher</span><span>(</span><span>)</span> <span>{</span>
+    console<span>.</span><span>log</span><span>(</span><span>"I am a Teacher"</span><span>)</span><span>;</span>
+  <span>}</span>
+<span>}</span>
+<span>//或直接：</span>
+<span>//export default Teacher;</span>
+
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h5 id="或直接导出实例化对象" tabindex="-1"> 或直接导出实例化对象</h5>
+<div><pre><code><span>import</span> Person <span>from</span> <span>"./Person.js"</span><span>;</span>
+
+<span>class</span> <span>Student</span> <span>extends</span> <span>Person</span> <span>{</span>
+  <span>who</span><span>(</span><span>)</span> <span>{</span>
+    console<span>.</span><span>log</span><span>(</span><span>"I am a student"</span><span>)</span><span>;</span>
+  <span>}</span>
+  <span>student</span><span>(</span><span>)</span> <span>{</span>
+    console<span>.</span><span>log</span><span>(</span><span>"I am a student"</span><span>)</span><span>;</span>
+  <span>}</span>
+<span>}</span>
+<span>export</span> <span>default</span> <span>new</span> <span>Student</span><span>(</span><span>)</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><div><pre><code><span><span><span>&lt;</span>script</span> <span>type</span><span><span>=</span><span>"</span>module<span>"</span></span><span>></span></span><span><span>
+    <span>import</span> student <span>from</span> <span>'./Student.js'</span>
+    student<span>.</span><span>who</span><span>(</span><span>)</span>
+    student<span>.</span><span>student</span><span>(</span><span>)</span>
+
+  </span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h5 id="运行结果" tabindex="-1"> 运行结果</h5>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-22-22:04:13*image-20220722220413190*7.png" alt="image-20220722220413190" loading="lazy"></p>
+]]></content:encoded>
+      <enclosure url="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-22-20:00:08*image-20220722200008169*b.png" type="image/png"/>
+    </item>
+    <item>
+      <title>Javascript面对对象编程</title>
+      <link>https://ivwv.github.io/posts/javascript/es6/Javascript%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html</link>
+      <guid>https://ivwv.github.io/posts/javascript/es6/Javascript%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html</guid>
+      <source url="https://ivwv.github.io/rss.xml">Javascript面对对象编程</source>
+      <category>javascript</category>
+      <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="javascript面对对象编程" tabindex="-1"> Javascript面对对象编程</h1>
+<h5 id="使用整合" tabindex="-1"> 使用整合</h5>
+<ul>
+<li>通过class 关键字创建类, 类名我们还是习惯性定义首字母大写</li>
+<li>类里面有个constructor 函数,可以接受传递过来的参数,同时返回实例对象</li>
+<li>constructor 函数 只要 new 生成实例时,就会自动调用这个函数, 如果我们不写这个函数,类也会自动生成这个函数</li>
+<li>生成实例 new 不能省略</li>
+<li>最后注意语法规范, 创建类 类名后面不要加小括号,生成实例 类名后面加小括号, 构造函数不需要加function</li>
+</ul>
+<div><pre><code><span>class</span> <span>Grand</span> <span>{</span>
+  <span>constructor</span><span>(</span><span>a<span>,</span> b</span><span>)</span> <span>{</span>
+    <span>this</span><span>.</span>a <span>=</span> a<span>;</span>
+    <span>this</span><span>.</span>b <span>=</span> b<span>;</span>
+  <span>}</span>
+  <span>// (1) 我们类里面所有的函数不需要写function</span>
+  <span>// (2) 多个函数方法之间不需要添加逗号分隔</span>
+  <span>add</span><span>(</span><span>)</span> <span>{</span>
+    <span>return</span> <span><span>`</span><span>add:</span><span><span>${</span><span>this</span><span>.</span>a <span>+</span> <span>this</span><span>.</span>b<span>}</span></span><span>`</span></span><span>;</span>
+  <span>}</span>
+<span>}</span>
+<span>class</span> <span>Father</span> <span>extends</span> <span>Grand</span> <span>{</span>
+  <span>constructor</span><span>(</span><span>a<span>,</span> b</span><span>)</span> <span>{</span>
+    <span>// 利用super调用父类的构造函数</span>
+    <span>// super 必须在子类this之前调用</span>
+    <span>// 否则会报错:my-01.html:28 Uncaught ReferenceError: Must call super constructor in derived class before accessing 'this' or returning from derived constructor</span>
+    <span>super</span><span>(</span>a<span>,</span> b<span>)</span><span>;</span>
+    <span>this</span><span>.</span>a <span>=</span> a<span>;</span>
+    <span>this</span><span>.</span>b <span>=</span> b<span>;</span>
+  <span>}</span>
+  <span>// (1) 我们类里面所有的函数不需要写function</span>
+  <span>// (2) 多个函数方法之间不需要添加逗号分隔</span>
+  <span>sub</span><span>(</span><span>)</span> <span>{</span>
+    <span>return</span> <span><span>`</span><span>sub:</span><span><span>${</span><span>this</span><span>.</span>a <span>-</span> <span>this</span><span>.</span>b<span>}</span></span><span>`</span></span><span>;</span>
+  <span>}</span>
+  <span>say</span><span>(</span><span>)</span> <span>{</span>
+    <span>return</span> <span>"我是爸爸"</span><span>;</span>
+  <span>}</span>
+<span>}</span>
+<span>class</span> <span>Son</span> <span>extends</span> <span>Father</span> <span>{</span>
+  <span>constructor</span><span>(</span><span>a<span>,</span> b</span><span>)</span> <span>{</span>
+    <span>// 需要在子类中调用 super(a,b)，才能调用父类的构造函数</span>
+    <span>super</span><span>(</span>a<span>,</span> b<span>)</span><span>;</span> <span>//调用了父类中的构造函数</span>
+    <span>this</span><span>.</span>a <span>=</span> a<span>;</span>
+    <span>this</span><span>.</span>b <span>=</span> b<span>;</span>
+  <span>}</span>
+
+  <span>// (1) 我们类里面所有的函数不需要写function</span>
+  <span>// (2) 多个函数方法之间不需要添加逗号分隔</span>
+  <span>mul</span><span>(</span><span>)</span> <span>{</span>
+    <span>return</span> <span><span>`</span><span>mul:</span><span><span>${</span><span>this</span><span>.</span>a <span>*</span> <span>this</span><span>.</span>b<span>}</span></span><span>`</span></span><span>;</span>
+  <span>}</span>
+
+  <span>say</span><span>(</span><span>)</span> <span>{</span>
+    <span>// console.log('我是儿子');</span>
+    <span>// 使用super调用父类的方法，可以不经过constructor 中的 super(a,b)</span>
+    <span>// 只需要在子类中调用 super.方法 即可</span>
+    console<span>.</span><span>log</span><span>(</span><span>super</span><span>.</span><span>say</span><span>(</span><span>)</span> <span>+</span> <span>"的儿子"</span><span>)</span><span>;</span>
+    <span>// super.say() 就是调用父类中的普通函数 say()</span>
+  <span>}</span>
+<span>}</span>
+<span>const</span> son <span>=</span> <span>new</span> <span>Son</span><span>(</span><span>1</span><span>,</span> <span>2</span><span>)</span><span>;</span>
+console<span>.</span><span>log</span><span>(</span>son<span>.</span><span>add</span><span>(</span><span>)</span><span>)</span><span>;</span> <span>//add:3</span>
+console<span>.</span><span>log</span><span>(</span>son<span>.</span><span>sub</span><span>(</span><span>)</span><span>)</span><span>;</span> <span>//sub:-1</span>
+console<span>.</span><span>log</span><span>(</span>son<span>.</span><span>mul</span><span>(</span><span>)</span><span>)</span><span>;</span> <span>//mul:2</span>
+son<span>.</span><span>say</span><span>(</span><span>)</span><span>;</span> <span>//我是爸爸的儿子</span>
+
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><strong>运行结果</strong></p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-12:23:51*image-20220719122351155*a.png" alt="image-20220719122351155" loading="lazy"></p>
+<h5 id="this指向问题" tabindex="-1"> this指向问题</h5>
+<div><pre><code> <span><span><span>&lt;</span>script</span><span>></span></span><span><span>
+        <span>// 1. 在 ES6 中类没有变量提升，所以必须先定义类，才能通过类实例化对象</span>
+        <span>// 2. 类里面的共有的属性和方法一定要加this使用.</span>
+        <span>var</span> that<span>;</span>
+        <span>var</span> _that<span>;</span>
+        <span>class</span> <span>Star</span> <span>{</span>
+            <span>constructor</span><span>(</span><span>uname<span>,</span> age</span><span>)</span> <span>{</span>
+                <span>// constructor 里面的this 指向的是 创建的实例对象</span>
+                that <span>=</span> <span>this</span><span>;</span>
+                console<span>.</span><span>log</span><span>(</span><span>this</span><span>)</span><span>;</span>
+
+                <span>this</span><span>.</span>uname <span>=</span> uname<span>;</span>
+                <span>this</span><span>.</span>age <span>=</span> age<span>;</span>
+                <span>// this.sing();</span>
+                <span>this</span><span>.</span>btn <span>=</span> document<span>.</span><span>querySelector</span><span>(</span><span>'button'</span><span>)</span><span>;</span>
+                <span>// this.btn.onclick = this.sing;</span>
+                <span>// 下面等同于上面的写法</span>
+                <span>this</span><span>.</span>btn<span>.</span><span>addEventListener</span><span>(</span><span>'click'</span><span>,</span> <span>this</span><span>.</span>sing<span>)</span><span>;</span>
+            <span>}</span>
+            <span>sing</span><span>(</span><span>)</span> <span>{</span>
+                <span>// 这个sing方法里面的this 指向的是 btn 这个按钮,因为这个按钮调用了这个函数</span>
+                console<span>.</span><span>log</span><span>(</span><span>this</span><span>)</span><span>;</span>
+                console<span>.</span><span>log</span><span>(</span>that<span>.</span>uname<span>)</span><span>;</span> <span>// that里面存储的是constructor里面的this</span>
+            <span>}</span>
+            <span>dance</span><span>(</span><span>)</span> <span>{</span>
+                <span>// 这个dance里面的this 指向的是实例对象 ldh 因为ldh 调用了这个函数</span>
+                _that <span>=</span> <span>this</span><span>;</span>
+                console<span>.</span><span>log</span><span>(</span><span>this</span><span>)</span><span>;</span>
+                console<span>.</span><span>log</span><span>(</span>_that<span>)</span><span>;</span>
+                console<span>.</span><span>log</span><span>(</span>that<span>)</span><span>;</span>
+                console<span>.</span><span>log</span><span>(</span><span>'---'</span><span>)</span><span>;</span>
+                <span>/**
+                 * 无论哪种指向，只要跟当前构造函数有关系的 
+                 * (被当前this所赋值，无论在哪儿赋值)，
+                 * 都是指向的是ldh这个实例对象
+                 * 所以在外部也等于new Star的那个变量
+                */</span>
+                <span>const</span> retult <span>=</span> <span>this</span> <span>===</span> _that <span>&amp;&amp;</span> <span>this</span> <span>===</span> that <span>&amp;&amp;</span> _that <span>===</span> that
+                console<span>.</span><span>log</span><span>(</span><span><span>`</span><span>当前this,that,_that是否相同：</span><span>`</span></span> <span>+</span> retult<span>)</span><span>;</span>
+
+            <span>}</span>
+        <span>}</span>
+
+
+        <span>var</span> ldh <span>=</span> <span>new</span> <span>Star</span><span>(</span><span>'刘德华'</span><span>)</span><span>;</span>
+        console<span>.</span><span>log</span><span>(</span>ldh<span>)</span><span>;</span>
+        console<span>.</span><span>log</span><span>(</span>that <span>===</span> ldh<span>)</span><span>;</span>
+        ldh<span>.</span><span>dance</span><span>(</span><span>)</span><span>;</span>
+        console<span>.</span><span>log</span><span>(</span>_that <span>===</span> ldh<span>)</span><span>;</span>
+
+    </span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><strong>运行结果</strong></p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-12:48:57*image-20220719124857522*9.png" alt="image-20220719124857522" loading="lazy"></p>
+<p><strong>点击按钮</strong></p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-12:49:49*image-20220719124949852*d.png" alt="image-20220719124949852" loading="lazy"></p>
+]]></content:encoded>
+      <enclosure url="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-12:23:51*image-20220719122351155*a.png" type="image/png"/>
+    </item>
+    <item>
+      <title>原型</title>
+      <link>https://ivwv.github.io/posts/javascript/es6/%E5%8E%9F%E5%9E%8B.html</link>
+      <guid>https://ivwv.github.io/posts/javascript/es6/%E5%8E%9F%E5%9E%8B.html</guid>
+      <source url="https://ivwv.github.io/rss.xml">原型</source>
+      <category>javascript</category>
+      <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="原型" tabindex="-1"> 原型</h1>
+<h2 id="prototype原型" tabindex="-1"> prototype原型</h2>
+<p>1.原型是什么？</p>
+<ul>
+<li>原型是一个对象，我们也称为<code>prototype</code>为原型对象。</li>
+</ul>
+<p>2.原型的作用是什么？</p>
+<ul>
+<li>共享方法</li>
+<li>避免多次开通内存空间，减小内存占用</li>
+</ul>
+<p>一般情况下,我们的公共属性定义到构造函数里面, 公共的方法我们放到原型对象身上</p>
+<div><pre><code><span>function</span> <span>Star</span><span>(</span><span>uname<span>,</span> age</span><span>)</span> <span>{</span>
+            <span>this</span><span>.</span>uname <span>=</span> uname<span>;</span>
+            <span>this</span><span>.</span>age <span>=</span> age<span>;</span>
+    <span>// 不建议这样挂载方法</span>
+            <span>// this.sing = function() {</span>
+            <span>//     console.log('我会唱歌');</span>
+            <span>// }</span>
+        <span>}</span>
+<span>// 建议这样将公共的方法挂载到Star的原型链上，这样以后的每个实例都可以访问</span>
+<span>Star</span><span>.</span>prototype<span>.</span><span>sing</span> <span>=</span> <span>function</span> <span>(</span><span>)</span> <span>{</span>
+     console<span>.</span><span>log</span><span>(</span><span>'我会唱歌'</span><span>)</span><span>;</span>
+<span>}</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><div><pre><code>console<span>.</span><span>dir</span><span>(</span>Star<span>)</span>
+</code></pre><div aria-hidden="true"><div></div></div></div><ul>
+<li>打印一下<code>Star</code>会出现下面的样子</li>
+<li>将Start展开会出现待展开的<code>prototype</code></li>
+<li>再次展开又会出现一个<code>prototype</code></li>
+</ul>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-17:50:30*image-20220719175030567*e.png" alt="image-20220719175030567" loading="lazy"></p>
+<p><strong>因为每一个原型上都有一个 prototype ,所以还可以再套娃(目前只是玩玩儿，可用性待发掘)</strong></p>
+<div><pre><code><span>Star</span><span>.</span>prototype<span>.</span>sing<span>.</span>prototype<span>.</span><span>sing2</span> <span>=</span> <span>function</span> <span>(</span><span>)</span> <span>{</span>
+            console<span>.</span><span>log</span><span>(</span><span>'我会唱歌2'</span><span>)</span><span>;</span>
+        <span>}</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div></div></div><ul>
+<li>继续打印</li>
+</ul>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-17:59:25*image-20220719175925250*c.png" alt="image-20220719175925250" loading="lazy"></p>
+<p><strong>接下来创建实例，调用方法</strong></p>
+<div><pre><code><span>var</span> ldh <span>=</span> <span>new</span> <span>Star</span><span>(</span><span>'刘德华'</span><span>,</span> <span>18</span><span>)</span><span>;</span>
+<span>var</span> zxy <span>=</span> <span>new</span> <span>Star</span><span>(</span><span>'张学友'</span><span>,</span> <span>19</span><span>)</span><span>;</span>
+console<span>.</span><span>log</span><span>(</span>ldh<span>.</span>sing <span>===</span> zxy<span>.</span>sing<span>)</span><span>;</span>
+ldh<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
+zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div></div></div><ul>
+<li>控制台输出</li>
+</ul>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-18:01:12*image-20220719180112332*0.png" alt="image-20220719180112332" loading="lazy"></p>
+<ul>
+<li>所以可以将实例对象都能使用的方法，挂载到实例的<code>prototype</code>上,无论new了多少个实例，都可以实现数据共享</li>
+<li>简单的说就是让他们都指向同一片内存空间，所以<code>ldh.sing === zxy.sing</code>才会为<code>true</code> 是因为都同时指向同一个内存空间</li>
+<li>一般情况下，我们的公共属性定义到构造函数里面，公共方法我们放在原型对象身上</li>
+</ul>
+<p><strong>只有构造函数本身才有 prototype 这个属性</strong></p>
+<div><pre><code>console<span>.</span><span>log</span><span>(</span><span>Star</span><span>.</span>prototype<span>)</span>
+</code></pre><div aria-hidden="true"><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-18:35:50*image-20220719183550578*f.png" alt="image-20220719183550578" loading="lazy"></p>
+<h2 id="对象原型-proto" tabindex="-1"> 对象原型<code>__proto__</code></h2>
+<p>对象身上系统自己添加一个 <code>__proto__</code> 指向我们构造函数的原型对象 <code>prototype</code></p>
+<p>对象原型只有<code>__proto__</code> 没有 <code>prototype</code></p>
+<div><pre><code> <span>function</span> <span>Star</span><span>(</span><span>uname<span>,</span> age</span><span>)</span> <span>{</span>
+            <span>this</span><span>.</span>uname <span>=</span> uname<span>;</span>
+            <span>this</span><span>.</span>age <span>=</span> age<span>;</span>
+        <span>}</span>
+        <span>Star</span><span>.</span>prototype<span>.</span><span>sing</span> <span>=</span> <span>function</span> <span>(</span><span>)</span> <span>{</span>
+            console<span>.</span><span>log</span><span>(</span><span>'我会唱歌'</span><span>)</span><span>;</span>
+        <span>}</span>
+        <span>var</span> ldh <span>=</span> <span>new</span> <span>Star</span><span>(</span><span>'刘德华'</span><span>,</span> <span>18</span><span>)</span><span>;</span>
+        <span>var</span> zxy <span>=</span> <span>new</span> <span>Star</span><span>(</span><span>'张学友'</span><span>,</span> <span>19</span><span>)</span><span>;</span>
+        console<span>.</span><span>log</span><span>(</span>ldh<span>.</span>__proto__<span>)</span><span>;</span> <span>// 对象身上系统自己添加一个 __proto__ 指向我们构造函数的原型对象 prototype</span>
+        console<span>.</span><span>log</span><span>(</span><span>Star</span><span>.</span>prototype<span>)</span><span>;</span>
+        ldh<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
+        ldh<span>.</span>__proto__<span>.</span><span>sing2</span> <span>=</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
+            console<span>.</span><span>log</span><span>(</span><span>'我会唱歌2'</span><span>)</span><span>;</span>
+        <span>}</span>
+        ldh<span>.</span><span>sing2</span><span>(</span><span>)</span><span>;</span>
+        console<span>.</span><span>log</span><span>(</span>ldh<span>.</span>__proto__ <span>===</span> <span>Star</span><span>.</span>prototype<span>)</span><span>;</span>
+        <span>// 方法的查找规则: 首先先看ldh 对象身上是否有 sing 方法,如果有就执行这个对象上的sing</span>
+        <span>// 如果么有sing 这个方法,因为有__proto__ 的存在,就去构造函数原型对象prototype身上去查找sing这个方法</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-18:42:24*image-20220719184224871*4.png" alt="image-20220719184224871" loading="lazy"></p>
+<h3 id="原型对象和对象原型" tabindex="-1"> 原型对象和对象原型</h3>
+<ul>
+<li>我们称为 <code>prototype</code> 为原型对象，<code>__proto__</code>为对象原型</li>
+<li><code>__proto__</code>对象原型和原型对象 <code>prototype </code>是等价的</li>
+<li><code>__proto__</code>对象原型的意义就在于为对象的查找机制提供一个方向，或者说一条路线，但是它是一个非标准属性，因此实际开发中，不可以使用这个属性，它只是内部指向原型对象 <code>prototype</code></li>
+</ul>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-18:45:48*image-20220719184548457*2.png" alt="image-20220719184548457" loading="lazy"></p>
+<h4 id="对象原型" tabindex="-1"> 对象原型</h4>
+<div><pre><code><span>function</span> <span>Star</span><span>(</span><span>uname<span>,</span> age</span><span>)</span> <span>{</span>
+            <span>this</span><span>.</span>uname <span>=</span> uname<span>;</span>
+            <span>this</span><span>.</span>age <span>=</span> age<span>;</span>
+        <span>}</span>
+        <span>// 很多情况下,我们需要手动的利用constructor 这个属性指回 原来的构造函数</span>
+        <span>// Star.prototype.sing = function () {</span>
+        <span>//     console.log('我会唱歌');</span>
+        <span>// };</span>
+        <span>// Star.prototype.movie = function () {</span>
+        <span>//     console.log('我会演电影');</span>
+        <span>// }</span>
+        <span>Star</span><span>.</span>prototype <span>=</span> <span>{</span>
+            <span>// 如果我们修改了原来的原型对象,给原型对象赋值的是一个对象,则必须手动的利用constructor指回原来的构造函数</span>
+            <span>constructor</span><span>:</span> Star<span>,</span>
+            <span>// 不加上面的constructor,则会报错,因为我们的原型对象指回的是Star,而不是Star.prototype</span>
+            <span>// 不加 constructor 再使用 Star.prototype = {} 就会将原来的Star构造函数给覆盖掉了</span>
+            <span>sing</span><span>(</span><span>)</span> <span>{</span>
+                console<span>.</span><span>log</span><span>(</span><span>'我会唱歌'</span><span>)</span><span>;</span>
+            <span>}</span><span>,</span>
+            <span>movie</span><span>(</span><span>)</span> <span>{</span>
+                console<span>.</span><span>log</span><span>(</span><span>'我会演电影'</span><span>)</span><span>;</span>
+            <span>}</span>
+        <span>}</span>
+        <span>var</span> ldh <span>=</span> <span>new</span> <span>Star</span><span>(</span><span>'刘德华'</span><span>,</span> <span>18</span><span>)</span><span>;</span>
+        <span>var</span> zxy <span>=</span> <span>new</span> <span>Star</span><span>(</span><span>'张学友'</span><span>,</span> <span>19</span><span>)</span><span>;</span>
+        console<span>.</span><span>log</span><span>(</span><span>Star</span><span>.</span>prototype<span>)</span><span>;</span>
+        console<span>.</span><span>log</span><span>(</span>ldh<span>.</span>__proto__<span>)</span><span>;</span>
+        console<span>.</span><span>log</span><span>(</span><span>Star</span><span>.</span>prototype<span>.</span>constructor<span>)</span><span>;</span>
+        console<span>.</span><span>log</span><span>(</span>ldh<span>.</span><span>__proto__</span><span>.</span>constructor<span>)</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><strong>最终输出</strong></p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-21:43:56*image-20220719214356161*3.png" alt="image-20220719214356161" loading="lazy"></p>
+<p>如果把<code>constructor: Star</code> 注释掉</p>
+<div><pre><code><span>Star</span><span>.</span>prototype <span>=</span> <span>{</span>
+            <span>// 如果我们修改了原来的原型对象,给原型对象赋值的是一个对象,则必须手动的利用constructor指回原来的构造函数</span>
+            <span>// constructor: Star,</span>
+            <span>// 不加上面的constructor,则会报错,因为我们的原型对象指回的是Star,而不是Star.prototype</span>
+            <span>// 不加 constructor 再使用 Star.prototype = {} 就会将原来的Star构造函数给覆盖掉了</span>
+            <span>sing</span><span>(</span><span>)</span> <span>{</span>
+                console<span>.</span><span>log</span><span>(</span><span>'我会唱歌'</span><span>)</span><span>;</span>
+            <span>}</span><span>,</span>
+            <span>movie</span><span>(</span><span>)</span> <span>{</span>
+                console<span>.</span><span>log</span><span>(</span><span>'我会演电影'</span><span>)</span><span>;</span>
+            <span>}</span>
+        <span>}</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><strong>打印输出</strong></p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-21:45:10*image-20220719214510759*8.png" alt="image-20220719214510759" loading="lazy"></p>
+<h5 id="结论" tabindex="-1"> 结论：</h5>
+<ul>
+<li>如果我们修改了原来的原型对象,给原型对象赋值的是一个对象,则必须手动的利用constructor指回原来的构造函数</li>
+</ul>
+<h5 id="构造函数、实例、原型对象三者之间的关系" tabindex="-1"> <strong>构造函数、实例、原型对象三者之间的关系</strong></h5>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-21:47:32*image-20220719214732582*8.png" alt="image-20220719214732582" loading="lazy"></p>
+<h5 id="原型链" tabindex="-1"> 原型链</h5>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-21:47:53*image-20220719214753030*0.png" alt="image-20220719214753030" loading="lazy"></p>
+<h5 id="javascript-的成员查找机制-规则" tabindex="-1"> <strong>JavaScript</strong> 的成员查找机制(规则)</h5>
+<ul>
+<li>当访问一个对象的属性（包括方法）时，首先查找这个对象自身有没有该属性</li>
+<li>如果没有就查找它的原型（也就是 __proto__指向的 prototype 原型对象）。</li>
+<li>如果还没有就查找原型对象的原型（Object的原型对象）。</li>
+<li>依此类推一直找到 Object 为止（null）。</li>
+<li><code>__proto__</code>对象原型的意义就在于为对象成员查找机制提供一个方向，或者说一条路线。</li>
+</ul>
+<h5 id="原型对象this指向" tabindex="-1"> 原型对象this指向</h5>
+<p>向我们实例对象.</p>
+<p>原型对象里面放的是方法, 这个方法里面的this 指向的是 这个方法的调用者, 也就是这个实例对象.</p>
+<h4 id="扩展内置对象" tabindex="-1"> 扩展内置对象</h4>
+<p>每一个内置对象都会在 <code>prototype</code>挂载对应的方法</p>
+<div><pre><code>		console<span>.</span><span>log</span><span>(</span><span>Array</span><span>.</span>prototype<span>)</span><span>;</span>
+        console<span>.</span><span>log</span><span>(</span><span>Object</span><span>.</span>prototype<span>)</span><span>;</span>
+        console<span>.</span><span>log</span><span>(</span><span>Number</span><span>.</span>prototype<span>)</span><span>;</span>
+        console<span>.</span><span>log</span><span>(</span><span>String</span><span>.</span>prototype<span>)</span><span>;</span>
+        console<span>.</span><span>log</span><span>(</span><span>Boolean</span><span>.</span>prototype<span>)</span><span>;</span>
+        console<span>.</span><span>log</span><span>(</span><span>Date</span><span>.</span>prototype<span>)</span><span>;</span>
+        console<span>.</span><span>log</span><span>(</span><span>RegExp</span><span>.</span>prototype<span>)</span><span>;</span>
+        console<span>.</span><span>log</span><span>(</span><span>Error</span><span>.</span>prototype<span>)</span><span>;</span>
+        console<span>.</span><span>log</span><span>(</span><span>Symbol</span><span>.</span>prototype<span>)</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-20-11:46:25*image-20220720114625603*b.png" alt="image-20220720114625603" loading="lazy"></p>
+<p><strong>我们也可以自定义方法挂载到内置对象的</strong> <code>prototype</code>上</p>
+<div><pre><code>		<span>Array</span><span>.</span>prototype<span>.</span><span>sum</span> <span>=</span> <span>function</span> <span>(</span><span>)</span> <span>{</span>
+            <span>var</span> sum <span>=</span> <span>0</span><span>;</span>
+            <span>for</span> <span>(</span><span>var</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> <span>this</span><span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+                sum <span>+=</span> <span>this</span><span>[</span>i<span>]</span><span>;</span>
+            <span>}</span>
+            <span>return</span> sum<span>;</span>
+        <span>}</span><span>;</span>
+
+		<span>var</span> arr <span>=</span> <span>[</span><span>1</span><span>,</span> <span>2</span><span>,</span> <span>3</span><span>]</span><span>;</span>
+        console<span>.</span><span>log</span><span>(</span>arr<span>.</span><span>sum</span><span>(</span><span>)</span><span>)</span><span>;</span>
+        console<span>.</span><span>log</span><span>(</span><span>Array</span><span>.</span>prototype<span>)</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-20-11:48:29*image-20220720114829169*7.png" alt="image-20220720114829169" loading="lazy"></p>
+<h4 id="call方法" tabindex="-1"> call方法</h4>
+<ul>
+<li><code>call() </code>可以调用函数</li>
+<li><code>call()</code>方法是<code>Function</code>原型上的，所以要通过 <code>方法.call('第一个参数为要将this指向的作用域',...args)</code></li>
+</ul>
+<div><pre><code><span>function</span> <span>fn</span><span>(</span><span>x<span>,</span> y</span><span>)</span> <span>{</span>
+            console<span>.</span><span>log</span><span>(</span><span>'我想喝手磨咖啡'</span><span>)</span><span>;</span>
+            <span>this</span><span>.</span><span>testSum</span><span>(</span>x<span>,</span> y<span>)</span>
+            console<span>.</span><span>log</span><span>(</span><span>this</span><span>)</span><span>;</span>
+<span>}</span>
+        <span>const</span> <span>fn2</span> <span>=</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
+            console<span>.</span><span>log</span><span>(</span><span>this</span><span>)</span><span>;</span>
+        <span>}</span>
+        <span>var</span> o <span>=</span> <span>{</span>
+            <span>name</span><span>:</span> <span>'andy'</span><span>,</span>
+            <span>testSum</span><span>(</span><span>x<span>,</span> y</span><span>)</span> <span>{</span>
+                console<span>.</span><span>log</span><span>(</span><span>'值为'</span> <span>+</span> <span>(</span>x <span>+</span> y<span>)</span><span>)</span><span>;</span>
+            <span>}</span>
+        <span>}</span><span>;</span>
+       
+        <span>// 1. call() 可以调用函数</span>
+        <span>// fn.call();</span>
+        <span>// 2. call() 可以改变这个函数的this指向 此时这个函数的this 就指向了o这个对象</span>
+        <span>fn</span><span>.</span><span>call</span><span>(</span>o<span>,</span> <span>321</span><span>,</span> <span>2</span><span>)</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-20-12:13:57*image-20220720121357273*1.png" alt="image-20220720121357273" loading="lazy"></p>
+<ul>
+<li>上图我们可以看到，在使用 <code>fn.call(o, 321, 2)</code>后，将<code>fn</code>的<code>this</code>指向了<code>o</code>这个对象</li>
+<li>我们在<code>o</code>上挂载一个<code>testSum</code>方法，在<code>fn</code>内通过<code>this.testSum()</code>调用，能在控制台中输出结果</li>
+</ul>
+<h4 id="借用父构造函数继承属性" tabindex="-1"> 借用父构造函数继承属性</h4>
+<div><pre><code>		<span>// 借用父构造函数继承属性</span>
+        <span>// // 1. 父构造函数</span>
+        <span>function</span> <span>Father</span><span>(</span><span>uname<span>,</span> age</span><span>)</span> <span>{</span>
+            <span>// this 指向父构造函数的对象实例</span>
+            <span>this</span><span>.</span>uname <span>=</span> uname<span>;</span>
+            <span>this</span><span>.</span>age <span>=</span> age<span>;</span>
+        <span>}</span>
+        <span>// 2 .子构造函数</span>
+        <span>function</span> <span>Son</span><span>(</span><span>uname<span>,</span> age<span>,</span> score</span><span>)</span> <span>{</span>
+            <span>// this 指向子构造函数的对象实例</span>
+            <span>Father</span><span>.</span><span>call</span><span>(</span><span>this</span><span>,</span> uname<span>,</span> age<span>)</span><span>;</span>
+            <span>this</span><span>.</span>score <span>=</span> score<span>;</span>
+        <span>}</span>
+        <span>var</span> son <span>=</span> <span>new</span> <span>Son</span><span>(</span><span>'刘德华'</span><span>,</span> <span>18</span><span>,</span> <span>100</span><span>)</span><span>;</span>
+        console<span>.</span><span>log</span><span>(</span>son<span>)</span><span>;</span>
+
+<span>// 传入对象形式的构造函数</span>
+<span>function</span> <span>Father</span><span>(</span><span>obj</span><span>)</span> <span>{</span>
+            <span>// this 指向父构造函数的对象实例</span>
+            <span>this</span><span>.</span>uname <span>=</span> obj<span>.</span>uname<span>;</span>
+            <span>this</span><span>.</span>age <span>=</span> obj<span>.</span>age<span>;</span>
+
+        <span>}</span>
+        <span>// 2 .子构造函数</span>
+        <span>function</span> <span>Son</span><span>(</span><span>obj</span><span>)</span> <span>{</span>
+            <span>// this 指向子构造函数的对象实例</span>
+            <span>Father</span><span>.</span><span>call</span><span>(</span><span>this</span><span>,</span> <span>{</span>
+                <span>uname</span><span>:</span> obj<span>.</span>uname<span>,</span>
+                <span>age</span><span>:</span> obj<span>.</span>age
+            <span>}</span><span>)</span><span>;</span>
+            <span>this</span><span>.</span>score <span>=</span> obj<span>.</span>score<span>;</span>
+        <span>}</span>
+        <span>var</span> son <span>=</span> <span>new</span> <span>Son</span><span>(</span><span>{</span>
+            <span>uname</span><span>:</span> <span>'刘德华'</span><span>,</span>
+            <span>age</span><span>:</span> <span>18</span><span>,</span>
+            <span>score</span><span>:</span> <span>100</span>
+
+        <span>}</span><span>)</span><span>;</span>
+        console<span>.</span><span>log</span><span>(</span>son<span>)</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-20-12:48:40*image-20220720124840693*0.png" alt="image-20220720124840693" loading="lazy"></p>
+<h4 id="利用原型对象继承方法" tabindex="-1"> 利用原型对象继承方法</h4>
+<div><pre><code><span>// 借用父构造函数继承属性</span>
+        <span>// 1. 父构造函数</span>
+        <span>function</span> <span>Father</span><span>(</span><span>uname<span>,</span> age</span><span>)</span> <span>{</span>
+            <span>// this 指向父构造函数的对象实例</span>
+            <span>this</span><span>.</span>uname <span>=</span> uname<span>;</span>
+            <span>this</span><span>.</span>age <span>=</span> age<span>;</span>
+        <span>}</span>
+        <span>Father</span><span>.</span>prototype<span>.</span><span>money</span> <span>=</span> <span>function</span> <span>(</span><span>)</span> <span>{</span>
+            console<span>.</span><span>log</span><span>(</span><span>100000</span><span>)</span><span>;</span>
+
+        <span>}</span><span>;</span>
+        <span>// 2 .子构造函数 </span>
+        <span>function</span> <span>Son</span><span>(</span><span>uname<span>,</span> age<span>,</span> score</span><span>)</span> <span>{</span>
+            <span>// this 指向子构造函数的对象实例</span>
+            <span>Father</span><span>.</span><span>call</span><span>(</span><span>this</span><span>,</span> uname<span>,</span> age<span>)</span><span>;</span>
+            <span>this</span><span>.</span>score <span>=</span> score<span>;</span>
+        <span>}</span>
+        <span>// 使用这样赋值，会将 Father.prototype 父构造函数的内存地址赋值给 Son.prototype 子构造函数，那么接下来给子构造函数原型上添加方法，父构造函数也会出现</span>
+        <span>// Son.prototype = Father.prototype; //这样直接赋值会有问题, 如果修改了子原型对象, 父原型对象也会跟着一起变化 </span>
+        <span>Son</span><span>.</span>prototype <span>=</span> <span>new</span> <span>Father</span><span>(</span><span>)</span><span>;</span>
+        <span>// 如果利用对象的形式修改了原型对象,别忘了利用constructor 指回原来的构造函数</span>
+        <span>Son</span><span>.</span>prototype<span>.</span>constructor <span>=</span> Son<span>;</span>
+        <span>// 这个是子构造函数专门的方法</span>
+        <span>Son</span><span>.</span>prototype<span>.</span><span>exam</span> <span>=</span> <span>function</span> <span>(</span><span>)</span> <span>{</span>
+            console<span>.</span><span>log</span><span>(</span><span>'孩子要考试'</span><span>)</span><span>;</span>
+        <span>}</span>
+        <span>var</span> son <span>=</span> <span>new</span> <span>Son</span><span>(</span><span>'刘德华'</span><span>,</span> <span>18</span><span>,</span> <span>100</span><span>)</span><span>;</span>
+        console<span>.</span><span>log</span><span>(</span>son<span>)</span><span>;</span>
+        console<span>.</span><span>log</span><span>(</span><span>Father</span><span>.</span>prototype<span>)</span><span>;</span>
+        <span>Father</span><span>.</span>prototype<span>.</span><span>money</span><span>(</span><span>)</span>
+        son<span>.</span><span>money</span><span>(</span><span>)</span>
+        son<span>.</span><span>exam</span><span>(</span><span>)</span>
+        console<span>.</span><span>log</span><span>(</span><span>Son</span><span>.</span>prototype<span>.</span>constructor<span>)</span><span>;</span>
+        <span>/**
+         * 如果使用 Son.prototype = Father.prototype; 下面会输出 true
+         * 如果使用 Son.prototype = new Father(); 下面会输出 false
+         */</span>
+        console<span>.</span><span>log</span><span>(</span><span>Son</span><span>.</span>prototype <span>===</span> <span>Father</span><span>.</span>prototype<span>)</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-20-13:17:49*image-20220720131749583*6.png" alt="image-20220720131749583" loading="lazy"></p>
+]]></content:encoded>
+      <enclosure url="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-17:50:30*image-20220719175030567*e.png" type="image/png"/>
+    </item>
+    <item>
+      <title>对象方法：Object.defineProperty</title>
+      <link>https://ivwv.github.io/posts/javascript/es6/%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%9AObject.defineProperty.html</link>
+      <guid>https://ivwv.github.io/posts/javascript/es6/%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%9AObject.defineProperty.html</guid>
+      <source url="https://ivwv.github.io/rss.xml">对象方法：Object.defineProperty</source>
+      <category>javascript</category>
+      <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="对象方法-object-defineproperty" tabindex="-1"> 对象方法：Object.defineProperty</h1>
+<div><pre><code>Object<span>.</span><span>defineProperty</span><span>(</span>obj<span>,</span> prop<span>,</span> descriptor<span>)</span>
+</code></pre><div aria-hidden="true"><div></div></div></div><ul>
+<li><code>obj</code>：必需。目标对象</li>
+<li><code>prop</code>：必需。需定义或修改的属性的名字</li>
+<li><code>descriptor</code>：必需。目标属性所拥有的特性</li>
+</ul>
+<p><code>Object.defineProperty()</code>  第三个参数 <code>descriptor </code>说明： 以对象形式 <code>{ } </code>书写</p>
+<ul>
+<li>
+<p><code>value</code>: 设置属性的值 默认为<code>undefined</code></p>
+</li>
+<li>
+<p><code>writable</code>: 值是否可以重写。<code>true </code>| <code>false </code>默认为<code>false</code></p>
+</li>
+<li>
+<p><code>enumerable</code>: 目标属性是否可以被枚举。<code>true </code>| <code>false </code>默认为<code>false</code></p>
+</li>
+<li>
+<p><code>configurable</code>: 目标属性是否可以被删除或是否可以再次修改特性 <code>true </code>| <code>false </code>默认为<code>false</code></p>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>类的本质</title>
+      <link>https://ivwv.github.io/posts/javascript/es6/%E7%B1%BB%E7%9A%84%E6%9C%AC%E8%B4%A8.html</link>
+      <guid>https://ivwv.github.io/posts/javascript/es6/%E7%B1%BB%E7%9A%84%E6%9C%AC%E8%B4%A8.html</guid>
+      <source url="https://ivwv.github.io/rss.xml">类的本质</source>
+      <category>javascript</category>
+      <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="类的本质" tabindex="-1"> 类的本质</h1>
+<ul>
+<li>
+<p><code>ES6 </code>之前通过 构造函数+ 原型实现面向对象 编程</p>
+<p>(1) 构造函数有原型对象<code>prototype</code></p>
+<p>(2) 构造函数原型对象<code>prototype </code>里面有<code>constructor </code>指向构造函数本身</p>
+<p>(3) 构造函数可以通过原型对象添加方法</p>
+<p>(4) 构造函数创建的实例对象有<code>__proto__</code> 原型指向 构造函数的原型对象</p>
+<p><code>ES6 </code>通过 类 实现面向对象编程*</p>
+</li>
+<li>
+<p>类的本质其实还是一个函数 我们也可以简单的认为 类就是 构造函数的另外一种写法</p>
+</li>
+<li>
+<p>类有原型对象<code>prototype</code></p>
+</li>
+</ul>
+<div><pre><code><span>// ES6 之前通过 构造函数+ 原型实现面向对象 编程</span>
+<span>// (1) 构造函数有原型对象prototype </span>
+<span>// (2) 构造函数原型对象prototype 里面有constructor 指向构造函数本身</span>
+<span>// (3) 构造函数可以通过原型对象添加方法</span>
+<span>// (4) 构造函数创建的实例对象有__proto__ 原型指向 构造函数的原型对象</span>
+<span>// ES6 通过 类 实现面向对象编程 </span>
+<span>class</span> <span>Star</span> <span>{</span><span>}</span>
+console<span>.</span><span>log</span><span>(</span><span>typeof</span> Star<span>)</span><span>;</span>
+<span>// 1. 类的本质其实还是一个函数 我们也可以简单的认为 类就是 构造函数的另外一种写法</span>
+<span>// (1) 类有原型对象prototype </span>
+console<span>.</span><span>log</span><span>(</span><span>Star</span><span>.</span>prototype<span>)</span><span>;</span>
+<span>// (2) 类原型对象prototype 里面有constructor 指向类本身</span>
+console<span>.</span><span>log</span><span>(</span><span>Star</span><span>.</span>prototype<span>.</span>constructor<span>)</span><span>;</span>
+<span>// (3)类可以通过原型对象添加方法</span>
+<span>Star</span><span>.</span>prototype<span>.</span><span>sing</span> <span>=</span> <span>function</span> <span>(</span><span>)</span> <span>{</span>
+    console<span>.</span><span>log</span><span>(</span><span>'冰雨'</span><span>)</span><span>;</span>
+<span>}</span>
+<span>var</span> ldh <span>=</span> <span>new</span> <span>Star</span><span>(</span><span>)</span><span>;</span>
+console<span>.</span><span>dir</span><span>(</span>ldh<span>)</span><span>;</span>
+<span>// (4) 类创建的实例对象有__proto__ 原型指向 类的原型对象</span>
+console<span>.</span><span>log</span><span>(</span>ldh<span>.</span>__proto__ <span>===</span> <span>Star</span><span>.</span>prototype<span>)</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-20-13:34:56*image-20220720133456588*9.png" alt="image-20220720133456588" loading="lazy"></p>
+]]></content:encoded>
+      <enclosure url="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-20-13:34:56*image-20220720133456588*9.png" type="image/png"/>
+    </item>
+    <item>
+      <title>Express中jwt验证的简单使用</title>
+      <link>https://ivwv.github.io/posts/node/express/Express%E4%B8%ADjwt%E9%AA%8C%E8%AF%81%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8.html</link>
+      <guid>https://ivwv.github.io/posts/node/express/Express%E4%B8%ADjwt%E9%AA%8C%E8%AF%81%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8.html</guid>
+      <source url="https://ivwv.github.io/rss.xml">Express中jwt验证的简单使用</source>
+      <category>Node</category>
+      <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="express中jwt验证的简单使用" tabindex="-1"> Express中jwt验证的简单使用</h1>
+<h2 id="安装jwt相关包" tabindex="-1"> 安装JWT相关包</h2>
+<div><pre><code>npm install jsonwebtoken express<span>-</span>jwt
+</code></pre><div aria-hidden="true"><div></div></div></div><ul>
+<li><code>jsonwebtoken</code><strong>用于生成JWT字符串</strong></li>
+<li><code>express-jwt</code><strong>用于将JWT字符串解析还原成JSON对象</strong></li>
+</ul>
+<h2 id="_01-导包" tabindex="-1"> 01：导包</h2>
+<p><strong>安装并导入 JWT 相关的两个包，分别是 jsonwebtoken 和 express-jwt</strong></p>
+<div><pre><code><span>const</span> jwt <span>=</span> <span>require</span><span>(</span><span>'jsonwebtoken'</span><span>)</span>
+<span>const</span> expressJWT <span>=</span> <span>require</span><span>(</span><span>'express-jwt'</span><span>)</span>
+</code></pre><div aria-hidden="true"><div></div><div></div></div></div><h2 id="_02-定义-secret-密钥" tabindex="-1"> 02：定义 secret 密钥</h2>
+<p><strong>定义 secret 密钥，建议将密钥命名为 secretKey</strong></p>
+<div><pre><code><span>//简易随机生成</span>
+<span>const</span> secretKey <span>=</span> <span>'hello'</span>
+</code></pre><div aria-hidden="true"><div></div><div></div></div></div><h2 id="_03-调用-jwt-sign-方法生成-jwt-字符串" tabindex="-1"> 03：调用 jwt.sign() 方法生成 JWT 字符串</h2>
+<p><strong>在登录成功之后，调用 jwt.sign() 方法生成 JWT 字符串。并通过 token 属性发送给客户端</strong></p>
+<div><pre><code><span>// 参数1：用户的信息对象</span>
+  <span>// 参数2：加密的秘钥</span>
+  <span>// 参数3：配置对象，可以配置当前 token 的有效期</span>
+  <span>// 记住：千万不要把密码加密到 token 字符中</span>
+<span>//定义登录接口</span>
+<span>//post '/api/login' 用于用户登录，判断用户登录信息是否正确，正确给用户发送一个token字符串</span>
+  <span>const</span> tokenStr <span>=</span> jwt<span>.</span><span>sign</span><span>(</span><span>{</span> <span>username</span><span>:</span> userinfo<span>.</span>username <span>}</span><span>,</span> secretKey<span>,</span> <span>{</span> <span>expiresIn</span><span>:</span> <span>'30s'</span> <span>}</span><span>)</span>
+  res<span>.</span><span>send</span><span>(</span><span>{</span>
+    <span>status</span><span>:</span> <span>200</span><span>,</span>
+    <span>message</span><span>:</span> <span>'登录成功！'</span><span>,</span>
+    <span>token</span><span>:</span> tokenStr<span>,</span> <span>// 要发送给客户端的 token 字符串</span>
+  <span>}</span><span>)</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><ul>
+<li><strong>用户接收</strong>
+<ul>
+<li><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-14:58:00*01*e.jpg" alt="01" loading="lazy"></li>
+</ul>
+</li>
+</ul>
+<p>​</p>
+<h2 id="_04-jwt字符串解析" tabindex="-1"> 04：JWT字符串解析</h2>
+<p><strong>注册将 JWT 字符串解析还原成 JSON 对象的中间件</strong></p>
+<ul>
+<li><strong>中间件，应放在路有前</strong></li>
+</ul>
+<div><pre><code><span>// 注意：只要配置成功了 express-jwt 这个中间件，就可以把解析出来的用户信息，挂载到 `req.user` 属性上</span>
+app<span>.</span><span>use</span><span>(</span><span>expressJWT</span><span>(</span><span>{</span> <span>secret</span><span>:</span> secretKey <span>}</span><span>)</span><span>.</span><span>unless</span><span>(</span><span>{</span> <span>path</span><span>:</span> <span>[</span><span><span>/</span><span>^\/api\/</span><span>/</span></span><span>]</span> <span>}</span><span>)</span><span>)</span>
+</code></pre><div aria-hidden="true"><div></div><div></div></div></div><ul>
+<li>
+<p><strong>将解析完成后的信息挂在到<code>req.user</code></strong></p>
+<ul>
+<li>
+<p><code>req.user</code>输出</p>
+</li>
+<li>
+<div><pre><code><span>{</span> <span>username</span><span>:</span> <span>'admin'</span><span>,</span> <span>iat</span><span>:</span> <span>1650168623</span><span>,</span> <span>exp</span><span>:</span> <span>1650168653</span> <span>}</span>
+</code></pre><div aria-hidden="true"><div></div></div></div></li>
+</ul>
+</li>
+</ul>
+<h2 id="_05-将字符串返回给用户" tabindex="-1"> 05：将字符串返回给用户</h2>
+<p><strong>使用 req.user 获取用户信息，并使用 data 属性将用户信息发送给客户端</strong></p>
+<div><pre><code><span>//创建一个get '/admin/getinfo' 有权限的 API 接口</span>
+res<span>.</span><span>send</span><span>(</span><span>{</span>
+    <span>status</span><span>:</span> <span>200</span><span>,</span>
+    <span>message</span><span>:</span> <span>'获取用户信息成功！'</span><span>,</span>
+    <span>data</span><span>:</span> req<span>.</span>user<span>,</span> <span>// 要发送给客户端的用户信息</span>
+  <span>}</span><span>)</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div></div></div><ul>
+<li>
+<p><strong>请求需要添加请求头Headers</strong></p>
+<ul>
+<li>
+<div><pre><code>key为<span><span>`</span><span>Authorization</span><span>`</span></span>
+</code></pre><div aria-hidden="true"><div></div></div></div></li>
+<li>
+<div><pre><code><span>//value是 Bearer +空格+token</span>
+<span>//通常将用户的token存放在localStorage和sessionStorage中</span>
+value为<span><span>`</span><span>Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNjUwMTY4NjIzLCJleHAiOjE2NTAxNjg2NTN9.K9qHxtvjNYZSYY_4mb3j4l-F_WezGAscwrhUAwsVFgQ</span><span>`</span></span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div></div></div></li>
+<li></li>
+</ul>
+</li>
+<li>
+<p><strong>用户接收</strong>-<strong>成功</strong></p>
+<ul>
+<li><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-14:58:00*02*3.jpg" alt="02" loading="lazy"></li>
+</ul>
+</li>
+</ul>
+<h2 id="_06-创建处理错误中间件" tabindex="-1"> 06：创建处理错误中间件</h2>
+<p><strong>使用全局错误处理中间件，捕获解析 JWT 失败后产生的错误</strong></p>
+<ul>
+<li><strong>当用户的token错误时</strong>
+<ul>
+<li><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-14:58:00*03*9.jpg" alt="03" loading="lazy"></li>
+<li><strong>会返回一个错误</strong></li>
+<li><strong>此时需要添加一个全局的错误处理中间件</strong></li>
+<li><strong>判断<code>err.name</code>是否为<code>UnauthorizedError</code></strong></li>
+<li><strong>如果等于就返回无效的token</strong></li>
+<li><strong>如果不等于就返回未知的错误</strong></li>
+<li></li>
+</ul>
+</li>
+</ul>
+<div><pre><code>app<span>.</span><span>use</span><span>(</span><span>(</span><span>err<span>,</span> req<span>,</span> res<span>,</span> next</span><span>)</span> <span>=></span> <span>{</span>
+  <span>// 这次错误是由 token 解析失败导致的</span>
+  <span>if</span> <span>(</span>err<span>.</span>name <span>===</span> <span>'UnauthorizedError'</span><span>)</span> <span>{</span>
+    <span>return</span> res<span>.</span><span>send</span><span>(</span><span>{</span>
+      <span>status</span><span>:</span> <span>401</span><span>,</span>
+      <span>message</span><span>:</span> <span>'无效的token'</span><span>,</span>
+    <span>}</span><span>)</span>
+  <span>}</span>
+  res<span>.</span><span>send</span><span>(</span><span>{</span>
+    <span>status</span><span>:</span> <span>500</span><span>,</span>
+    <span>message</span><span>:</span> <span>'未知的错误'</span><span>,</span>
+  <span>}</span><span>)</span>
+<span>}</span><span>)</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><ul>
+<li>
+<ul>
+<li><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-14:58:00*04*3.jpg" alt="04" loading="lazy"></li>
+</ul>
+</li>
+</ul>
+<h2 id="演示代码" tabindex="-1"> 演示代码</h2>
+<div><pre><code><span>// 导入 express 模块</span>
+<span>const</span> express <span>=</span> <span>require</span><span>(</span><span>'express'</span><span>)</span>
+<span>// 创建 express 的服务器实例</span>
+<span>const</span> app <span>=</span> <span>express</span><span>(</span><span>)</span>
+
+<span>// TODO_01：安装并导入 JWT 相关的两个包，分别是 jsonwebtoken 和 express-jwt</span>
+<span>const</span> jwt <span>=</span> <span>require</span><span>(</span><span>'jsonwebtoken'</span><span>)</span>
+<span>const</span> expressJWT <span>=</span> <span>require</span><span>(</span><span>'express-jwt'</span><span>)</span>
+
+<span>// 允许跨域资源共享</span>
+<span>const</span> cors <span>=</span> <span>require</span><span>(</span><span>'cors'</span><span>)</span>
+app<span>.</span><span>use</span><span>(</span><span>cors</span><span>(</span><span>)</span><span>)</span>
+
+<span>// 解析 post 表单数据的中间件</span>
+<span>const</span> bodyParser <span>=</span> <span>require</span><span>(</span><span>'body-parser'</span><span>)</span>
+app<span>.</span><span>use</span><span>(</span>bodyParser<span>.</span><span>urlencoded</span><span>(</span><span>{</span> <span>extended</span><span>:</span> <span>false</span> <span>}</span><span>)</span><span>)</span>
+
+<span>// TODO_02：定义 secret 密钥，建议将密钥命名为 secretKey</span>
+<span>const</span> secretKey <span>=</span> <span>'itheima No1 ^_^'</span>
+
+<span>// TODO_04：注册将 JWT 字符串解析还原成 JSON 对象的中间件</span>
+<span>// 注意：只要配置成功了 express-jwt 这个中间件，就可以把解析出来的用户信息，挂载到 req.user 属性上</span>
+app<span>.</span><span>use</span><span>(</span><span>expressJWT</span><span>(</span><span>{</span> <span>secret</span><span>:</span> secretKey <span>}</span><span>)</span><span>.</span><span>unless</span><span>(</span><span>{</span> <span>path</span><span>:</span> <span>[</span><span><span>/</span><span>^\/api\/</span><span>/</span></span><span>]</span> <span>}</span><span>)</span><span>)</span>
+
+<span>// 登录接口</span>
+app<span>.</span><span>post</span><span>(</span><span>'/api/login'</span><span>,</span> <span>function</span> <span>(</span><span>req<span>,</span> res</span><span>)</span> <span>{</span>
+  <span>// 将 req.body 请求体中的数据，转存为 userinfo 常量</span>
+  <span>const</span> userinfo <span>=</span> req<span>.</span>body
+  <span>// 登录失败</span>
+  <span>if</span> <span>(</span>userinfo<span>.</span>username <span>!==</span> <span>'admin'</span> <span>||</span> userinfo<span>.</span>password <span>!==</span> <span>'000000'</span><span>)</span> <span>{</span>
+    <span>return</span> res<span>.</span><span>send</span><span>(</span><span>{</span>
+      <span>status</span><span>:</span> <span>400</span><span>,</span>
+      <span>message</span><span>:</span> <span>'登录失败！'</span><span>,</span>
+    <span>}</span><span>)</span>
+  <span>}</span>
+  <span>// 登录成功</span>
+  <span>// TODO_03：在登录成功之后，调用 jwt.sign() 方法生成 JWT 字符串。并通过 token 属性发送给客户端</span>
+  <span>// 参数1：用户的信息对象</span>
+  <span>// 参数2：加密的秘钥</span>
+  <span>// 参数3：配置对象，可以配置当前 token 的有效期</span>
+  <span>// 记住：千万不要把密码加密到 token 字符中</span>
+  <span>const</span> tokenStr <span>=</span> jwt<span>.</span><span>sign</span><span>(</span><span>{</span> <span>username</span><span>:</span> userinfo<span>.</span>username <span>}</span><span>,</span> secretKey<span>,</span> <span>{</span> <span>expiresIn</span><span>:</span> <span>'30s'</span> <span>}</span><span>)</span>
+  res<span>.</span><span>send</span><span>(</span><span>{</span>
+    <span>status</span><span>:</span> <span>200</span><span>,</span>
+    <span>message</span><span>:</span> <span>'登录成功！'</span><span>,</span>
+    <span>token</span><span>:</span> tokenStr<span>,</span> <span>// 要发送给客户端的 token 字符串</span>
+  <span>}</span><span>)</span>
+<span>}</span><span>)</span>
+
+<span>// 这是一个有权限的 API 接口</span>
+app<span>.</span><span>get</span><span>(</span><span>'/admin/getinfo'</span><span>,</span> <span>function</span> <span>(</span><span>req<span>,</span> res</span><span>)</span> <span>{</span>
+  <span>// TODO_05：使用 req.user 获取用户信息，并使用 data 属性将用户信息发送给客户端</span>
+  console<span>.</span><span>log</span><span>(</span>req<span>.</span>user<span>)</span>
+  res<span>.</span><span>send</span><span>(</span><span>{</span>
+    <span>status</span><span>:</span> <span>200</span><span>,</span>
+    <span>message</span><span>:</span> <span>'获取用户信息成功！'</span><span>,</span>
+    <span>data</span><span>:</span> req<span>.</span>user<span>,</span> <span>// 要发送给客户端的用户信息</span>
+  <span>}</span><span>)</span>
+<span>}</span><span>)</span>
+
+<span>// TODO_06：使用全局错误处理中间件，捕获解析 JWT 失败后产生的错误</span>
+app<span>.</span><span>use</span><span>(</span><span>(</span><span>err<span>,</span> req<span>,</span> res<span>,</span> next</span><span>)</span> <span>=></span> <span>{</span>
+  <span>// 这次错误是由 token 解析失败导致的</span>
+  <span>if</span> <span>(</span>err<span>.</span>name <span>===</span> <span>'UnauthorizedError'</span><span>)</span> <span>{</span>
+    <span>return</span> res<span>.</span><span>send</span><span>(</span><span>{</span>
+      <span>status</span><span>:</span> <span>401</span><span>,</span>
+      <span>message</span><span>:</span> <span>'无效的token'</span><span>,</span>
+    <span>}</span><span>)</span>
+  <span>}</span>
+  res<span>.</span><span>send</span><span>(</span><span>{</span>
+    <span>status</span><span>:</span> <span>500</span><span>,</span>
+    <span>message</span><span>:</span> <span>'未知的错误'</span><span>,</span>
+  <span>}</span><span>)</span>
+<span>}</span><span>)</span>
+
+<span>// 调用 app.listen 方法，指定端口号并启动web服务器</span>
+app<span>.</span><span>listen</span><span>(</span><span>8888</span><span>,</span> <span>function</span> <span>(</span><span>)</span> <span>{</span>
+  console<span>.</span><span>log</span><span>(</span><span>'Express server running at http://127.0.0.1:8888'</span><span>)</span>
+<span>}</span><span>)</span>
+
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>]]></content:encoded>
+      <enclosure url="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-14:58:00*01*e.jpg" type="image/jpeg"/>
+    </item>
+    <item>
+      <title>幻灯片页</title>
+      <link>https://ivwv.github.io/slide.html</link>
+      <guid>https://ivwv.github.io/slide.html</guid>
+      <source url="https://ivwv.github.io/rss.xml">幻灯片页</source>
+      <pubDate>Wed, 29 Jul 2020 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<Presentation id="presentation-1a96284b" data-code="%0A%3C!--%20.slide%3A%20data-transition%3D%22slide%22%20--%3E%0A%0A%23%23%20%E5%B9%BB%E7%81%AF%E7%89%87%E6%BC%94%E7%A4%BA%0A%0A%3C!--%20.element%3A%20class%3D%22r-fit-text%22%20--%3E%0A%0A%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%B9%BB%E7%81%AF%E7%89%87%E6%BC%94%E7%A4%BA%E4%B8%8E%E5%90%84%E7%A7%8D%E5%B0%8F%E8%B4%B4%E5%A3%AB%E3%80%82%0A%0A%3C!--%20.element%3A%20class%3D%22r-fit-text%22%20--%3E%0A%0A%3E%20%E4%BD%9C%E8%80%85%20Mr.Hope.%20%E8%AF%B7%E6%BB%9A%E5%8A%A8%E9%BC%A0%E6%A0%87%E6%BB%9A%E8%BD%AE%E8%BF%9B%E5%85%A5%E4%B8%8B%E4%B8%80%E9%A1%B5%0A%0A---%0A%0A%23%23%20%E6%A0%87%E6%B3%A8%E5%B9%BB%E7%81%AF%E7%89%87%0A%0A%3C!--%20.element%3A%20class%3D%22r-fit-text%22%20--%3E%0A%0A%5B%F0%9F%91%87%5D(%23%2F1%2F1)%0A%0A--%0A%0A%23%23%20%E6%A0%87%E6%B3%A8%E5%B9%BB%E7%81%AF%E7%89%87%0A%0A%3C!--%20.element%3A%20class%3D%22r-fit-text%22%20--%3E%0A%0A%E4%BD%BF%E7%94%A8%20%60---%60%20%E6%A0%87%E6%B3%A8%E6%B0%B4%E5%B9%B3%E5%B9%BB%E7%81%AF%E7%89%87%0A%0A%3C!--%20.element%3A%20class%3D%22fragment%20fade-in%22%20--%3E%0A%0A%E5%9C%A8%E6%B0%B4%E5%B9%B3%E5%B9%BB%E7%81%AF%E7%89%87%E4%B8%AD%E4%BD%BF%E7%94%A8%20%60--%60%20%E5%88%86%E5%89%B2%E5%9E%82%E7%9B%B4%E5%B9%BB%E7%81%AF%E7%89%87%0A%0A%3C!--%20.element%3A%20class%3D%22fragment%20fade-in%22%20--%3E%0A%0A%E4%BD%BF%E7%94%A8%20%60%3C!--%20.slide%3A%20...%20--%3E%60%20%E5%9C%A8%E5%B9%BB%E7%81%AF%E7%89%87%E4%B8%8A%E6%B7%BB%E5%8A%A0%E5%B1%9E%E6%80%A7%0A%0A%3C!--%20.element%3A%20class%3D%22fragment%20fade-in%22%20--%3E%0A%0A%E4%BD%BF%E7%94%A8%20%60%3C!--%20.element%3A%20...%20--%3E%60%20%E5%9C%A8%E5%89%8D%E4%B8%80%E4%B8%AA%20HTML%20%E5%85%83%E7%B4%A0%E4%B8%8A%E6%B7%BB%E5%8A%A0%E5%B1%9E%E6%80%A7%0A%0A%3C!--%20.element%3A%20class%3D%22fragment%20fade-in%22%20--%3E%0A%0A---%0A%0A%3C!--%20.slide%3A%20data-transition%3D%22slide%22%20data-auto-animate%20--%3E%0A%0A%23%23%20Markdown%0A%0A%3C!--%20.element%3A%20class%3D%22r-fit-text%22%20--%3E%0A%0A%E4%BD%A0%E5%8F%AF%E4%BB%A5%E5%9C%A8%E5%B9%BB%E7%81%AF%E7%89%87%E4%B8%AD%E4%BD%BF%E7%94%A8%20Markdown%20%E8%AF%AD%E6%B3%95%E7%9A%84%E5%90%84%E7%A7%8D%E6%A0%87%E8%AE%B0.%0A%0A%3C!--%20.element%3A%20class%3D%22r-fit-text%22%20--%3E%0A%0A--%0A%0A%3C!--%20.slide%3A%20data-auto-animate%20--%3E%0A%0A%23%23%20Markdown%0A%0A%E4%BD%A0%E5%8F%AF%E4%BB%A5%E5%9C%A8%E5%B9%BB%E7%81%AF%E7%89%87%E4%B8%AD%E4%BD%BF%E7%94%A8%20Markdown%20%E8%AF%AD%E6%B3%95%E7%9A%84%E5%90%84%E7%A7%8D%E6%A0%87%E8%AE%B0.%0A%0A%23%23%23%20%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%20H3%0A%0A%E6%A0%87%E9%A2%98%E9%BB%98%E8%AE%A4%E4%BC%9A%E8%87%AA%E5%8A%A8%E8%BD%AC%E6%8D%A2%E4%B8%BA%E5%A4%A7%E5%86%99%E3%80%82%0A%0A%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E6%9C%89%E7%9D%80%20**%E7%B2%97%E4%BD%93**%2C%20_%E6%96%9C%E4%BD%93_%2C%20~~%E5%88%A0%E9%99%A4%E7%BA%BF~~%20%E6%96%87%E5%AD%97%E5%B9%B6%E5%8C%85%E5%90%AB%20%5B%E4%B8%80%E4%B8%AA%E9%93%BE%E6%8E%A5%5D(https%3A%2F%2Fmrhope.site)%20%E7%9A%84%E6%AE%B5%E8%90%BD%EF%BC%8C%E5%B9%B6%E4%B8%94%E5%AE%83%E4%BC%9A%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C%E3%80%82%E6%89%80%E4%BB%A5%E4%BD%A0%E6%97%A0%E9%9C%80%E6%8B%85%E5%BF%83%E5%AE%83%E7%9A%84%E9%95%BF%E5%BA%A6%E3%80%82%0A%0A--%0A%0A%3C!--%20.slide%3A%20data-auto-animate%20--%3E%0A%0A%23%23%20Markdown%0A%0A%E4%BD%A0%E5%8F%AF%E4%BB%A5%E5%9C%A8%E5%B9%BB%E7%81%AF%E7%89%87%E4%B8%AD%E4%BD%BF%E7%94%A8%20Markdown%20%E8%AF%AD%E6%B3%95%E7%9A%84%E5%90%84%E7%A7%8D%E6%A0%87%E8%AE%B0.%0A%0A%E5%88%97%E8%A1%A8%E9%BB%98%E8%AE%A4%E4%B8%BA%20%60inline-block%60%0A%0A-%20%E9%A1%B9%E7%9B%AE%0A-%20%E9%A1%B9%E7%9B%AE%0A-%20%E9%A1%B9%E7%9B%AE%0A%0A1.%20%E9%A1%B9%E7%9B%AE%201%0A1.%20%E9%A1%B9%E7%9B%AE%202%0A1.%20%E9%A1%B9%E7%9B%AE%203%0A%0A--%0A%0A%3C!--%20.slide%3A%20data-auto-animate%20--%3E%0A%0A%23%23%20Markdown%0A%0A%E4%BD%A0%E5%8F%AF%E4%BB%A5%E5%9C%A8%E5%B9%BB%E7%81%AF%E7%89%87%E4%B8%AD%E4%BD%BF%E7%94%A8%20Markdown%20%E8%AF%AD%E6%B3%95%E7%9A%84%E5%90%84%E7%A7%8D%E6%A0%87%E8%AE%B0.%0A%0A%E5%9C%A8%E4%BD%A0%E5%90%AF%E7%94%A8%20%60highlight%60%20%E6%8F%92%E4%BB%B6%E5%90%8E%EF%BC%8C%E4%BB%A3%E7%A0%81%E5%9D%97%E4%BC%9A%E8%87%AA%E5%8A%A8%E9%AB%98%E4%BA%AE%E3%80%82%0A%0A%60%60%60js%0Aconst%20a%20%3D%201%3B%0A%60%60%60%0A%0A--%0A%0A%3C!--%20.slide%3A%20data-auto-animate%20--%3E%0A%0A%23%23%20Markdown%0A%0A%E4%BD%A0%E5%8F%AF%E4%BB%A5%E5%9C%A8%E5%B9%BB%E7%81%AF%E7%89%87%E4%B8%AD%E4%BD%BF%E7%94%A8%20Markdown%20%E8%AF%AD%E6%B3%95%E7%9A%84%E5%90%84%E7%A7%8D%E6%A0%87%E8%AE%B0.%0A%0A%E5%9C%A8%E4%BD%A0%E5%90%AF%E7%94%A8%20%60math%60%20%E6%8F%92%E4%BB%B6%E5%90%8E%EF%BC%8C%E4%BD%A0%E4%B9%9F%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%20TEX%20%E6%A0%BC%E5%BC%8F%E4%BD%BF%E7%94%A8%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E3%80%82%0A%0A%24%24%0AJ(%5Ctheta_0%2C%5Ctheta_1)%20%3D%20%5Csum_%7Bi%3D0%7D%0A%24%24%0A%0A--%0A%0A%3C!--%20.slide%3A%20data-auto-animate%20--%3E%0A%0A%23%23%20Markdown%0A%0A%E4%BD%A0%E5%8F%AF%E4%BB%A5%E5%9C%A8%E5%B9%BB%E7%81%AF%E7%89%87%E4%B8%AD%E4%BD%BF%E7%94%A8%20Markdown%20%E8%AF%AD%E6%B3%95%E7%9A%84%E5%90%84%E7%A7%8D%E6%A0%87%E8%AE%B0.%0A%0A%E2%9A%A0**%E8%AF%B7%E6%B3%A8%E6%84%8F**%3A%20%E8%A1%A8%E6%A0%BC%E5%92%8C%E5%88%86%E5%89%B2%E7%BA%BF%EF%BC%8C%E4%BB%A5%E5%8F%8A%E6%89%80%E6%9C%89%E4%B8%8D%E5%9C%A8%20Markdown%20%E6%A0%87%E5%87%86%E8%AF%AD%E6%B3%95%E4%B8%AD%E7%9A%84%E5%86%85%E5%AE%B9%E5%9D%87%E4%B8%8D%E5%8F%97%E6%94%AF%E6%8C%81%E3%80%82%0A%0A---%0A%0A%3C!--%20.slide%3A%20data-transition%3D%22slide%22%20data-auto-animate%20--%3E%0A%0A%23%23%20%E5%B8%83%E5%B1%80%0A%0A%3C!--%20.element%3A%20class%3D%22r-fit-text%22%20--%3E%0A%0A--%0A%0A%3C!--%20.slide%3A%20data-auto-animate%20%20--%3E%0A%0A%23%23%20%E5%B8%83%E5%B1%80%0A%0A%3C!--%20.element%3A%20class%3D%22r-fit-text%22%20--%3E%0A%0A%F0%9F%91%86%20%60r-fit-text%60%20class%20%E4%BC%9A%E8%AE%A9%E6%96%87%E5%AD%97%E5%9C%A8%E4%B8%8D%E8%B6%85%E5%87%BA%E5%B9%BB%E7%81%AF%E7%89%87%E8%8C%83%E5%9B%B4%E7%9A%84%E6%83%85%E5%86%B5%E4%B8%8B%E5%B0%BD%E5%8F%AF%E8%83%BD%E5%A4%A7%E3%80%82%0A%0A--%0A%0A%3C!--%20.slide%3A%20data-auto-animate%20%20--%3E%0A%0A%23%23%20%E5%B8%83%E5%B1%80%0A%0A!%5BLogo%5D(%2Flogo.svg)%0A%0A%3C!--%20.element%3A%20class%3D%22r-stretch%22%20--%3E%0A%0A%F0%9F%91%86%20%60r-stretch%60%20class%20%E5%B8%AE%E5%8A%A9%E4%BD%A0%E6%8E%A7%E5%88%B6%E6%B3%A8%E5%85%A5%E5%9B%BE%E7%89%87%E6%88%96%E8%A7%86%E9%A2%91%E7%9A%84%E5%A4%A7%E5%B0%8F%EF%BC%8C%E4%BD%BF%E5%AE%83%E4%BB%AC%E5%A1%AB%E5%85%85%E6%BB%A1%E5%B9%BB%E7%81%AF%E7%89%87%E5%9E%82%E7%9B%B4%E6%96%B9%E5%90%91%E4%B8%8A%E7%9A%84%E5%89%A9%E4%BD%99%E7%A9%BA%E9%97%B4%E3%80%82%0A%0A--%0A%0A%3C!--%20.slide%3A%20data-auto-animate%20data-background-color%3D%22rgb(70%2C%2070%2C%20255)%22%20--%3E%0A%0A%23%23%20%E5%B8%83%E5%B1%80%0A%0A%23%23%23%20%E8%83%8C%E6%99%AF%0A%0A%E4%BD%A0%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%E5%90%91%E7%89%B9%E5%AE%9A%E5%B9%BB%E7%81%AF%E7%89%87%E6%B7%BB%E5%8A%A0%20%60data-background%60%20%E5%B1%9E%E6%80%A7%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B9%BB%E7%81%AF%E7%89%87%E8%83%8C%E6%99%AF.%0A%0A---%0A%0A%3C!--%20.slide%3A%20data-auto-animate%20--%3E%0A%0A%23%23%20%E5%8A%A8%E7%94%BB%E7%89%87%E6%AE%B5%0A%0A%3C!--%20.element%3A%20class%3D%22r-fit-text%22%20--%3E%0A%0A--%0A%0A%3C!--%20.slide%3A%20data-auto-animate%20--%3E%0A%0A%23%23%20%E5%8A%A8%E7%94%BB%E7%89%87%E6%AE%B5%0A%0A%3C!--%20.element%3A%20class%3D%22r-fit-text%22%20--%3E%0A%0A%E5%8A%A8%E7%94%BB%E7%89%87%E6%AE%B5%E7%94%A8%E4%BA%8E%E9%AB%98%E4%BA%AE%E6%88%96%E6%98%BE%E9%9A%90%E5%B9%BB%E7%81%AF%E7%89%87%E4%B8%AD%E7%9A%84%E5%85%83%E7%B4%A0%E3%80%82%0A%0A%E4%BD%A0%E9%9C%80%E8%A6%81%E5%9C%A8%E5%85%83%E7%B4%A0%E4%B8%8A%E6%B7%BB%E5%8A%A0%20%60fragment%60%20%E5%92%8C%E5%8A%A8%E7%94%BB%20class%E3%80%82%0A%0A--%0A%0A%3C!--%20.slide%3A%20data-auto-animate%20--%3E%0A%0A%23%23%20%E5%8A%A8%E7%94%BB%E7%89%87%E6%AE%B5%0A%0A%23%23%23%20%E5%8A%A8%E7%94%BB%20class%0A%0A-%20%60fade-in%60%0A%3C!--%20.element%3A%20class%3D%22fragment%20fade-in%22%20--%3E%0A%0A-%20%60fade-out%60%0A%3C!--%20.element%3A%20class%3D%22fragment%20fade-out%22%20--%3E%0A%0A-%20%60fade-up%60%0A%3C!--%20.element%3A%20class%3D%22fragment%20fade-up%22%20--%3E%0A%0A%3C!--%20list%20break%20--%3E%0A%0A-%20%60fade-down%60%0A%3C!--%20.element%3A%20class%3D%22fragment%20fade-down%22%20--%3E%0A%0A-%20%60fade-left%60%0A%3C!--%20.element%3A%20class%3D%22fragment%20fade-left%22%20--%3E%0A%0A-%20%60fade-right%60%0A%3C!--%20.element%3A%20class%3D%22fragment%20fade-right%22%20--%3E%0A%0A%3C!--%20list%20break%20--%3E%0A%0A-%20%60fade-in-then-out%60%0A%3C!--%20.element%3A%20class%3D%22fragment%20fade-in-then-out%22%20--%3E%0A%0A-%20%60fade-in-then-semi-out%60%0A%3C!--%20.element%3A%20class%3D%22fragment%20fade-in-then-semi-out%22%20--%3E%0A%0A--%0A%0A%3C!--%20.slide%3A%20data-auto-animate%20--%3E%0A%0A%23%23%20%E5%8A%A8%E7%94%BB%E7%89%87%E6%AE%B5%0A%0A%23%23%23%20%E5%8A%A8%E7%94%BB%20class%0A%0A-%20%60grow%60%0A%3C!--%20.element%3A%20class%3D%22fragment%20grow%22%20--%3E%0A%0A-%20%60shrink%60%0A%3C!--%20.element%3A%20class%3D%22fragment%20shrink%22%20--%3E%0A%0A-%20%60strike%60%0A%3C!--%20.element%3A%20class%3D%22fragment%20strike%22%20--%3E%0A%0A%3C!--%20list%20break%20--%3E%0A%0A-%20%60highlight-red%60%0A%3C!--%20.element%3A%20class%3D%22fragment%20highlight-red%22%20--%3E%0A%0A-%20%60highlight-green%60%0A%3C!--%20.element%3A%20class%3D%22fragment%20highlight-green%22%20--%3E%0A%0A-%20%60highlight-blue%60%0A%3C!--%20.element%3A%20class%3D%22fragment%20highlight-blue%22%20--%3E%0A%0A%3C!--%20list%20break%20--%3E%0A%0A-%20%60highlight-current-red%60%0A%3C!--%20.element%3A%20class%3D%22fragment%20highlight-current-red%22%20--%3E%0A%0A-%20%60highlight-current-green%60%0A%3C!--%20.element%3A%20class%3D%22fragment%20highlight-current-green%22%20--%3E%0A%0A-%20%60highlight-current-blue%60%0A%3C!--%20.element%3A%20class%3D%22fragment%20highlight-current-blue%22%20--%3E%0A%0A--%0A%0A%3C!--%20.slide%3A%20data-auto-animate%20--%3E%0A%0A%23%23%20%E5%8A%A8%E7%94%BB%E7%89%87%E6%AE%B5%0A%0A%23%23%23%20%E5%A4%9A%E4%B8%AA%E5%8A%A8%E7%94%BB%E7%89%87%E6%AE%B5%0A%0A%E4%BD%A0%E5%8F%AF%E4%BB%A5%E6%8C%89%E7%85%A7%E9%A1%BA%E5%BA%8F%E5%8C%85%E8%A3%B9%E4%B8%80%E4%B8%AA%20HTML%20%E5%85%83%E7%B4%A0%E4%BD%BF%E5%85%B6%E6%8B%A5%E6%9C%89%E5%A4%9A%E4%B8%AA%E5%8A%A8%E7%94%BB%E7%89%87%E6%AE%B5%0A%0A%3Cspan%20class%3D%22fragment%20fade-in%22%3E%0A%20%20%3Cspan%20class%3D%22fragment%20highlight-red%22%3E%0A%20%20%20%20%3Cspan%20class%3D%22fragment%20fade-out%22%3E%0A%20%20%20%20%20%20%E6%B8%90%E5%85%A5%20%3E%20%E5%8F%98%E7%BA%A2%20%3E%20%E6%B8%90%E5%87%BA%0A%20%20%20%20%3C%2Fspan%3E%0A%20%20%3C%2Fspan%3E%0A%3C%2Fspan%3E%0A%0A--%0A%0A%3C!--%20.slide%3A%20data-auto-animate%20--%3E%0A%0A%23%23%20%E5%8A%A8%E7%94%BB%E7%89%87%E6%AE%B5%0A%0A%23%23%23%20%E9%A1%BA%E5%BA%8F%0A%0A%E4%BD%A0%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%20%60data-fragment-index%60%20%E5%B1%9E%E6%80%A7%E6%94%B9%E5%8F%98%E5%85%83%E7%B4%A0%E7%9A%84%E5%8A%A8%E7%94%BB%E9%A1%BA%E5%BA%8F%E3%80%82%0A%0A%E4%B8%8D%E5%90%8C%E5%85%83%E7%B4%A0%E5%8F%AF%E4%BB%A5%E6%9C%89%E7%9B%B8%E5%90%8C%E7%9A%84%E5%8A%A8%E7%94%BB%E9%A1%BA%E5%BA%8F%E3%80%82%0A%0A-%20%E6%9C%80%E5%90%8E%E6%98%BE%E7%A4%BA%0A%3C!--%20.element%3A%20class%3D%22fragment%22%20data-fragment-index%3D%223%22--%3E%0A%0A-%20%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%98%BE%E7%A4%BA%0A%3C!--%20.element%3A%20class%3D%22fragment%22%20data-fragment-index%3D%222%22--%3E%0A%0A%3C!--%20list%20break%20--%3E%0A%0A-%20%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%98%BE%E7%A4%BA%0A%3C!--%20.element%3A%20class%3D%22fragment%22%20data-fragment-index%3D%221%22--%3E%0A%0A-%20%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%98%BE%E7%A4%BA%0A%3C!--%20.element%3A%20class%3D%22fragment%22%20data-fragment-index%3D%222%22--%3E%0A%0A---%0A%0A%3C!--%20.slide%3A%20data-transition%3D%22slide%22%20data-auto-animate%20--%3E%0A%0A%23%23%20%E6%B8%90%E5%8F%98%0A%0A%3C!--%20.element%3A%20class%3D%22r-fit-text%22%20--%3E%0A%0A--%0A%0A%3C!--%20.slide%3A%20data-transition%3D%22slide%22%20data-auto-animate%20--%3E%0A%0A%23%23%20%E6%B8%90%E5%8F%98%0A%0A%3C!--%20.element%3A%20class%3D%22r-fit-text%22%20--%3E%0A%0ATransition%20%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%E9%85%8D%E7%BD%AE%E4%B8%AD%E7%9A%84%20%60transition%60%20%E9%80%89%E9%A1%B9%E5%85%A8%E5%B1%80%E8%AE%BE%E7%BD%AE%EF%BC%8C%E4%B9%9F%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%E5%9C%A8%E7%89%B9%E5%AE%9A%E5%B9%BB%E7%81%AF%E7%89%87%E6%B7%BB%E5%8A%A0%20%60data-transition%60%20%E5%B1%9E%E6%80%A7%E5%B1%80%E9%83%A8%E8%AE%BE%E7%BD%AE.%0A%0A%E5%8F%AF%E8%83%BD%E7%9A%84%E5%80%BC%3A%0A%0A-%20none%0A-%20fade%0A-%20slide%0A%0A%3C!--%20list%20break%20--%3E%0A%0A-%20convex%0A-%20concave%0A-%20zoom%0A%0A--%0A%0A%3C!--%20.slide%3A%20data-auto-animate%20--%3E%0A%0A%23%23%20%E6%B8%90%E5%8F%98%0A%0A%3C!--%20.element%3A%20class%3D%22r-fit-text%22%20--%3E%0A%0A%23%23%23%20%E8%BF%87%E6%B8%A1%E5%8A%A8%E7%94%BB%0A%0A%E4%BD%A0%E5%8F%AF%E4%BB%A5%E5%9C%A8%E7%9B%B8%E9%82%BB%E7%9A%84%E5%B9%BB%E7%81%AF%E7%89%87%E4%B8%8A%E6%B7%BB%E5%8A%A0%20%60data-auto-animate%60%20%E4%BD%BF%E7%9B%B8%E5%90%8C%E7%9A%84%20HTML%20%E5%85%83%E7%B4%A0%E4%BA%A7%E7%94%9F%E8%BF%87%E6%B8%A1%E5%8A%A8%E7%94%BB%E6%95%88%E6%9E%9C%E3%80%82%0A%0A---%0A%0A%3C!--%20.slide%3A%20data-transition%3D%22slide%22%20data-auto-animate%20--%3E%0A%0A%23%23%20%E5%8A%9F%E8%83%BD%0A%0A%3C!--%20.element%3A%20class%3D%22r-fit-text%22%20--%3E%0A%0A--%0A%0A%3C!--%20.slide%3A%20data-transition%3D%22slide%22%20data-auto-animate%20--%3E%0A%0A%23%23%20%E5%8A%9F%E8%83%BD%0A%0A%3C!--%20.element%3A%20class%3D%22r-fit-text%22%20--%3E%0A%0A%23%23%23%20%E4%BB%A3%E7%A0%81%0A%0A%E9%80%9A%E8%BF%87%E5%90%AF%E7%94%A8%20%60highlight%60%20%E6%8F%92%E4%BB%B6%EF%BC%8C%E4%BD%A0%E5%8F%AF%E4%BB%A5%E5%AF%B9%E4%BB%A3%E7%A0%81%E5%9D%97%E8%BF%9B%E8%A1%8C%E9%AB%98%E4%BA%AE%E3%80%82%0A%0A%E4%BD%A0%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%20%60%5Ba-b%7Cc-d%5D%60%20%E8%AF%AD%E6%B3%95%E6%9D%A5%E5%88%86%E5%B8%83%E9%AB%98%E4%BA%AE%E7%89%B9%E5%AE%9A%E8%A1%8C%E3%80%82%0A%0A%60%60%60js%20%5B1-2%7C3%7C4%5D%0Alet%20a%20%3D%201%3B%0Alet%20b%20%3D%202%3B%0Alet%20c%20%3D%20(x)%20%3D%3E%201%20%2B%202%20%2B%20x%3B%0Ac(3)%3B%0A%60%60%60%0A%0A--%0A%0A%3C!--%20.slide%3A%20data-transition%3D%22slide%22%20data-auto-animate%20--%3E%0A%0A%23%23%20%E5%8A%9F%E8%83%BD%0A%0A%3C!--%20.element%3A%20class%3D%22r-fit-text%22%20--%3E%0A%0A%23%23%23%20%E9%A2%84%E8%A7%88%E6%A8%A1%E5%BC%8F%0A%0A%E6%8C%89%E4%B8%8B%20%60Esc%60%20%E6%88%96%20%60O%60%20%E5%8D%B3%E5%8F%AF%E5%9C%A8%E5%B9%BB%E7%81%AF%E7%89%87%E8%8E%B7%E5%BE%97%E7%84%A6%E7%82%B9%E6%97%B6%E8%BF%9B%E5%85%A5%E9%A2%84%E8%A7%88%E6%A8%A1%E5%BC%8F%E3%80%82%0A%0A--%0A%0A%3C!--%20.slide%3A%20data-transition%3D%22slide%22%20data-auto-animate%20--%3E%0A%0A%23%23%20%E5%8A%9F%E8%83%BD%0A%0A%3C!--%20.element%3A%20class%3D%22r-fit-text%22%20--%3E%0A%0A%23%23%23%20%E5%85%A8%E5%B1%8F%E6%A8%A1%E5%BC%8F%0A%0A%E6%8C%89%E4%B8%8B%20%60F%60%20%E6%88%96%20%60F11%60%20%E5%8D%B3%E5%8F%AF%E5%9C%A8%E5%B9%BB%E7%81%AF%E7%89%87%E8%8E%B7%E5%BE%97%E7%84%A6%E7%82%B9%E6%97%B6%E8%BF%9B%E5%85%A5%E5%85%A8%E5%B1%8F%E6%A8%A1%E5%BC%8F%E3%80%82%0A%0A--%0A%0A%3C!--%20.slide%3A%20data-transition%3D%22slide%22%20data-auto-animate%20--%3E%0A%0A%23%23%20%E5%8A%9F%E8%83%BD%0A%0A%3C!--%20.element%3A%20class%3D%22r-fit-text%22%20--%3E%0A%0A%23%23%23%20%E7%BC%A9%E6%94%BE%0A%0A%E6%8C%89%E4%B8%8B%20%60alt%60%20(Linux%20%E4%B8%8A%E4%BD%BF%E7%94%A8%20%60ctrl%60)%20%E7%9A%84%E5%90%8C%E6%97%B6%E7%82%B9%E5%87%BB%E5%B9%BB%E7%81%AF%E7%89%87%E7%9A%84%E4%BB%BB%E4%BD%95%E5%85%83%E7%B4%A0%EF%BC%8C%E5%8D%B3%E5%8F%AF%E4%BB%A5%E5%90%91%E6%AD%A4%E5%85%83%E7%B4%A0%E8%BF%9B%E8%A1%8C%E6%94%BE%E5%A4%A7%E3%80%82%0A%0A%E5%86%8D%E6%AC%A1%E7%82%B9%E5%87%BB%E5%8D%B3%E5%8F%AF%E7%BC%A9%E5%B0%8F%E3%80%82%0A%0A---%0A%0A%3C!--%20.element%3A%20class%3D%22r-fit-text%22%20--%3E%0A%0A%23%23%20%E7%BB%93%E6%9D%9F%0A" theme="auto"></Presentation>]]></content:encoded>
+      <enclosure url="https://ivwv.github.io/logo.svg" type="image/svg+xml"/>
+    </item>
+    <item>
+      <title>主要功能与配置演示</title>
+      <link>https://ivwv.github.io/guide/</link>
+      <guid>https://ivwv.github.io/guide/</guid>
+      <source url="https://ivwv.github.io/rss.xml">主要功能与配置演示</source>
+      <category>使用指南</category>
+      <pubDate>Wed, 29 Jul 2020 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2 id="目录" tabindex="-1"> 目录</h2>
+<ul>
+<li>
+<p><a href="/guide/markdown.html">Markdown 展示</a></p>
+</li>
+<li>
+<p><a href="/guide/page.html">页面展示</a></p>
+</li>
+<li>
+<p><a href="/guide/disable.html">禁用展示</a></p>
+</li>
+<li>
+<p><a href="/guide/encrypt.html">加密展示</a></p>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>布局与功能禁用</title>
+      <link>https://ivwv.github.io/guide/disable.html</link>
+      <guid>https://ivwv.github.io/guide/disable.html</guid>
+      <source url="https://ivwv.github.io/rss.xml">布局与功能禁用</source>
+      <description>你可以通过设置页面的 Frontmatter，在页面禁用功能与布局。
+</description>
+      <category>使用指南</category>
+      <pubDate>Thu, 28 Jul 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>你可以通过设置页面的 Frontmatter，在页面禁用功能与布局。</p>
+
+<p>本页面就是一个示例，禁用了如下功能:</p>
+<ul>
+<li>导航栏</li>
+<li>侧边栏</li>
+<li>路径导航</li>
+<li>页面信息</li>
+<li>贡献者</li>
+<li>编辑此页链接</li>
+<li>更新时间</li>
+<li>上一篇/下一篇 链接</li>
+<li>评论</li>
+<li>页脚</li>
+<li>返回顶部按钮</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>密码加密的文章</title>
+      <link>https://ivwv.github.io/guide/encrypt.html</link>
+      <guid>https://ivwv.github.io/guide/encrypt.html</guid>
+      <source url="https://ivwv.github.io/rss.xml">密码加密的文章</source>
+      <category>使用指南</category>
+      <pubDate>Fri, 29 Jul 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="密码加密的文章" tabindex="-1"> 密码加密的文章</h1>
+<p>实际的文章内容。</p>
+<p>段落 1 文字段落 1 文字段落 1 文字段落 1 文字段落 1 文字段落 1 文字段落 1 文字段落 1 文字段落 1 文字段落 1 文字段落 1 文字段落 1 文字。</p>
+<p>段落 2 文字段落 2 文字段落 2 文字段落 2 文字段落 2 文字段落 2 文字段落 2 文字段落 2 文字段落 2 文字段落 2 文字段落 2 文字段落 2 文字段落 2 文字段落 2 文字。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Markdown 展示</title>
+      <link>https://ivwv.github.io/guide/markdown.html</link>
+      <guid>https://ivwv.github.io/guide/markdown.html</guid>
+      <source url="https://ivwv.github.io/rss.xml">Markdown 展示</source>
+      <description>VuePress 主要从 Markdown 文件生成页面。因此，你可以使用它轻松生成文档或博客站点。
+你应该创建和编写 Markdown 文件，以便 VuePress 可以根据文件结构将它们转换为不同的页面。
+</description>
+      <category>使用指南</category>
+      <pubDate>Fri, 29 Jul 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>VuePress 主要从 Markdown 文件生成页面。因此，你可以使用它轻松生成文档或博客站点。</p>
+<p>你应该创建和编写 Markdown 文件，以便 VuePress 可以根据文件结构将它们转换为不同的页面。</p>
+
+<h2 id="markdown-介绍" tabindex="-1"> Markdown 介绍</h2>
+<p>如果你是一个新手，还不会编写 Markdown，请先阅读 <a href="https://vuepress-theme-hope.github.io/v2/zh/cookbook/markdown/" target="_blank" rel="noopener noreferrer">Markdown 介绍</a> 和 <a href="https://vuepress-theme-hope.github.io/v2/zh/cookbook/markdown/demo.html" target="_blank" rel="noopener noreferrer">Markdown 演示</a>。</p>
+<h2 id="markdown-配置" tabindex="-1"> Markdown 配置</h2>
+<p>VuePress 通过 Frontmatter 为每个 Markdown 页面引入配置。</p>
+<div><p>相关信息</p>
+<p>Frontmatter 是 VuePress 中很重要的一个概念，如果你不了解它，你需要阅读 <a href="https://vuepress-theme-hope.github.io/v2/zh/cookbook/vuepress/page.html#front-matter" target="_blank" rel="noopener noreferrer">Frontmatter 介绍</a>。</p>
+</div>
+<h2 id="markdown-扩展" tabindex="-1"> Markdown 扩展</h2>
+<p>VuePress 会使用 <a href="https://github.com/markdown-it/markdown-it" target="_blank" rel="noopener noreferrer">markdown-it</a> 来解析 Markdown 内容，因此可以借助于 markdown-it 插件来实现 <a href="https://github.com/markdown-it/markdown-it#syntax-extensions" target="_blank" rel="noopener noreferrer">语法扩展</a> 。</p>
+<h3 id="vuepress-扩展" tabindex="-1"> VuePress 扩展</h3>
+<p>为了丰富文档写作，VuePress 对 Markdown 语法进行了扩展。</p>
+<p>关于这些扩展，请阅读 <a href="https://vuepress-theme-hope.github.io/v2/zh/cookbook/vuepress/markdown.html" target="_blank" rel="noopener noreferrer">VuePress 中的 Markdown 扩展</a>。</p>
+<h3 id="主题扩展" tabindex="-1"> 主题扩展</h3>
+<p>通过 <a href="https://vuepress-theme-hope.github.io/v2/md-enhance/zh/" target="_blank" rel="noopener noreferrer"><code>vuepress-plugin-md-enhance</code></a>，主题扩展了更多 Markdown 语法，提供更加丰富的写作功能。</p>
+<div><p>一键启用</p>
+<p>你可以设置在主题选项中设置 <code>plugins.mdEnhance.enableAll: true</code> 启用 <a href="https://vuepress-theme-hope.github.io/v2/md-enhance/zh/" target="_blank" rel="noopener noreferrer">md-enhance</a> 插件的所有功能。</p>
+<CodeTabs :data='[{"title":"TS"},{"title":"JS"}]' tab-id="language">
+
+<template #tab0="{ title, value, isActive }">
+<div><pre><code><span>import</span> <span>{</span> hopeTheme <span>}</span> <span>from</span> <span>"vuepress-theme-hope"</span><span>;</span>
+
+<span>export</span> <span>default</span> <span>{</span>
+  theme<span>:</span> <span>hopeTheme</span><span>(</span><span>{</span>
+    plugins<span>:</span> <span>{</span>
+      mdEnhance<span>:</span> <span>{</span>
+        enableAll<span>:</span> <span>true</span><span>,</span>
+      <span>}</span><span>,</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>)</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div></template>
+<template #tab1="{ title, value, isActive }">
+<div><pre><code><span>const</span> <span>{</span> hopeTheme <span>}</span> <span>=</span> <span>require</span><span>(</span><span>"vuepress-theme-hope"</span><span>)</span><span>;</span>
+
+module<span>.</span>exports <span>=</span> <span>{</span>
+  <span>theme</span><span>:</span> <span>hopeTheme</span><span>(</span><span>{</span>
+    <span>plugins</span><span>:</span> <span>{</span>
+      <span>mdEnhance</span><span>:</span> <span>{</span>
+        <span>enableAll</span><span>:</span> <span>true</span><span>,</span>
+      <span>}</span><span>,</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>)</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div></template>
+</CodeTabs>
+</div>
+<h4 id="自定义容器" tabindex="-1"> 自定义容器</h4>
+<div>
+<p>安全的在 Markdown 中使用 {{ variable }}。</p>
+</div>
+<div><p>自定义标题</p>
+<p>信息容器，包含 <code>代码</code> 与 。</p>
+<div><pre><code><span>const</span> a <span>=</span> <span>1</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div></div></div></div>
+<div><p>自定义标题</p>
+<p>提示容器</p>
+</div>
+<div><p>自定义标题</p>
+<p>警告容器</p>
+</div>
+<div><p>自定义标题</p>
+<p>危险容器</p>
+</div>
+<details><summary>自定义标题</summary>
+<p>详情容器</p>
+</details>
+<details><summary>代码</summary>
+<div><pre><code>:::
+
+安全的在 Markdown 中使用 {{ variable }}。
+
+:::
+
+::: info 自定义标题
+
+信息容器
+
+:::
+
+::: tip 自定义标题
+
+提示容器
+
+:::
+
+::: warning 自定义标题
+
+警告容器
+
+:::
+
+::: danger 自定义标题
+
+危险容器
+
+:::
+
+::: details 自定义标题
+
+详情容器
+
+:::
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div></details>
+<ul>
+<li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/container.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
+</ul>
+<h4 id="代码块" tabindex="-1"> 代码块</h4>
+<CodeTabs :data='[{"title":"pnpm"},{"title":"yarn"},{"title":"npm"}]' :active="2">
+
+<template #tab0="{ title, value, isActive }">
+<div><pre><code><span>pnpm</span> <span>add</span> -D vuepress-theme-hope
+</code></pre><div aria-hidden="true"><div></div></div></div></template>
+<template #tab1="{ title, value, isActive }">
+<div><pre><code><span>yarn</span> <span>add</span> -D vuepress-theme-hope
+</code></pre><div aria-hidden="true"><div></div></div></div></template>
+<template #tab2="{ title, value, isActive }">
+<div><pre><code><span>npm</span> i -D vuepress-theme-hope
+</code></pre><div aria-hidden="true"><div></div></div></div></template>
+</CodeTabs>
+<ul>
+<li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/code-tabs.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
+</ul>
+<h4 id="自定义对齐" tabindex="-1"> 自定义对齐</h4>
+<div style="text-align: center"><p>我是居中的</p>
+</div>
+<div style="text-align: right"><p>我在右对齐</p>
+</div>
+<ul>
+<li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/align.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
+</ul>
+<h4 id="上下角标" tabindex="-1"> 上下角标</h4>
+<p>19<sup>th</sup> H<sub>2</sub>O</p>
+<ul>
+<li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/sup-sub.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
+</ul>
+<h4 id="脚注" tabindex="-1"> 脚注</h4>
+<p>此文字有脚注<sup></sup>.</p>
+<ul>
+<li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/footnote.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
+</ul>
+<h4 id="标记" tabindex="-1"> 标记</h4>
+<p>你可以标记 <mark>重要的内容</mark> 。</p>
+<ul>
+<li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/mark.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
+</ul>
+<h4 id="任务列表" tabindex="-1"> 任务列表</h4>
+<ul>
+<li>
+<p><input type="checkbox" id="task-item-0" checked="checked" disabled="disabled"><label for="task-item-0"> 计划 1</label></p>
+</li>
+<li>
+<p><input type="checkbox" id="task-item-1" disabled="disabled"><label for="task-item-1"> 计划 2</label></p>
+</li>
+<li>
+<p><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/tasklist.html" target="_blank" rel="noopener noreferrer">查看详情</a></p>
+</li>
+</ul>
+<h3 id="图片增强" tabindex="-1"> 图片增强</h3>
+<p>支持为图片设置颜色模式和大小</p>
+<ul>
+<li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/image.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
+</ul>
+<h4 id="图表" tabindex="-1"> 图表</h4>
+<ChartJS id="chart-64a5691a" config="%7B%0A%20%20%22type%22%3A%20%22scatter%22%2C%0A%20%20%22data%22%3A%20%7B%0A%20%20%20%20%22datasets%22%3A%20%5B%0A%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22label%22%3A%20%22%E6%95%A3%E7%82%B9%E6%95%B0%E6%8D%AE%E9%9B%86%22%2C%0A%20%20%20%20%20%20%20%20%22data%22%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%7B%20%22x%22%3A%20-10%2C%20%22y%22%3A%200%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%20%22x%22%3A%200%2C%20%22y%22%3A%2010%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%20%22x%22%3A%2010%2C%20%22y%22%3A%205%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%7B%20%22x%22%3A%200.5%2C%20%22y%22%3A%205.5%20%7D%0A%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%22backgroundColor%22%3A%20%22rgb(255%2C%2099%2C%20132)%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%5D%0A%20%20%7D%2C%0A%20%20%22options%22%3A%20%7B%0A%20%20%20%20%22scales%22%3A%20%7B%0A%20%20%20%20%20%20%22x%22%3A%20%7B%0A%20%20%20%20%20%20%20%20%22type%22%3A%20%22linear%22%2C%0A%20%20%20%20%20%20%20%20%22position%22%3A%20%22bottom%22%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A" title="%E4%B8%80%E4%B8%AA%E6%95%A3%E7%82%B9%E5%9B%BE%E6%A1%88%E4%BE%8B" type="json"></ChartJS><ul>
+<li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/chart.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
+</ul>
+<h4 id="echarts" tabindex="-1"> Echarts</h4>
+<ECharts id="echarts-64a568ac" config="%7B%0A%20%20%22xAxis%22%3A%20%7B%0A%20%20%20%20%22type%22%3A%20%22category%22%2C%0A%20%20%20%20%22data%22%3A%20%5B%22Mon%22%2C%20%22Tue%22%2C%20%22Wed%22%2C%20%22Thu%22%2C%20%22Fri%22%2C%20%22Sat%22%2C%20%22Sun%22%5D%0A%20%20%7D%2C%0A%20%20%22yAxis%22%3A%20%7B%0A%20%20%20%20%22type%22%3A%20%22value%22%0A%20%20%7D%2C%0A%20%20%22series%22%3A%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22data%22%3A%20%5B150%2C%20230%2C%20224%2C%20218%2C%20135%2C%20147%2C%20260%5D%2C%0A%20%20%20%20%20%20%22type%22%3A%20%22line%22%0A%20%20%20%20%7D%0A%20%20%5D%0A%7D%0A" title="%E4%B8%80%E4%B8%AA%E6%8A%98%E7%BA%BF%E5%9B%BE%E6%A1%88%E4%BE%8B" type="json"></ECharts><ul>
+<li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/echarts.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
+</ul>
+<h4 id="流程图" tabindex="-1"> 流程图</h4>
+<FlowChart id="flowchart-64a56868" code="cond%3D%3Econdition%3A%20%E6%98%AF%E5%90%A6%E6%89%A7%E8%A1%8C%E6%93%8D%E4%BD%9C%3F%0Aprocess%3D%3Eoperation%3A%20%E6%93%8D%E4%BD%9C%0Ae%3D%3Eend%3A%20%E7%BB%93%E6%9D%9F%0A%0Acond(yes)-%3Eprocess-%3Ee%0Acond(no)-%3Ee%0A" preset="vue"></FlowChart><ul>
+<li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/flowchart.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
+</ul>
+<h4 id="mermaid" tabindex="-1"> Mermaid</h4>
+<Mermaid id="mermaid-64a56828" code="flowchart%20TB%0A%20%20%20%20c1--%3Ea2%0A%20%20%20%20subgraph%20one%0A%20%20%20%20a1--%3Ea2%0A%20%20%20%20end%0A%20%20%20%20subgraph%20two%0A%20%20%20%20b1--%3Eb2%0A%20%20%20%20end%0A%20%20%20%20subgraph%20three%0A%20%20%20%20c1--%3Ec2%0A%20%20%20%20end%0A%20%20%20%20one%20--%3E%20two%0A%20%20%20%20three%20--%3E%20two%0A%20%20%20%20two%20--%3E%20c2%0A"></Mermaid><ul>
+<li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/mermaid.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
+</ul>
+<h4 id="tex-语法" tabindex="-1"> Tex 语法</h4>
+<p class='katex-block'><span><span><span><i>Content not supported</i></span><span aria-hidden="true"><span><span style="height:2.4em;vertical-align:-0.95em;"></span><span><span></span><span><span><span><span style="height:1.3714em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span style="margin-right:0.05556em;">∂</span><span><span style="margin-right:0.03588em;">ω</span><span><span><span><span style="height:0.5904em;"><span style="top:-2.989em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span style="margin-right:0.02778em;">r</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.05556em;">∂</span><span><span><span><span style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span style="margin-right:0.02778em;">r</span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="margin-right:0.1667em;"></span><span><span style="top:0em;"><span>(</span></span><span><span></span><span><span><span><span style="height:1.3414em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span style="margin-right:0.03588em;">ω</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.03588em;">y</span><span><span><span><span style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">ω</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="top:0em;"><span>)</span></span></span><span style="margin-right:0.2778em;"></span><span>=</span><span style="margin-right:0.2778em;"></span></span><span><span style="height:3.0277em;vertical-align:-1.2777em;"></span><span><span style="top:0em;"><span>(</span></span><span><span></span><span><span><span><span style="height:1.3414em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span style="margin-right:0.03588em;">ω</span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.03588em;">y</span><span><span><span><span style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.03588em;">ω</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="top:0em;"><span>)</span></span></span><span style="margin-right:0.1667em;"></span><span><span style="top:0em;"><span>{</span></span><span>(</span><span>lo<span style="margin-right:0.01389em;">g</span></span><span style="margin-right:0.1667em;"></span><span style="margin-right:0.03588em;">y</span><span><span>)</span><span><span><span><span style="height:0.7144em;"><span style="top:-3.113em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span style="margin-right:0.02778em;">r</span></span></span></span></span></span></span></span><span style="margin-right:0.2222em;"></span><span>+</span><span style="margin-right:0.2222em;"></span><span><span><span><span style="height:1.6514em;"><span style="top:-1.8723em;margin-left:0em;"><span style="height:3.05em;"></span><span><span><span>i</span><span>=</span><span>1</span></span></span></span><span style="top:-3.05em;"><span style="height:3.05em;"></span><span><span>∑</span></span></span><span style="top:-4.3em;margin-left:0em;"><span style="height:3.05em;"></span><span><span style="margin-right:0.02778em;">r</span></span></span></span><span>​</span></span><span><span style="height:1.2777em;"><span></span></span></span></span></span><span style="margin-right:0.1667em;"></span><span><span></span><span><span><span><span style="height:1.5017em;"><span style="top:-2.314em;"><span style="height:3em;"></span><span><span><span style="margin-right:0.03588em;">ω</span><span><span><span><span style="height:0.7507em;"><span style="top:-2.989em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>i</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span style="height:3em;"></span><span style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span style="height:3em;"></span><span><span>(</span><span>−</span><span>1</span><span><span>)</span><span><span><span><span style="height:0.8247em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span>i</span></span></span></span></span></span></span></span><span style="margin-right:0.02778em;">r</span><span style="margin-right:0.1667em;"></span><span>⋯</span><span style="margin-right:0.1667em;"></span><span>(</span><span style="margin-right:0.02778em;">r</span><span style="margin-right:0.2222em;"></span><span>−</span><span style="margin-right:0.2222em;"></span><span>i</span><span style="margin-right:0.2222em;"></span><span>+</span><span style="margin-right:0.2222em;"></span><span>1</span><span>)</span><span>(</span><span>lo<span style="margin-right:0.01389em;">g</span></span><span style="margin-right:0.1667em;"></span><span style="margin-right:0.03588em;">y</span><span><span>)</span><span><span><span><span style="height:0.8247em;"><span style="top:-3.063em;margin-right:0.05em;"><span style="height:2.7em;"></span><span><span><span style="margin-right:0.02778em;">r</span><span>−</span><span>i</span></span></span></span></span></span></span></span></span></span></span></span><span>​</span></span><span><span style="height:0.686em;"><span></span></span></span></span></span><span></span></span><span style="top:0em;"><span>}</span></span></span></span></span></span></span></p>
+<ul>
+<li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/tex.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
+</ul>
+<h4 id="导入文件" tabindex="-1"> 导入文件</h4>
+<ul>
+<li>
+<p><a href="/guide/markdown.html">Markdown 展示</a></p>
+</li>
+<li>
+<p><a href="/guide/page.html">页面展示</a></p>
+</li>
+<li>
+<p><a href="/guide/disable.html">禁用展示</a></p>
+</li>
+<li>
+<p><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/include.html" target="_blank" rel="noopener noreferrer">查看详情</a></p>
+</li>
+</ul>
+<h4 id="代码演示" tabindex="-1"> 代码演示</h4>
+
+<CodeDemo id="code-demo-3c31404e" type="normal" title="%E4%B8%80%E4%B8%AA%E6%99%AE%E9%80%9A%20Demo" code="%7B%22html%22%3A%22%3Ch1%3EVuePress%20Theme%20Hope%3C%2Fh1%3E%5Cn%3Cp%3E%3Cspan%20id%3D%5C%22very%5C%22%3E%E9%9D%9E%E5%B8%B8%3C%2Fspan%3E%E5%BC%BA%E5%A4%A7!%3C%2Fp%3E%5Cn%22%2C%22js%22%3A%22document.querySelector(%5C%22%23very%5C%22).addEventListener(%5C%22click%5C%22%2C%20()%20%3D%3E%20%7B%5Cn%20%20alert(%5C%22%E9%9D%9E%E5%B8%B8%E5%BC%BA%E5%A4%A7%5C%22)%3B%5Cn%7D)%3B%5Cn%22%2C%22css%22%3A%22span%20%7B%5Cn%20%20color%3A%20red%3B%5Cn%7D%5Cn%22%7D">
+<div><pre><code><span><span><span>&lt;</span>h1</span><span>></span></span>VuePress Theme Hope<span><span><span>&lt;/</span>h1</span><span>></span></span>
+<span><span><span>&lt;</span>p</span><span>></span></span><span><span><span>&lt;</span>span</span> <span>id</span><span><span>=</span><span>"</span>very<span>"</span></span><span>></span></span>非常<span><span><span>&lt;/</span>span</span><span>></span></span>强大!<span><span><span>&lt;/</span>p</span><span>></span></span>
+</code></pre><div aria-hidden="true"><div></div><div></div></div></div><div><pre><code>document<span>.</span><span>querySelector</span><span>(</span><span>"#very"</span><span>)</span><span>.</span><span>addEventListener</span><span>(</span><span>"click"</span><span>,</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
+  <span>alert</span><span>(</span><span>"非常强大"</span><span>)</span><span>;</span>
+<span>}</span><span>)</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div></div></div><div><pre><code><span>span</span> <span>{</span>
+  <span>color</span><span>:</span> red<span>;</span>
+<span>}</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div></div></div></CodeDemo><ul>
+<li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/demo.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
+</ul>
+<h4 id="样式化" tabindex="-1"> 样式化</h4>
+
+<p>设置它<span style="color:red">没有</span>任何效果，请<span style="color:red">不要</span>这样使用</p>
+<ul>
+<li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/stylize.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
+</ul>
+
+<h4 id="幻灯片" tabindex="-1"> 幻灯片</h4>
+<Presentation id="presentation-64a56128" data-code="%0A%23%23%20%E5%B9%BB%E7%81%AF%E7%89%87%201%0A%0A%E4%B8%80%E4%B8%AA%E6%9C%89%E6%96%87%E5%AD%97%E5%92%8C%20%5B%E9%93%BE%E6%8E%A5%5D(https%3A%2F%2Fmrhope.site)%20%E7%9A%84%E6%AE%B5%E8%90%BD%0A%0A---%0A%0A%23%23%20%E5%B9%BB%E7%81%AF%E7%89%87%202%0A%0A-%20%E9%A1%B9%E7%9B%AE%201%0A-%20%E9%A1%B9%E7%9B%AE%202%0A%0A---%0A%0A%23%23%20%E5%B9%BB%E7%81%AF%E7%89%87%203.1%0A%0A%60%60%60js%0Aconst%20a%20%3D%201%3B%0A%60%60%60%0A%0A--%0A%0A%23%23%20%E5%B9%BB%E7%81%AF%E7%89%87%203.2%0A%0A%24%24%0AJ(%5Ctheta_0%2C%5Ctheta_1)%20%3D%20%5Csum_%7Bi%3D0%7D%0A%24%24%0A" theme="auto"></Presentation><ul>
+<li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/markdown/presentation.html" target="_blank" rel="noopener noreferrer">查看详情</a></li>
+</ul>
+<hr>
+<section>
+<ol>
+<li id="footnote1"><p>这是脚注内容 </p>
+</li>
+</ol>
+</section>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>页面配置</title>
+      <link>https://ivwv.github.io/guide/page.html</link>
+      <guid>https://ivwv.github.io/guide/page.html</guid>
+      <source url="https://ivwv.github.io/rss.xml">页面配置</source>
+      <description>more 注释之前的内容被视为文章摘要。
+</description>
+      <category>使用指南</category>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p><code>more</code> 注释之前的内容被视为文章摘要。</p>
+
+<h2 id="页面信息" tabindex="-1"> 页面信息</h2>
+<p>你可以在 Markdown 的 Frontmatter 中设置页面信息。</p>
+<ul>
+<li>作者设置为 Ms.Hope。</li>
+<li>写作日期为 2020 年 1 月 1 日</li>
+<li>分类为 “使用指南”</li>
+<li>标签为 “页面配置” 和 “使用指南”</li>
+</ul>
+<h2 id="页面内容" tabindex="-1"> 页面内容</h2>
+<p>你可以自由在这里书写你的 Markdown。</p>
+<div><p>提示</p>
+<ul>
+<li>
+<p>你可以将图片和 Markdown 文件放置在一起，但是你需要使用<strong>相对链接</strong><code>./</code> 进行引用。</p>
+</li>
+<li>
+<p>对于 <code>.vuepress/public</code> 文件夹的图片，请使用绝对链接 <code>/</code> 进行引用。</p>
+</li>
+</ul>
+</div>
+<p>主题包含了一个自定义徽章章可以使用:</p>
+<blockquote>
+<p>文字结尾应该有深蓝色的 徽章文字 徽章。 <i>Content not supported</i></p>
+</blockquote>
+<h2 id="页面结构" tabindex="-1"> 页面结构</h2>
+<p>此页面应当包含:</p>
+<ul>
+<li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/layout/breadcrumb.html" target="_blank" rel="noopener noreferrer">路径导航</a></li>
+<li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/feature/page-info.html" target="_blank" rel="noopener noreferrer">标题和页面信息</a></li>
+<li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/layout/page.html#%E6%A0%87%E9%A2%98%E5%88%97%E8%A1%A8" target="_blank" rel="noopener noreferrer">TOC (文章标题列表)</a></li>
+<li><a href="https://vuepress-theme-hope.github.io/v2/guide/feature/meta.html" target="_blank" rel="noopener noreferrer">贡献者、更新时间等页面元信息</a></li>
+<li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/feature/comment.html" target="_blank" rel="noopener noreferrer">评论</a></li>
+<li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/layout/navbar.html" target="_blank" rel="noopener noreferrer">导航栏</a></li>
+<li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/layout/sidebar.html" target="_blank" rel="noopener noreferrer">侧边栏</a></li>
+<li><a href="https://vuepress-theme-hope.github.io/v2/zh/guide/layout/footer.html" target="_blank" rel="noopener noreferrer">页脚</a></li>
+<li>返回顶部按钮</li>
+</ul>
+<p>你可以通过主题选项和页面 Frontmatter 自定义它们。</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
