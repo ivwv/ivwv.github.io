@@ -48,7 +48,12 @@ export default navbar([
       },
     ],
   },
-  
+  {
+    text: "本站备用网址",
+    icon: "creative",
+    link: "https://ivwv.netlify.app/",
+  },
+
   // {
   //   text: "文章",
   //   icon: "edit",
