@@ -22,7 +22,11 @@ export default defineUserConfig({
   description: "SY's Blog",
 
   base: "/",
-  head: [["link", { rel: "icon", href: "/logo.png" }]],
+  head: [
+    ["link", { rel: "icon", href: "/logo.png" }],
+    ["script", { src: "/js/global.js" }],
+  ],
+  shouldPrefetch: false,
 
   theme,
   plugins: [
