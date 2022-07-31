@@ -51,7 +51,14 @@ export default navbar([
   {
     text: "本站备用网址",
     icon: "creative",
-    link: "https://ivwv.netlify.app/",
+    // link: "https://ivwv.netlify.app/",
+    children: [
+      {
+        text: "本站备用网址(Netlify支持，速度更快)",
+        icon: "creative",
+        link: "https://ivwv.netlify.app/",
+      },
+    ],
   },
 
   // {

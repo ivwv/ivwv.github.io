@@ -82,7 +82,7 @@ son.say(); //我是爸爸的儿子
 
 **运行结果**
 
-![image-20220719122351155](https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-12:23:51*image-20220719122351155*a.png)
+![image-20220719122351155](https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-12:23:51*image-20220719122351155*a.png =400x400)
 
 
 

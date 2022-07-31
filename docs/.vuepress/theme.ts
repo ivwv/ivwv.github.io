@@ -106,6 +106,12 @@ export default hopeTheme({
       imageMark: true,
       // 启用图片大小
       imageSize: true,
+      // 启用代码演示
+      demo: true,
+      // 支持导入文件
+      include: true,
+      // 属性支持
+      attrs: true,
       presentation: {
         plugins: ["highlight", "math", "search", "notes", "zoom"],
       },
