@@ -81,24 +81,24 @@ export default hopeTheme({
       /**
        * Using Giscus
        */
-      provider: "Giscus",
-      repo: "ivwv/ivwv-blog-Giscus",
-      repoId: "R_kgDOHvHOZQ",
-      category: "Announcements",
-      categoryId: "DIC_kwDOHvHOZc4CQgMY",
+      // provider: "Giscus",
+      // repo: "ivwv/ivwv-blog-Giscus",
+      // repoId: "R_kgDOHvHOZQ",
+      // category: "Announcements",
+      // categoryId: "DIC_kwDOHvHOZc4CQgMY",
 
       /**
        * waline
        */
-      // comment: true,
-      // provider: "Waline",
-      // serverURL: "https://waline-ivwv-2twtg2b2g-ivwv.vercel.app/", // your server url
-      // dark: "auto", // dark mode: true , false or 'auto'
-      // meta: ["nick", "mail", "link"],
-      // requiredMeta: ["nick", "mail"],
-      // wordLimit: 0,
-      // pageSize: 10,
-      // copyright: true,
+      comment: true,
+      provider: "Waline",
+      serverURL: "https://waline-ivwv-2twtg2b2g-ivwv.vercel.app/", // your server url
+      dark: "auto", // dark mode: true , false or 'auto'
+      meta: ["nick", "mail", "link"],
+      requiredMeta: ["nick", "mail"],
+      wordLimit: 0,
+      pageSize: 10,
+      copyright: true,
     },
 
     mdEnhance: {
