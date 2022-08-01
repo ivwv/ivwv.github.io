@@ -11,6 +11,7 @@ export default sidebar([
     collapsable: true,
     prefix: "/posts/PDF/",
     children: [
+     "/posts/PDF/",
       {
         text: "前端相关书籍",
         icon: "creative",
