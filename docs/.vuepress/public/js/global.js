@@ -14,3 +14,4 @@
 // setTimeout(function () {
 //   alert("2");
 // }, 4000);
+alert("2");

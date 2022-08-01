@@ -27,7 +27,7 @@ export default navbar([
       {
         text: "PDF书籍",
         icon: "note",
-        link: "/category/PDF书籍/",
+        link: "/category/PDF/",
       },
     ],
   },

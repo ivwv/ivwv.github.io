@@ -12,7 +12,7 @@ tag:
 # 是否收藏在博客主题的文章列表中。当填入数字时，数字越大，排名越靠前
 star: true
 # 是否置顶
-sticky: false
+sticky: true
 # 是否将该文章添加至文章列表中。
 article: true
 # 是否将该文章添加至时间线中。
@@ -26,11 +26,10 @@ timeline: true
 
 # 我的项目
 
-1. [电商后台管理系统](/posts/project/vue-shop/README.md)
-2. [新闻门户网站(前后端项目)](/posts/project/newsinfo/README.md)
+1. [电商后台管理系统(2022/07.08--2022/07.18)](/posts/project/vue-shop/README.md)
+2. [新闻门户网站(2022/05.02--2022/05.18)](/posts/project/newsinfo/README.md)
 3. [`Node+Socket.io`聊天程序 ](/posts/project/socket-chat/README.md)
-4. [`puppeteer` 爬取 `electron` 官网文档，保存为 `pdf` 格式](/posts/project/puppeteer-electron-pdf/README.md)
-
+4. [`puppeteer` 爬取 `electron` 官网文档，保存为 `pdf` 格式(2022/07.21)](/posts/project/puppeteer-electron-pdf/README.md)
 
 
 

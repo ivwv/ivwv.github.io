@@ -16,10 +16,10 @@ projects:
     desc: 个人项目整合
     link: /posts/project/
 
-  # - icon: project
-  #   name: 新闻门户网站
-  #   desc: 后端-Node+Express+Jwt+Mysql+Ejs,前端-BootStrap
-  #   link: https://client--news.herokuapp.com/
+  - icon: project
+    name: PDF书籍
+    desc: 前后端PDF书籍整合
+    link: /posts/PDF/
 
   # - icon: book
   #   name: 书籍名称

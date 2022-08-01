@@ -24,7 +24,7 @@ export default defineUserConfig({
   base: "/",
   head: [
     ["link", { rel: "icon", href: "/logo.png" }],
-    ["script", { src: "/js/global.js" }],
+    // ["script", { src: "/js/global.js" }],
   ],
   shouldPrefetch: false,
 
