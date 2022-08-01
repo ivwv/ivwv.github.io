@@ -16,7 +16,7 @@ export default sidebar([
         collapsable: true,
         prefix: "front-end/",
         children: [
-          "ES6-in-depth",
+          "深入浅出ES6",
           "学习JavaScript数据结构与算法（第3版）",
           "你不知道的JavaScript（上卷）",
           "你不知道的JavaScript（中卷）",

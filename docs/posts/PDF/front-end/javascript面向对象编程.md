@@ -22,4 +22,4 @@ PDF书籍 javascript面向对象编程.pdf
 <!-- more -->
 
 
-<PDF url="https://lc-gluttony.s3.amazonaws.com/LfQUMiHwWA4l/xwVPHp92KwanhJOAm1hi3yv6328o9QIV/javascript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.pdf" />
+<PDF url="https://lc-gluttony.s3.amazonaws.com/LfQUMiHwWA4l/xwVPHp92KwanhJOAm1hi3yv6328o9QIV/javascript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.pdf" :toolbar="false"/>

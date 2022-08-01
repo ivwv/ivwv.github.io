@@ -1,5 +1,5 @@
 ---
-title: ES6-in-depth
+title: 深入浅出ES6
 icon: edit
 date: 2022-07-30
 category:
@@ -16,7 +16,7 @@ article: false
 timeline: true
 ---
 ::: tip 导读
-PDF书籍 ES6-in-depth.pdf
+PDF书籍 深入浅出ES6 - ES6-in-depth.pdf
 :::
 <!-- more -->
 

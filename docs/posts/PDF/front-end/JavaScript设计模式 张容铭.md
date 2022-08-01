@@ -22,4 +22,4 @@ PDF书籍 JavaScript设计模式 张容铭.pdf
 <!-- more -->
 
 
-<PDF url="https://lc-gluttony.s3.amazonaws.com/LfQUMiHwWA4l/goH420O7UtGtCohixxJWeCpQqK0oUc8O/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%20%E5%BC%A0%E5%AE%B9%E9%93%AD.pdf" />
+<PDF url="https://lc-gluttony.s3.amazonaws.com/LfQUMiHwWA4l/goH420O7UtGtCohixxJWeCpQqK0oUc8O/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%20%E5%BC%A0%E5%AE%B9%E9%93%AD.pdf" :toolbar="false"/>
