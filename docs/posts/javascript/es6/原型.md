@@ -2,7 +2,7 @@
 icon: edit
 date: 2022-07-30
 category:
-  - Javascript
+  - JavaScript
 tag:
   - es6
   - 面向对象
