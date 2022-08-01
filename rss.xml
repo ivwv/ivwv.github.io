@@ -6,8 +6,8 @@
     <link>https://ivwv.github.io/</link>
     <description>SY's Blog</description>
     <language>zh-CN</language>
-    <pubDate>Mon, 01 Aug 2022 11:43:26 GMT</pubDate>
-    <lastBuildDate>Mon, 01 Aug 2022 11:43:26 GMT</lastBuildDate>
+    <pubDate>Mon, 01 Aug 2022 12:39:15 GMT</pubDate>
+    <lastBuildDate>Mon, 01 Aug 2022 12:39:15 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>PDF</category>
@@ -17,7 +17,6 @@
     <category>Node</category>
     <category>CSS</category>
     <category>我的项目整合</category>
-    <category>Javascript</category>
     <category>使用指南</category>
     <item>
       <title>阮一峰-Bash-脚本教程</title>
@@ -717,7 +716,7 @@ Vue2+ElementUi+Node+Axios 电商后台管理项目。
 es6模块化导入与导出自己的整理
 
 </description>
-      <category>Javascript</category>
+      <category>JavaScript</category>
       <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<div><p>导读</p>
 <p>es6模块化导入与导出自己的整理</p>
@@ -829,7 +828,7 @@ es6模块化导入与导出自己的整理
 面向对象相关的笔记
 
 </description>
-      <category>Javascript</category>
+      <category>JavaScript</category>
       <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<div><p>导读</p>
 <p>面向对象相关的笔记</p>
@@ -971,7 +970,7 @@ son<span>.</span><span>say</span><span>(</span><span>)</span><span>;</span> <spa
 原型相关的笔记
 
 </description>
-      <category>Javascript</category>
+      <category>JavaScript</category>
       <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<div><p>导读</p>
 <p>原型相关的笔记</p>
@@ -1277,7 +1276,7 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
 面向对象相关的笔记
 
 </description>
-      <category>Javascript</category>
+      <category>JavaScript</category>
       <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<div><p>导读</p>
 <p>面向对象相关的笔记</p>
@@ -1316,7 +1315,7 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
 面向对象相关的笔记
 
 </description>
-      <category>Javascript</category>
+      <category>JavaScript</category>
       <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<div><p>导读</p>
 <p>面向对象相关的笔记</p>
