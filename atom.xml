@@ -3,97 +3,411 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-07-31T16:17:58.851Z</updated>
+  <updated>2022-08-01T10:02:06.865Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
-  <category term="我的项目整合"/>
-  <category term="PDF书籍"/>
+  <category term="PDF"/>
+  <category term="Linux"/>
   <category term="Node"/>
+  <category term="CSS"/>
+  <category term="HTML"/>
+  <category term="JavaScript"/>
+  <category term="我的项目整合"/>
   <category term="Javascript"/>
   <category term="使用指南"/>
   <contributor>
     <name>Ms.Hope</name>
   </contributor>
   <entry>
-    <title type="html">我的项目整合</title>
-    <id>https://ivwv.github.io/posts/project/</id>
-    <link href="https://ivwv.github.io/posts/project/"/>
-    <updated>2022-07-31T16:14:17.000Z</updated>
-    <summary type="html"><![CDATA[<p>我的项目介绍</p>
+    <title type="html">PDF书籍整合</title>
+    <id>https://ivwv.github.io/posts/PDF/</id>
+    <link href="https://ivwv.github.io/posts/PDF/"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍整合均来自互联网</p>
+</div>
 ]]></summary>
-    <content type="html"><![CDATA[<p>我的项目介绍</p>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍整合均来自互联网</p>
+</div>
 
-<h1 id="我的项目" tabindex="-1"> 我的项目</h1>
-<ol>
-<li><a href="/posts/project/vue-shop/">电商后台管理系统</a></li>
-<li><a href="/posts/project/newsinfo/">新闻门户网站(前后端项目)</a></li>
-<li><a href="/posts/project/socket-chat/"><code>Node+Socket.io</code>聊天程序 </a></li>
-<li><a href="/posts/project/puppeteer-electron-pdf/"><code>puppeteer</code> 爬取 <code>electron</code> 官网文档，保存为 <code>pdf</code> 格式</a></li>
-</ol>
 ]]></content>
-    <category term="我的项目整合" scheme=""/>
-    <published>2022-07-31T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">newsinfo</title>
-    <id>https://ivwv.github.io/posts/project/newsinfo/</id>
-    <link href="https://ivwv.github.io/posts/project/newsinfo/"/>
-    <updated>2022-07-31T15:11:32.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="newsinfo" tabindex="-1"> newsinfo</h1>
-]]></content>
-    <published>2022-07-31T14:21:29.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">puppeteer</title>
-    <id>https://ivwv.github.io/posts/project/puppeteer-electron-pdf/</id>
-    <link href="https://ivwv.github.io/posts/project/puppeteer-electron-pdf/"/>
-    <updated>2022-07-31T15:11:32.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="puppeteer" tabindex="-1"> puppeteer</h1>
-<h1 id="puppeteer-1" tabindex="-1"> puppeteer</h1>
-]]></content>
-    <published>2022-07-31T14:21:29.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">socket.io</title>
-    <id>https://ivwv.github.io/posts/project/socket-chat/</id>
-    <link href="https://ivwv.github.io/posts/project/socket-chat/"/>
-    <updated>2022-07-31T14:21:29.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="socket-io" tabindex="-1"> socket.io</h1>
-]]></content>
-    <published>2022-07-31T14:21:29.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">电商后台管理项目</title>
-    <id>https://ivwv.github.io/posts/project/vue-shop/</id>
-    <link href="https://ivwv.github.io/posts/project/vue-shop/"/>
-    <updated>2022-07-31T14:21:29.000Z</updated>
-    <summary type="html"><![CDATA[<p>Vue2+ElementUi+Node+Axios 电商后台管理项目</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>Vue2+ElementUi+Node+Axios 电商后台管理项目</p>
-
-<div><pre><code><span>const</span> a <span>=</span><span>1</span><span>;</span>
-</code></pre><div aria-hidden="true"><div></div></div></div>]]></content>
-    <category term="我的项目整合" scheme=""/>
-    <published>2022-07-31T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">ES6-in-depth</title>
-    <id>https://ivwv.github.io/posts/PDF%E4%B9%A6%E7%B1%8D/ES6-in-depth.html</id>
-    <link href="https://ivwv.github.io/posts/PDF%E4%B9%A6%E7%B1%8D/ES6-in-depth.html"/>
-    <updated>2022-07-30T10:16:27.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="es6-in-depth" tabindex="-1"> ES6-in-depth</h1>
-
-<i>Content not supported</i>]]></content>
-    <category term="PDF书籍" scheme=""/>
+    <category term="PDF" scheme=""/>
     <published>2022-07-30T00:00:00.000Z</published>
   </entry>
   <entry>
+    <title type="html">阮一峰 Bash 脚本教程</title>
+    <id>https://ivwv.github.io/posts/PDF/Linux/%E9%98%AE%E4%B8%80%E5%B3%B0%20Bash%20%E8%84%9A%E6%9C%AC%E6%95%99%E7%A8%8B.html</id>
+    <link href="https://ivwv.github.io/posts/PDF/Linux/%E9%98%AE%E4%B8%80%E5%B3%B0%20Bash%20%E8%84%9A%E6%9C%AC%E6%95%99%E7%A8%8B.html"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 阮一峰 Bash 脚本教程.pdf</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 阮一峰 Bash 脚本教程.pdf</p>
+</div>
+
+<i>Content not supported</i>]]></content>
+    <category term="PDF" scheme=""/>
+    <category term="Linux" scheme=""/>
+    <published>2022-08-01T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">NODE.js入门手册</title>
+    <id>https://ivwv.github.io/posts/PDF/back-end/NODE.js%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.html</id>
+    <link href="https://ivwv.github.io/posts/PDF/back-end/NODE.js%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.html"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 NODE.js入门手册.pdf</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 NODE.js入门手册.pdf</p>
+</div>
+
+<i>Content not supported</i>]]></content>
+    <category term="PDF" scheme=""/>
+    <category term="Node" scheme=""/>
+    <published>2022-08-01T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">Node.js实战</title>
+    <id>https://ivwv.github.io/posts/PDF/back-end/Node.js%E5%AE%9E%E6%88%98.html</id>
+    <link href="https://ivwv.github.io/posts/PDF/back-end/Node.js%E5%AE%9E%E6%88%98.html"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 Node.js实战.pdf</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 Node.js实战.pdf</p>
+</div>
+
+<i>Content not supported</i>]]></content>
+    <category term="PDF" scheme=""/>
+    <category term="Node" scheme=""/>
+    <published>2022-08-01T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">深入浅出Node.js</title>
+    <id>https://ivwv.github.io/posts/PDF/back-end/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BANode.js.html</id>
+    <link href="https://ivwv.github.io/posts/PDF/back-end/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BANode.js.html"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 深入浅出Node.js.pdf</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 深入浅出Node.js.pdf</p>
+</div>
+
+<i>Content not supported</i>]]></content>
+    <category term="PDF" scheme=""/>
+    <category term="Node" scheme=""/>
+    <published>2022-08-01T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">CSS权威指南-第三版</title>
+    <id>https://ivwv.github.io/posts/PDF/front-end/CSS%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%89%E7%89%88.html</id>
+    <link href="https://ivwv.github.io/posts/PDF/front-end/CSS%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%89%E7%89%88.html"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 CSS权威指南-第三版pdf</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 CSS权威指南-第三版pdf</p>
+</div>
+
+<i>Content not supported</i>]]></content>
+    <category term="PDF" scheme=""/>
+    <category term="CSS" scheme=""/>
+    <published>2022-08-01T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">ES6-in-depth</title>
+    <id>https://ivwv.github.io/posts/PDF/front-end/ES6-in-depth.html</id>
+    <link href="https://ivwv.github.io/posts/PDF/front-end/ES6-in-depth.html"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 ES6-in-depth.pdf</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 ES6-in-depth.pdf</p>
+</div>
+
+
+<i>Content not supported</i>]]></content>
+    <category term="PDF" scheme=""/>
+    <published>2022-07-30T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">HTML5游戏开发进阶指南＝PRO HTML5 GAMES</title>
+    <id>https://ivwv.github.io/posts/PDF/front-end/HTML5%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%EF%BC%9DPRO%20HTML5%20GAMES.html</id>
+    <link href="https://ivwv.github.io/posts/PDF/front-end/HTML5%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97%EF%BC%9DPRO%20HTML5%20GAMES.html"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 HTML5游戏开发进阶指南＝PRO HTML5 GAMES.pdf</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 HTML5游戏开发进阶指南＝PRO HTML5 GAMES.pdf</p>
+</div>
+
+<i>Content not supported</i>]]></content>
+    <category term="PDF" scheme=""/>
+    <category term="HTML" scheme=""/>
+    <published>2022-08-01T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">JavaScript百炼成仙</title>
+    <id>https://ivwv.github.io/posts/PDF/front-end/JavaScript%E7%99%BE%E7%82%BC%E6%88%90%E4%BB%99.html</id>
+    <link href="https://ivwv.github.io/posts/PDF/front-end/JavaScript%E7%99%BE%E7%82%BC%E6%88%90%E4%BB%99.html"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 JavaScript百炼成仙.pdf</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 JavaScript百炼成仙.pdf</p>
+</div>
+
+<i>Content not supported</i>]]></content>
+    <category term="PDF" scheme=""/>
+    <category term="JavaScript" scheme=""/>
+    <published>2022-08-01T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">JavaScript设计模式 张容铭</title>
+    <id>https://ivwv.github.io/posts/PDF/front-end/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%20%E5%BC%A0%E5%AE%B9%E9%93%AD.html</id>
+    <link href="https://ivwv.github.io/posts/PDF/front-end/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%20%E5%BC%A0%E5%AE%B9%E9%93%AD.html"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 JavaScript设计模式 张容铭.pdf</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 JavaScript设计模式 张容铭.pdf</p>
+</div>
+
+<i>Content not supported</i>]]></content>
+    <category term="PDF" scheme=""/>
+    <category term="JavaScript" scheme=""/>
+    <published>2022-08-01T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">JavaScript设计模式与开发实践</title>
+    <id>https://ivwv.github.io/posts/PDF/front-end/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5.html</id>
+    <link href="https://ivwv.github.io/posts/PDF/front-end/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5.html"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 JavaScript设计模式与开发实践.pdf</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 JavaScript设计模式与开发实践.pdf</p>
+</div>
+
+<i>Content not supported</i>]]></content>
+    <category term="PDF" scheme=""/>
+    <category term="JavaScript" scheme=""/>
+    <published>2022-08-01T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">JavaScript高级程序设计（第4版）</title>
+    <id>https://ivwv.github.io/posts/PDF/front-end/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89.html</id>
+    <link href="https://ivwv.github.io/posts/PDF/front-end/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89.html"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 JavaScript高级程序设计（第4版）.pdf</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 JavaScript高级程序设计（第4版）.pdf</p>
+</div>
+
+<i>Content not supported</i>]]></content>
+    <category term="PDF" scheme=""/>
+    <category term="JavaScript" scheme=""/>
+    <published>2022-08-01T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">Three.js开发指南 原书第2版</title>
+    <id>https://ivwv.github.io/posts/PDF/front-end/Three.js%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97%20%E5%8E%9F%E4%B9%A6%E7%AC%AC2%E7%89%88.html</id>
+    <link href="https://ivwv.github.io/posts/PDF/front-end/Three.js%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97%20%E5%8E%9F%E4%B9%A6%E7%AC%AC2%E7%89%88.html"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 Three.js开发指南 原书第2版.pdf</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 Three.js开发指南 原书第2版.pdf</p>
+</div>
+
+<i>Content not supported</i>]]></content>
+    <category term="PDF" scheme=""/>
+    <category term="JavaScript" scheme=""/>
+    <published>2022-08-01T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">代码整洁之道.(美)马丁.扫描版</title>
+    <id>https://ivwv.github.io/posts/PDF/front-end/%5B%E4%BB%A3%E7%A0%81%E6%95%B4%E6%B4%81%E4%B9%8B%E9%81%93%5D.(%E7%BE%8E)%E9%A9%AC%E4%B8%81.%E6%89%AB%E6%8F%8F%E7%89%88.html</id>
+    <link href="https://ivwv.github.io/posts/PDF/front-end/%5B%E4%BB%A3%E7%A0%81%E6%95%B4%E6%B4%81%E4%B9%8B%E9%81%93%5D.(%E7%BE%8E)%E9%A9%AC%E4%B8%81.%E6%89%AB%E6%8F%8F%E7%89%88.html"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 代码整洁之道.(美)马丁.扫描版.pdf</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 代码整洁之道.(美)马丁.扫描版.pdf</p>
+</div>
+
+<i>Content not supported</i>]]></content>
+    <category term="PDF" scheme=""/>
+    <category term="JavaScript" scheme=""/>
+    <published>2022-08-01T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">javascript面向对象编程</title>
+    <id>https://ivwv.github.io/posts/PDF/front-end/javascript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html</id>
+    <link href="https://ivwv.github.io/posts/PDF/front-end/javascript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 javascript面向对象编程.pdf</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 javascript面向对象编程.pdf</p>
+</div>
+
+<i>Content not supported</i>]]></content>
+    <category term="PDF" scheme=""/>
+    <category term="JavaScript" scheme=""/>
+    <published>2022-08-01T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">你不知道的JavaScript（上卷）</title>
+    <id>https://ivwv.github.io/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8A%E5%8D%B7%EF%BC%89.html</id>
+    <link href="https://ivwv.github.io/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8A%E5%8D%B7%EF%BC%89.html"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 你不知道的JavaScript（上卷）.pdf</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 你不知道的JavaScript（上卷）.pdf</p>
+</div>
+
+<i>Content not supported</i>]]></content>
+    <category term="PDF" scheme=""/>
+    <category term="JavaScript" scheme=""/>
+    <published>2022-08-01T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">你不知道的JavaScript（下卷）</title>
+    <id>https://ivwv.github.io/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8B%E5%8D%B7%EF%BC%89.html</id>
+    <link href="https://ivwv.github.io/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8B%E5%8D%B7%EF%BC%89.html"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 你不知道的JavaScript（下卷）.pdf</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 你不知道的JavaScript（下卷）.pdf</p>
+</div>
+
+<i>Content not supported</i>]]></content>
+    <category term="PDF" scheme=""/>
+    <category term="JavaScript" scheme=""/>
+    <published>2022-08-01T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">你不知道的JavaScript（中卷）</title>
+    <id>https://ivwv.github.io/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%AD%E5%8D%B7%EF%BC%89.html</id>
+    <link href="https://ivwv.github.io/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%AD%E5%8D%B7%EF%BC%89.html"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 你不知道的JavaScript（中卷）.pdf</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 你不知道的JavaScript（中卷）.pdf</p>
+</div>
+
+<i>Content not supported</i>]]></content>
+    <category term="PDF" scheme=""/>
+    <category term="JavaScript" scheme=""/>
+    <published>2022-08-01T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">学习JavaScript数据结构与算法（第3版）</title>
+    <id>https://ivwv.github.io/posts/PDF/front-end/%E5%AD%A6%E4%B9%A0JavaScript%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%EF%BC%88%E7%AC%AC3%E7%89%88%EF%BC%89.html</id>
+    <link href="https://ivwv.github.io/posts/PDF/front-end/%E5%AD%A6%E4%B9%A0JavaScript%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%EF%BC%88%E7%AC%AC3%E7%89%88%EF%BC%89.html"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 学习JavaScript数据结构与算法（第3版）.pdf</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 学习JavaScript数据结构与算法（第3版）.pdf</p>
+</div>
+
+<i>Content not supported</i>]]></content>
+    <category term="PDF" scheme=""/>
+    <category term="JavaScript" scheme=""/>
+    <published>2022-08-01T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">图解HTTP (上野宣)</title>
+    <id>https://ivwv.github.io/posts/PDF/network/%E5%9B%BE%E8%A7%A3HTTP%20(%E4%B8%8A%E9%87%8E%E5%AE%A3).html</id>
+    <link href="https://ivwv.github.io/posts/PDF/network/%E5%9B%BE%E8%A7%A3HTTP%20(%E4%B8%8A%E9%87%8E%E5%AE%A3).html"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 图解HTTP (上野宣).pdf</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 图解HTTP (上野宣).pdf</p>
+</div>
+
+<i>Content not supported</i>]]></content>
+    <category term="PDF" scheme=""/>
+    <published>2022-08-01T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">图解TCPIP（第五版）</title>
+    <id>https://ivwv.github.io/posts/PDF/network/%E5%9B%BE%E8%A7%A3TCPIP%EF%BC%88%E7%AC%AC%E4%BA%94%E7%89%88%EF%BC%89.html</id>
+    <link href="https://ivwv.github.io/posts/PDF/network/%E5%9B%BE%E8%A7%A3TCPIP%EF%BC%88%E7%AC%AC%E4%BA%94%E7%89%88%EF%BC%89.html"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 图解TCPIP（第五版）.pdf</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 图解TCPIP（第五版）.pdf</p>
+</div>
+
+<i>Content not supported</i>]]></content>
+    <category term="PDF" scheme=""/>
+    <published>2022-08-01T00:00:00.000Z</published>
+  </entry>
+  <entry>
     <title type="html">process.env环境变量配置</title>
-    <id>https://ivwv.github.io/posts/node/process.env%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html</id>
-    <link href="https://ivwv.github.io/posts/node/process.env%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html"/>
-    <updated>2022-07-30T08:45:21.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="process-env环境变量配置" tabindex="-1"> <code>process.env</code>环境变量配置</h1>
+    <id>https://ivwv.github.io/posts/node/other/process.env%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html</id>
+    <link href="https://ivwv.github.io/posts/node/other/process.env%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>Node 环境变量配置</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>Node 环境变量配置</p>
+</div>
+
+<h1 id="process-env环境变量配置" tabindex="-1"> <code>process.env</code>环境变量配置</h1>
 <h3 id="windows-系统" tabindex="-1"> Windows 系统</h3>
 <p>Windows 系统下，最常用的命令行面板就是 <code>CMD</code>（Command的简写） 和 <code>Powershell</code>。它们的操作分别如下：</p>
 <h4 id="cmd-command-或-命令提示符" tabindex="-1"> CMD (Command 或 命令提示符)</h4>
@@ -215,11 +529,159 @@ unset NODE_ENV
     <published>2022-07-30T00:00:00.000Z</published>
   </entry>
   <entry>
+    <title type="html">我的项目整合</title>
+    <id>https://ivwv.github.io/posts/project/</id>
+    <link href="https://ivwv.github.io/posts/project/"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<p>我的项目介绍</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>我的项目介绍</p>
+
+<h1 id="我的项目" tabindex="-1"> 我的项目</h1>
+<ol>
+<li><a href="/posts/project/vue-shop/">电商后台管理系统(2022/07.08--2022/07.18)</a></li>
+<li><a href="/posts/project/newsinfo/">新闻门户网站(2022/05.02--2022/05.18)</a></li>
+<li><a href="/posts/project/socket-chat/"><code>Node+Socket.io</code>聊天程序 </a></li>
+<li><a href="/posts/project/puppeteer-electron-pdf/"><code>puppeteer</code> 爬取 <code>electron</code> 官网文档，保存为 <code>pdf</code> 格式(2022/07.21)</a></li>
+</ol>
+]]></content>
+    <category term="我的项目整合" scheme=""/>
+    <published>2022-07-31T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">新闻门户网站</title>
+    <id>https://ivwv.github.io/posts/project/newsinfo/</id>
+    <link href="https://ivwv.github.io/posts/project/newsinfo/"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>该项目是在大二期间，学校举办的技能节，参加了<code>web</code>项目。比赛内容是做出一个新闻门户网站，两人一组。犹豫队友平时比较忙，我就让他帮我找找素材啥的，然后让他做了一个<code>index.html</code>首页</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>该项目是在大二期间，学校举办的技能节，参加了<code>web</code>项目。比赛内容是做出一个新闻门户网站，两人一组。犹豫队友平时比较忙，我就让他帮我找找素材啥的，然后让他做了一个<code>index.html</code>首页</p>
+</div>
+
+<p><a href="http://client--news.herokuapp.com/" target="_blank" rel="noopener noreferrer">项目展示</a></p>
+<p><a href="https://gitee.com/isyv/newsinfo_with_imgs" target="_blank" rel="noopener noreferrer"><code>Gitee</code>-后端</a></p>
+<p><a href="https://gitee.com/isyv/newsclient" target="_blank" rel="noopener noreferrer"><code>Gitee</code>-前端</a></p>
+<p><a href="https://documenter.getpostman.com/view/19150006/UyxdKokK#afccd7cd-423e-4695-abb3-269d31cf1e62" target="_blank" rel="noopener noreferrer">后端接口</a></p>
+<div><p>提示</p>
+<p>该项目部署在<code>Heroku</code>国外免费容器平台，首次进入会有20秒左右的启动时间。</p>
+<p>国外平台偶尔出现在国内打不开的情况。</p>
+</div>
+<h1 id="项目展示" tabindex="-1"> 项目展示</h1>
+<h2 id="首页" tabindex="-1"> 首页</h2>
+<p>由于首页不是我做的，跟整体观感会有差距</p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:22:55*image-20220801162255125*9.png" alt="image-20220801162255125"></p>
+<h2 id="登录注册" tabindex="-1"> 登录注册</h2>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:28:31*image-20220801162831706*7.png" alt="image-20220801162831706"></p>
+<h2 id="新闻详情页" tabindex="-1"> 新闻详情页</h2>
+<ul>
+<li>当用户登录成功后，右上角的登录按钮会变成头像以及用户名</li>
+<li>新闻的标题、分类、时间是使用<code>Ejs</code>模板引擎获取后端数据渲染</li>
+<li>新闻内容可以通过标题下方的工具栏调节字体</li>
+<li>右侧轮播图使用<code>Swiper</code>插件，并且图片和文字内容通过<code>axios</code>获取渲染</li>
+<li>右侧轮播图和新闻排行展示顺序是根据页面浏览量动态展示</li>
+<li>搜索功能</li>
+</ul>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:32:17*image-20220801163217876*3.png" alt="image-20220801163217876"></p>
+<h2 id="搜索功能" tabindex="-1"> 搜索功能</h2>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:45:45*image-20220801164545874*f.png" alt="image-20220801164545874"></p>
+<h2 id="后台管理" tabindex="-1"> 后台管理</h2>
+<p><strong>由于当时技术受限，并且没有了解到富文本插件，所以新闻上传使用较原始的input表单上传，</strong></p>
+<h3 id="后台首页" tabindex="-1"> 后台首页</h3>
+<p>使用<code>Echart</code>通过接口数据简单的做了可视化</p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:48:52*image-20220801164852219*9.png" alt="image-20220801164852219"></p>
+<h3 id="插入新闻" tabindex="-1"> 插入新闻</h3>
+<ul>
+<li>当图片选择好后，点击确定，会直接上传，并且拿到服务器端的图片地址</li>
+</ul>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:51:24*image-20220801165124206*b.png" alt="image-20220801165124206"></p>
+<h3 id="新闻列表" tabindex="-1"> 新闻列表</h3>
+<ul>
+<li>可以删除</li>
+<li>查看新闻信息</li>
+<li>图片预览是直接跳转到图片直链，也是由于当时不了解图片预览有啥插件</li>
+<li>分页是直接前端发送请求携带页码，后端查询相关数据</li>
+</ul>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:53:40*image-20220801165340766*c.png" alt="image-20220801165340766"></p>
+<h3 id="用户管理" tabindex="-1"> 用户管理</h3>
+<ul>
+<li>用户列表原理和新闻列表原理相同</li>
+</ul>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:56:14*image-20220801165614717*3.png" alt="image-20220801165614717"></p>
+]]></content>
+    <category term="我的项目整合" scheme=""/>
+    <published>2022-08-01T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">puppeteer</title>
+    <id>https://ivwv.github.io/posts/project/puppeteer-electron-pdf/</id>
+    <link href="https://ivwv.github.io/posts/project/puppeteer-electron-pdf/"/>
+    <updated>2022-07-31T15:11:32.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="puppeteer" tabindex="-1"> puppeteer</h1>
+<h1 id="puppeteer-1" tabindex="-1"> puppeteer</h1>
+]]></content>
+    <published>2022-07-31T14:21:29.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">socket.io</title>
+    <id>https://ivwv.github.io/posts/project/socket-chat/</id>
+    <link href="https://ivwv.github.io/posts/project/socket-chat/"/>
+    <updated>2022-07-31T14:21:29.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="socket-io" tabindex="-1"> socket.io</h1>
+]]></content>
+    <published>2022-07-31T14:21:29.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">电商后台管理项目</title>
+    <id>https://ivwv.github.io/posts/project/vue-shop/</id>
+    <link href="https://ivwv.github.io/posts/project/vue-shop/"/>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>Vue2+ElementUi+Node+Axios 电商后台管理项目。
+这个项目将vue2学完后完成的一个项目</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>Vue2+ElementUi+Node+Axios 电商后台管理项目。
+这个项目将vue2学完后完成的一个项目</p>
+</div>
+
+<p><a href="https://client-vue-shop.herokuapp.com/#/login" target="_blank" rel="noopener noreferrer">项目展示</a></p>
+<div><p>提示</p>
+<p>1.该项目部署在<code>Heroku</code>国外免费容器平台，首次进入会有20秒左右的启动时间。
+国外平台偶尔出现在国内打不开的情况。</p>
+</div>
+<h2 id="项目展示" tabindex="-1"> 项目展示</h2>
+<h3 id="登录界面" tabindex="-1"> 登录界面</h3>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-15:54:34*image-20220801155434253*1.png" alt="image-20220801155434253"></p>
+<h3 id="权限管理" tabindex="-1"> 权限管理</h3>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-15:55:10*image-20220801155510192*e.png" alt="image-20220801155510192"></p>
+<h3 id="商品列表分类" tabindex="-1"> 商品列表分类</h3>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-15:55:48*image-20220801155548650*e.png" alt="image-20220801155548650"></p>
+<h3 id="添加商品分类" tabindex="-1"> 添加商品分类</h3>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-15:56:32*image-20220801155632840*4.png" alt="image-20220801155632840"></p>
+<h3 id="添加信息模态框" tabindex="-1"> 添加信息模态框</h3>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-15:57:00*image-20220801155700058*7.png" alt="image-20220801155700058"></p>
+]]></content>
+    <category term="我的项目整合" scheme=""/>
+    <published>2022-07-31T00:00:00.000Z</published>
+  </entry>
+  <entry>
     <title type="html">ES6在前端的模块导入与导出</title>
     <id>https://ivwv.github.io/posts/javascript/es6/ES6%E5%9C%A8%E5%89%8D%E7%AB%AF%E7%9A%84%E6%A8%A1%E5%9D%97%E5%AF%BC%E5%85%A5%E4%B8%8E%E5%AF%BC%E5%87%BA.html</id>
     <link href="https://ivwv.github.io/posts/javascript/es6/ES6%E5%9C%A8%E5%89%8D%E7%AB%AF%E7%9A%84%E6%A8%A1%E5%9D%97%E5%AF%BC%E5%85%A5%E4%B8%8E%E5%AF%BC%E5%87%BA.html"/>
-    <updated>2022-07-31T14:21:29.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="es6在前端的模块导入与导出" tabindex="-1"> ES6在前端的模块导入与导出</h1>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>es6模块化导入与导出自己的整理</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>es6模块化导入与导出自己的整理</p>
+</div>
+
+<h1 id="es6在前端的模块导入与导出" tabindex="-1"> ES6在前端的模块导入与导出</h1>
 <h4 id="html文件使用" tabindex="-1"> <code>html</code>文件使用</h4>
 <h5 id="方法一" tabindex="-1"> 方法一</h5>
 <ul>
@@ -321,8 +783,16 @@ unset NODE_ENV
     <title type="html">Javascript面对对象编程</title>
     <id>https://ivwv.github.io/posts/javascript/es6/Javascript%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html</id>
     <link href="https://ivwv.github.io/posts/javascript/es6/Javascript%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html"/>
-    <updated>2022-07-31T16:14:17.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="javascript面对对象编程" tabindex="-1"> Javascript面对对象编程</h1>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>面向对象相关的笔记</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>面向对象相关的笔记</p>
+</div>
+
+<h1 id="javascript面对对象编程" tabindex="-1"> Javascript面对对象编程</h1>
 <h5 id="使用整合" tabindex="-1"> 使用整合</h5>
 <ul>
 <li>通过class 关键字创建类, 类名我们还是习惯性定义首字母大写</li>
@@ -454,8 +924,16 @@ son<span>.</span><span>say</span><span>(</span><span>)</span><span>;</span> <spa
     <title type="html">原型</title>
     <id>https://ivwv.github.io/posts/javascript/es6/%E5%8E%9F%E5%9E%8B.html</id>
     <link href="https://ivwv.github.io/posts/javascript/es6/%E5%8E%9F%E5%9E%8B.html"/>
-    <updated>2022-07-31T14:21:29.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="原型" tabindex="-1"> 原型</h1>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>原型相关的笔记</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>原型相关的笔记</p>
+</div>
+
+<h1 id="原型" tabindex="-1"> 原型</h1>
 <h2 id="prototype原型" tabindex="-1"> prototype原型</h2>
 <p>1.原型是什么？</p>
 <ul>
@@ -751,8 +1229,16 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
     <title type="html">对象方法：Object.defineProperty</title>
     <id>https://ivwv.github.io/posts/javascript/es6/%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%9AObject.defineProperty.html</id>
     <link href="https://ivwv.github.io/posts/javascript/es6/%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%9AObject.defineProperty.html"/>
-    <updated>2022-07-31T14:21:29.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="对象方法-object-defineproperty" tabindex="-1"> 对象方法：Object.defineProperty</h1>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>面向对象相关的笔记</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>面向对象相关的笔记</p>
+</div>
+
+<h1 id="对象方法-object-defineproperty" tabindex="-1"> 对象方法：Object.defineProperty</h1>
 <div><pre><code>Object<span>.</span><span>defineProperty</span><span>(</span>obj<span>,</span> prop<span>,</span> descriptor<span>)</span>
 </code></pre><div aria-hidden="true"><div></div></div></div><ul>
 <li><code>obj</code>：必需。目标对象</li>
@@ -782,8 +1268,16 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
     <title type="html">类的本质</title>
     <id>https://ivwv.github.io/posts/javascript/es6/%E7%B1%BB%E7%9A%84%E6%9C%AC%E8%B4%A8.html</id>
     <link href="https://ivwv.github.io/posts/javascript/es6/%E7%B1%BB%E7%9A%84%E6%9C%AC%E8%B4%A8.html"/>
-    <updated>2022-07-31T14:21:29.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="类的本质" tabindex="-1"> 类的本质</h1>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>面向对象相关的笔记</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>面向对象相关的笔记</p>
+</div>
+
+<h1 id="类的本质" tabindex="-1"> 类的本质</h1>
 <ul>
 <li>
 <p><code>ES6 </code>之前通过 构造函数+ 原型实现面向对象 编程</p>
@@ -830,8 +1324,16 @@ console<span>.</span><span>log</span><span>(</span>ldh<span>.</span>__proto__ <s
     <title type="html">Express中jwt验证的简单使用</title>
     <id>https://ivwv.github.io/posts/node/express/Express%E4%B8%ADjwt%E9%AA%8C%E8%AF%81%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8.html</id>
     <link href="https://ivwv.github.io/posts/node/express/Express%E4%B8%ADjwt%E9%AA%8C%E8%AF%81%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8.html"/>
-    <updated>2022-07-31T14:21:29.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="express中jwt验证的简单使用" tabindex="-1"> Express中jwt验证的简单使用</h1>
+    <updated>2022-08-01T10:01:16.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>express框架和jsonwebtoken插件的应用</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>express框架和jsonwebtoken插件的应用</p>
+</div>
+
+<h1 id="express中jwt验证的简单使用" tabindex="-1"> Express中jwt验证的简单使用</h1>
 <h2 id="安装jwt相关包" tabindex="-1"> 安装JWT相关包</h2>
 <div><pre><code>npm install jsonwebtoken express<span>-</span>jwt
 </code></pre><div aria-hidden="true"><div></div></div></div><ul>
