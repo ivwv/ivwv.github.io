@@ -21,4 +21,4 @@ PDF书籍 NODE.js入门手册.pdf
 <!-- more -->
 
 
-<PDF url="https://lc-gluttony.s3.amazonaws.com/LfQUMiHwWA4l/BTNn1r1yREDRTKByePDeIPuXo661VmYT/NODE.js%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.pdf" :toolbar="false"/>
+<PDF url="https://lc-gluttony.s3.amazonaws.com/LfQUMiHwWA4l/BTNn1r1yREDRTKByePDeIPuXo661VmYT/NODE.js%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.pdf"  />

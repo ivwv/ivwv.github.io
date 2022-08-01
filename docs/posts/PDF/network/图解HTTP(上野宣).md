@@ -20,4 +20,4 @@ PDF书籍 图解HTTP (上野宣).pdf
 :::
 <!-- more -->
 
-<PDF url="https://lc-gluttony.s3.amazonaws.com/LfQUMiHwWA4l/iPHH8eiRDT3fihtJ5bo5tXMJ4TsJsurL/%E5%9B%BE%E8%A7%A3HTTP%20%28%E4%B8%8A%E9%87%8E%E5%AE%A3%29%20%28.pdf" :toolbar="false" />
+<PDF url="https://lc-gluttony.s3.amazonaws.com/LfQUMiHwWA4l/iPHH8eiRDT3fihtJ5bo5tXMJ4TsJsurL/%E5%9B%BE%E8%A7%A3HTTP%20%28%E4%B8%8A%E9%87%8E%E5%AE%A3%29%20%28.pdf"   />

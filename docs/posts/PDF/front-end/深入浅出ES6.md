@@ -22,4 +22,4 @@ PDF书籍 深入浅出ES6 - ES6-in-depth.pdf
 
 
 <!-- <PDF url="https://vuepress-theme-hope.github.io/v2/components/sample.pdf#page=1&toolbar=1&zoom=100" /> -->
-<PDF url="https://public-1310720021.cos.ap-shanghai.myqcloud.com/blog-file/ES6-in-depth.pdf" :toolbar="false" />
+<PDF url="https://public-1310720021.cos.ap-shanghai.myqcloud.com/blog-file/ES6-in-depth.pdf"   />

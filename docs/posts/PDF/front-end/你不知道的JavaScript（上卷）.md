@@ -22,4 +22,4 @@ PDF书籍 你不知道的JavaScript（上卷）.pdf
 <!-- more -->
 
 
-<PDF url="https://lc-gluttony.s3.amazonaws.com/LfQUMiHwWA4l/2TGpdV3w8p3e5d563o2JnnmO1PYY5VWz/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8A%E5%8D%B7%EF%BC%89%40www.java1234.com.pdf" :toolbar="false" />
+<PDF url="https://lc-gluttony.s3.amazonaws.com/LfQUMiHwWA4l/2TGpdV3w8p3e5d563o2JnnmO1PYY5VWz/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8A%E5%8D%B7%EF%BC%89%40www.java1234.com.pdf"   />

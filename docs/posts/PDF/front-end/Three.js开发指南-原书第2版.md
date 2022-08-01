@@ -23,4 +23,4 @@ PDF书籍 Three.js开发指南 原书第2版.pdf
 <!-- more -->
 
 
-<PDF url="https://lc-gluttony.s3.amazonaws.com/LfQUMiHwWA4l/oCHkR6zv1wRnO2AlyxXm9o4GfNsFYDMw/Three.js%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97%20%20%E5%8E%9F%E4%B9%A6%E7%AC%AC2%E7%89%88.pdf" :toolbar="false"/>
+<PDF url="https://lc-gluttony.s3.amazonaws.com/LfQUMiHwWA4l/oCHkR6zv1wRnO2AlyxXm9o4GfNsFYDMw/Three.js%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97%20%20%E5%8E%9F%E4%B9%A6%E7%AC%AC2%E7%89%88.pdf"  />

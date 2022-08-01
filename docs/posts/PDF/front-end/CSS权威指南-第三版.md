@@ -22,4 +22,4 @@ PDF书籍 CSS权威指南-第三版pdf
 <!-- more -->
 
 
-<PDF url="https://lc-gluttony.s3.amazonaws.com/LfQUMiHwWA4l/6tIBXalLdB4JJEWe72MneGKR4wjNoEMI/CSS%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%89%E7%89%88.pdf" :toolbar="false"/>
+<PDF url="https://lc-gluttony.s3.amazonaws.com/LfQUMiHwWA4l/6tIBXalLdB4JJEWe72MneGKR4wjNoEMI/CSS%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%89%E7%89%88.pdf"  />

@@ -21,4 +21,4 @@ PDF书籍 Node.js实战.pdf
 <!-- more -->
 
 
-<PDF url="https://lc-gluttony.s3.amazonaws.com/LfQUMiHwWA4l/Exxd7QTxbL9q7cSHkBFh3AA6Xnv5U4ea/Node.js%E5%AE%9E%E6%88%98.pdf" :toolbar="false"/>
+<PDF url="https://lc-gluttony.s3.amazonaws.com/LfQUMiHwWA4l/Exxd7QTxbL9q7cSHkBFh3AA6Xnv5U4ea/Node.js%E5%AE%9E%E6%88%98.pdf"  />

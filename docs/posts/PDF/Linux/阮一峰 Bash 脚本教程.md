@@ -22,4 +22,4 @@ PDF书籍 阮一峰 Bash 脚本教程.pdf
 :::
 <!-- more -->
 
-<PDF url="https://lc-gluttony.s3.amazonaws.com/LfQUMiHwWA4l/zPGBw2Ypma3A0kh2cmaUdLSxVcAeDdhO/%E9%98%AE%E4%B8%80%E5%B3%B0%20Bash%20%E8%84%9A%E6%9C%AC%E6%95%99%E7%A8%8B.pdf" :toolbar="false" />
+<PDF url="https://lc-gluttony.s3.amazonaws.com/LfQUMiHwWA4l/zPGBw2Ypma3A0kh2cmaUdLSxVcAeDdhO/%E9%98%AE%E4%B8%80%E5%B3%B0%20Bash%20%E8%84%9A%E6%9C%AC%E6%95%99%E7%A8%8B.pdf"   />

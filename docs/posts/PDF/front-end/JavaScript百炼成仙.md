@@ -22,4 +22,4 @@ PDF书籍 JavaScript百炼成仙.pdf
 <!-- more -->
 
 
-<PDF url="https://lc-gluttony.s3.amazonaws.com/LfQUMiHwWA4l/dxlnxT6i4i419oYe8veT87TsRq1bE6lN/JavaScript%E7%99%BE%E7%82%BC%E6%88%90%E4%BB%99.pdf" :toolbar="false"/>
+<PDF url="https://lc-gluttony.s3.amazonaws.com/LfQUMiHwWA4l/dxlnxT6i4i419oYe8veT87TsRq1bE6lN/JavaScript%E7%99%BE%E7%82%BC%E6%88%90%E4%BB%99.pdf"  />
