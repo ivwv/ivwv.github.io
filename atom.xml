@@ -3,14 +3,14 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-01T11:42:04.440Z</updated>
+  <updated>2022-08-01T11:43:26.848Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
   <category term="PDF"/>
+  <category term="Linux"/>
   <category term="HTML"/>
   <category term="JavaScript"/>
-  <category term="Linux"/>
   <category term="Node"/>
   <category term="CSS"/>
   <category term="我的项目整合"/>
@@ -19,6 +19,24 @@
   <contributor>
     <name>Ms.Hope</name>
   </contributor>
+  <entry>
+    <title type="html">阮一峰-Bash-脚本教程</title>
+    <id>https://ivwv.github.io/posts/PDF/Linux/%E9%98%AE%E4%B8%80%E5%B3%B0-Bash-%E8%84%9A%E6%9C%AC%E6%95%99%E7%A8%8B.html</id>
+    <link href="https://ivwv.github.io/posts/PDF/Linux/%E9%98%AE%E4%B8%80%E5%B3%B0-Bash-%E8%84%9A%E6%9C%AC%E6%95%99%E7%A8%8B.html"/>
+    <updated>2022-08-01T11:42:38.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 阮一峰-Bash-脚本教程.pdf</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>PDF书籍 阮一峰-Bash-脚本教程.pdf</p>
+</div>
+
+<i>Content not supported</i>]]></content>
+    <category term="PDF" scheme=""/>
+    <category term="Linux" scheme=""/>
+    <published>2022-07-27T00:00:00.000Z</published>
+  </entry>
   <entry>
     <title type="html">HTML5游戏开发进阶指南</title>
     <id>https://ivwv.github.io/posts/PDF/front-end/HTML5%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97.html</id>
@@ -176,24 +194,6 @@
 ]]></content>
     <category term="PDF" scheme=""/>
     <published>2022-08-01T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">阮一峰 Bash 脚本教程</title>
-    <id>https://ivwv.github.io/posts/PDF/Linux/%E9%98%AE%E4%B8%80%E5%B3%B0%20Bash%20%E8%84%9A%E6%9C%AC%E6%95%99%E7%A8%8B.html</id>
-    <link href="https://ivwv.github.io/posts/PDF/Linux/%E9%98%AE%E4%B8%80%E5%B3%B0%20Bash%20%E8%84%9A%E6%9C%AC%E6%95%99%E7%A8%8B.html"/>
-    <updated>2022-08-01T11:38:48.000Z</updated>
-    <summary type="html"><![CDATA[<div><p>导读</p>
-<p>PDF书籍 阮一峰 Bash 脚本教程.pdf</p>
-</div>
-]]></summary>
-    <content type="html"><![CDATA[<div><p>导读</p>
-<p>PDF书籍 阮一峰 Bash 脚本教程.pdf</p>
-</div>
-
-<i>Content not supported</i>]]></content>
-    <category term="PDF" scheme=""/>
-    <category term="Linux" scheme=""/>
-    <published>2022-07-27T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="html">NODE.js入门手册</title>
