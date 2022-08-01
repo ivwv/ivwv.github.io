@@ -6,13 +6,13 @@
   "description": "SY's Blog",
   "items": [
     {
-      "title": "HTML5游戏开发进阶指南＝PRO HTML5 GAMES",
+      "title": "HTML5游戏开发进阶指南",
       "url": "https://ivwv.github.io/posts/PDF/front-end/HTML5%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97.html",
       "id": "https://ivwv.github.io/posts/PDF/front-end/HTML5%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97.html",
-      "summary": "导读\nPDF书籍 HTML5游戏开发进阶指南＝PRO HTML5 GAMES.pdf\n\n",
-      "content_html": "<div><p>导读</p>\n<p>PDF书籍 HTML5游戏开发进阶指南＝PRO HTML5 GAMES.pdf</p>\n</div>\n\n<i>Content not supported</i>",
+      "summary": "导读\nPDF书籍 HTML5游戏开发进阶指南\n\n",
+      "content_html": "<div><p>导读</p>\n<p>PDF书籍 HTML5游戏开发进阶指南</p>\n</div>\n\n<i>Content not supported</i>",
       "date_published": "2022-07-27T00:00:00.000Z",
-      "date_modified": "2022-08-01T11:38:48.000Z",
+      "date_modified": "2022-08-01T11:40:58.000Z",
       "authors": [],
       "tags": [
         "PDF",
