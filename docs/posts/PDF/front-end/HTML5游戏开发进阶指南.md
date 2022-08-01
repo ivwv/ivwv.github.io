@@ -1,5 +1,5 @@
 ---
-title: HTML5游戏开发进阶指南＝PRO HTML5 GAMES
+title: HTML5游戏开发进阶指南
 icon: edit
 date: 2022-07-27
 category:
@@ -17,7 +17,7 @@ article: true
 timeline: true
 ---
 ::: tip 导读
-PDF书籍 HTML5游戏开发进阶指南＝PRO HTML5 GAMES.pdf
+PDF书籍 HTML5游戏开发进阶指南
 :::
 <!-- more -->
 
