@@ -56,7 +56,7 @@ export default navbar([
       {
         text: "GitHub Pages",
         icon: "creative",
-        link: "https://ivwv.netlify.app/",
+        link: "https://ivwv.github.io/",
       },
       {
         text: "Netlify Pages-速度更快",
