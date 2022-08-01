@@ -19,3 +19,8 @@ timeline: true
 PDF书籍整合均来自互联网
 :::
 <!-- more -->
+
+::: tip 前端前端相关书籍
+[深入浅出ES6](https://ivwv.github.io/posts/PDF/front-end/深入浅出ES6.html)
+[学习JavaScript数据结构与算法（第3版）](https://ivwv.github.io/posts/PDF/front-end/学习JavaScript数据结构与算法（第3版）.html)
+:::
