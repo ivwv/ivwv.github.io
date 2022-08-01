@@ -1,5 +1,5 @@
 ---
-title: 阮一峰 Bash 脚本教程
+title: 阮一峰-Bash-脚本教程
 icon: edit
 date: 2022-07-27
 category:
@@ -18,7 +18,7 @@ article: true
 timeline: true
 ---
 ::: tip 导读
-PDF书籍 阮一峰 Bash 脚本教程.pdf
+PDF书籍 阮一峰-Bash-脚本教程.pdf
 :::
 <!-- more -->
 
