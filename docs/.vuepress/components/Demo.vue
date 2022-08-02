@@ -3,9 +3,7 @@
 </template>
 
 <script>
-export default {
-  // name: "Demo",
-};
+export default {};
 </script>
 
 <style></style>

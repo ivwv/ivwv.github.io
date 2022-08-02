@@ -111,7 +111,7 @@ export default sidebar([
   {
     text: "技术文章",
     icon: "creative",
-    prefix: "/posts/",
+    prefix: "/posts/technology/",
     collapsable: true,
     children: [
       {
