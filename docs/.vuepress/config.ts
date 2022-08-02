@@ -13,7 +13,8 @@ import { sitemapPlugin } from "vuepress-plugin-sitemap2";
 import { feedPlugin } from "vuepress-plugin-feed2";
 // 移动端适配
 import { pwaPlugin } from "vuepress-plugin-pwa2";
-
+// google analytics 统计
+const { googleAnalyticsPlugin } = require("@vuepress/plugin-google-analytics");
 // 导 航
 import theme from "./theme";
 
@@ -47,13 +48,13 @@ export default defineUserConfig({
     // <!-- Global site tag (gtag.js) - Google Analytics -->
     // <script async src="https://www.googletagmanager.com/gtag/js?id=G-3115GBP5VH"></script>
     // google统计
-    [
-      "script",
-      {
-        async: true,
-        src: "https://www.googletagmanager.com/gtag/js?id=G-3115GBP5VH",
-      },
-    ],
+    // [
+    //   "script",
+    //   {
+    //     async: true,
+    //     src: "https://www.googletagmanager.com/gtag/js?id=G-3115GBP5VH",
+    //   },
+    // ],
     /*
     <script>
   window.dataLayer = window.dataLayer || [];
@@ -79,6 +80,10 @@ export default defineUserConfig({
 
   theme,
   plugins: [
+    // google analytics 统计
+    googleAnalyticsPlugin({
+      id: "G-3115GBP5VH",
+    }),
     // 图片预览
     photoSwipePlugin({
       selector: ".theme-hope-content img",
