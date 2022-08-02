@@ -49,36 +49,26 @@ export default defineUserConfig({
     // <meta name="baidu-site-verification" content="code-JYAj48wkPF" />
     // 百度站长验证
     ["meta", { name: "baidu-site-verification", content: "code-JYAj48wkPF" }],
-    // <!-- Global site tag (gtag.js) - Google Analytics -->
-    // <script async src="https://www.googletagmanager.com/gtag/js?id=G-3115GBP5VH"></script>
-    // google统计
-    // [
-    //   "script",
-    //   {
-    //     async: true,
-    //     src: "https://www.googletagmanager.com/gtag/js?id=G-3115GBP5VH",
-    //   },
-    // ],
-    /*
-    <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-3115GBP5VH');
-</script>
-    */
-    // google统计
-    // [
-    //   "script",
-    //   {
-    //     innerHTML: `window.dataLayer = window.dataLayer || [];
-    //     function gtag(){dataLayer.push(arguments);}
-    //     gtag('js', new Date());
-
-    //     gtag('config', 'G-3115GBP5VH');`,
-    //   },
-    // ],
+    /*************** start 添加谷歌统计 ***********/
+    [
+      "script",
+      {
+        async: true,
+        src: "https://www.googletagmanager.com/gtag/js?id=G-3115GBP5VH",
+      },
+    ],
+    [
+      "script",
+      {},
+      `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-3115GBP5VH');
+      `,
+    ],
+    /*************** end 添加谷歌统计 ***********/
   ],
   shouldPrefetch: false,
 
