@@ -1,4 +1,6 @@
 import { defineUserConfig } from "vuepress";
+// 导入path
+import path from "path";
 // 搜索
 import { searchPlugin } from "@vuepress/plugin-search";
 // 组件
@@ -16,7 +18,7 @@ import { pwaPlugin } from "vuepress-plugin-pwa2";
 // google analytics 统计
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 // 注册组件
-import { registerComponentsPlugin }  from '@vuepress/plugin-register-components'
+import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 // 导 航
 import theme from "./theme";
 
@@ -67,16 +69,16 @@ export default defineUserConfig({
 </script>
     */
     // google统计
-    [
-      "script",
-      {
-        innerHTML: `window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-      
-        gtag('config', 'G-3115GBP5VH');`,
-      },
-    ],
+    // [
+    //   "script",
+    //   {
+    //     innerHTML: `window.dataLayer = window.dataLayer || [];
+    //     function gtag(){dataLayer.push(arguments);}
+    //     gtag('js', new Date());
+
+    //     gtag('config', 'G-3115GBP5VH');`,
+    //   },
+    // ],
   ],
   shouldPrefetch: false,
 
@@ -84,7 +86,7 @@ export default defineUserConfig({
   plugins: [
     // 注册组件
     registerComponentsPlugin({
-
+      componentsDir: path.resolve(__dirname, "./components"),
     }),
     // google analytics 统计
     googleAnalyticsPlugin({
