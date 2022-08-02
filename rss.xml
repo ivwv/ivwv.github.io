@@ -6,8 +6,8 @@
     <link>https://ivwv.github.io/</link>
     <description>SY's Blog</description>
     <language>zh-CN</language>
-    <pubDate>Mon, 01 Aug 2022 12:46:09 GMT</pubDate>
-    <lastBuildDate>Mon, 01 Aug 2022 12:46:09 GMT</lastBuildDate>
+    <pubDate>Tue, 02 Aug 2022 01:14:03 GMT</pubDate>
+    <lastBuildDate>Tue, 02 Aug 2022 01:14:03 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>PDF</category>
@@ -23,17 +23,10 @@
       <link>https://ivwv.github.io/posts/PDF/Linux/%E9%98%AE%E4%B8%80%E5%B3%B0-Bash-%E8%84%9A%E6%9C%AC%E6%95%99%E7%A8%8B.html</link>
       <guid>https://ivwv.github.io/posts/PDF/Linux/%E9%98%AE%E4%B8%80%E5%B3%B0-Bash-%E8%84%9A%E6%9C%AC%E6%95%99%E7%A8%8B.html</guid>
       <source url="https://ivwv.github.io/rss.xml">阮一峰-Bash-脚本教程</source>
-      <description>导读
-PDF书籍 阮一峰-Bash-脚本教程.pdf
-
-</description>
       <category>PDF</category>
       <category>Linux</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div><p>导读</p>
-<p>PDF书籍 阮一峰-Bash-脚本教程.pdf</p>
-</div>
-
+      <content:encoded><![CDATA[
 <i>Content not supported</i>]]></content:encoded>
     </item>
     <item>
@@ -41,17 +34,10 @@ PDF书籍 阮一峰-Bash-脚本教程.pdf
       <link>https://ivwv.github.io/posts/PDF/front-end/HTML5%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/HTML5%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97.html</guid>
       <source url="https://ivwv.github.io/rss.xml">HTML5游戏开发进阶指南</source>
-      <description>导读
-PDF书籍 HTML5游戏开发进阶指南
-
-</description>
       <category>PDF</category>
       <category>HTML</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div><p>导读</p>
-<p>PDF书籍 HTML5游戏开发进阶指南</p>
-</div>
-
+      <content:encoded><![CDATA[
 <i>Content not supported</i>]]></content:encoded>
     </item>
     <item>
@@ -59,17 +45,10 @@ PDF书籍 HTML5游戏开发进阶指南
       <link>https://ivwv.github.io/posts/PDF/front-end/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%BC%A0%E5%AE%B9%E9%93%AD.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%BC%A0%E5%AE%B9%E9%93%AD.html</guid>
       <source url="https://ivwv.github.io/rss.xml">JavaScript设计模式 张容铭</source>
-      <description>导读
-PDF书籍 JavaScript设计模式 张容铭.pdf
-
-</description>
       <category>PDF</category>
       <category>JavaScript</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div><p>导读</p>
-<p>PDF书籍 JavaScript设计模式 张容铭.pdf</p>
-</div>
-
+      <content:encoded><![CDATA[
 <i>Content not supported</i>]]></content:encoded>
     </item>
     <item>
@@ -77,17 +56,10 @@ PDF书籍 JavaScript设计模式 张容铭.pdf
       <link>https://ivwv.github.io/posts/PDF/front-end/Three.js%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97-%E5%8E%9F%E4%B9%A6%E7%AC%AC2%E7%89%88.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/Three.js%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97-%E5%8E%9F%E4%B9%A6%E7%AC%AC2%E7%89%88.html</guid>
       <source url="https://ivwv.github.io/rss.xml">Three.js开发指南 原书第2版</source>
-      <description>导读
-PDF书籍 Three.js开发指南 原书第2版.pdf
-
-</description>
       <category>PDF</category>
       <category>JavaScript</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div><p>导读</p>
-<p>PDF书籍 Three.js开发指南 原书第2版.pdf</p>
-</div>
-
+      <content:encoded><![CDATA[
 <i>Content not supported</i>]]></content:encoded>
     </item>
     <item>
@@ -95,17 +67,10 @@ PDF书籍 Three.js开发指南 原书第2版.pdf
       <link>https://ivwv.github.io/posts/PDF/front-end/%E4%BB%A3%E7%A0%81%E6%95%B4%E6%B4%81%E4%B9%8B%E9%81%93.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/%E4%BB%A3%E7%A0%81%E6%95%B4%E6%B4%81%E4%B9%8B%E9%81%93.html</guid>
       <source url="https://ivwv.github.io/rss.xml">代码整洁之道</source>
-      <description>导读
-PDF书籍 代码整洁之道.pdf
-
-</description>
       <category>PDF</category>
       <category>JavaScript</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div><p>导读</p>
-<p>PDF书籍 代码整洁之道.pdf</p>
-</div>
-
+      <content:encoded><![CDATA[
 <i>Content not supported</i>]]></content:encoded>
     </item>
     <item>
@@ -113,16 +78,9 @@ PDF书籍 代码整洁之道.pdf
       <link>https://ivwv.github.io/posts/PDF/network/%E5%9B%BE%E8%A7%A3HTTP(%E4%B8%8A%E9%87%8E%E5%AE%A3).html</link>
       <guid>https://ivwv.github.io/posts/PDF/network/%E5%9B%BE%E8%A7%A3HTTP(%E4%B8%8A%E9%87%8E%E5%AE%A3).html</guid>
       <source url="https://ivwv.github.io/rss.xml">图解HTTP (上野宣)</source>
-      <description>导读
-PDF书籍 图解HTTP (上野宣).pdf
-
-</description>
       <category>PDF</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div><p>导读</p>
-<p>PDF书籍 图解HTTP (上野宣).pdf</p>
-</div>
-
+      <content:encoded><![CDATA[
 <i>Content not supported</i>]]></content:encoded>
     </item>
     <item>
@@ -130,16 +88,9 @@ PDF书籍 图解HTTP (上野宣).pdf
       <link>https://ivwv.github.io/posts/PDF/front-end/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAES6.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAES6.html</guid>
       <source url="https://ivwv.github.io/rss.xml">深入浅出ES6</source>
-      <description>导读
-PDF书籍 深入浅出ES6 - ES6-in-depth.pdf
-
-</description>
       <category>PDF</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div><p>导读</p>
-<p>PDF书籍 深入浅出ES6 - ES6-in-depth.pdf</p>
-</div>
-
+      <content:encoded><![CDATA[
 
 <i>Content not supported</i>]]></content:encoded>
     </item>
@@ -199,17 +150,10 @@ PDF书籍整合均来自互联网
       <link>https://ivwv.github.io/posts/PDF/back-end/NODE.js%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.html</link>
       <guid>https://ivwv.github.io/posts/PDF/back-end/NODE.js%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.html</guid>
       <source url="https://ivwv.github.io/rss.xml">NODE.js入门手册</source>
-      <description>导读
-PDF书籍 NODE.js入门手册.pdf
-
-</description>
       <category>PDF</category>
       <category>Node</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div><p>导读</p>
-<p>PDF书籍 NODE.js入门手册.pdf</p>
-</div>
-
+      <content:encoded><![CDATA[
 <i>Content not supported</i>]]></content:encoded>
     </item>
     <item>
@@ -217,17 +161,10 @@ PDF书籍 NODE.js入门手册.pdf
       <link>https://ivwv.github.io/posts/PDF/back-end/Node.js%E5%AE%9E%E6%88%98.html</link>
       <guid>https://ivwv.github.io/posts/PDF/back-end/Node.js%E5%AE%9E%E6%88%98.html</guid>
       <source url="https://ivwv.github.io/rss.xml">Node.js实战</source>
-      <description>导读
-PDF书籍 Node.js实战.pdf
-
-</description>
       <category>PDF</category>
       <category>Node</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div><p>导读</p>
-<p>PDF书籍 Node.js实战.pdf</p>
-</div>
-
+      <content:encoded><![CDATA[
 <i>Content not supported</i>]]></content:encoded>
     </item>
     <item>
@@ -235,17 +172,10 @@ PDF书籍 Node.js实战.pdf
       <link>https://ivwv.github.io/posts/PDF/back-end/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BANode.js.html</link>
       <guid>https://ivwv.github.io/posts/PDF/back-end/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BANode.js.html</guid>
       <source url="https://ivwv.github.io/rss.xml">深入浅出Node.js</source>
-      <description>导读
-PDF书籍 深入浅出Node.js.pdf
-
-</description>
       <category>PDF</category>
       <category>Node</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div><p>导读</p>
-<p>PDF书籍 深入浅出Node.js.pdf</p>
-</div>
-
+      <content:encoded><![CDATA[
 <i>Content not supported</i>]]></content:encoded>
     </item>
     <item>
@@ -253,17 +183,10 @@ PDF书籍 深入浅出Node.js.pdf
       <link>https://ivwv.github.io/posts/PDF/front-end/CSS%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%89%E7%89%88.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/CSS%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%89%E7%89%88.html</guid>
       <source url="https://ivwv.github.io/rss.xml">CSS权威指南-第三版</source>
-      <description>导读
-PDF书籍 CSS权威指南-第三版pdf
-
-</description>
       <category>PDF</category>
       <category>CSS</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div><p>导读</p>
-<p>PDF书籍 CSS权威指南-第三版pdf</p>
-</div>
-
+      <content:encoded><![CDATA[
 <i>Content not supported</i>]]></content:encoded>
     </item>
     <item>
@@ -271,17 +194,10 @@ PDF书籍 CSS权威指南-第三版pdf
       <link>https://ivwv.github.io/posts/PDF/front-end/JavaScript%E7%99%BE%E7%82%BC%E6%88%90%E4%BB%99.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/JavaScript%E7%99%BE%E7%82%BC%E6%88%90%E4%BB%99.html</guid>
       <source url="https://ivwv.github.io/rss.xml">JavaScript百炼成仙</source>
-      <description>导读
-PDF书籍 JavaScript百炼成仙.pdf
-
-</description>
       <category>PDF</category>
       <category>JavaScript</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div><p>导读</p>
-<p>PDF书籍 JavaScript百炼成仙.pdf</p>
-</div>
-
+      <content:encoded><![CDATA[
 <i>Content not supported</i>]]></content:encoded>
     </item>
     <item>
@@ -289,17 +205,10 @@ PDF书籍 JavaScript百炼成仙.pdf
       <link>https://ivwv.github.io/posts/PDF/front-end/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5.html</guid>
       <source url="https://ivwv.github.io/rss.xml">JavaScript设计模式与开发实践</source>
-      <description>导读
-PDF书籍 JavaScript设计模式与开发实践.pdf
-
-</description>
       <category>PDF</category>
       <category>JavaScript</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div><p>导读</p>
-<p>PDF书籍 JavaScript设计模式与开发实践.pdf</p>
-</div>
-
+      <content:encoded><![CDATA[
 <i>Content not supported</i>]]></content:encoded>
     </item>
     <item>
@@ -307,17 +216,10 @@ PDF书籍 JavaScript设计模式与开发实践.pdf
       <link>https://ivwv.github.io/posts/PDF/front-end/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89.html</guid>
       <source url="https://ivwv.github.io/rss.xml">JavaScript高级程序设计（第4版）</source>
-      <description>导读
-PDF书籍 JavaScript高级程序设计（第4版）.pdf
-
-</description>
       <category>PDF</category>
       <category>JavaScript</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div><p>导读</p>
-<p>PDF书籍 JavaScript高级程序设计（第4版）.pdf</p>
-</div>
-
+      <content:encoded><![CDATA[
 <i>Content not supported</i>]]></content:encoded>
     </item>
     <item>
@@ -325,17 +227,10 @@ PDF书籍 JavaScript高级程序设计（第4版）.pdf
       <link>https://ivwv.github.io/posts/PDF/front-end/javascript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/javascript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html</guid>
       <source url="https://ivwv.github.io/rss.xml">javascript面向对象编程</source>
-      <description>导读
-PDF书籍 javascript面向对象编程.pdf
-
-</description>
       <category>PDF</category>
       <category>JavaScript</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div><p>导读</p>
-<p>PDF书籍 javascript面向对象编程.pdf</p>
-</div>
-
+      <content:encoded><![CDATA[
 <i>Content not supported</i>]]></content:encoded>
     </item>
     <item>
@@ -343,17 +238,10 @@ PDF书籍 javascript面向对象编程.pdf
       <link>https://ivwv.github.io/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8A%E5%8D%B7%EF%BC%89.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8A%E5%8D%B7%EF%BC%89.html</guid>
       <source url="https://ivwv.github.io/rss.xml">你不知道的JavaScript（上卷）</source>
-      <description>导读
-PDF书籍 你不知道的JavaScript（上卷）.pdf
-
-</description>
       <category>PDF</category>
       <category>JavaScript</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div><p>导读</p>
-<p>PDF书籍 你不知道的JavaScript（上卷）.pdf</p>
-</div>
-
+      <content:encoded><![CDATA[
 <i>Content not supported</i>]]></content:encoded>
     </item>
     <item>
@@ -361,17 +249,10 @@ PDF书籍 你不知道的JavaScript（上卷）.pdf
       <link>https://ivwv.github.io/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8B%E5%8D%B7%EF%BC%89.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8B%E5%8D%B7%EF%BC%89.html</guid>
       <source url="https://ivwv.github.io/rss.xml">你不知道的JavaScript（下卷）</source>
-      <description>导读
-PDF书籍 你不知道的JavaScript（下卷）.pdf
-
-</description>
       <category>PDF</category>
       <category>JavaScript</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div><p>导读</p>
-<p>PDF书籍 你不知道的JavaScript（下卷）.pdf</p>
-</div>
-
+      <content:encoded><![CDATA[
 <i>Content not supported</i>]]></content:encoded>
     </item>
     <item>
@@ -379,17 +260,10 @@ PDF书籍 你不知道的JavaScript（下卷）.pdf
       <link>https://ivwv.github.io/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%AD%E5%8D%B7%EF%BC%89.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%AD%E5%8D%B7%EF%BC%89.html</guid>
       <source url="https://ivwv.github.io/rss.xml">你不知道的JavaScript（中卷）</source>
-      <description>导读
-PDF书籍 你不知道的JavaScript（中卷）.pdf
-
-</description>
       <category>PDF</category>
       <category>JavaScript</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div><p>导读</p>
-<p>PDF书籍 你不知道的JavaScript（中卷）.pdf</p>
-</div>
-
+      <content:encoded><![CDATA[
 <i>Content not supported</i>]]></content:encoded>
     </item>
     <item>
@@ -397,17 +271,10 @@ PDF书籍 你不知道的JavaScript（中卷）.pdf
       <link>https://ivwv.github.io/posts/PDF/front-end/%E5%AD%A6%E4%B9%A0JavaScript%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%EF%BC%88%E7%AC%AC3%E7%89%88%EF%BC%89.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/%E5%AD%A6%E4%B9%A0JavaScript%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%EF%BC%88%E7%AC%AC3%E7%89%88%EF%BC%89.html</guid>
       <source url="https://ivwv.github.io/rss.xml">学习JavaScript数据结构与算法（第3版）</source>
-      <description>导读
-PDF书籍 学习JavaScript数据结构与算法（第3版）.pdf
-
-</description>
       <category>PDF</category>
       <category>JavaScript</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div><p>导读</p>
-<p>PDF书籍 学习JavaScript数据结构与算法（第3版）.pdf</p>
-</div>
-
+      <content:encoded><![CDATA[
 <i>Content not supported</i>]]></content:encoded>
     </item>
     <item>
@@ -415,16 +282,9 @@ PDF书籍 学习JavaScript数据结构与算法（第3版）.pdf
       <link>https://ivwv.github.io/posts/PDF/network/%E5%9B%BE%E8%A7%A3TCPIP%EF%BC%88%E7%AC%AC%E4%BA%94%E7%89%88%EF%BC%89.html</link>
       <guid>https://ivwv.github.io/posts/PDF/network/%E5%9B%BE%E8%A7%A3TCPIP%EF%BC%88%E7%AC%AC%E4%BA%94%E7%89%88%EF%BC%89.html</guid>
       <source url="https://ivwv.github.io/rss.xml">图解TCPIP（第五版）</source>
-      <description>导读
-PDF书籍 图解TCPIP（第五版）.pdf
-
-</description>
       <category>PDF</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div><p>导读</p>
-<p>PDF书籍 图解TCPIP（第五版）.pdf</p>
-</div>
-
+      <content:encoded><![CDATA[
 <i>Content not supported</i>]]></content:encoded>
     </item>
     <item>
