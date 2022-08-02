@@ -50,6 +50,7 @@ export default defineUserConfig({
     // 百度站长验证
     ["meta", { name: "baidu-site-verification", content: "code-JYAj48wkPF" }],
     /*************** start 添加谷歌统计 ***********/
+    /*
     [
       "script",
       {
@@ -68,6 +69,7 @@ export default defineUserConfig({
       gtag('config', 'G-3115GBP5VH');
       `,
     ],
+    */
     /*************** end 添加谷歌统计 ***********/
   ],
   shouldPrefetch: false,
