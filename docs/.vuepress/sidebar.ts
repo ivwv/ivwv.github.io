@@ -119,15 +119,22 @@ export default sidebar([
         icon: "creative",
         collapsable: true,
         prefix: "vuepress/",
-        children: ["vuepress-register-components"],
+        children: ["vuepress-register-components", "vuepress-hope-iconfont"],
       },
     ],
   },
   {
     text: "资源分享",
     icon: "creative",
-    prefix: "/posts/",
+    prefix: "/posts/share/",
     collapsable: true,
-    children: [],
+    children: [
+      {
+        text: "图床",
+        icon: "creative",
+        prefix: "imgur/",
+        children: [],
+      },
+    ],
   },
 ]);
