@@ -3,10 +3,11 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-02T02:56:47.617Z</updated>
+  <updated>2022-08-02T03:18:26.260Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
+  <category term="demo"/>
   <category term="PDF"/>
   <category term="Linux"/>
   <category term="HTML"/>
@@ -18,6 +19,23 @@
   <contributor>
     <name>Ms.Hope</name>
   </contributor>
+  <entry>
+    <title type="html">测试注册组件</title>
+    <id>https://ivwv.github.io/posts/node/other/%E6%B5%8B%E8%AF%95%E6%B3%A8%E5%86%8C%E7%BB%84%E4%BB%B6.html</id>
+    <link href="https://ivwv.github.io/posts/node/other/%E6%B5%8B%E8%AF%95%E6%B3%A8%E5%86%8C%E7%BB%84%E4%BB%B6.html"/>
+    <updated>2022-08-02T03:17:37.000Z</updated>
+    <summary type="html"><![CDATA[<div><p>导读</p>
+<p>测试注册组件</p>
+</div>
+]]></summary>
+    <content type="html"><![CDATA[<div><p>导读</p>
+<p>测试注册组件</p>
+</div>
+
+<Demo></Demo>]]></content>
+    <category term="demo" scheme=""/>
+    <published>2022-08-02T00:00:00.000Z</published>
+  </entry>
   <entry>
     <title type="html">阮一峰-Bash-脚本教程</title>
     <id>https://ivwv.github.io/posts/PDF/Linux/%E9%98%AE%E4%B8%80%E5%B3%B0-Bash-%E8%84%9A%E6%9C%AC%E6%95%99%E7%A8%8B.html</id>
