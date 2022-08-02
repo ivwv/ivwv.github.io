@@ -34,6 +34,12 @@ export default defineUserConfig({
         content: "LeFBm40tk1ztZLlPI1zHgbAyplU_l0lSRrjpUkqmtKw",
       },
     ],
+    // <meta name="msvalidate.01" content="B7C29717C9BBED39368D957F6E16F3B5" />
+    // bing站长验证
+    [
+      "meta",
+      { name: "msvalidate.01", content: "B7C29717C9BBED39368D957F6E16F3B5" },
+    ],
   ],
   shouldPrefetch: false,
 
