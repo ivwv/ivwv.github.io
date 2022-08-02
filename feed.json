@@ -6,6 +6,19 @@
   "description": "SY's Blog",
   "items": [
     {
+      "title": "黑马案例大事件项目",
+      "url": "https://ivwv.github.io/posts/project/api-server/",
+      "id": "https://ivwv.github.io/posts/project/api-server/",
+      "summary": "\n黑马视频教程-大事件项目后台接口项目 使用 node+express+mysql+Postman+JsonWebToken+joi+bcryptjs+multer\n\n",
+      "content_html": "<blockquote>\n<p>黑马视频教程-大事件项目后台接口项目 使用 <code>node</code>+<code>express</code>+<code>mysql</code>+<code>Postman</code>+<code>JsonWebToken</code>+<code>joi</code>+<code>bcryptjs</code>+<code>multer</code></p>\n</blockquote>\n\n<div><p>源码</p>\n<p><a href=\"https://gitee.com/isyv/api_server\" target=\"_blank\" rel=\"noopener noreferrer\">Gitee</a></p>\n</div>\n",
+      "date_published": "2022-08-02T00:00:00.000Z",
+      "date_modified": "2022-08-02T09:12:56.000Z",
+      "authors": [],
+      "tags": [
+        "demo"
+      ]
+    },
+    {
       "title": "Vuepress2中如何在md文件中添加自定义组件",
       "url": "https://ivwv.github.io/posts/technology/vuepress/vuepress-register-components.html",
       "id": "https://ivwv.github.io/posts/technology/vuepress/vuepress-register-components.html",
@@ -16,19 +29,6 @@
       "authors": [],
       "tags": [
         "Vuepress"
-      ]
-    },
-    {
-      "title": "测试注册组件",
-      "url": "https://ivwv.github.io/posts/node/other/%E6%B5%8B%E8%AF%95%E6%B3%A8%E5%86%8C%E7%BB%84%E4%BB%B6.html",
-      "id": "https://ivwv.github.io/posts/node/other/%E6%B5%8B%E8%AF%95%E6%B3%A8%E5%86%8C%E7%BB%84%E4%BB%B6.html",
-      "summary": "导读\n测试注册组件\n\n",
-      "content_html": "<div><p>导读</p>\n<p>测试注册组件</p>\n</div>\n\n<Demo></Demo>",
-      "date_published": "2022-08-02T00:00:00.000Z",
-      "date_modified": "2022-08-02T03:17:37.000Z",
-      "authors": [],
-      "tags": [
-        "demo"
       ]
     },
     {
@@ -127,7 +127,7 @@
       "summary": "导读\nPDF书籍整合均来自互联网\n\n",
       "content_html": "<div><p>导读</p>\n<p>PDF书籍整合均来自互联网</p>\n</div>\n\n<div><p>前端相关书籍</p>\n</div>\n<ol>\n<li><a href=\"/posts/PDF/front-end/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAES6.html\">深入浅出ES6</a></li>\n<li><a href=\"/posts/PDF/front-end/%E5%AD%A6%E4%B9%A0JavaScript%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%EF%BC%88%E7%AC%AC3%E7%89%88%EF%BC%89.html\">学习JavaScript数据结构与算法（第3版）</a></li>\n<li><a href=\"/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8A%E5%8D%B7%EF%BC%89.html\">你不知道的JavaScript（上卷）</a></li>\n<li><a href=\"/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%AD%E5%8D%B7%EF%BC%89.html\">你不知道的JavaScript（中卷）</a></li>\n<li><a href=\"/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8B%E5%8D%B7%EF%BC%89.html\">你不知道的JavaScript（下卷）</a></li>\n<li><a href=\"/posts/PDF/front-end/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5.html\">JavaScript设计模式与开发实践</a></li>\n<li><a href=\"/posts/PDF/front-end/Three.js%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97-%E5%8E%9F%E4%B9%A6%E7%AC%AC2%E7%89%88.html\">Three.js开发指南-原书第2版</a></li>\n<li><a href=\"/posts/PDF/front-end/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%BC%A0%E5%AE%B9%E9%93%AD.html\">JavaScript设计模式-张容铭</a></li>\n<li><a href=\"/posts/PDF/front-end/javascript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html\">javascript面向对象编程</a></li>\n<li><a href=\"/posts/PDF/front-end/JavaScript%E7%99%BE%E7%82%BC%E6%88%90%E4%BB%99.html\">JavaScript百炼成仙</a></li>\n<li><a href=\"/posts/PDF/front-end/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89.html\">JavaScript高级程序设计（第4版）</a></li>\n<li><a href=\"/posts/PDF/front-end/HTML5%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97.html\">HTML5游戏开发进阶指南</a></li>\n<li><a href=\"/posts/PDF/front-end/CSS%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%89%E7%89%88.html\">CSS权威指南-第三版</a></li>\n<li><a href=\"/posts/PDF/front-end/%E4%BB%A3%E7%A0%81%E6%95%B4%E6%B4%81%E4%B9%8B%E9%81%93.html\">代码整洁之道</a></li>\n</ol>\n<div><p>后端相关书籍</p>\n</div>\n<ol>\n<li><a href=\"/posts/PDF/back-end/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BANode.js.html\">深入浅出Node.js</a></li>\n<li><a href=\"/posts/PDF/back-end/NODE.js%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.html\">NODE.js入门手册</a></li>\n<li><a href=\"/posts/PDF/back-end/Node.js%E5%AE%9E%E6%88%98.html\">Node.js实战</a></li>\n</ol>\n<div><p>网络相关书籍</p>\n</div>\n<ol>\n<li><a href=\"/posts/PDF/network/%E5%9B%BE%E8%A7%A3HTTP(%E4%B8%8A%E9%87%8E%E5%AE%A3).html\">图解HTTP(上野宣)</a></li>\n<li><a href=\"/posts/PDF/network/%E5%9B%BE%E8%A7%A3TCPIP%EF%BC%88%E7%AC%AC%E4%BA%94%E7%89%88%EF%BC%89.html\">图解TCPIP（第五版）</a></li>\n</ol>\n<div><p>Linux运维相关书籍</p>\n</div>\n<p>1.<a href=\"/posts/PDF/linux/%E9%98%AE%E4%B8%80%E5%B3%B0-Bash-%E8%84%9A%E6%9C%AC%E6%95%99%E7%A8%8B.html\">阮一峰-Bash-脚本教程</a></p>\n",
       "date_published": "2022-08-01T00:00:00.000Z",
-      "date_modified": "2022-08-01T11:32:33.000Z",
+      "date_modified": "2022-08-02T09:12:56.000Z",
       "authors": [],
       "tags": [
         "PDF"
@@ -319,9 +319,9 @@
       "url": "https://ivwv.github.io/posts/project/",
       "id": "https://ivwv.github.io/posts/project/",
       "summary": "导读\n我的项目列表\n\n",
-      "content_html": "<div><p>导读</p>\n<p>我的项目列表</p>\n</div>\n\n<h1 id=\"我的项目\" tabindex=\"-1\"> 我的项目</h1>\n<ol>\n<li><a href=\"/posts/project/vue-shop/\">电商后台管理系统(2022/07.08--2022/07.18)</a></li>\n<li><a href=\"/posts/project/newsinfo/\">新闻门户网站(2022/05.02--2022/05.18)</a></li>\n<li><a href=\"/posts/project/socket-chat/\"><code>Node+Socket.io</code>聊天程序 </a></li>\n<li><a href=\"/posts/project/puppeteer-electron-pdf/\"><code>puppeteer</code> 爬取 <code>electron</code> 官网文档，保存为 <code>pdf</code> 格式(2022/07.21)</a></li>\n</ol>\n",
+      "content_html": "<div><p>导读</p>\n<p>我的项目列表</p>\n</div>\n\n<h1 id=\"我的项目\" tabindex=\"-1\"> 我的项目</h1>\n<blockquote>\n<ol>\n<li><a href=\"/posts/project/api-server/\">黑马视频教程-大事件项目(2022/05.15--2022/05.25)</a></li>\n</ol>\n<p>使用技术:<code>node</code>+<code>express</code>+<code>mysql</code>+<code>Postman</code>+<code>JsonWebToken</code>+<code>joi</code>+<code>bcryptjs</code>+<code>multer</code></p>\n</blockquote>\n<blockquote>\n<ol start=\"2\">\n<li><a href=\"/posts/project/vue-shop/\">电商后台管理系统(2022/07.08--2022/07.18)</a></li>\n</ol>\n<p>使用技术:<code>vue2</code>+<code>ElementUi</code>+<code>axiso</code></p>\n</blockquote>\n<blockquote>\n<ol start=\"3\">\n<li><a href=\"/posts/project/newsinfo/\">新闻门户网站(2022/05.02--2022/05.18)</a></li>\n</ol>\n<p>使用技术:<code>node</code>+<code>bootstrap</code>+<code>axios</code>+<code>ejs</code></p>\n</blockquote>\n<blockquote>\n<ol start=\"4\">\n<li><a href=\"/posts/project/socket-chat/\"><code>Node+Socket.io</code>聊天程序 </a></li>\n</ol>\n<p>使用技术:<code>node</code>+<code>socket.io</code></p>\n</blockquote>\n<blockquote>\n<ol start=\"5\">\n<li><a href=\"/posts/project/puppeteer-electron-pdf/\"><code>puppeteer</code>爬取 <code>electron</code>官网文档，保存为<code>pdf</code>格式(2022/07.21)</a></li>\n</ol>\n<p>使用技术:<code>node</code>+<code>puppeteero</code></p>\n</blockquote>\n",
       "date_published": "2022-07-31T00:00:00.000Z",
-      "date_modified": "2022-08-01T10:13:11.000Z",
+      "date_modified": "2022-08-02T09:12:56.000Z",
       "authors": [],
       "tags": [
         "我的项目整合"
@@ -332,44 +332,54 @@
       "url": "https://ivwv.github.io/posts/project/newsinfo/",
       "id": "https://ivwv.github.io/posts/project/newsinfo/",
       "summary": "导读\n该项目是在大二期间，学校举办的技能节，参加了web项目。比赛内容是做出一个新闻门户网站，两人一组。犹豫队友平时比较忙，我就让他帮我找找素材啥的，然后让他做了一个index.html首页\n\n",
-      "content_html": "<div><p>导读</p>\n<p>该项目是在大二期间，学校举办的技能节，参加了<code>web</code>项目。比赛内容是做出一个新闻门户网站，两人一组。犹豫队友平时比较忙，我就让他帮我找找素材啥的，然后让他做了一个<code>index.html</code>首页</p>\n</div>\n\n<p><a href=\"http://client--news.herokuapp.com/\" target=\"_blank\" rel=\"noopener noreferrer\">项目展示</a></p>\n<p><a href=\"https://gitee.com/isyv/newsinfo_with_imgs\" target=\"_blank\" rel=\"noopener noreferrer\"><code>Gitee</code>-后端</a></p>\n<p><a href=\"https://gitee.com/isyv/newsclient\" target=\"_blank\" rel=\"noopener noreferrer\"><code>Gitee</code>-前端</a></p>\n<p><a href=\"https://documenter.getpostman.com/view/19150006/UyxdKokK#afccd7cd-423e-4695-abb3-269d31cf1e62\" target=\"_blank\" rel=\"noopener noreferrer\">后端接口</a></p>\n<div><p>提示</p>\n<p>该项目部署在<code>Heroku</code>国外免费容器平台，首次进入会有20秒左右的启动时间。</p>\n<p>国外平台偶尔出现在国内打不开的情况。</p>\n</div>\n<h1 id=\"项目展示\" tabindex=\"-1\"> 项目展示</h1>\n<h2 id=\"首页\" tabindex=\"-1\"> 首页</h2>\n<p>由于首页不是我做的，跟整体观感会有差距</p>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:22:55*image-20220801162255125*9.png\" alt=\"image-20220801162255125\"></p>\n<h2 id=\"登录注册\" tabindex=\"-1\"> 登录注册</h2>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:28:31*image-20220801162831706*7.png\" alt=\"image-20220801162831706\"></p>\n<h2 id=\"新闻详情页\" tabindex=\"-1\"> 新闻详情页</h2>\n<ul>\n<li>当用户登录成功后，右上角的登录按钮会变成头像以及用户名</li>\n<li>新闻的标题、分类、时间是使用<code>Ejs</code>模板引擎获取后端数据渲染</li>\n<li>新闻内容可以通过标题下方的工具栏调节字体</li>\n<li>右侧轮播图使用<code>Swiper</code>插件，并且图片和文字内容通过<code>axios</code>获取渲染</li>\n<li>右侧轮播图和新闻排行展示顺序是根据页面浏览量动态展示</li>\n<li>搜索功能</li>\n</ul>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:32:17*image-20220801163217876*3.png\" alt=\"image-20220801163217876\"></p>\n<h2 id=\"搜索功能\" tabindex=\"-1\"> 搜索功能</h2>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:45:45*image-20220801164545874*f.png\" alt=\"image-20220801164545874\"></p>\n<h2 id=\"后台管理\" tabindex=\"-1\"> 后台管理</h2>\n<p><strong>由于当时技术受限，并且没有了解到富文本插件，所以新闻上传使用较原始的input表单上传，</strong></p>\n<h3 id=\"后台首页\" tabindex=\"-1\"> 后台首页</h3>\n<p>使用<code>Echart</code>通过接口数据简单的做了可视化</p>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:48:52*image-20220801164852219*9.png\" alt=\"image-20220801164852219\"></p>\n<h3 id=\"插入新闻\" tabindex=\"-1\"> 插入新闻</h3>\n<ul>\n<li>当图片选择好后，点击确定，会直接上传，并且拿到服务器端的图片地址</li>\n</ul>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:51:24*image-20220801165124206*b.png\" alt=\"image-20220801165124206\"></p>\n<h3 id=\"新闻列表\" tabindex=\"-1\"> 新闻列表</h3>\n<ul>\n<li>可以删除</li>\n<li>查看新闻信息</li>\n<li>图片预览是直接跳转到图片直链，也是由于当时不了解图片预览有啥插件</li>\n<li>分页是直接前端发送请求携带页码，后端查询相关数据</li>\n</ul>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:53:40*image-20220801165340766*c.png\" alt=\"image-20220801165340766\"></p>\n<h3 id=\"用户管理\" tabindex=\"-1\"> 用户管理</h3>\n<ul>\n<li>用户列表原理和新闻列表原理相同</li>\n</ul>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:56:14*image-20220801165614717*3.png\" alt=\"image-20220801165614717\"></p>\n",
+      "content_html": "<div><p>导读</p>\n<p>该项目是在大二期间，学校举办的技能节，参加了<code>web</code>项目。比赛内容是做出一个新闻门户网站，两人一组。犹豫队友平时比较忙，我就让他帮我找找素材啥的，然后让他做了一个<code>index.html</code>首页</p>\n</div>\n\n<blockquote>\n<p><a href=\"http://client--news.herokuapp.com/\" target=\"_blank\" rel=\"noopener noreferrer\">项目展示</a></p>\n<p><a href=\"https://gitee.com/isyv/newsinfo_with_imgs\" target=\"_blank\" rel=\"noopener noreferrer\"><code>Gitee</code>-后端</a></p>\n<p><a href=\"https://gitee.com/isyv/newsclient\" target=\"_blank\" rel=\"noopener noreferrer\"><code>Gitee</code>-前端</a></p>\n<p><a href=\"https://documenter.getpostman.com/view/19150006/UyxdKokK#afccd7cd-423e-4695-abb3-269d31cf1e62\" target=\"_blank\" rel=\"noopener noreferrer\">后端接口</a></p>\n</blockquote>\n<div><p>提示</p>\n<p>该项目部署在<code>Heroku</code>国外免费容器平台，首次进入会有20秒左右的启动时间。</p>\n<p>国外平台偶尔出现在国内打不开的情况。</p>\n</div>\n<h1 id=\"项目展示\" tabindex=\"-1\"> 项目展示</h1>\n<h2 id=\"首页\" tabindex=\"-1\"> 首页</h2>\n<p>由于首页不是我做的，跟整体观感会有差距</p>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:22:55*image-20220801162255125*9.png\" alt=\"image-20220801162255125\"></p>\n<h2 id=\"登录注册\" tabindex=\"-1\"> 登录注册</h2>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:28:31*image-20220801162831706*7.png\" alt=\"image-20220801162831706\"></p>\n<h2 id=\"新闻详情页\" tabindex=\"-1\"> 新闻详情页</h2>\n<ul>\n<li>当用户登录成功后，右上角的登录按钮会变成头像以及用户名</li>\n<li>新闻的标题、分类、时间是使用<code>Ejs</code>模板引擎获取后端数据渲染</li>\n<li>新闻内容可以通过标题下方的工具栏调节字体</li>\n<li>右侧轮播图使用<code>Swiper</code>插件，并且图片和文字内容通过<code>axios</code>获取渲染</li>\n<li>右侧轮播图和新闻排行展示顺序是根据页面浏览量动态展示</li>\n<li>搜索功能</li>\n</ul>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:32:17*image-20220801163217876*3.png\" alt=\"image-20220801163217876\"></p>\n<h2 id=\"搜索功能\" tabindex=\"-1\"> 搜索功能</h2>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:45:45*image-20220801164545874*f.png\" alt=\"image-20220801164545874\"></p>\n<h2 id=\"后台管理\" tabindex=\"-1\"> 后台管理</h2>\n<p><strong>由于当时技术受限，并且没有了解到富文本插件，所以新闻上传使用较原始的input表单上传，</strong></p>\n<h3 id=\"后台首页\" tabindex=\"-1\"> 后台首页</h3>\n<p>使用<code>Echart</code>通过接口数据简单的做了可视化</p>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:48:52*image-20220801164852219*9.png\" alt=\"image-20220801164852219\"></p>\n<h3 id=\"插入新闻\" tabindex=\"-1\"> 插入新闻</h3>\n<ul>\n<li>当图片选择好后，点击确定，会直接上传，并且拿到服务器端的图片地址</li>\n</ul>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:51:24*image-20220801165124206*b.png\" alt=\"image-20220801165124206\"></p>\n<h3 id=\"新闻列表\" tabindex=\"-1\"> 新闻列表</h3>\n<ul>\n<li>可以删除</li>\n<li>查看新闻信息</li>\n<li>图片预览是直接跳转到图片直链，也是由于当时不了解图片预览有啥插件</li>\n<li>分页是直接前端发送请求携带页码，后端查询相关数据</li>\n</ul>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:53:40*image-20220801165340766*c.png\" alt=\"image-20220801165340766\"></p>\n<h3 id=\"用户管理\" tabindex=\"-1\"> 用户管理</h3>\n<ul>\n<li>用户列表原理和新闻列表原理相同</li>\n</ul>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:56:14*image-20220801165614717*3.png\" alt=\"image-20220801165614717\"></p>\n",
       "image": "https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:22:55*image-20220801162255125*9.png",
       "date_published": "2022-08-01T00:00:00.000Z",
-      "date_modified": "2022-08-01T10:01:16.000Z",
+      "date_modified": "2022-08-02T09:12:56.000Z",
       "authors": [],
       "tags": [
         "我的项目整合"
       ]
     },
     {
-      "title": "puppeteer",
+      "title": "Puppeteer爬取Eletron官网文档,保存为pdf格式",
       "url": "https://ivwv.github.io/posts/project/puppeteer-electron-pdf/",
       "id": "https://ivwv.github.io/posts/project/puppeteer-electron-pdf/",
-      "content_html": "<h1 id=\"puppeteer\" tabindex=\"-1\"> puppeteer</h1>\n<h1 id=\"puppeteer-1\" tabindex=\"-1\"> puppeteer</h1>\n",
-      "date_published": "2022-07-31T14:21:29.000Z",
-      "date_modified": "2022-07-31T15:11:32.000Z",
+      "summary": "\n为什么会做这样的一个项目?\n在学习electron时，官网中文文档时不时会翻译不了，当能翻译时，我就想着为何不使用puppeteer将文档保存为pdf格式。\n\n",
+      "content_html": "<blockquote>\n<p>为什么会做这样的一个项目?</p>\n<p>在学习<code>electron</code>时，官网中文文档时不时会翻译不了，当能翻译时，我就想着为何不使用<code>puppeteer</code>将文档保存为<code>pdf</code>格式。</p>\n</blockquote>\n\n<p>dawdawd</p>\n",
+      "date_published": "2022-08-02T00:00:00.000Z",
+      "date_modified": "2022-08-02T09:12:56.000Z",
       "authors": [],
-      "tags": []
+      "tags": [
+        "我的项目整合",
+        "Puppeteer",
+        "Node"
+      ]
     },
     {
-      "title": "socket.io",
+      "title": "Node socket.io 聊天室",
       "url": "https://ivwv.github.io/posts/project/socket-chat/",
       "id": "https://ivwv.github.io/posts/project/socket-chat/",
-      "content_html": "<h1 id=\"socket-io\" tabindex=\"-1\"> socket.io</h1>\n",
-      "date_published": "2022-07-31T14:21:29.000Z",
-      "date_modified": "2022-07-31T14:21:29.000Z",
+      "summary": "\nNode socket.io 聊天室 包含用户名自定义、多人房间、用户进入房间全局提示、用户退出全局提示、用户打字中全局提示\n\n",
+      "content_html": "<blockquote>\n<p>Node socket.io 聊天室 包含用户名自定义、多人房间、用户进入房间全局提示、用户退出全局提示、用户打字中全局提示</p>\n</blockquote>\n\n<blockquote>\n<p><a href=\"http://socket-io-chats.herokuapp.com/\" target=\"_blank\" rel=\"noopener noreferrer\">项目预览</a>   <code>Heroku</code>平台，首次启动需要等待20秒，30分钟后休眠。</p>\n<p><a href=\"https://github.com/ivwv/socket_io_chat\" target=\"_blank\" rel=\"noopener noreferrer\">项目源码 Github</a></p>\n</blockquote>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-02-15:57:56*image-20220802155756267*f.png\" alt=\"image-20220802155756267\"></p>\n<hr>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-02-15:58:29*image-20220802155829081*5.png\" alt=\"image-20220802155829081\"></p>\n",
+      "image": "https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-02-15:57:56*image-20220802155756267*f.png",
+      "date_published": "2022-08-02T00:00:00.000Z",
+      "date_modified": "2022-08-02T09:12:56.000Z",
       "authors": [],
-      "tags": []
+      "tags": [
+        "我的项目整合",
+        "Node"
+      ]
     },
     {
       "title": "电商后台管理项目",
       "url": "https://ivwv.github.io/posts/project/vue-shop/",
       "id": "https://ivwv.github.io/posts/project/vue-shop/",
       "summary": "导读\nVue2+ElementUi+Node+Axios 电商后台管理项目。\n这个项目将vue2学完后完成的一个项目\n\n",
-      "content_html": "<div><p>导读</p>\n<p>Vue2+ElementUi+Node+Axios 电商后台管理项目。\n这个项目将vue2学完后完成的一个项目</p>\n</div>\n\n<p><a href=\"https://client-vue-shop.herokuapp.com/#/login\" target=\"_blank\" rel=\"noopener noreferrer\">项目展示</a></p>\n<div><p>提示</p>\n<p>1.该项目部署在<code>Heroku</code>国外免费容器平台，首次进入会有20秒左右的启动时间。\n国外平台偶尔出现在国内打不开的情况。</p>\n</div>\n<h2 id=\"项目展示\" tabindex=\"-1\"> 项目展示</h2>\n<h3 id=\"登录界面\" tabindex=\"-1\"> 登录界面</h3>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-15:54:34*image-20220801155434253*1.png\" alt=\"image-20220801155434253\"></p>\n<h3 id=\"权限管理\" tabindex=\"-1\"> 权限管理</h3>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-15:55:10*image-20220801155510192*e.png\" alt=\"image-20220801155510192\"></p>\n<h3 id=\"商品列表分类\" tabindex=\"-1\"> 商品列表分类</h3>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-15:55:48*image-20220801155548650*e.png\" alt=\"image-20220801155548650\"></p>\n<h3 id=\"添加商品分类\" tabindex=\"-1\"> 添加商品分类</h3>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-15:56:32*image-20220801155632840*4.png\" alt=\"image-20220801155632840\"></p>\n<h3 id=\"添加信息模态框\" tabindex=\"-1\"> 添加信息模态框</h3>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-15:57:00*image-20220801155700058*7.png\" alt=\"image-20220801155700058\"></p>\n",
+      "content_html": "<div><p>导读</p>\n<p>Vue2+ElementUi+Node+Axios 电商后台管理项目。\n这个项目将vue2学完后完成的一个项目</p>\n</div>\n\n<blockquote>\n<p><a href=\"https://client-vue-shop.herokuapp.com/#/login\" target=\"_blank\" rel=\"noopener noreferrer\">项目展示</a></p>\n</blockquote>\n<div><p>提示</p>\n<p>1.该项目部署在<code>Heroku</code>国外免费容器平台，首次进入会有20秒左右的启动时间。\n国外平台偶尔出现在国内打不开的情况。</p>\n</div>\n<h2 id=\"项目展示\" tabindex=\"-1\"> 项目展示</h2>\n<h3 id=\"登录界面\" tabindex=\"-1\"> 登录界面</h3>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-15:54:34*image-20220801155434253*1.png\" alt=\"image-20220801155434253\"></p>\n<h3 id=\"权限管理\" tabindex=\"-1\"> 权限管理</h3>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-15:55:10*image-20220801155510192*e.png\" alt=\"image-20220801155510192\"></p>\n<h3 id=\"商品列表分类\" tabindex=\"-1\"> 商品列表分类</h3>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-15:55:48*image-20220801155548650*e.png\" alt=\"image-20220801155548650\"></p>\n<h3 id=\"添加商品分类\" tabindex=\"-1\"> 添加商品分类</h3>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-15:56:32*image-20220801155632840*4.png\" alt=\"image-20220801155632840\"></p>\n<h3 id=\"添加信息模态框\" tabindex=\"-1\"> 添加信息模态框</h3>\n<p><img src=\"https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-15:57:00*image-20220801155700058*7.png\" alt=\"image-20220801155700058\"></p>\n",
       "image": "https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-15:54:34*image-20220801155434253*1.png",
       "date_published": "2022-07-31T00:00:00.000Z",
-      "date_modified": "2022-08-01T10:01:16.000Z",
+      "date_modified": "2022-08-02T09:12:56.000Z",
       "authors": [],
       "tags": [
         "我的项目整合"

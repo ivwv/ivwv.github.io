@@ -3,12 +3,12 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-02T05:38:55.268Z</updated>
+  <updated>2022-08-02T09:13:47.769Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
-  <category term="Vuepress"/>
   <category term="demo"/>
+  <category term="Vuepress"/>
   <category term="PDF"/>
   <category term="Linux"/>
   <category term="HTML"/>
@@ -16,10 +16,31 @@
   <category term="Node"/>
   <category term="CSS"/>
   <category term="我的项目整合"/>
+  <category term="Puppeteer"/>
   <category term="使用指南"/>
   <contributor>
     <name>Ms.Hope</name>
   </contributor>
+  <entry>
+    <title type="html">黑马案例大事件项目</title>
+    <id>https://ivwv.github.io/posts/project/api-server/</id>
+    <link href="https://ivwv.github.io/posts/project/api-server/"/>
+    <updated>2022-08-02T09:12:56.000Z</updated>
+    <summary type="html"><![CDATA[<blockquote>
+<p>黑马视频教程-大事件项目后台接口项目 使用 <code>node</code>+<code>express</code>+<code>mysql</code>+<code>Postman</code>+<code>JsonWebToken</code>+<code>joi</code>+<code>bcryptjs</code>+<code>multer</code></p>
+</blockquote>
+]]></summary>
+    <content type="html"><![CDATA[<blockquote>
+<p>黑马视频教程-大事件项目后台接口项目 使用 <code>node</code>+<code>express</code>+<code>mysql</code>+<code>Postman</code>+<code>JsonWebToken</code>+<code>joi</code>+<code>bcryptjs</code>+<code>multer</code></p>
+</blockquote>
+
+<div><p>源码</p>
+<p><a href="https://gitee.com/isyv/api_server" target="_blank" rel="noopener noreferrer">Gitee</a></p>
+</div>
+]]></content>
+    <category term="demo" scheme=""/>
+    <published>2022-08-02T00:00:00.000Z</published>
+  </entry>
   <entry>
     <title type="html">Vuepress2中如何在md文件中添加自定义组件</title>
     <id>https://ivwv.github.io/posts/technology/vuepress/vuepress-register-components.html</id>
@@ -63,23 +84,6 @@
 </code></pre><div aria-hidden="true"><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-02-13:25:22*image-20220802132522080*c.png" alt="image-20220802132522080"></p>
 ]]></content>
     <category term="Vuepress" scheme=""/>
-    <published>2022-08-02T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">测试注册组件</title>
-    <id>https://ivwv.github.io/posts/node/other/%E6%B5%8B%E8%AF%95%E6%B3%A8%E5%86%8C%E7%BB%84%E4%BB%B6.html</id>
-    <link href="https://ivwv.github.io/posts/node/other/%E6%B5%8B%E8%AF%95%E6%B3%A8%E5%86%8C%E7%BB%84%E4%BB%B6.html"/>
-    <updated>2022-08-02T03:17:37.000Z</updated>
-    <summary type="html"><![CDATA[<div><p>导读</p>
-<p>测试注册组件</p>
-</div>
-]]></summary>
-    <content type="html"><![CDATA[<div><p>导读</p>
-<p>测试注册组件</p>
-</div>
-
-<Demo></Demo>]]></content>
-    <category term="demo" scheme=""/>
     <published>2022-08-02T00:00:00.000Z</published>
   </entry>
   <entry>
@@ -162,7 +166,7 @@
     <title type="html">PDF书籍整合</title>
     <id>https://ivwv.github.io/posts/PDF/</id>
     <link href="https://ivwv.github.io/posts/PDF/"/>
-    <updated>2022-08-01T11:32:33.000Z</updated>
+    <updated>2022-08-02T09:12:56.000Z</updated>
     <summary type="html"><![CDATA[<div><p>导读</p>
 <p>PDF书籍整合均来自互联网</p>
 </div>
@@ -489,7 +493,7 @@ unset NODE_ENV
     <title type="html">我的项目整合</title>
     <id>https://ivwv.github.io/posts/project/</id>
     <link href="https://ivwv.github.io/posts/project/"/>
-    <updated>2022-08-01T10:13:11.000Z</updated>
+    <updated>2022-08-02T09:12:56.000Z</updated>
     <summary type="html"><![CDATA[<div><p>导读</p>
 <p>我的项目列表</p>
 </div>
@@ -499,12 +503,36 @@ unset NODE_ENV
 </div>
 
 <h1 id="我的项目" tabindex="-1"> 我的项目</h1>
+<blockquote>
 <ol>
-<li><a href="/posts/project/vue-shop/">电商后台管理系统(2022/07.08--2022/07.18)</a></li>
-<li><a href="/posts/project/newsinfo/">新闻门户网站(2022/05.02--2022/05.18)</a></li>
-<li><a href="/posts/project/socket-chat/"><code>Node+Socket.io</code>聊天程序 </a></li>
-<li><a href="/posts/project/puppeteer-electron-pdf/"><code>puppeteer</code> 爬取 <code>electron</code> 官网文档，保存为 <code>pdf</code> 格式(2022/07.21)</a></li>
+<li><a href="/posts/project/api-server/">黑马视频教程-大事件项目(2022/05.15--2022/05.25)</a></li>
 </ol>
+<p>使用技术:<code>node</code>+<code>express</code>+<code>mysql</code>+<code>Postman</code>+<code>JsonWebToken</code>+<code>joi</code>+<code>bcryptjs</code>+<code>multer</code></p>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li><a href="/posts/project/vue-shop/">电商后台管理系统(2022/07.08--2022/07.18)</a></li>
+</ol>
+<p>使用技术:<code>vue2</code>+<code>ElementUi</code>+<code>axiso</code></p>
+</blockquote>
+<blockquote>
+<ol start="3">
+<li><a href="/posts/project/newsinfo/">新闻门户网站(2022/05.02--2022/05.18)</a></li>
+</ol>
+<p>使用技术:<code>node</code>+<code>bootstrap</code>+<code>axios</code>+<code>ejs</code></p>
+</blockquote>
+<blockquote>
+<ol start="4">
+<li><a href="/posts/project/socket-chat/"><code>Node+Socket.io</code>聊天程序 </a></li>
+</ol>
+<p>使用技术:<code>node</code>+<code>socket.io</code></p>
+</blockquote>
+<blockquote>
+<ol start="5">
+<li><a href="/posts/project/puppeteer-electron-pdf/"><code>puppeteer</code>爬取 <code>electron</code>官网文档，保存为<code>pdf</code>格式(2022/07.21)</a></li>
+</ol>
+<p>使用技术:<code>node</code>+<code>puppeteero</code></p>
+</blockquote>
 ]]></content>
     <category term="我的项目整合" scheme=""/>
     <published>2022-07-31T00:00:00.000Z</published>
@@ -513,7 +541,7 @@ unset NODE_ENV
     <title type="html">新闻门户网站</title>
     <id>https://ivwv.github.io/posts/project/newsinfo/</id>
     <link href="https://ivwv.github.io/posts/project/newsinfo/"/>
-    <updated>2022-08-01T10:01:16.000Z</updated>
+    <updated>2022-08-02T09:12:56.000Z</updated>
     <summary type="html"><![CDATA[<div><p>导读</p>
 <p>该项目是在大二期间，学校举办的技能节，参加了<code>web</code>项目。比赛内容是做出一个新闻门户网站，两人一组。犹豫队友平时比较忙，我就让他帮我找找素材啥的，然后让他做了一个<code>index.html</code>首页</p>
 </div>
@@ -522,10 +550,12 @@ unset NODE_ENV
 <p>该项目是在大二期间，学校举办的技能节，参加了<code>web</code>项目。比赛内容是做出一个新闻门户网站，两人一组。犹豫队友平时比较忙，我就让他帮我找找素材啥的，然后让他做了一个<code>index.html</code>首页</p>
 </div>
 
+<blockquote>
 <p><a href="http://client--news.herokuapp.com/" target="_blank" rel="noopener noreferrer">项目展示</a></p>
 <p><a href="https://gitee.com/isyv/newsinfo_with_imgs" target="_blank" rel="noopener noreferrer"><code>Gitee</code>-后端</a></p>
 <p><a href="https://gitee.com/isyv/newsclient" target="_blank" rel="noopener noreferrer"><code>Gitee</code>-前端</a></p>
 <p><a href="https://documenter.getpostman.com/view/19150006/UyxdKokK#afccd7cd-423e-4695-abb3-269d31cf1e62" target="_blank" rel="noopener noreferrer">后端接口</a></p>
+</blockquote>
 <div><p>提示</p>
 <p>该项目部署在<code>Heroku</code>国外免费容器平台，首次进入会有20秒左右的启动时间。</p>
 <p>国外平台偶尔出现在国内打不开的情况。</p>
@@ -576,29 +606,57 @@ unset NODE_ENV
     <published>2022-08-01T00:00:00.000Z</published>
   </entry>
   <entry>
-    <title type="html">puppeteer</title>
+    <title type="html">Puppeteer爬取Eletron官网文档,保存为pdf格式</title>
     <id>https://ivwv.github.io/posts/project/puppeteer-electron-pdf/</id>
     <link href="https://ivwv.github.io/posts/project/puppeteer-electron-pdf/"/>
-    <updated>2022-07-31T15:11:32.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="puppeteer" tabindex="-1"> puppeteer</h1>
-<h1 id="puppeteer-1" tabindex="-1"> puppeteer</h1>
+    <updated>2022-08-02T09:12:56.000Z</updated>
+    <summary type="html"><![CDATA[<blockquote>
+<p>为什么会做这样的一个项目?</p>
+<p>在学习<code>electron</code>时，官网中文文档时不时会翻译不了，当能翻译时，我就想着为何不使用<code>puppeteer</code>将文档保存为<code>pdf</code>格式。</p>
+</blockquote>
+]]></summary>
+    <content type="html"><![CDATA[<blockquote>
+<p>为什么会做这样的一个项目?</p>
+<p>在学习<code>electron</code>时，官网中文文档时不时会翻译不了，当能翻译时，我就想着为何不使用<code>puppeteer</code>将文档保存为<code>pdf</code>格式。</p>
+</blockquote>
+
+<p>dawdawd</p>
 ]]></content>
-    <published>2022-07-31T14:21:29.000Z</published>
+    <category term="我的项目整合" scheme=""/>
+    <category term="Puppeteer" scheme=""/>
+    <category term="Node" scheme=""/>
+    <published>2022-08-02T00:00:00.000Z</published>
   </entry>
   <entry>
-    <title type="html">socket.io</title>
+    <title type="html">Node socket.io 聊天室</title>
     <id>https://ivwv.github.io/posts/project/socket-chat/</id>
     <link href="https://ivwv.github.io/posts/project/socket-chat/"/>
-    <updated>2022-07-31T14:21:29.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="socket-io" tabindex="-1"> socket.io</h1>
+    <updated>2022-08-02T09:12:56.000Z</updated>
+    <summary type="html"><![CDATA[<blockquote>
+<p>Node socket.io 聊天室 包含用户名自定义、多人房间、用户进入房间全局提示、用户退出全局提示、用户打字中全局提示</p>
+</blockquote>
+]]></summary>
+    <content type="html"><![CDATA[<blockquote>
+<p>Node socket.io 聊天室 包含用户名自定义、多人房间、用户进入房间全局提示、用户退出全局提示、用户打字中全局提示</p>
+</blockquote>
+
+<blockquote>
+<p><a href="http://socket-io-chats.herokuapp.com/" target="_blank" rel="noopener noreferrer">项目预览</a>   <code>Heroku</code>平台，首次启动需要等待20秒，30分钟后休眠。</p>
+<p><a href="https://github.com/ivwv/socket_io_chat" target="_blank" rel="noopener noreferrer">项目源码 Github</a></p>
+</blockquote>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-02-15:57:56*image-20220802155756267*f.png" alt="image-20220802155756267"></p>
+<hr>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-02-15:58:29*image-20220802155829081*5.png" alt="image-20220802155829081"></p>
 ]]></content>
-    <published>2022-07-31T14:21:29.000Z</published>
+    <category term="我的项目整合" scheme=""/>
+    <category term="Node" scheme=""/>
+    <published>2022-08-02T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="html">电商后台管理项目</title>
     <id>https://ivwv.github.io/posts/project/vue-shop/</id>
     <link href="https://ivwv.github.io/posts/project/vue-shop/"/>
-    <updated>2022-08-01T10:01:16.000Z</updated>
+    <updated>2022-08-02T09:12:56.000Z</updated>
     <summary type="html"><![CDATA[<div><p>导读</p>
 <p>Vue2+ElementUi+Node+Axios 电商后台管理项目。
 这个项目将vue2学完后完成的一个项目</p>
@@ -609,7 +667,9 @@ unset NODE_ENV
 这个项目将vue2学完后完成的一个项目</p>
 </div>
 
+<blockquote>
 <p><a href="https://client-vue-shop.herokuapp.com/#/login" target="_blank" rel="noopener noreferrer">项目展示</a></p>
+</blockquote>
 <div><p>提示</p>
 <p>1.该项目部署在<code>Heroku</code>国外免费容器平台，首次进入会有20秒左右的启动时间。
 国外平台偶尔出现在国内打不开的情况。</p>

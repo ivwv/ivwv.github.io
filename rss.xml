@@ -6,12 +6,12 @@
     <link>https://ivwv.github.io/</link>
     <description>SY's Blog</description>
     <language>zh-CN</language>
-    <pubDate>Tue, 02 Aug 2022 05:38:55 GMT</pubDate>
-    <lastBuildDate>Tue, 02 Aug 2022 05:38:55 GMT</lastBuildDate>
+    <pubDate>Tue, 02 Aug 2022 09:13:47 GMT</pubDate>
+    <lastBuildDate>Tue, 02 Aug 2022 09:13:47 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
-    <category>Vuepress</category>
     <category>demo</category>
+    <category>Vuepress</category>
     <category>PDF</category>
     <category>Linux</category>
     <category>HTML</category>
@@ -19,7 +19,28 @@
     <category>Node</category>
     <category>CSS</category>
     <category>我的项目整合</category>
+    <category>Puppeteer</category>
     <category>使用指南</category>
+    <item>
+      <title>黑马案例大事件项目</title>
+      <link>https://ivwv.github.io/posts/project/api-server/</link>
+      <guid>https://ivwv.github.io/posts/project/api-server/</guid>
+      <source url="https://ivwv.github.io/rss.xml">黑马案例大事件项目</source>
+      <description>
+黑马视频教程-大事件项目后台接口项目 使用 node+express+mysql+Postman+JsonWebToken+joi+bcryptjs+multer
+
+</description>
+      <category>demo</category>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<blockquote>
+<p>黑马视频教程-大事件项目后台接口项目 使用 <code>node</code>+<code>express</code>+<code>mysql</code>+<code>Postman</code>+<code>JsonWebToken</code>+<code>joi</code>+<code>bcryptjs</code>+<code>multer</code></p>
+</blockquote>
+
+<div><p>源码</p>
+<p><a href="https://gitee.com/isyv/api_server" target="_blank" rel="noopener noreferrer">Gitee</a></p>
+</div>
+]]></content:encoded>
+    </item>
     <item>
       <title>Vuepress2中如何在md文件中添加自定义组件</title>
       <link>https://ivwv.github.io/posts/technology/vuepress/vuepress-register-components.html</link>
@@ -65,23 +86,6 @@
 </code></pre><div aria-hidden="true"><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-02-13:25:22*image-20220802132522080*c.png" alt="image-20220802132522080"></p>
 ]]></content:encoded>
       <enclosure url="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-02-13:25:22*image-20220802132522080*c.png" type="image/png"/>
-    </item>
-    <item>
-      <title>测试注册组件</title>
-      <link>https://ivwv.github.io/posts/node/other/%E6%B5%8B%E8%AF%95%E6%B3%A8%E5%86%8C%E7%BB%84%E4%BB%B6.html</link>
-      <guid>https://ivwv.github.io/posts/node/other/%E6%B5%8B%E8%AF%95%E6%B3%A8%E5%86%8C%E7%BB%84%E4%BB%B6.html</guid>
-      <source url="https://ivwv.github.io/rss.xml">测试注册组件</source>
-      <description>导读
-测试注册组件
-
-</description>
-      <category>demo</category>
-      <pubDate>Tue, 02 Aug 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<div><p>导读</p>
-<p>测试注册组件</p>
-</div>
-
-<Demo></Demo>]]></content:encoded>
     </item>
     <item>
       <title>阮一峰-Bash-脚本教程</title>
@@ -502,12 +506,36 @@ unset NODE_ENV
 </div>
 
 <h1 id="我的项目" tabindex="-1"> 我的项目</h1>
+<blockquote>
 <ol>
-<li><a href="/posts/project/vue-shop/">电商后台管理系统(2022/07.08--2022/07.18)</a></li>
-<li><a href="/posts/project/newsinfo/">新闻门户网站(2022/05.02--2022/05.18)</a></li>
-<li><a href="/posts/project/socket-chat/"><code>Node+Socket.io</code>聊天程序 </a></li>
-<li><a href="/posts/project/puppeteer-electron-pdf/"><code>puppeteer</code> 爬取 <code>electron</code> 官网文档，保存为 <code>pdf</code> 格式(2022/07.21)</a></li>
+<li><a href="/posts/project/api-server/">黑马视频教程-大事件项目(2022/05.15--2022/05.25)</a></li>
 </ol>
+<p>使用技术:<code>node</code>+<code>express</code>+<code>mysql</code>+<code>Postman</code>+<code>JsonWebToken</code>+<code>joi</code>+<code>bcryptjs</code>+<code>multer</code></p>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li><a href="/posts/project/vue-shop/">电商后台管理系统(2022/07.08--2022/07.18)</a></li>
+</ol>
+<p>使用技术:<code>vue2</code>+<code>ElementUi</code>+<code>axiso</code></p>
+</blockquote>
+<blockquote>
+<ol start="3">
+<li><a href="/posts/project/newsinfo/">新闻门户网站(2022/05.02--2022/05.18)</a></li>
+</ol>
+<p>使用技术:<code>node</code>+<code>bootstrap</code>+<code>axios</code>+<code>ejs</code></p>
+</blockquote>
+<blockquote>
+<ol start="4">
+<li><a href="/posts/project/socket-chat/"><code>Node+Socket.io</code>聊天程序 </a></li>
+</ol>
+<p>使用技术:<code>node</code>+<code>socket.io</code></p>
+</blockquote>
+<blockquote>
+<ol start="5">
+<li><a href="/posts/project/puppeteer-electron-pdf/"><code>puppeteer</code>爬取 <code>electron</code>官网文档，保存为<code>pdf</code>格式(2022/07.21)</a></li>
+</ol>
+<p>使用技术:<code>node</code>+<code>puppeteero</code></p>
+</blockquote>
 ]]></content:encoded>
     </item>
     <item>
@@ -525,10 +553,12 @@ unset NODE_ENV
 <p>该项目是在大二期间，学校举办的技能节，参加了<code>web</code>项目。比赛内容是做出一个新闻门户网站，两人一组。犹豫队友平时比较忙，我就让他帮我找找素材啥的，然后让他做了一个<code>index.html</code>首页</p>
 </div>
 
+<blockquote>
 <p><a href="http://client--news.herokuapp.com/" target="_blank" rel="noopener noreferrer">项目展示</a></p>
 <p><a href="https://gitee.com/isyv/newsinfo_with_imgs" target="_blank" rel="noopener noreferrer"><code>Gitee</code>-后端</a></p>
 <p><a href="https://gitee.com/isyv/newsclient" target="_blank" rel="noopener noreferrer"><code>Gitee</code>-前端</a></p>
 <p><a href="https://documenter.getpostman.com/view/19150006/UyxdKokK#afccd7cd-423e-4695-abb3-269d31cf1e62" target="_blank" rel="noopener noreferrer">后端接口</a></p>
+</blockquote>
 <div><p>提示</p>
 <p>该项目部署在<code>Heroku</code>国外免费容器平台，首次进入会有20秒左右的启动时间。</p>
 <p>国外平台偶尔出现在国内打不开的情况。</p>
@@ -578,23 +608,52 @@ unset NODE_ENV
       <enclosure url="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-01-16:22:55*image-20220801162255125*9.png" type="image/png"/>
     </item>
     <item>
-      <title>puppeteer</title>
+      <title>Puppeteer爬取Eletron官网文档,保存为pdf格式</title>
       <link>https://ivwv.github.io/posts/project/puppeteer-electron-pdf/</link>
       <guid>https://ivwv.github.io/posts/project/puppeteer-electron-pdf/</guid>
-      <source url="https://ivwv.github.io/rss.xml">puppeteer</source>
-      <pubDate>Sun, 31 Jul 2022 14:21:29 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="puppeteer" tabindex="-1"> puppeteer</h1>
-<h1 id="puppeteer-1" tabindex="-1"> puppeteer</h1>
+      <source url="https://ivwv.github.io/rss.xml">Puppeteer爬取Eletron官网文档,保存为pdf格式</source>
+      <description>
+为什么会做这样的一个项目?
+在学习electron时，官网中文文档时不时会翻译不了，当能翻译时，我就想着为何不使用puppeteer将文档保存为pdf格式。
+
+</description>
+      <category>我的项目整合</category>
+      <category>Puppeteer</category>
+      <category>Node</category>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<blockquote>
+<p>为什么会做这样的一个项目?</p>
+<p>在学习<code>electron</code>时，官网中文文档时不时会翻译不了，当能翻译时，我就想着为何不使用<code>puppeteer</code>将文档保存为<code>pdf</code>格式。</p>
+</blockquote>
+
+<p>dawdawd</p>
 ]]></content:encoded>
     </item>
     <item>
-      <title>socket.io</title>
+      <title>Node socket.io 聊天室</title>
       <link>https://ivwv.github.io/posts/project/socket-chat/</link>
       <guid>https://ivwv.github.io/posts/project/socket-chat/</guid>
-      <source url="https://ivwv.github.io/rss.xml">socket.io</source>
-      <pubDate>Sun, 31 Jul 2022 14:21:29 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="socket-io" tabindex="-1"> socket.io</h1>
+      <source url="https://ivwv.github.io/rss.xml">Node socket.io 聊天室</source>
+      <description>
+Node socket.io 聊天室 包含用户名自定义、多人房间、用户进入房间全局提示、用户退出全局提示、用户打字中全局提示
+
+</description>
+      <category>我的项目整合</category>
+      <category>Node</category>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<blockquote>
+<p>Node socket.io 聊天室 包含用户名自定义、多人房间、用户进入房间全局提示、用户退出全局提示、用户打字中全局提示</p>
+</blockquote>
+
+<blockquote>
+<p><a href="http://socket-io-chats.herokuapp.com/" target="_blank" rel="noopener noreferrer">项目预览</a>   <code>Heroku</code>平台，首次启动需要等待20秒，30分钟后休眠。</p>
+<p><a href="https://github.com/ivwv/socket_io_chat" target="_blank" rel="noopener noreferrer">项目源码 Github</a></p>
+</blockquote>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-02-15:57:56*image-20220802155756267*f.png" alt="image-20220802155756267"></p>
+<hr>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-02-15:58:29*image-20220802155829081*5.png" alt="image-20220802155829081"></p>
 ]]></content:encoded>
+      <enclosure url="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-02-15:57:56*image-20220802155756267*f.png" type="image/png"/>
     </item>
     <item>
       <title>电商后台管理项目</title>
@@ -613,7 +672,9 @@ Vue2+ElementUi+Node+Axios 电商后台管理项目。
 这个项目将vue2学完后完成的一个项目</p>
 </div>
 
+<blockquote>
 <p><a href="https://client-vue-shop.herokuapp.com/#/login" target="_blank" rel="noopener noreferrer">项目展示</a></p>
+</blockquote>
 <div><p>提示</p>
 <p>1.该项目部署在<code>Heroku</code>国外免费容器平台，首次进入会有20秒左右的启动时间。
 国外平台偶尔出现在国内打不开的情况。</p>
