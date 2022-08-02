@@ -25,6 +25,14 @@ export default defineUserConfig({
   head: [
     ["link", { rel: "icon", href: "/logo.png" }],
     // ["script", { src: "/js/global.js" }],
+    // <meta name="google-site-verification" content="LeFBm40tk1ztZLlPI1zHgbAyplU_l0lSRrjpUkqmtKw" />
+    [
+      "meta",
+      {
+        name: "google-site-verification",
+        content: "LeFBm40tk1ztZLlPI1zHgbAyplU_l0lSRrjpUkqmtKw",
+      },
+    ],
   ],
   shouldPrefetch: false,
 
