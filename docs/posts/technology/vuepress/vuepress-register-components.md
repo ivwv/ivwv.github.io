@@ -1,6 +1,6 @@
 ---
 title: Vuepress2中如何在md文件中添加自定义组件
-icon: edit
+icon: vue
 date: 2022-08-02
 category:
   - Vuepress

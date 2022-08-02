@@ -1,6 +1,6 @@
 ---
 title: Vuepress-theme-hope-iconfont 图标大全
-icon: edit
+icon: vue
 date: 2022-08-02
 category:
   - Vuepress

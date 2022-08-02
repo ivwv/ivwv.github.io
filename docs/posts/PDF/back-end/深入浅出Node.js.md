@@ -1,6 +1,6 @@
 ---
 title: 深入浅出Node.js
-icon: edit
+icon: file
 date: 2022-07-27
 category:
   - PDF

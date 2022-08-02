@@ -1,6 +1,6 @@
 ---
 title: 你不知道的JavaScript（上卷）
-icon: edit
+icon: file
 date: 2022-07-27
 category:
   - PDF

@@ -1,6 +1,6 @@
 ---
 title: 我的项目整合
-icon: edit
+icon: list
 # YYYY-MM-DD
 date: 2022-07-31
 # 分类

@@ -1,5 +1,5 @@
 ---
-icon: edit
+icon: javascript
 date: 2022-07-30
 category:
   - JavaScript

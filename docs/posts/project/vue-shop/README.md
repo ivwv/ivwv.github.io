@@ -1,6 +1,6 @@
 ---
 title: 电商后台管理项目
-icon: edit
+icon: license
 # YYYY-MM-DD
 date: 2022-07-31
 # 分类

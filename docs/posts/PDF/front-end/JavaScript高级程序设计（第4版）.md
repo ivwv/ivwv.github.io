@@ -1,6 +1,6 @@
 ---
 title: JavaScript高级程序设计（第4版）
-icon: edit
+icon: file
 date: 2022-07-27
 category:
   - PDF

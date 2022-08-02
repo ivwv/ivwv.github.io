@@ -1,6 +1,6 @@
 ---
 title: 学习JavaScript数据结构与算法（第3版）
-icon: edit
+icon: file
 date: 2022-07-27
 category:
   - PDF

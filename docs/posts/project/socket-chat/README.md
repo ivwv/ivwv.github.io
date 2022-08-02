@@ -1,6 +1,6 @@
 ---
 title: Node socket.io 聊天室
-icon: edit
+icon: license
 # YYYY-MM-DD
 date: 2022-08-02
 # 分类

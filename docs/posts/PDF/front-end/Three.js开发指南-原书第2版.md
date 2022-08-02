@@ -1,6 +1,6 @@
 ---
 title: Three.js开发指南 原书第2版
-icon: edit
+icon: file
 date: 2022-07-27
 category:
   - PDF

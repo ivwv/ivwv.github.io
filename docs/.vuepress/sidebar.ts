@@ -65,20 +65,20 @@ export default sidebar([
     children: [
       {
         text: "Node",
-        icon: "note",
+        icon: "nodeJS",
         collapsable: true,
         prefix: "node/",
         children: [
           {
             text: "Express框架",
-            icon: "note",
+            icon: "nodeJS",
             prefix: "express/",
             collapsable: true,
             children: ["Express中jwt验证的简单使用"],
           },
           {
             text: "Other",
-            icon: "note",
+            icon: "others",
             prefix: "other/",
             collapsable: true,
             children: ["process.env环境变量配置"],
@@ -87,13 +87,13 @@ export default sidebar([
       },
       {
         text: "JavaScript",
-        icon: "note",
+        icon: "javascript",
         collapsable: true,
         prefix: "javascript/",
         children: [
           {
             text: "ES6",
-            icon: "note",
+            icon: "es6",
             collapsable: true,
             prefix: "es6/",
             children: [
@@ -110,7 +110,7 @@ export default sidebar([
   },
   {
     text: "技术文章",
-    icon: "creative",
+    icon: "article",
     prefix: "/posts/technology/",
     collapsable: true,
     children: [
@@ -125,13 +125,13 @@ export default sidebar([
   },
   {
     text: "资源分享",
-    icon: "creative",
+    icon: "share",
     prefix: "/posts/share/",
     collapsable: true,
     children: [
       {
         text: "图床",
-        icon: "creative",
+        icon: "pic",
         prefix: "imgur/",
         children: [],
       },

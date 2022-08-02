@@ -1,6 +1,6 @@
 ---
 title: 新闻门户网站
-icon: edit
+icon: license
 # YYYY-MM-DD
 date: 2022-08-01
 # 分类

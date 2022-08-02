@@ -1,6 +1,6 @@
 ---
 title: Puppeteer爬取Eletron官网文档,保存为pdf格式
-icon: edit
+icon: license
 # YYYY-MM-DD
 date: 2022-08-02
 # 分类

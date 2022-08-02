@@ -1,6 +1,6 @@
 ---
 title: JavaScript百炼成仙
-icon: edit
+icon: file
 date: 2022-07-27
 category:
   - PDF

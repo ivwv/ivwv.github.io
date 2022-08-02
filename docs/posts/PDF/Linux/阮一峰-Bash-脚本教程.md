@@ -1,6 +1,6 @@
 ---
 title: 阮一峰-Bash-脚本教程
-icon: edit
+icon: file
 date: 2022-07-27
 category:
   - PDF

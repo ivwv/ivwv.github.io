@@ -1,6 +1,6 @@
 ---
 title: 黑马案例大事件项目
-icon: edit
+icon: license
 date: 2022-08-02
 category:
   - demo

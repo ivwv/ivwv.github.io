@@ -1,6 +1,6 @@
 ---
 title: CSS权威指南-第三版
-icon: edit
+icon: file
 date: 2022-07-27
 category:
   - PDF

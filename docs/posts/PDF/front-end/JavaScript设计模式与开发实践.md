@@ -1,6 +1,6 @@
 ---
 title: JavaScript设计模式与开发实践
-icon: edit
+icon: file
 date: 2022-07-27
 category:
   - PDF
