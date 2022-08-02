@@ -135,6 +135,12 @@ export default sidebar([
         prefix: "imgur/",
         children: [],
       },
+      {
+        text: "Markdown",
+        icon: "markdown",
+        prefix: "mark-down/",
+        children: ["emoji"],
+      },
     ],
   },
 ]);
