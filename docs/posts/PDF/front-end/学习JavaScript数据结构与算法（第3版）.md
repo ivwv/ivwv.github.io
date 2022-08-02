@@ -17,9 +17,7 @@ article: true
 # 是否将该文章添加至时间线中。
 timeline: true
 ---
-::: tip 导读
-PDF书籍 学习JavaScript数据结构与算法（第3版）.pdf
-:::
+
 <!-- more -->
 
 

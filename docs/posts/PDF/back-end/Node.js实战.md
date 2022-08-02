@@ -15,9 +15,7 @@ article: true
 # 是否将该文章添加至时间线中。
 timeline: true
 ---
-::: tip 导读
-PDF书籍 Node.js实战.pdf
-:::
+
 <!-- more -->
 
 

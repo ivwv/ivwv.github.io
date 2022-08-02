@@ -17,9 +17,7 @@ article: true
 # 是否将该文章添加至时间线中。
 timeline: true
 ---
-::: tip 导读
-PDF书籍 Three.js开发指南 原书第2版.pdf
-:::
+
 <!-- more -->
 
 

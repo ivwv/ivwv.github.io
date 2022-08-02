@@ -16,9 +16,7 @@ article: true
 # 是否将该文章添加至时间线中。
 timeline: true
 ---
-::: tip 导读
-PDF书籍 JavaScript设计模式与开发实践.pdf
-:::
+
 <!-- more -->
 
 
