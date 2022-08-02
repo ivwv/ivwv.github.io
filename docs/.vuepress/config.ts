@@ -19,6 +19,7 @@ import { pwaPlugin } from "vuepress-plugin-pwa2";
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 // 注册组件
 import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
+import { gitPlugin } from "@vuepress/plugin-git";
 // 导 航
 import theme from "./theme";
 
@@ -87,6 +88,12 @@ export default defineUserConfig({
 
   theme,
   plugins: [
+    // gitPlugin
+    gitPlugin({
+      createdTime: true,
+      updatedTime: true,
+      contributors: true,
+    }),
     // 注册组件
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, "./components"),
