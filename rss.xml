@@ -6,12 +6,12 @@
     <link>https://ivwv.github.io/</link>
     <description>SY's Blog</description>
     <language>zh-CN</language>
-    <pubDate>Tue, 02 Aug 2022 09:13:47 GMT</pubDate>
-    <lastBuildDate>Tue, 02 Aug 2022 09:13:47 GMT</lastBuildDate>
+    <pubDate>Tue, 02 Aug 2022 13:16:18 GMT</pubDate>
+    <lastBuildDate>Tue, 02 Aug 2022 13:16:18 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
-    <category>demo</category>
     <category>Vuepress</category>
+    <category>demo</category>
     <category>PDF</category>
     <category>Linux</category>
     <category>HTML</category>
@@ -21,6 +21,16 @@
     <category>我的项目整合</category>
     <category>Puppeteer</category>
     <category>使用指南</category>
+    <item>
+      <title>Vuepress-theme-hope-iconfont 图标大全</title>
+      <link>https://ivwv.github.io/posts/technology/vuepress/vuepress-hope-iconfont.html</link>
+      <guid>https://ivwv.github.io/posts/technology/vuepress/vuepress-hope-iconfont.html</guid>
+      <source url="https://ivwv.github.io/rss.xml">Vuepress-theme-hope-iconfont 图标大全</source>
+      <category>Vuepress</category>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<Iconfont></Iconfont>]]></content:encoded>
+    </item>
     <item>
       <title>黑马案例大事件项目</title>
       <link>https://ivwv.github.io/posts/project/api-server/</link>

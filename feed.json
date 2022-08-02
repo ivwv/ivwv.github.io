@@ -6,6 +6,18 @@
   "description": "SY's Blog",
   "items": [
     {
+      "title": "Vuepress-theme-hope-iconfont 图标大全",
+      "url": "https://ivwv.github.io/posts/technology/vuepress/vuepress-hope-iconfont.html",
+      "id": "https://ivwv.github.io/posts/technology/vuepress/vuepress-hope-iconfont.html",
+      "content_html": "\n<Iconfont></Iconfont>",
+      "date_published": "2022-08-02T00:00:00.000Z",
+      "date_modified": "2022-08-02T13:15:29.000Z",
+      "authors": [],
+      "tags": [
+        "Vuepress"
+      ]
+    },
+    {
       "title": "黑马案例大事件项目",
       "url": "https://ivwv.github.io/posts/project/api-server/",
       "id": "https://ivwv.github.io/posts/project/api-server/",
