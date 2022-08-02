@@ -11,7 +11,7 @@ export default sidebar([
     collapsable: true,
     prefix: "/posts/PDF/",
     children: [
-     "/posts/PDF/",
+      "/posts/PDF/",
       {
         text: "前端相关书籍",
         icon: "creative",
@@ -81,7 +81,7 @@ export default sidebar([
             icon: "note",
             prefix: "other/",
             collapsable: true,
-            children: ["process.env环境变量配置"],
+            children: ["process.env环境变量配置", "测试注册组件"],
           },
         ],
       },
