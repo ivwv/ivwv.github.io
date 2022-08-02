@@ -14,7 +14,9 @@ import { feedPlugin } from "vuepress-plugin-feed2";
 // 移动端适配
 import { pwaPlugin } from "vuepress-plugin-pwa2";
 // google analytics 统计
-const { googleAnalyticsPlugin } = require("@vuepress/plugin-google-analytics");
+import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
+// 注册组件
+import { registerComponentsPlugin }  from '@vuepress/plugin-register-components'
 // 导 航
 import theme from "./theme";
 
@@ -80,6 +82,10 @@ export default defineUserConfig({
 
   theme,
   plugins: [
+    // 注册组件
+    registerComponentsPlugin({
+
+    }),
     // google analytics 统计
     googleAnalyticsPlugin({
       id: "G-3115GBP5VH",
