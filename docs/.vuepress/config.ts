@@ -71,6 +71,17 @@ export default defineUserConfig({
     ],
     */
     /*************** end 添加谷歌统计 ***********/
+    /*************** start google广告 ***********/
+    // <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5528889537462133"
+    //  crossorigin="anonymous"></script>
+    [
+      "script",
+      {
+        async: true,
+        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5528889537462133",
+      },
+    ],
+    /********** end google 广告 **************** */
   ],
   shouldPrefetch: false,
 
