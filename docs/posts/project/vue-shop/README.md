@@ -26,7 +26,7 @@ Vue2+ElementUi+Node+Axios 电商后台管理项目。
 :::
 <!-- more -->
 
-[项目展示](https://client-vue-shop.herokuapp.com/#/login)
+> [项目展示](https://client-vue-shop.herokuapp.com/#/login)
 
 
 ::: tip

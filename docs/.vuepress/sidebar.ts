@@ -81,7 +81,7 @@ export default sidebar([
             icon: "note",
             prefix: "other/",
             collapsable: true,
-            children: ["process.env环境变量配置", "测试注册组件"],
+            children: ["process.env环境变量配置"],
           },
         ],
       },

@@ -1,5 +1,5 @@
 ---
-title: 测试注册组件
+title: 黑马案例大事件项目
 icon: edit
 date: 2022-08-02
 category:
@@ -16,9 +16,11 @@ article: true
 # 是否将该文章添加至时间线中。
 timeline: true
 ---
-::: tip 导读
-测试注册组件
-:::
+> 黑马视频教程-大事件项目后台接口项目 使用 `node`+`express`+`mysql`+`Postman`+`JsonWebToken`+`joi`+`bcryptjs`+`multer`
+
+
 <!-- more -->
 
-<Demo></Demo>
+::: tip 源码
+[Gitee](https://gitee.com/isyv/api_server)
+:::
