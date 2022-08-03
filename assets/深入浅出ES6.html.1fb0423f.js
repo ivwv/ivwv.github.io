@@ -1,0 +1,1 @@
+import{_ as o}from"./plugin-vue_export-helper.21dcd24c.js";import{o as t,c,b as r,r as _}from"./app.84e096b6.js";const n={};function a(l,s){const e=_("PDF");return t(),c("div",null,[r(e,{url:"https://public-1310720021.cos.ap-shanghai.myqcloud.com/blog-file/ES6-in-depth.pdf"})])}var f=o(n,[["render",a],["__file","\u6DF1\u5165\u6D45\u51FAES6.html.vue"]]);export{f as default};
