@@ -3,7 +3,7 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-03T11:48:20.725Z</updated>
+  <updated>2022-08-03T13:12:19.390Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
@@ -27,7 +27,7 @@
     <title type="html">GitHub OAuth第三方登录示例教程(Node后端)</title>
     <id>https://ivwv.github.io/posts/technology/oauth/github-oauth.html</id>
     <link href="https://ivwv.github.io/posts/technology/oauth/github-oauth.html"/>
-    <updated>2022-08-03T11:47:31.000Z</updated>
+    <updated>2022-08-03T13:11:29.000Z</updated>
     <summary type="html"><![CDATA[<blockquote>
 <p>很多网站登录时，允许使用第三方网站的身份，这称为&quot;第三方登录&quot;。</p>
 </blockquote>
@@ -87,7 +87,7 @@
 </ol>
 <h2 id="_3-示例仓库" tabindex="-1"> 3. 示例仓库</h2>
 <blockquote>
-<p>我写了一个<a href="https://github.com/ruanyf/node-oauth-demo" target="_blank" rel="noopener noreferrer">代码仓库</a>，请将它克隆到本地。</p>
+<p>我写了一个<a href="https://github.com/ivwv/GitHub-OAuth-Demo" target="_blank" rel="noopener noreferrer">代码仓库</a>，请将它克隆到本地。</p>
 </blockquote>
 <div><pre><code><span>git</span> clone https://github.com/ivwv/GitHub-OAuth-Demo.git
 <span>cd</span> GitHub-OAuth-Demo
