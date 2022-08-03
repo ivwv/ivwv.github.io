@@ -121,6 +121,13 @@ export default sidebar([
         prefix: "vuepress/",
         children: ["vuepress-register-components", "vuepress-hope-iconfont"],
       },
+      {
+        text: "OAuth登录",
+        collapsable: true,
+        icon: "lock",
+        prefix: "oauth/",
+        children: ['github-oauth'],
+      },
     ],
   },
   {
@@ -132,12 +139,14 @@ export default sidebar([
       {
         text: "图床",
         icon: "pic",
+        collapsable: true,
         prefix: "imgur/",
         children: [],
       },
       {
         text: "Markdown",
         icon: "markdown",
+        collapsable: true,
         prefix: "mark-down/",
         children: ["emoji"],
       },
