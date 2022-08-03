@@ -203,8 +203,8 @@ const token = await response.data["access_token"];
 ```json
 {
   login: 'ivwv',
-  id: 99464244,
-  node_id: 'U_kgDOBe20NA',
+  id: 99484154,
+  node_id: 'U_kggsBedw0NA',
   avatar_url: 'https://avatars.githubusercontent.com/u/99464244?v=4',
   gravatar_id: '',
   url: 'https://api.github.com/users/ivwv',
