@@ -77,7 +77,7 @@ timeline: true
 
 ##    3. 示例仓库
 
->  我写了一个[代码仓库](https://github.com/ruanyf/node-oauth-demo)，请将它克隆到本地。
+>  我写了一个[代码仓库](https://github.com/ivwv/GitHub-OAuth-Demo)，请将它克隆到本地。
 
 ```sh
 git clone https://github.com/ivwv/GitHub-OAuth-Demo.git
