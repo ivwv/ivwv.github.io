@@ -18,6 +18,8 @@ export default sidebar([
         collapsable: true,
         prefix: "front-end/",
         children: [
+          "33个非常实用的JavaScript一行代码",
+          "56个JavaScript实用工具函数助你提升开发效率",
           "深入浅出ES6",
           "学习JavaScript数据结构与算法（第3版）",
           "你不知道的JavaScript（上卷）",
@@ -126,7 +128,7 @@ export default sidebar([
         collapsable: true,
         icon: "lock",
         prefix: "oauth/",
-        children: ['github-oauth'],
+        children: ["github-oauth"],
       },
     ],
   },
