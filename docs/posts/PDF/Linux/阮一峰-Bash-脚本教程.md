@@ -17,7 +17,7 @@ article: true
 # 是否将该文章添加至时间线中。
 timeline: true
 ---
-
+<CountView></CountView>
 <!-- more -->
 
 <PDF url="https://lc-gluttony.s3.amazonaws.com/LfQUMiHwWA4l/zPGBw2Ypma3A0kh2cmaUdLSxVcAeDdhO/%E9%98%AE%E4%B8%80%E5%B3%B0%20Bash%20%E8%84%9A%E6%9C%AC%E6%95%99%E7%A8%8B.pdf"   />

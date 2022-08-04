@@ -44,6 +44,11 @@ projects:
 footer: 努力提升自己!
 ---
 
+
+
+<CountView></CountView>
+
+
 <!-- 这是一个博客主页的案例。
 
 要使用此布局，你应该在页面前端设置 `layout: Blog` 和 `home: true`。

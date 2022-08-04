@@ -101,6 +101,7 @@ features:
 copyright: false
 footer: MIT Licensed | Copyright © 2019-present Mr.Hope
 ---
+<CountView></CountView>
 
 这是项目主页的案例。你可以在这里放置你的主体内容。
 

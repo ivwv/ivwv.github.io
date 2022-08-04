@@ -15,6 +15,7 @@ article: true
 # 是否将该文章添加至时间线中。
 timeline: true
 ---
+<CountView></CountView>
 ::: tip 导读
 PDF书籍整合均来自互联网
 :::

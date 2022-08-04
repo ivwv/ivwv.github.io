@@ -21,6 +21,7 @@ article: true
 # 是否将该文章添加至时间线中。
 timeline: true
 ---
+<CountView></CountView>
 
 ::: tip 导读
 该项目是在大二期间，学校举办的技能节，参加了`web`项目。比赛内容是做出一个新闻门户网站，两人一组。犹豫队友平时比较忙，我就让他帮我找找素材啥的，然后让他做了一个`index.html`首页
