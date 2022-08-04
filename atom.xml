@@ -3,19 +3,19 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-04T10:13:54.668Z</updated>
+  <updated>2022-08-04T14:41:07.442Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
+  <category term="PDF"/>
+  <category term="JavaScript"/>
   <category term="OAuth"/>
   <category term="Node"/>
   <category term="Markdown"/>
   <category term="Vuepress"/>
   <category term="demo"/>
-  <category term="PDF"/>
   <category term="Linux"/>
   <category term="HTML"/>
-  <category term="JavaScript"/>
   <category term="CSS"/>
   <category term="我的项目整合"/>
   <category term="Puppeteer"/>
@@ -23,6 +23,34 @@
   <contributor>
     <name>Ms.Hope</name>
   </contributor>
+  <entry>
+    <title type="html">33个非常实用的JavaScript一行代码</title>
+    <id>https://ivwv.github.io/posts/PDF/front-end/33%E4%B8%AA%E9%9D%9E%E5%B8%B8%E5%AE%9E%E7%94%A8%E7%9A%84JavaScript%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81.html</id>
+    <link href="https://ivwv.github.io/posts/PDF/front-end/33%E4%B8%AA%E9%9D%9E%E5%B8%B8%E5%AE%9E%E7%94%A8%E7%9A%84JavaScript%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81.html"/>
+    <updated>2022-08-04T14:40:10.000Z</updated>
+    <summary type="html"><![CDATA[<CountView></CountView>
+]]></summary>
+    <content type="html"><![CDATA[<CountView></CountView>
+
+<i>Content not supported</i>]]></content>
+    <category term="PDF" scheme=""/>
+    <category term="JavaScript" scheme=""/>
+    <published>2022-08-04T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">56个JavaScript实用工具函数助你提升开发效率</title>
+    <id>https://ivwv.github.io/posts/PDF/front-end/56%E4%B8%AAJavaScript%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0%E5%8A%A9%E4%BD%A0%E6%8F%90%E5%8D%87%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87.html</id>
+    <link href="https://ivwv.github.io/posts/PDF/front-end/56%E4%B8%AAJavaScript%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0%E5%8A%A9%E4%BD%A0%E6%8F%90%E5%8D%87%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87.html"/>
+    <updated>2022-08-04T14:40:10.000Z</updated>
+    <summary type="html"><![CDATA[<CountView></CountView>
+]]></summary>
+    <content type="html"><![CDATA[<CountView></CountView>
+
+<i>Content not supported</i>]]></content>
+    <category term="PDF" scheme=""/>
+    <category term="JavaScript" scheme=""/>
+    <published>2022-08-04T00:00:00.000Z</published>
+  </entry>
   <entry>
     <title type="html">GitHub OAuth第三方登录示例教程(Node后端)</title>
     <id>https://ivwv.github.io/posts/technology/oauth/github-oauth.html</id>

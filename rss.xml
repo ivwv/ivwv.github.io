@@ -6,23 +6,51 @@
     <link>https://ivwv.github.io/</link>
     <description>SY's Blog</description>
     <language>zh-CN</language>
-    <pubDate>Thu, 04 Aug 2022 10:13:54 GMT</pubDate>
-    <lastBuildDate>Thu, 04 Aug 2022 10:13:54 GMT</lastBuildDate>
+    <pubDate>Thu, 04 Aug 2022 14:41:07 GMT</pubDate>
+    <lastBuildDate>Thu, 04 Aug 2022 14:41:07 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+    <category>PDF</category>
+    <category>JavaScript</category>
     <category>OAuth</category>
     <category>Node</category>
     <category>Markdown</category>
     <category>Vuepress</category>
     <category>demo</category>
-    <category>PDF</category>
     <category>Linux</category>
     <category>HTML</category>
-    <category>JavaScript</category>
     <category>CSS</category>
     <category>我的项目整合</category>
     <category>Puppeteer</category>
     <category>使用指南</category>
+    <item>
+      <title>33个非常实用的JavaScript一行代码</title>
+      <link>https://ivwv.github.io/posts/PDF/front-end/33%E4%B8%AA%E9%9D%9E%E5%B8%B8%E5%AE%9E%E7%94%A8%E7%9A%84JavaScript%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81.html</link>
+      <guid>https://ivwv.github.io/posts/PDF/front-end/33%E4%B8%AA%E9%9D%9E%E5%B8%B8%E5%AE%9E%E7%94%A8%E7%9A%84JavaScript%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81.html</guid>
+      <source url="https://ivwv.github.io/rss.xml">33个非常实用的JavaScript一行代码</source>
+      <description>
+</description>
+      <category>PDF</category>
+      <category>JavaScript</category>
+      <pubDate>Thu, 04 Aug 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<CountView></CountView>
+
+<i>Content not supported</i>]]></content:encoded>
+    </item>
+    <item>
+      <title>56个JavaScript实用工具函数助你提升开发效率</title>
+      <link>https://ivwv.github.io/posts/PDF/front-end/56%E4%B8%AAJavaScript%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0%E5%8A%A9%E4%BD%A0%E6%8F%90%E5%8D%87%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87.html</link>
+      <guid>https://ivwv.github.io/posts/PDF/front-end/56%E4%B8%AAJavaScript%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0%E5%8A%A9%E4%BD%A0%E6%8F%90%E5%8D%87%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87.html</guid>
+      <source url="https://ivwv.github.io/rss.xml">56个JavaScript实用工具函数助你提升开发效率</source>
+      <description>
+</description>
+      <category>PDF</category>
+      <category>JavaScript</category>
+      <pubDate>Thu, 04 Aug 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<CountView></CountView>
+
+<i>Content not supported</i>]]></content:encoded>
+    </item>
     <item>
       <title>GitHub OAuth第三方登录示例教程(Node后端)</title>
       <link>https://ivwv.github.io/posts/technology/oauth/github-oauth.html</link>
