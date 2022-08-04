@@ -3,7 +3,7 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-04T10:00:14.421Z</updated>
+  <updated>2022-08-04T10:13:54.668Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
@@ -2309,16 +2309,16 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
     <title type="html">PDF书籍整合</title>
     <id>https://ivwv.github.io/posts/PDF/</id>
     <link href="https://ivwv.github.io/posts/PDF/"/>
-    <updated>2022-08-04T07:38:00.000Z</updated>
+    <updated>2022-08-04T10:13:01.000Z</updated>
     <summary type="html"><![CDATA[<CountView></CountView>
-::: tip 导读
-PDF书籍整合均来自互联网
-:::
+<div><p>导读</p>
+<p>PDF书籍整合均来自互联网</p>
+</div>
 ]]></summary>
     <content type="html"><![CDATA[<CountView></CountView>
-::: tip 导读
-PDF书籍整合均来自互联网
-:::
+<div><p>导读</p>
+<p>PDF书籍整合均来自互联网</p>
+</div>
 
 <div><p>前端相关书籍</p>
 </div>

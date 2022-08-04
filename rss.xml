@@ -6,8 +6,8 @@
     <link>https://ivwv.github.io/</link>
     <description>SY's Blog</description>
     <language>zh-CN</language>
-    <pubDate>Thu, 04 Aug 2022 10:00:14 GMT</pubDate>
-    <lastBuildDate>Thu, 04 Aug 2022 10:00:14 GMT</lastBuildDate>
+    <pubDate>Thu, 04 Aug 2022 10:13:54 GMT</pubDate>
+    <lastBuildDate>Thu, 04 Aug 2022 10:13:54 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>OAuth</category>
@@ -2313,16 +2313,16 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
       <guid>https://ivwv.github.io/posts/PDF/</guid>
       <source url="https://ivwv.github.io/rss.xml">PDF书籍整合</source>
       <description>
-::: tip 导读
+导读
 PDF书籍整合均来自互联网
-:::
+
 </description>
       <category>PDF</category>
       <pubDate>Mon, 01 Aug 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<CountView></CountView>
-::: tip 导读
-PDF书籍整合均来自互联网
-:::
+<div><p>导读</p>
+<p>PDF书籍整合均来自互联网</p>
+</div>
 
 <div><p>前端相关书籍</p>
 </div>
