@@ -4,7 +4,7 @@
 export default {
   data() {
     return {
-      apiServer: "http://localhost:3000",
+      apiServer: "http://124.221.62.120:3333",
       ipinfo: {},
       clientInfo: {
         href: "",
