@@ -18,7 +18,7 @@ export default {
       fetch("https://ipinfo.io/?token=e73fecae5b3e0b")
         .then((res) => res.json())
         .then((res) => {
-          console.log(res);
+          // console.log(res);
           this.ipinfo = res;
           this.clientInfo = {
             href: decodeURI(window.location.href),
