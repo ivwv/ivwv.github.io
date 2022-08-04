@@ -4,12 +4,13 @@
 export default {
   data() {
     return {
-      apiServer: "http://124.221.62.120:3333",
+      apiServer: "https://count-blog-view.herokuapp.com",
       ipinfo: {},
       clientInfo: {
         href: "",
         host: "",
         pathname: "",
+        time: "",
       },
     };
   },
@@ -24,6 +25,7 @@ export default {
             href: decodeURI(window.location.href),
             host: decodeURI(window.location.host),
             pathname: decodeURI(window.location.pathname),
+            time: new Date().toLocaleString(),
           };
           fetch(this.apiServer + "/get_client_info", {
             method: "POST",
