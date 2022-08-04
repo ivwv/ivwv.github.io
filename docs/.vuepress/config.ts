@@ -31,6 +31,11 @@ export default defineUserConfig({
   base: "/",
   head: [
     ["link", { rel: "icon", href: "/logo.png" }],
+    // <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    [
+      "meta",
+      { name: "Content-Security-Policy", content: "upgrade-insecure-requests" },
+    ],
     // ["script", { src: "/js/global.js" }],
     // <meta name="google-site-verification" content="LeFBm40tk1ztZLlPI1zHgbAyplU_l0lSRrjpUkqmtKw" />
     // google站长验证
