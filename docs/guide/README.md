@@ -6,6 +6,8 @@ icon: creative
 category:
   - 使用指南
 ---
+<CountView></CountView>
+
 
 ## 目录
 
