@@ -71,7 +71,7 @@ export default navbar([
       {
         text: "Render Pages",
         icon: "creative",
-        link: "https://ivwv.onrender.com//",
+        link: "https://ivwv.onrender.com/",
       },
     ],
   },
