@@ -3,7 +3,7 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-05T15:17:21.293Z</updated>
+  <updated>2022-08-05T15:20:21.849Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
@@ -30,7 +30,7 @@
     <title type="html">PicGo+Typora 配合 Github 创建个人图床</title>
     <id>https://ivwv.github.io/posts/share/imgur/typora-picgo-github-picur.html</id>
     <link href="https://ivwv.github.io/posts/share/imgur/typora-picgo-github-picur.html"/>
-    <updated>2022-08-05T15:11:49.000Z</updated>
+    <updated>2022-08-05T15:19:25.000Z</updated>
     <summary type="html">PicGo+Typora 配合 Github 创建个人图床</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
@@ -134,7 +134,7 @@
     <category term="图床" scheme=""/>
     <category term="Picgo" scheme=""/>
     <category term="GitHub" scheme=""/>
-    <published>2022-08-04T00:00:00.000Z</published>
+    <published>2022-08-05T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="html">33个非常实用的JavaScript一行代码</title>
