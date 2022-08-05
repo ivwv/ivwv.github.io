@@ -46,6 +46,13 @@ export default defineUserConfig({
         content: "LeFBm40tk1ztZLlPI1zHgbAyplU_l0lSRrjpUkqmtKw",
       },
     ],
+    // <meta name="description" content="一个具有强大功能的 vuepress 主题✨">
+    // 描述
+    [
+      "meta",
+      { name: "description", content: "分享自己的学习日常---努力成就更好的自己✨" },
+    ],
+
     // <meta name="msvalidate.01" content="B7C29717C9BBED39368D957F6E16F3B5" />
     // bing站长验证
     [
