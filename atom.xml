@@ -3,7 +3,7 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-04T14:41:07.442Z</updated>
+  <updated>2022-08-05T13:13:04.362Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
@@ -27,9 +27,8 @@
     <title type="html">33个非常实用的JavaScript一行代码</title>
     <id>https://ivwv.github.io/posts/PDF/front-end/33%E4%B8%AA%E9%9D%9E%E5%B8%B8%E5%AE%9E%E7%94%A8%E7%9A%84JavaScript%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81.html</id>
     <link href="https://ivwv.github.io/posts/PDF/front-end/33%E4%B8%AA%E9%9D%9E%E5%B8%B8%E5%AE%9E%E7%94%A8%E7%9A%84JavaScript%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81.html"/>
-    <updated>2022-08-04T14:40:10.000Z</updated>
-    <summary type="html"><![CDATA[<CountView></CountView>
-]]></summary>
+    <updated>2022-08-05T13:12:13.000Z</updated>
+    <summary type="html">33个非常实用的JavaScript一行代码</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 
 <i>Content not supported</i>]]></content>
