@@ -17,7 +17,7 @@ star: false
 article: true
 # 是否将该文章添加至时间线中。
 timeline: true
-description: 33个非常实用的JavaScript一行代码
+
 ---
 <CountView></CountView>
 <!-- more -->
