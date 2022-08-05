@@ -3,7 +3,7 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-05T13:40:06.097Z</updated>
+  <updated>2022-08-05T13:43:38.438Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
@@ -2771,18 +2771,243 @@ unset NODE_ENV
     <published>2022-08-01T00:00:00.000Z</published>
   </entry>
   <entry>
-    <title type="html">Puppeteer爬取Eletron官网文档,保存为pdf格式</title>
+    <title type="html">Puppeteer爬取Eletron官网文档并保存为pdf格式</title>
     <id>https://ivwv.github.io/posts/project/puppeteer-electron-pdf/</id>
     <link href="https://ivwv.github.io/posts/project/puppeteer-electron-pdf/"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
-    <summary type="html">Puppeteer爬取Eletron官网文档,保存为pdf格式</summary>
+    <updated>2022-08-05T13:42:49.000Z</updated>
+    <summary type="html">Puppeteer爬取Eletron官网文档并保存为pdf格式</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
-<p>为什么会做这样的一个项目?</p>
-<p>在学习<code>electron</code>时，官网中文文档时不时会翻译不了，当能翻译时，我就想着为何不使用<code>puppeteer</code>将文档保存为<code>pdf</code>格式。</p>
+<p>为什么要做这个小爬虫？</p>
+<p>说起来是个艰辛的路程...</p>
+<p>当我接触到<code>electron</code>时，被这强大的用处深深吸引！</p>
+<p>但是官网确老是抽风！</p>
+<p>时不时的不能翻译成中文，</p>
+<p>恰好有一天，发现能翻译 中文了，就萌生了一个使用<code>puppeteer</code>将文档爬取下来保存！</p>
 </blockquote>
 
-<p>dawdawd</p>
+<blockquote>
+<p><a href="https://github.com/ivwv/puppeteer-electron-pdf" target="_blank" rel="noopener noreferrer"><code>点击获取Github代码</code></a></p>
+</blockquote>
+<h3 id="开始" tabindex="-1"> 开始</h3>
+<div><pre><code><span>npm</span> i puppeteer
+</code></pre><div aria-hidden="true"><div></div></div></div><blockquote>
+<p><code>config.js</code></p>
+</blockquote>
+<p>保存<code>pdf</code> 需要在无头模式下进行<code>headless: true,</code></p>
+<div><pre><code><span>// 配置文件</span>
+module<span>.</span>exports <span>=</span> <span>{</span>
+  <span>// chrome配置文件</span>
+  <span>chrome</span><span>:</span> <span>{</span>
+    <span>headless</span><span>:</span> <span>true</span><span>,</span>
+    <span>// 忽略 自动化提示</span>
+    <span>ignoreDefaultArgs</span><span>:</span> <span>[</span><span>"--enable-automation"</span><span>]</span><span>,</span>
+    <span>// 浏览器路径</span>
+    <span>// executablePath: "",</span>
+    <span>// 浏览器用户数据存放地址</span>
+    <span>userDataDir</span><span>:</span> <span>"./userDataDir"</span><span>,</span>
+    <span>slowMo</span><span>:</span> <span>30</span><span>,</span>
+    <span>defaultViewport</span><span>:</span> <span>{</span>
+      <span>width</span><span>:</span> <span>1536</span><span>,</span>
+      <span>height</span><span>:</span> <span>730</span><span>,</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><blockquote>
+<p><code>PdfUtils.js</code></p>
+</blockquote>
+<div><pre><code><span>const</span> fs <span>=</span> <span>require</span><span>(</span><span>"fs"</span><span>)</span><span>;</span>
+<span>const</span> path <span>=</span> <span>require</span><span>(</span><span>"path"</span><span>)</span><span>;</span>
+
+module<span>.</span>exports <span>=</span> <span>class</span> <span>PdfUtils</span> <span>{</span>
+  <span>constructor</span><span>(</span><span>page</span><span>)</span> <span>{</span>
+    <span>this</span><span>.</span>page <span>=</span> page<span>;</span>
+    <span>// 文档总菜单类名(！唯一)</span>
+    <span>this</span><span>.</span>menuUlLi <span>=</span> <span>".theme-doc-sidebar-item-category"</span><span>;</span>
+    <span>// menu的菜单名 类名</span>
+    <span>this</span><span>.</span>menuUlLiA <span>=</span> <span>".menu__list-item-collapsible >a"</span><span>;</span>
+    <span>// 每个子菜单的类名</span>
+    <span>this</span><span>.</span>li_a <span>=</span> <span>".menuLink_aa1l"</span><span>;</span>
+  <span>}</span>
+
+  <span>/**
+   * 获取 this.menuUlLi 的每一个子菜单的菜单名
+   * <span>@returns</span> <span><span>{</span>Promise<span>&lt;</span>Array<span>></span><span>}</span></span>
+   *
+   */</span>
+  <span>async</span> <span>getMenuName</span><span>(</span><span>)</span> <span>{</span>
+    <span>const</span> menuName <span>=</span> <span>await</span> <span>this</span><span>.</span>page<span>.</span><span>$$eval</span><span>(</span><span>this</span><span>.</span>menuUlLiA<span>,</span> <span>(</span><span><span>as</span></span><span>)</span> <span>=></span>
+      <span>as</span><span>.</span><span>map</span><span>(</span><span>(</span><span>a</span><span>)</span> <span>=></span> a<span>.</span>innerText<span>)</span>
+    <span>)</span><span>;</span>
+    <span>return</span> menuName<span>;</span>
+  <span>}</span>
+  <span>/**
+   * 处理 getMenuName 返回的数据
+   * 将数组中的每一项通过空格分开，再使用 - 合并
+   * <span>@returns</span> <span><span>{</span>Promise<span>&lt;</span>Array<span>></span><span>}</span></span>
+   */</span>
+  <span>async</span> <span>getMenuNameHandle</span><span>(</span><span>)</span> <span>{</span>
+    <span>const</span> menuName <span>=</span> <span>await</span> <span>this</span><span>.</span><span>getMenuName</span><span>(</span><span>)</span><span>;</span>
+    <span>const</span> menuNameHandle <span>=</span> menuName<span>.</span><span>map</span><span>(</span><span>(</span><span>item</span><span>)</span> <span>=></span> <span>{</span>
+      <span>return</span> item<span>.</span><span>split</span><span>(</span><span>" "</span><span>)</span><span>.</span><span>join</span><span>(</span><span>"-"</span><span>)</span><span>;</span>
+    <span>}</span><span>)</span><span>;</span>
+
+    <span>return</span> menuNameHandle<span>;</span>
+  <span>}</span>
+
+  <span>/**
+   * 返回当前页面主菜单下面的每个子菜单的长度
+   * <span>@returns</span>
+   */</span>
+  <span>async</span> <span>getMenuLength</span><span>(</span><span>)</span> <span>{</span>
+    <span>const</span> menuLength <span>=</span> <span>await</span> <span>this</span><span>.</span>page<span>.</span><span>$$eval</span><span>(</span>
+      <span>this</span><span>.</span>menuUlLi<span>,</span>
+      <span>(</span><span>lis</span><span>)</span> <span>=></span> lis<span>.</span>length
+    <span>)</span><span>;</span>
+    <span>return</span> menuLength<span>;</span>
+  <span>}</span>
+
+  <span>/**
+   * 点击每一个菜单，返回当前菜单的子菜单长度
+   */</span>
+  <span>async</span> <span>clickMenu</span><span>(</span><span>)</span> <span>{</span>
+    <span>const</span> menuLength <span>=</span> <span>await</span> <span>this</span><span>.</span><span>getMenuLength</span><span>(</span><span>)</span><span>;</span>
+
+    <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>1</span><span>;</span> i <span>&lt;</span> menuLength<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+      <span>try</span> <span>{</span>
+        <span>if</span> <span>(</span>i <span>>=</span> menuLength<span>)</span> <span>return</span><span>;</span>
+        <span>// 等待1秒</span>
+        <span>await</span> <span>this</span><span>.</span>page<span>.</span><span>waitForTimeout</span><span>(</span><span>1000</span><span>)</span><span>;</span>
+        <span>await</span> <span>this</span><span>.</span>page<span>.</span><span>click</span><span>(</span><span><span>`</span><span><span>${</span><span>this</span><span>.</span>menuUlLi<span>}</span></span><span>:nth-child(</span><span><span>${</span>i <span>+</span> <span>1</span><span>}</span></span><span>)</span><span>`</span></span><span>)</span><span>;</span>
+      <span>}</span> <span>catch</span> <span>(</span>error<span>)</span> <span>{</span>
+        console<span>.</span><span>log</span><span>(</span>i<span>)</span><span>;</span>
+      <span>}</span>
+    <span>}</span>
+  <span>}</span>
+
+  <span>/**
+   * 在页面内执行js代码，返回一个对象 包含a 的href和innerText
+   * <span>@returns</span> <span><span>{</span>Promise<span>&lt;</span>Array<span>></span><span>}</span></span>
+   */</span>
+  <span>async</span> <span>getHrefInfo</span><span>(</span><span>)</span> <span>{</span>
+    <span>const</span> menuHref <span>=</span> <span>await</span> <span>this</span><span>.</span>page<span>.</span><span>$$eval</span><span>(</span><span>this</span><span>.</span>li_a<span>,</span> <span>(</span><span><span>as</span></span><span>)</span> <span>=></span>
+      <span>as</span><span>.</span><span>map</span><span>(</span><span>(</span><span>a</span><span>)</span> <span>=></span> <span>{</span>
+        <span>return</span> <span>{</span>
+          <span>//</span>
+          <span>menu</span><span>:</span> a<span>.</span>parentElement<span>.</span>parentElement<span>.</span>parentElement<span>.</span>childNodes<span>[</span><span>0</span><span>]</span><span>.</span>childNodes<span>[</span><span>0</span><span>]</span><span>.</span>innerHTML
+            <span>.</span><span>split</span><span>(</span><span>" "</span><span>)</span>
+            <span>.</span><span>join</span><span>(</span><span>"-"</span><span>)</span><span>,</span>
+          <span>href</span><span>:</span> a<span>.</span>href<span>,</span>
+          <span>innerText</span><span>:</span> a<span>.</span>innerText<span>.</span><span>split</span><span>(</span><span>" "</span><span>)</span><span>.</span><span>join</span><span>(</span><span>"-"</span><span>)</span><span>,</span>
+        <span>}</span><span>;</span>
+      <span>}</span><span>)</span>
+    <span>)</span><span>;</span>
+    <span>return</span> menuHref<span>;</span>
+  <span>}</span>
+
+  <span>/**
+   * 根据url 通过 / 分割，获取最后一个字符串
+   * <span>@param</span> <span><span>{</span>string<span>}</span></span> <span>url</span>
+   * <span>@returns</span> <span><span>{</span>string<span>}</span></span>
+   */</span>
+  <span>getUrlLastStr</span><span>(</span><span>url</span><span>)</span> <span>{</span>
+    <span>const</span> urlArr <span>=</span> url<span>.</span><span>split</span><span>(</span><span>"/"</span><span>)</span><span>;</span>
+    <span>const</span> lastStr <span>=</span> urlArr<span>[</span>urlArr<span>.</span>length <span>-</span> <span>1</span><span>]</span><span>;</span>
+    <span>return</span> lastStr<span>;</span>
+  <span>}</span>
+
+  <span>/**
+   * 检测文件名是否合法
+   * 不合法则正则替换为合法的文件名
+   * <span>@param</span> <span><span>{</span>string<span>}</span></span> <span>name</span>
+   * <span>@returns</span> <span><span>{</span>string<span>}</span></span>
+   */</span>
+  <span>checkFileName</span><span>(</span><span>name</span><span>)</span> <span>{</span>
+    <span>const</span> reg <span>=</span> <span><span>/</span><span>[\/:*?"&lt;>|]</span><span>/</span><span>g</span></span><span>;</span>
+    <span>const</span> newName <span>=</span> name<span>.</span><span>replace</span><span>(</span>reg<span>,</span> <span>""</span><span>)</span><span>;</span>
+    <span>return</span> newName<span>;</span>
+  <span>}</span>
+
+  <span>/**
+   * 通过 url 保存PDF
+   * <span>@param</span> <span><span>{</span><span>*</span><span>}</span></span> <span>obj</span>
+   */</span>
+  <span>async</span> <span>getPdf</span><span>(</span><span>obj</span><span>)</span> <span>{</span>
+    <span>const</span> <span>{</span> menu<span>,</span> href<span>,</span> innerText <span>}</span> <span>=</span> obj<span>;</span>
+    console<span>.</span><span>log</span><span>(</span><span>[</span>menu<span>,</span> href<span>,</span> innerText<span>]</span><span>)</span><span>;</span>
+    <span>await</span> <span>this</span><span>.</span>page<span>.</span><span>goto</span><span>(</span>href<span>)</span><span>;</span>
+    <span>// 判断文件夹是否存在，不存在则创建</span>
+    <span>const</span> dir <span>=</span> <span>this</span><span>.</span><span>checkFileName</span><span>(</span>menu<span>)</span><span>;</span>
+    <span>if</span> <span>(</span><span>!</span>fs<span>.</span><span>existsSync</span><span>(</span>dir<span>)</span><span>)</span> <span>{</span>
+      fs<span>.</span><span>mkdirSync</span><span>(</span>dir<span>)</span><span>;</span>
+    <span>}</span>
+    <span>const</span> urlLastStr <span>=</span> <span>this</span><span>.</span><span>getUrlLastStr</span><span>(</span>href<span>)</span><span>;</span>
+
+    <span>await</span> <span>this</span><span>.</span>page<span>.</span><span>pdf</span><span>(</span><span>{</span>
+      <span>path</span><span>:</span> <span><span>`</span><span>./</span><span><span>${</span>dir<span>}</span></span><span>/</span><span><span>${</span><span>this</span><span>.</span><span>checkFileName</span><span>(</span>innerText<span>)</span><span>}</span></span><span>.pdf</span><span>`</span></span><span>,</span>
+      <span>format</span><span>:</span> <span>"A4"</span><span>,</span>
+      <span>// printBackground: true,</span>
+    <span>}</span><span>)</span><span>;</span>
+    <span>// 判断是否下载完成</span>
+    <span>const</span> isExist <span>=</span> fs<span>.</span><span>existsSync</span><span>(</span><span><span>`</span><span>./</span><span><span>${</span>dir<span>}</span></span><span>/</span><span><span>${</span>innerText<span>}</span></span><span>.pdf</span><span>`</span></span><span>)</span><span>;</span>
+    <span>if</span> <span>(</span>isExist<span>)</span> <span>{</span>
+      console<span>.</span><span>log</span><span>(</span><span><span>`</span><span><span>${</span>innerText<span>}</span></span><span>下载完成</span><span>`</span></span><span>)</span><span>;</span>
+    <span>}</span>
+  <span>}</span>
+<span>}</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><blockquote>
+<p><code>app.js</code></p>
+</blockquote>
+<div><pre><code><span>const</span> puppeteer <span>=</span> <span>require</span><span>(</span><span>"puppeteer"</span><span>)</span><span>;</span>
+<span>const</span> <span>{</span> chrome <span>}</span> <span>=</span> <span>require</span><span>(</span><span>"./config"</span><span>)</span><span>;</span>
+<span>const</span> PdfUtils <span>=</span> <span>require</span><span>(</span><span>"./PdfUtils"</span><span>)</span><span>;</span>
+
+<span>(</span><span>async</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
+  <span>const</span> browser <span>=</span> <span>await</span> puppeteer<span>.</span><span>launch</span><span>(</span>chrome<span>)</span><span>;</span>
+  <span>const</span> page <span>=</span> <span>await</span> browser<span>.</span><span>newPage</span><span>(</span><span>)</span><span>;</span>
+  <span>await</span> page<span>.</span><span>goto</span><span>(</span><span>"https://www.electronjs.org/zh/docs/latest/api/app"</span><span>)</span><span>;</span>
+  <span>const</span> pdfUtils <span>=</span> <span>new</span> <span>PdfUtils</span><span>(</span>page<span>)</span><span>;</span>
+  <span>const</span> menuLength <span>=</span> <span>await</span> pdfUtils<span>.</span><span>getMenuLength</span><span>(</span><span>)</span><span>;</span>
+  console<span>.</span><span>log</span><span>(</span>menuLength<span>)</span><span>;</span>
+  <span>const</span> menuName <span>=</span> <span>await</span> pdfUtils<span>.</span><span>getMenuNameHandle</span><span>(</span><span>)</span><span>;</span>
+  console<span>.</span><span>log</span><span>(</span>menuName<span>)</span><span>;</span>
+  <span>await</span> pdfUtils<span>.</span><span>clickMenu</span><span>(</span><span>)</span><span>;</span>
+  <span>const</span> menuHrefArr <span>=</span> <span>await</span> pdfUtils<span>.</span><span>getHrefInfo</span><span>(</span><span>)</span><span>;</span>
+  console<span>.</span><span>log</span><span>(</span>menuHrefArr<span>)</span><span>;</span>
+  <span>// 开始下载</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> menuHrefArr<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    console<span>.</span><span>log</span><span>(</span><span>"---"</span><span>)</span><span>;</span>
+    <span>await</span> pdfUtils<span>.</span><span>getPdf</span><span>(</span>menuHrefArr<span>[</span>i<span>]</span><span>)</span><span>;</span>
+    <span>// 判断是否全部下载完毕,如果下载完毕则关闭浏览器</span>
+    <span>if</span> <span>(</span>i <span>===</span> menuHrefArr<span>.</span>length <span>-</span> <span>1</span><span>)</span> <span>{</span>
+      <span>await</span> browser<span>.</span><span>close</span><span>(</span><span>)</span><span>;</span>
+    <span>}</span>
+  <span>}</span>
+<span>}</span><span>)</span><span>(</span><span>)</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h5 id="执行" tabindex="-1"> 执行</h5>
+<div><pre><code><span>node</span> app.js
+</code></pre><div aria-hidden="true"><div></div></div></div><p>等待片刻，即可得到<code>electron</code>的<code>pdf</code>文档</p>
+<blockquote>
+<p>下载完毕的目录</p>
+</blockquote>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-27-19:19:56*image-20220727191956220*e.png" alt="image-20220727191956220"></p>
+<blockquote>
+<p>目录文件</p>
+</blockquote>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-27-19:20:18*image-20220727192018194*f.png" alt="image-20220727192018194"></p>
+<blockquote>
+<p>文件</p>
+</blockquote>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-27-19:20:41*image-20220727192041621*d.png" alt="image-20220727192041621"></p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>​																		<strong>学习分享，大佬勿喷！</strong></p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
 ]]></content>
     <category term="我的项目整合" scheme=""/>
     <category term="Puppeteer" scheme=""/>
