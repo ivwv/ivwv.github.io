@@ -6,8 +6,8 @@
     <link>https://ivwv.github.io/</link>
     <description>SY's Blog</description>
     <language>zh-CN</language>
-    <pubDate>Fri, 05 Aug 2022 13:13:04 GMT</pubDate>
-    <lastBuildDate>Fri, 05 Aug 2022 13:13:04 GMT</lastBuildDate>
+    <pubDate>Fri, 05 Aug 2022 13:40:06 GMT</pubDate>
+    <lastBuildDate>Fri, 05 Aug 2022 13:40:06 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>PDF</category>
@@ -41,8 +41,7 @@
       <link>https://ivwv.github.io/posts/PDF/front-end/56%E4%B8%AAJavaScript%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0%E5%8A%A9%E4%BD%A0%E6%8F%90%E5%8D%87%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/56%E4%B8%AAJavaScript%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0%E5%8A%A9%E4%BD%A0%E6%8F%90%E5%8D%87%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87.html</guid>
       <source url="https://ivwv.github.io/rss.xml">56个JavaScript实用工具函数助你提升开发效率</source>
-      <description>
-</description>
+      <description>56个JavaScript实用工具函数助你提升开发效率</description>
       <category>PDF</category>
       <category>JavaScript</category>
       <pubDate>Thu, 04 Aug 2022 00:00:00 GMT</pubDate>
@@ -55,11 +54,7 @@
       <link>https://ivwv.github.io/posts/technology/oauth/github-oauth.html</link>
       <guid>https://ivwv.github.io/posts/technology/oauth/github-oauth.html</guid>
       <source url="https://ivwv.github.io/rss.xml">GitHub OAuth第三方登录示例教程(Node后端)</source>
-      <description>
-
-很多网站登录时，允许使用第三方网站的身份，这称为&amp;quot;第三方登录&amp;quot;。
-
-</description>
+      <description>GitHub OAuth第三方登录示例教程(Node后端)</description>
       <category>OAuth</category>
       <category>Node</category>
       <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
@@ -306,11 +301,7 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
       <link>https://ivwv.github.io/posts/share/mark-down/emoji.html</link>
       <guid>https://ivwv.github.io/posts/share/mark-down/emoji.html</guid>
       <source url="https://ivwv.github.io/rss.xml">markdown通用Emoji表情大全</source>
-      <description>
-
-超多Emoji表情，欢迎使用！
-
-</description>
+      <description>markdown通用Emoji表情大全</description>
       <category>Markdown</category>
       <pubDate>Tue, 02 Aug 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<CountView></CountView>
@@ -2158,8 +2149,7 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
       <link>https://ivwv.github.io/posts/technology/vuepress/vuepress-hope-iconfont.html</link>
       <guid>https://ivwv.github.io/posts/technology/vuepress/vuepress-hope-iconfont.html</guid>
       <source url="https://ivwv.github.io/rss.xml">Vuepress-theme-hope-iconfont 图标大全</source>
-      <description>
-</description>
+      <description>Vuepress-theme-hope-iconfont 图标大全</description>
       <category>Vuepress</category>
       <pubDate>Tue, 02 Aug 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<CountView></CountView>
@@ -2171,11 +2161,7 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
       <link>https://ivwv.github.io/posts/project/api-server/</link>
       <guid>https://ivwv.github.io/posts/project/api-server/</guid>
       <source url="https://ivwv.github.io/rss.xml">黑马案例大事件项目</source>
-      <description>
-
-黑马视频教程-大事件项目后台接口项目 使用 node+express+mysql+Postman+JsonWebToken+joi+bcryptjs+multer
-
-</description>
+      <description>黑马案例大事件项目</description>
       <category>demo</category>
       <pubDate>Tue, 02 Aug 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<CountView></CountView>
@@ -2193,8 +2179,7 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
       <link>https://ivwv.github.io/posts/technology/vuepress/vuepress-register-components.html</link>
       <guid>https://ivwv.github.io/posts/technology/vuepress/vuepress-register-components.html</guid>
       <source url="https://ivwv.github.io/rss.xml">Vuepress2中如何在md文件中添加自定义组件</source>
-      <description>
-</description>
+      <description>Vuepress2中如何在md文件中添加自定义组件</description>
       <category>Vuepress</category>
       <pubDate>Tue, 02 Aug 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<CountView></CountView>
@@ -2242,8 +2227,7 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
       <link>https://ivwv.github.io/posts/PDF/Linux/%E9%98%AE%E4%B8%80%E5%B3%B0-Bash-%E8%84%9A%E6%9C%AC%E6%95%99%E7%A8%8B.html</link>
       <guid>https://ivwv.github.io/posts/PDF/Linux/%E9%98%AE%E4%B8%80%E5%B3%B0-Bash-%E8%84%9A%E6%9C%AC%E6%95%99%E7%A8%8B.html</guid>
       <source url="https://ivwv.github.io/rss.xml">阮一峰-Bash-脚本教程</source>
-      <description>
-</description>
+      <description>阮一峰-Bash-脚本教程</description>
       <category>PDF</category>
       <category>Linux</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
@@ -2256,8 +2240,7 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
       <link>https://ivwv.github.io/posts/PDF/front-end/HTML5%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/HTML5%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97.html</guid>
       <source url="https://ivwv.github.io/rss.xml">HTML5游戏开发进阶指南</source>
-      <description>
-</description>
+      <description>HTML5游戏开发进阶指南</description>
       <category>PDF</category>
       <category>HTML</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
@@ -2270,8 +2253,7 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
       <link>https://ivwv.github.io/posts/PDF/front-end/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%BC%A0%E5%AE%B9%E9%93%AD.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%BC%A0%E5%AE%B9%E9%93%AD.html</guid>
       <source url="https://ivwv.github.io/rss.xml">JavaScript设计模式 张容铭</source>
-      <description>
-</description>
+      <description>JavaScript设计模式 张容铭</description>
       <category>PDF</category>
       <category>JavaScript</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
@@ -2284,8 +2266,7 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
       <link>https://ivwv.github.io/posts/PDF/front-end/Three.js%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97-%E5%8E%9F%E4%B9%A6%E7%AC%AC2%E7%89%88.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/Three.js%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97-%E5%8E%9F%E4%B9%A6%E7%AC%AC2%E7%89%88.html</guid>
       <source url="https://ivwv.github.io/rss.xml">Three.js开发指南 原书第2版</source>
-      <description>
-</description>
+      <description>Three.js开发指南 原书第2版</description>
       <category>PDF</category>
       <category>JavaScript</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
@@ -2298,8 +2279,7 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
       <link>https://ivwv.github.io/posts/PDF/front-end/%E4%BB%A3%E7%A0%81%E6%95%B4%E6%B4%81%E4%B9%8B%E9%81%93.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/%E4%BB%A3%E7%A0%81%E6%95%B4%E6%B4%81%E4%B9%8B%E9%81%93.html</guid>
       <source url="https://ivwv.github.io/rss.xml">代码整洁之道</source>
-      <description>
-</description>
+      <description>代码整洁之道</description>
       <category>PDF</category>
       <category>JavaScript</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
@@ -2312,8 +2292,7 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
       <link>https://ivwv.github.io/posts/PDF/network/%E5%9B%BE%E8%A7%A3HTTP(%E4%B8%8A%E9%87%8E%E5%AE%A3).html</link>
       <guid>https://ivwv.github.io/posts/PDF/network/%E5%9B%BE%E8%A7%A3HTTP(%E4%B8%8A%E9%87%8E%E5%AE%A3).html</guid>
       <source url="https://ivwv.github.io/rss.xml">图解HTTP (上野宣)</source>
-      <description>
-</description>
+      <description>图解HTTP (上野宣)</description>
       <category>PDF</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<CountView></CountView>
@@ -2325,8 +2304,7 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
       <link>https://ivwv.github.io/posts/PDF/front-end/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAES6.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAES6.html</guid>
       <source url="https://ivwv.github.io/rss.xml">深入浅出ES6</source>
-      <description>
-</description>
+      <description>深入浅出ES6</description>
       <category>PDF</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<CountView></CountView>
@@ -2339,11 +2317,7 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
       <link>https://ivwv.github.io/posts/PDF/</link>
       <guid>https://ivwv.github.io/posts/PDF/</guid>
       <source url="https://ivwv.github.io/rss.xml">PDF书籍整合</source>
-      <description>
-导读
-PDF书籍整合均来自互联网
-
-</description>
+      <description>PDF书籍整合</description>
       <category>PDF</category>
       <pubDate>Mon, 01 Aug 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<CountView></CountView>
@@ -2392,8 +2366,7 @@ PDF书籍整合均来自互联网
       <link>https://ivwv.github.io/posts/PDF/back-end/NODE.js%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.html</link>
       <guid>https://ivwv.github.io/posts/PDF/back-end/NODE.js%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.html</guid>
       <source url="https://ivwv.github.io/rss.xml">NODE.js入门手册</source>
-      <description>
-</description>
+      <description>NODE.js入门手册</description>
       <category>PDF</category>
       <category>Node</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
@@ -2406,8 +2379,7 @@ PDF书籍整合均来自互联网
       <link>https://ivwv.github.io/posts/PDF/back-end/Node.js%E5%AE%9E%E6%88%98.html</link>
       <guid>https://ivwv.github.io/posts/PDF/back-end/Node.js%E5%AE%9E%E6%88%98.html</guid>
       <source url="https://ivwv.github.io/rss.xml">Node.js实战</source>
-      <description>
-</description>
+      <description>Node.js实战</description>
       <category>PDF</category>
       <category>Node</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
@@ -2420,8 +2392,7 @@ PDF书籍整合均来自互联网
       <link>https://ivwv.github.io/posts/PDF/back-end/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BANode.js.html</link>
       <guid>https://ivwv.github.io/posts/PDF/back-end/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BANode.js.html</guid>
       <source url="https://ivwv.github.io/rss.xml">深入浅出Node.js</source>
-      <description>
-</description>
+      <description>深入浅出Node.js</description>
       <category>PDF</category>
       <category>Node</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
@@ -2434,8 +2405,7 @@ PDF书籍整合均来自互联网
       <link>https://ivwv.github.io/posts/PDF/front-end/CSS%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%89%E7%89%88.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/CSS%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%89%E7%89%88.html</guid>
       <source url="https://ivwv.github.io/rss.xml">CSS权威指南-第三版</source>
-      <description>
-</description>
+      <description>CSS权威指南-第三版</description>
       <category>PDF</category>
       <category>CSS</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
@@ -2448,8 +2418,7 @@ PDF书籍整合均来自互联网
       <link>https://ivwv.github.io/posts/PDF/front-end/JavaScript%E7%99%BE%E7%82%BC%E6%88%90%E4%BB%99.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/JavaScript%E7%99%BE%E7%82%BC%E6%88%90%E4%BB%99.html</guid>
       <source url="https://ivwv.github.io/rss.xml">JavaScript百炼成仙</source>
-      <description>
-</description>
+      <description>JavaScript百炼成仙</description>
       <category>PDF</category>
       <category>JavaScript</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
@@ -2462,8 +2431,7 @@ PDF书籍整合均来自互联网
       <link>https://ivwv.github.io/posts/PDF/front-end/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5.html</guid>
       <source url="https://ivwv.github.io/rss.xml">JavaScript设计模式与开发实践</source>
-      <description>
-</description>
+      <description>JavaScript设计模式与开发实践</description>
       <category>PDF</category>
       <category>JavaScript</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
@@ -2476,8 +2444,7 @@ PDF书籍整合均来自互联网
       <link>https://ivwv.github.io/posts/PDF/front-end/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89.html</guid>
       <source url="https://ivwv.github.io/rss.xml">JavaScript高级程序设计（第4版）</source>
-      <description>
-</description>
+      <description>JavaScript高级程序设计（第4版）</description>
       <category>PDF</category>
       <category>JavaScript</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
@@ -2490,8 +2457,7 @@ PDF书籍整合均来自互联网
       <link>https://ivwv.github.io/posts/PDF/front-end/javascript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/javascript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html</guid>
       <source url="https://ivwv.github.io/rss.xml">javascript面向对象编程</source>
-      <description>
-</description>
+      <description>javascript面向对象编程</description>
       <category>PDF</category>
       <category>JavaScript</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
@@ -2504,8 +2470,7 @@ PDF书籍整合均来自互联网
       <link>https://ivwv.github.io/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8A%E5%8D%B7%EF%BC%89.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8A%E5%8D%B7%EF%BC%89.html</guid>
       <source url="https://ivwv.github.io/rss.xml">你不知道的JavaScript（上卷）</source>
-      <description>
-</description>
+      <description>你不知道的JavaScript（上卷）</description>
       <category>PDF</category>
       <category>JavaScript</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
@@ -2518,8 +2483,7 @@ PDF书籍整合均来自互联网
       <link>https://ivwv.github.io/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8B%E5%8D%B7%EF%BC%89.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8B%E5%8D%B7%EF%BC%89.html</guid>
       <source url="https://ivwv.github.io/rss.xml">你不知道的JavaScript（下卷）</source>
-      <description>
-</description>
+      <description>你不知道的JavaScript（下卷）</description>
       <category>PDF</category>
       <category>JavaScript</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
@@ -2532,8 +2496,7 @@ PDF书籍整合均来自互联网
       <link>https://ivwv.github.io/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%AD%E5%8D%B7%EF%BC%89.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%AD%E5%8D%B7%EF%BC%89.html</guid>
       <source url="https://ivwv.github.io/rss.xml">你不知道的JavaScript（中卷）</source>
-      <description>
-</description>
+      <description>你不知道的JavaScript（中卷）</description>
       <category>PDF</category>
       <category>JavaScript</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
@@ -2546,8 +2509,7 @@ PDF书籍整合均来自互联网
       <link>https://ivwv.github.io/posts/PDF/front-end/%E5%AD%A6%E4%B9%A0JavaScript%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%EF%BC%88%E7%AC%AC3%E7%89%88%EF%BC%89.html</link>
       <guid>https://ivwv.github.io/posts/PDF/front-end/%E5%AD%A6%E4%B9%A0JavaScript%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%EF%BC%88%E7%AC%AC3%E7%89%88%EF%BC%89.html</guid>
       <source url="https://ivwv.github.io/rss.xml">学习JavaScript数据结构与算法（第3版）</source>
-      <description>
-</description>
+      <description>学习JavaScript数据结构与算法（第3版）</description>
       <category>PDF</category>
       <category>JavaScript</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
@@ -2560,8 +2522,7 @@ PDF书籍整合均来自互联网
       <link>https://ivwv.github.io/posts/PDF/network/%E5%9B%BE%E8%A7%A3TCPIP%EF%BC%88%E7%AC%AC%E4%BA%94%E7%89%88%EF%BC%89.html</link>
       <guid>https://ivwv.github.io/posts/PDF/network/%E5%9B%BE%E8%A7%A3TCPIP%EF%BC%88%E7%AC%AC%E4%BA%94%E7%89%88%EF%BC%89.html</guid>
       <source url="https://ivwv.github.io/rss.xml">图解TCPIP（第五版）</source>
-      <description>
-</description>
+      <description>图解TCPIP（第五版）</description>
       <category>PDF</category>
       <pubDate>Wed, 27 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<CountView></CountView>
@@ -2573,11 +2534,7 @@ PDF书籍整合均来自互联网
       <link>https://ivwv.github.io/posts/node/other/process.env%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html</link>
       <guid>https://ivwv.github.io/posts/node/other/process.env%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html</guid>
       <source url="https://ivwv.github.io/rss.xml">process.env环境变量配置</source>
-      <description>
-导读
-Node 环境变量配置
-
-</description>
+      <description>process.env环境变量配置</description>
       <category>Node</category>
       <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<CountView></CountView>
@@ -2585,7 +2542,6 @@ Node 环境变量配置
 <p>Node 环境变量配置</p>
 </div>
 
-<h1 id="process-env环境变量配置" tabindex="-1"> <code>process.env</code>环境变量配置</h1>
 <h3 id="windows-系统" tabindex="-1"> Windows 系统</h3>
 <p>Windows 系统下，最常用的命令行面板就是 <code>CMD</code>（Command的简写） 和 <code>Powershell</code>。它们的操作分别如下：</p>
 <h4 id="cmd-command-或-命令提示符" tabindex="-1"> CMD (Command 或 命令提示符)</h4>
@@ -2709,11 +2665,7 @@ unset NODE_ENV
       <link>https://ivwv.github.io/posts/project/</link>
       <guid>https://ivwv.github.io/posts/project/</guid>
       <source url="https://ivwv.github.io/rss.xml">我的项目整合</source>
-      <description>
-导读
-我的项目列表
-
-</description>
+      <description>我的项目整合</description>
       <category>我的项目整合</category>
       <pubDate>Sun, 31 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<CountView></CountView>
@@ -2759,11 +2711,7 @@ unset NODE_ENV
       <link>https://ivwv.github.io/posts/project/newsinfo/</link>
       <guid>https://ivwv.github.io/posts/project/newsinfo/</guid>
       <source url="https://ivwv.github.io/rss.xml">新闻门户网站</source>
-      <description>
-导读
-该项目是在大二期间，学校举办的技能节，参加了web项目。比赛内容是做出一个新闻门户网站，两人一组。犹豫队友平时比较忙，我就让他帮我找找素材啥的，然后让他做了一个index.html首页
-
-</description>
+      <description>新闻门户网站</description>
       <category>我的项目整合</category>
       <pubDate>Mon, 01 Aug 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<CountView></CountView>
@@ -2830,12 +2778,7 @@ unset NODE_ENV
       <link>https://ivwv.github.io/posts/project/puppeteer-electron-pdf/</link>
       <guid>https://ivwv.github.io/posts/project/puppeteer-electron-pdf/</guid>
       <source url="https://ivwv.github.io/rss.xml">Puppeteer爬取Eletron官网文档,保存为pdf格式</source>
-      <description>
-
-为什么会做这样的一个项目?
-在学习electron时，官网中文文档时不时会翻译不了，当能翻译时，我就想着为何不使用puppeteer将文档保存为pdf格式。
-
-</description>
+      <description>Puppeteer爬取Eletron官网文档,保存为pdf格式</description>
       <category>我的项目整合</category>
       <category>Puppeteer</category>
       <category>Node</category>
@@ -2854,11 +2797,7 @@ unset NODE_ENV
       <link>https://ivwv.github.io/posts/project/socket-chat/</link>
       <guid>https://ivwv.github.io/posts/project/socket-chat/</guid>
       <source url="https://ivwv.github.io/rss.xml">Node socket.io 聊天室</source>
-      <description>
-
-Node socket.io 聊天室 包含用户名自定义、多人房间、用户进入房间全局提示、用户退出全局提示、用户打字中全局提示
-
-</description>
+      <description>Node socket.io 聊天室</description>
       <category>我的项目整合</category>
       <category>Node</category>
       <pubDate>Tue, 02 Aug 2022 00:00:00 GMT</pubDate>
@@ -2882,12 +2821,7 @@ Node socket.io 聊天室 包含用户名自定义、多人房间、用户进入�
       <link>https://ivwv.github.io/posts/project/vue-shop/</link>
       <guid>https://ivwv.github.io/posts/project/vue-shop/</guid>
       <source url="https://ivwv.github.io/rss.xml">电商后台管理项目</source>
-      <description>
-导读
-Vue2+ElementUi+Node+Axios 电商后台管理项目。
-这个项目将vue2学完后完成的一个项目
-
-</description>
+      <description>电商后台管理项目</description>
       <category>我的项目整合</category>
       <pubDate>Sun, 31 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<CountView></CountView>
@@ -2922,11 +2856,7 @@ Vue2+ElementUi+Node+Axios 电商后台管理项目。
       <link>https://ivwv.github.io/posts/javascript/es6/ES6%E5%9C%A8%E5%89%8D%E7%AB%AF%E7%9A%84%E6%A8%A1%E5%9D%97%E5%AF%BC%E5%85%A5%E4%B8%8E%E5%AF%BC%E5%87%BA.html</link>
       <guid>https://ivwv.github.io/posts/javascript/es6/ES6%E5%9C%A8%E5%89%8D%E7%AB%AF%E7%9A%84%E6%A8%A1%E5%9D%97%E5%AF%BC%E5%85%A5%E4%B8%8E%E5%AF%BC%E5%87%BA.html</guid>
       <source url="https://ivwv.github.io/rss.xml">ES6在前端的模块导入与导出</source>
-      <description>
-导读
-es6模块化导入与导出自己的整理
-
-</description>
+      <description>ES6在前端的模块导入与导出</description>
       <category>JavaScript</category>
       <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<CountView></CountView>
@@ -2934,7 +2864,6 @@ es6模块化导入与导出自己的整理
 <p>es6模块化导入与导出自己的整理</p>
 </div>
 
-<h1 id="es6在前端的模块导入与导出" tabindex="-1"> ES6在前端的模块导入与导出</h1>
 <h4 id="html文件使用" tabindex="-1"> <code>html</code>文件使用</h4>
 <h5 id="方法一" tabindex="-1"> 方法一</h5>
 <ul>
@@ -3036,11 +2965,7 @@ es6模块化导入与导出自己的整理
       <link>https://ivwv.github.io/posts/javascript/es6/Javascript%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html</link>
       <guid>https://ivwv.github.io/posts/javascript/es6/Javascript%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html</guid>
       <source url="https://ivwv.github.io/rss.xml">Javascript面对对象编程</source>
-      <description>
-导读
-面向对象相关的笔记
-
-</description>
+      <description>Javascript面对对象编程</description>
       <category>JavaScript</category>
       <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<CountView></CountView>
@@ -3048,7 +2973,6 @@ es6模块化导入与导出自己的整理
 <p>面向对象相关的笔记</p>
 </div>
 
-<h1 id="javascript面对对象编程" tabindex="-1"> Javascript面对对象编程</h1>
 <h5 id="使用整合" tabindex="-1"> 使用整合</h5>
 <ul>
 <li>通过class 关键字创建类, 类名我们还是习惯性定义首字母大写</li>
@@ -3180,11 +3104,7 @@ son<span>.</span><span>say</span><span>(</span><span>)</span><span>;</span> <spa
       <link>https://ivwv.github.io/posts/javascript/es6/%E5%8E%9F%E5%9E%8B.html</link>
       <guid>https://ivwv.github.io/posts/javascript/es6/%E5%8E%9F%E5%9E%8B.html</guid>
       <source url="https://ivwv.github.io/rss.xml">原型</source>
-      <description>
-导读
-原型相关的笔记
-
-</description>
+      <description>JavaScript原型链</description>
       <category>JavaScript</category>
       <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<CountView></CountView>
@@ -3192,7 +3112,6 @@ son<span>.</span><span>say</span><span>(</span><span>)</span><span>;</span> <spa
 <p>原型相关的笔记</p>
 </div>
 
-<h1 id="原型" tabindex="-1"> 原型</h1>
 <h2 id="prototype原型" tabindex="-1"> prototype原型</h2>
 <p>1.原型是什么？</p>
 <ul>
@@ -3488,11 +3407,7 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
       <link>https://ivwv.github.io/posts/javascript/es6/%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%9AObject.defineProperty.html</link>
       <guid>https://ivwv.github.io/posts/javascript/es6/%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%9AObject.defineProperty.html</guid>
       <source url="https://ivwv.github.io/rss.xml">对象方法：Object.defineProperty</source>
-      <description>
-导读
-面向对象相关的笔记
-
-</description>
+      <description>对象方法：Object.defineProperty</description>
       <category>JavaScript</category>
       <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<CountView></CountView>
@@ -3529,11 +3444,7 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
       <link>https://ivwv.github.io/posts/javascript/es6/%E7%B1%BB%E7%9A%84%E6%9C%AC%E8%B4%A8.html</link>
       <guid>https://ivwv.github.io/posts/javascript/es6/%E7%B1%BB%E7%9A%84%E6%9C%AC%E8%B4%A8.html</guid>
       <source url="https://ivwv.github.io/rss.xml">类的本质</source>
-      <description>
-导读
-面向对象相关的笔记
-
-</description>
+      <description>类的本质</description>
       <category>JavaScript</category>
       <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<CountView></CountView>
@@ -3541,7 +3452,6 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
 <p>面向对象相关的笔记</p>
 </div>
 
-<h1 id="类的本质" tabindex="-1"> 类的本质</h1>
 <ul>
 <li>
 <p><code>ES6 </code>之前通过 构造函数+ 原型实现面向对象 编程</p>
@@ -3588,11 +3498,7 @@ console<span>.</span><span>log</span><span>(</span>ldh<span>.</span>__proto__ <s
       <link>https://ivwv.github.io/posts/node/express/Express%E4%B8%ADjwt%E9%AA%8C%E8%AF%81%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8.html</link>
       <guid>https://ivwv.github.io/posts/node/express/Express%E4%B8%ADjwt%E9%AA%8C%E8%AF%81%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8.html</guid>
       <source url="https://ivwv.github.io/rss.xml">Express中jwt验证的简单使用</source>
-      <description>\
-导读
-express框架和jsonwebtoken插件的应用
-
-</description>
+      <description>Express中jwt验证的简单使用</description>
       <category>Node</category>
       <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<CountView></CountView>\
@@ -3600,7 +3506,6 @@ express框架和jsonwebtoken插件的应用
 <p>express框架和jsonwebtoken插件的应用</p>
 </div>
 
-<h1 id="express中jwt验证的简单使用" tabindex="-1"> Express中jwt验证的简单使用</h1>
 <h2 id="安装jwt相关包" tabindex="-1"> 安装JWT相关包</h2>
 <div><pre><code>npm install jsonwebtoken express<span>-</span>jwt
 </code></pre><div aria-hidden="true"><div></div></div></div><ul>
