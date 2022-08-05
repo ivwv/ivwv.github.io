@@ -3,6 +3,8 @@ home: true
 layout: Blog
 # icon: home
 title: ❤努力提升自己❤
+description: ❤努力提升自己❤
+isOriginal: true
 heroImage: /logo.svg
 heroText: SY's Blog
 heroFullScreen: true

@@ -1,5 +1,7 @@
 ---
 title: JavaScript高级程序设计（第4版）
+description: JavaScript高级程序设计（第4版）
+isOriginal: false
 icon: file
 date: 2022-07-27
 category:

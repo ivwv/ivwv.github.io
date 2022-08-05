@@ -1,4 +1,8 @@
 ---
+title: 对象方法：Object.defineProperty
+description: 对象方法：Object.defineProperty
+# 是否为原创
+isOriginal: true
 icon: javascript
 date: 2022-07-30
 category:

@@ -1,5 +1,7 @@
 ---
 title: 新闻门户网站
+description: 新闻门户网站
+isOriginal: true
 icon: license
 # YYYY-MM-DD
 date: 2022-08-01

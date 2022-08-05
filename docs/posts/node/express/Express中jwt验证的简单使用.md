@@ -1,4 +1,7 @@
 ---
+title: Express中jwt验证的简单使用
+description: Express中jwt验证的简单使用
+isOriginal: true
 icon: nodeJS
 date: 2022-07-30
 category:
@@ -24,7 +27,7 @@ express框架和jsonwebtoken插件的应用
 :::
 <!-- more -->
 
-# Express中jwt验证的简单使用
+
 
 ## 安装JWT相关包
 

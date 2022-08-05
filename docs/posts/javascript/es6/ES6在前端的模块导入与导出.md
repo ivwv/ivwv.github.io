@@ -1,5 +1,8 @@
 ---
+title: ES6在前端的模块导入与导出
 icon: javascript
+description: ES6在前端的模块导入与导出
+isOriginal: true
 date: 2022-07-30
 category:
   - JavaScript
@@ -22,7 +25,7 @@ timeline: true
 es6模块化导入与导出自己的整理
 :::
 <!-- more -->
-# ES6在前端的模块导入与导出
+
 
 #### `html`文件使用
 

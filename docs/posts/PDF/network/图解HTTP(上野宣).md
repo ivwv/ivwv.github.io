@@ -1,5 +1,7 @@
 ---
 title: 图解HTTP (上野宣)
+description: 图解HTTP (上野宣)
+isOriginal: false
 icon: file
 date: 2022-07-27
 category:

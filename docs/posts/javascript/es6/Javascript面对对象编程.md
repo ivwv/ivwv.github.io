@@ -1,4 +1,7 @@
 ---
+title: Javascript面对对象编程
+description: Javascript面对对象编程
+isOriginal: true
 icon: javascript
 date: 2022-07-30
 category:
@@ -24,7 +27,7 @@ timeline: true
 :::
 <!-- more -->
 
-# Javascript面对对象编程
+
 
 ##### 使用整合
 

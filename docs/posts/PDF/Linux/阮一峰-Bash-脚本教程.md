@@ -1,5 +1,7 @@
 ---
 title: 阮一峰-Bash-脚本教程
+description: 阮一峰-Bash-脚本教程
+isOriginal: false
 icon: file
 date: 2022-07-27
 category:

@@ -1,5 +1,7 @@
 ---
 title: PDF书籍整合
+description: PDF书籍整合
+isOriginal: true
 icon: list
 date: 2022-08-01
 category:

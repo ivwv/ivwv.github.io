@@ -1,4 +1,7 @@
 ---
+title: process.env环境变量配置
+description: process.env环境变量配置
+isOriginal: true
 icon: nodeJS
 date: 2022-07-30
 category:
@@ -24,7 +27,6 @@ Node 环境变量配置
 :::
 <!-- more -->
 
-# `process.env`环境变量配置
 
 ### Windows 系统
 

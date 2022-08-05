@@ -1,5 +1,7 @@
 ---
 title: GitHub OAuth第三方登录示例教程(Node后端)
+description: GitHub OAuth第三方登录示例教程(Node后端)
+isOriginal: true
 icon: lock
 date: 2022-08-03
 category:

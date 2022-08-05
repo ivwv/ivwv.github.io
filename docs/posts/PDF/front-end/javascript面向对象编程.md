@@ -1,5 +1,7 @@
 ---
 title: javascript面向对象编程
+description: javascript面向对象编程
+isOriginal: false
 icon: file
 date: 2022-07-27
 category:

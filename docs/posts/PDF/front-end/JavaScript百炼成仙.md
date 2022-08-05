@@ -1,5 +1,7 @@
 ---
 title: JavaScript百炼成仙
+description: JavaScript百炼成仙
+isOriginal: false
 icon: file
 date: 2022-07-27
 category:
