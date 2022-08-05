@@ -8,7 +8,6 @@ isOriginal: true
 heroImage: /logo.svg
 heroText: SY's Blog
 heroFullScreen: true
-description:
 tagline: ❤永远爱着我的宝贝婷婷❤
 
 bgImage: /bg/夕阳.png
