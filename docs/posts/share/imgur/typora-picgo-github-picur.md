@@ -4,7 +4,7 @@ description: PicGo+Typora 配合 Github 创建个人图床
 isOriginal: true
 icon: pic
 # YYYY-MM-DD
-date: 2022-08-04
+date: 2022-08-05
 # 分类
 category:
   - 图床
