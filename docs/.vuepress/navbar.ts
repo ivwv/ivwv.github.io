@@ -68,6 +68,11 @@ export default navbar([
         icon: "creative",
         link: "https://isyv.tk/",
       },
+      {
+        text: "Render Pages",
+        icon: "creative",
+        link: "https://ivwv.onrender.com//",
+      },
     ],
   },
 
