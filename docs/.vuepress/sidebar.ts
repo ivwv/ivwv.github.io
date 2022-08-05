@@ -143,7 +143,7 @@ export default sidebar([
         icon: "pic",
         collapsable: true,
         prefix: "imgur/",
-        children: [],
+        children: ["typora-picgo-github-picur"],
       },
       {
         text: "Markdown",
