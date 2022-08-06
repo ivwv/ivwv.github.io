@@ -6,8 +6,8 @@
     <link>https://ivwv.github.io/</link>
     <description>SY's Blog</description>
     <language>zh-CN</language>
-    <pubDate>Sat, 06 Aug 2022 10:19:14 GMT</pubDate>
-    <lastBuildDate>Sat, 06 Aug 2022 10:19:14 GMT</lastBuildDate>
+    <pubDate>Sat, 06 Aug 2022 10:44:20 GMT</pubDate>
+    <lastBuildDate>Sat, 06 Aug 2022 10:44:20 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Vue3</category>
@@ -51,7 +51,7 @@
 </ul>
 </li>
 <li>将<code>axios</code>挂载为<code>app</code>的全局自定义属性之后，每个组件可以通过<code>this</code>直接访问到全局挂载的自定义属性</li>
-<li>自定义属性名可自定义，不冲突即可，这里挂载的是<code>$http</code>只定义属性名</li>
+<li>自定义属性名可自定义，不冲突即可，这里挂载的是<code>$http</code>自定义属性名</li>
 </ol>
 <p><strong>代码⬇️</strong></p>
 <div><pre><code>import { createApp } from 'vue'
