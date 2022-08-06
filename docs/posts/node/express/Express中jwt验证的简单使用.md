@@ -2,7 +2,7 @@
 title: Express中jwt验证的简单使用
 description: Express中jwt验证的简单使用
 isOriginal: true
-icon: nodeJS
+icon: Nodejs
 date: 2022-07-30
 category:
   - Node

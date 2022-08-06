@@ -31,6 +31,17 @@ export default defineUserConfig({
   base: "/",
   head: [
     ["link", { rel: "icon", href: "/logo.png" }],
+    /**
+     * 自定义阿里巴巴适量图标图 //at.alicdn.com/t/c/font_3572268_h0ey3d84gim.css
+     * 以后再生成的图标需要重新更换地址
+     */
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://at.alicdn.com/t/c/font_3572268_mc5bbxe1h2l.css",
+      },
+    ],
     // <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     [
       "meta",
@@ -50,7 +61,10 @@ export default defineUserConfig({
     // 描述
     [
       "meta",
-      { name: "description", content: "分享自己的学习日常---努力成就更好的自己✨" },
+      {
+        name: "description",
+        content: "分享自己的学习日常---努力成就更好的自己✨",
+      },
     ],
 
     // <meta name="msvalidate.01" content="B7C29717C9BBED39368D957F6E16F3B5" />
