@@ -3,24 +3,21 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-06T01:10:24.649Z</updated>
+  <updated>2022-08-06T08:49:45.418Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
   <category term="图床"/>
   <category term="Picgo"/>
   <category term="GitHub"/>
-  <category term="PDF"/>
-  <category term="JavaScript"/>
   <category term="OAuth"/>
   <category term="Node"/>
   <category term="Markdown"/>
   <category term="Vuepress"/>
   <category term="我的项目整合"/>
-  <category term="Linux"/>
-  <category term="HTML"/>
-  <category term="CSS"/>
+  <category term="PDF"/>
   <category term="Puppeteer"/>
+  <category term="JavaScript"/>
   <category term="使用指南"/>
   <contributor>
     <name>Ms.Hope</name>
@@ -134,32 +131,6 @@
     <category term="Picgo" scheme=""/>
     <category term="GitHub" scheme=""/>
     <published>2022-08-05T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">33个非常实用的JavaScript一行代码</title>
-    <id>https://ivwv.github.io/posts/PDF/front-end/33%E4%B8%AA%E9%9D%9E%E5%B8%B8%E5%AE%9E%E7%94%A8%E7%9A%84JavaScript%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81.html</id>
-    <link href="https://ivwv.github.io/posts/PDF/front-end/33%E4%B8%AA%E9%9D%9E%E5%B8%B8%E5%AE%9E%E7%94%A8%E7%9A%84JavaScript%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81.html"/>
-    <updated>2022-08-05T13:39:17.000Z</updated>
-    <summary type="html">33个非常实用的JavaScript一行代码</summary>
-    <content type="html"><![CDATA[<CountView></CountView>
-
-<i>Content not supported</i>]]></content>
-    <category term="PDF" scheme=""/>
-    <category term="JavaScript" scheme=""/>
-    <published>2022-08-04T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">56个JavaScript实用工具函数助你提升开发效率</title>
-    <id>https://ivwv.github.io/posts/PDF/front-end/56%E4%B8%AAJavaScript%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0%E5%8A%A9%E4%BD%A0%E6%8F%90%E5%8D%87%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87.html</id>
-    <link href="https://ivwv.github.io/posts/PDF/front-end/56%E4%B8%AAJavaScript%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0%E5%8A%A9%E4%BD%A0%E6%8F%90%E5%8D%87%E5%BC%80%E5%8F%91%E6%95%88%E7%8E%87.html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
-    <summary type="html">56个JavaScript实用工具函数助你提升开发效率</summary>
-    <content type="html"><![CDATA[<CountView></CountView>
-
-<i>Content not supported</i>]]></content>
-    <category term="PDF" scheme=""/>
-    <category term="JavaScript" scheme=""/>
-    <published>2022-08-04T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="html">GitHub OAuth第三方登录示例教程(Node后端)</title>
@@ -2334,96 +2305,6 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
     <published>2022-08-02T00:00:00.000Z</published>
   </entry>
   <entry>
-    <title type="html">阮一峰-Bash-脚本教程</title>
-    <id>https://ivwv.github.io/posts/PDF/Linux/%E9%98%AE%E4%B8%80%E5%B3%B0-Bash-%E8%84%9A%E6%9C%AC%E6%95%99%E7%A8%8B.html</id>
-    <link href="https://ivwv.github.io/posts/PDF/Linux/%E9%98%AE%E4%B8%80%E5%B3%B0-Bash-%E8%84%9A%E6%9C%AC%E6%95%99%E7%A8%8B.html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
-    <summary type="html">阮一峰-Bash-脚本教程</summary>
-    <content type="html"><![CDATA[<CountView></CountView>
-
-<i>Content not supported</i>]]></content>
-    <category term="PDF" scheme=""/>
-    <category term="Linux" scheme=""/>
-    <published>2022-07-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">HTML5游戏开发进阶指南</title>
-    <id>https://ivwv.github.io/posts/PDF/front-end/HTML5%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97.html</id>
-    <link href="https://ivwv.github.io/posts/PDF/front-end/HTML5%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97.html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
-    <summary type="html">HTML5游戏开发进阶指南</summary>
-    <content type="html"><![CDATA[<CountView></CountView>
-
-<i>Content not supported</i>]]></content>
-    <category term="PDF" scheme=""/>
-    <category term="HTML" scheme=""/>
-    <published>2022-07-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">JavaScript设计模式 张容铭</title>
-    <id>https://ivwv.github.io/posts/PDF/front-end/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%BC%A0%E5%AE%B9%E9%93%AD.html</id>
-    <link href="https://ivwv.github.io/posts/PDF/front-end/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%BC%A0%E5%AE%B9%E9%93%AD.html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
-    <summary type="html">JavaScript设计模式 张容铭</summary>
-    <content type="html"><![CDATA[<CountView></CountView>
-
-<i>Content not supported</i>]]></content>
-    <category term="PDF" scheme=""/>
-    <category term="JavaScript" scheme=""/>
-    <published>2022-07-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">Three.js开发指南 原书第2版</title>
-    <id>https://ivwv.github.io/posts/PDF/front-end/Three.js%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97-%E5%8E%9F%E4%B9%A6%E7%AC%AC2%E7%89%88.html</id>
-    <link href="https://ivwv.github.io/posts/PDF/front-end/Three.js%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97-%E5%8E%9F%E4%B9%A6%E7%AC%AC2%E7%89%88.html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
-    <summary type="html">Three.js开发指南 原书第2版</summary>
-    <content type="html"><![CDATA[<CountView></CountView>
-
-<i>Content not supported</i>]]></content>
-    <category term="PDF" scheme=""/>
-    <category term="JavaScript" scheme=""/>
-    <published>2022-07-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">代码整洁之道</title>
-    <id>https://ivwv.github.io/posts/PDF/front-end/%E4%BB%A3%E7%A0%81%E6%95%B4%E6%B4%81%E4%B9%8B%E9%81%93.html</id>
-    <link href="https://ivwv.github.io/posts/PDF/front-end/%E4%BB%A3%E7%A0%81%E6%95%B4%E6%B4%81%E4%B9%8B%E9%81%93.html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
-    <summary type="html">代码整洁之道</summary>
-    <content type="html"><![CDATA[<CountView></CountView>
-
-<i>Content not supported</i>]]></content>
-    <category term="PDF" scheme=""/>
-    <category term="JavaScript" scheme=""/>
-    <published>2022-07-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">图解HTTP (上野宣)</title>
-    <id>https://ivwv.github.io/posts/PDF/network/%E5%9B%BE%E8%A7%A3HTTP(%E4%B8%8A%E9%87%8E%E5%AE%A3).html</id>
-    <link href="https://ivwv.github.io/posts/PDF/network/%E5%9B%BE%E8%A7%A3HTTP(%E4%B8%8A%E9%87%8E%E5%AE%A3).html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
-    <summary type="html">图解HTTP (上野宣)</summary>
-    <content type="html"><![CDATA[<CountView></CountView>
-
-<i>Content not supported</i>]]></content>
-    <category term="PDF" scheme=""/>
-    <published>2022-07-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">深入浅出ES6</title>
-    <id>https://ivwv.github.io/posts/PDF/front-end/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAES6.html</id>
-    <link href="https://ivwv.github.io/posts/PDF/front-end/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BAES6.html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
-    <summary type="html">深入浅出ES6</summary>
-    <content type="html"><![CDATA[<CountView></CountView>
-
-
-<i>Content not supported</i>]]></content>
-    <category term="PDF" scheme=""/>
-    <published>2022-07-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
     <title type="html">PDF书籍整合</title>
     <id>https://ivwv.github.io/posts/PDF/</id>
     <link href="https://ivwv.github.io/posts/PDF/"/>
@@ -2471,174 +2352,6 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
 ]]></content>
     <category term="PDF" scheme=""/>
     <published>2022-08-01T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">NODE.js入门手册</title>
-    <id>https://ivwv.github.io/posts/PDF/back-end/NODE.js%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.html</id>
-    <link href="https://ivwv.github.io/posts/PDF/back-end/NODE.js%E5%85%A5%E9%97%A8%E6%89%8B%E5%86%8C.html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
-    <summary type="html">NODE.js入门手册</summary>
-    <content type="html"><![CDATA[<CountView></CountView>
-
-<i>Content not supported</i>]]></content>
-    <category term="PDF" scheme=""/>
-    <category term="Node" scheme=""/>
-    <published>2022-07-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">Node.js实战</title>
-    <id>https://ivwv.github.io/posts/PDF/back-end/Node.js%E5%AE%9E%E6%88%98.html</id>
-    <link href="https://ivwv.github.io/posts/PDF/back-end/Node.js%E5%AE%9E%E6%88%98.html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
-    <summary type="html">Node.js实战</summary>
-    <content type="html"><![CDATA[<CountView></CountView>
-
-<i>Content not supported</i>]]></content>
-    <category term="PDF" scheme=""/>
-    <category term="Node" scheme=""/>
-    <published>2022-07-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">深入浅出Node.js</title>
-    <id>https://ivwv.github.io/posts/PDF/back-end/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BANode.js.html</id>
-    <link href="https://ivwv.github.io/posts/PDF/back-end/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BANode.js.html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
-    <summary type="html">深入浅出Node.js</summary>
-    <content type="html"><![CDATA[<CountView></CountView>
-
-<i>Content not supported</i>]]></content>
-    <category term="PDF" scheme=""/>
-    <category term="Node" scheme=""/>
-    <published>2022-07-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">CSS权威指南-第三版</title>
-    <id>https://ivwv.github.io/posts/PDF/front-end/CSS%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%89%E7%89%88.html</id>
-    <link href="https://ivwv.github.io/posts/PDF/front-end/CSS%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E7%AC%AC%E4%B8%89%E7%89%88.html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
-    <summary type="html">CSS权威指南-第三版</summary>
-    <content type="html"><![CDATA[<CountView></CountView>
-
-<i>Content not supported</i>]]></content>
-    <category term="PDF" scheme=""/>
-    <category term="CSS" scheme=""/>
-    <published>2022-07-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">JavaScript百炼成仙</title>
-    <id>https://ivwv.github.io/posts/PDF/front-end/JavaScript%E7%99%BE%E7%82%BC%E6%88%90%E4%BB%99.html</id>
-    <link href="https://ivwv.github.io/posts/PDF/front-end/JavaScript%E7%99%BE%E7%82%BC%E6%88%90%E4%BB%99.html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
-    <summary type="html">JavaScript百炼成仙</summary>
-    <content type="html"><![CDATA[<CountView></CountView>
-
-<i>Content not supported</i>]]></content>
-    <category term="PDF" scheme=""/>
-    <category term="JavaScript" scheme=""/>
-    <published>2022-07-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">JavaScript设计模式与开发实践</title>
-    <id>https://ivwv.github.io/posts/PDF/front-end/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5.html</id>
-    <link href="https://ivwv.github.io/posts/PDF/front-end/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5.html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
-    <summary type="html">JavaScript设计模式与开发实践</summary>
-    <content type="html"><![CDATA[<CountView></CountView>
-
-<i>Content not supported</i>]]></content>
-    <category term="PDF" scheme=""/>
-    <category term="JavaScript" scheme=""/>
-    <published>2022-07-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">JavaScript高级程序设计（第4版）</title>
-    <id>https://ivwv.github.io/posts/PDF/front-end/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89.html</id>
-    <link href="https://ivwv.github.io/posts/PDF/front-end/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%AC%AC4%E7%89%88%EF%BC%89.html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
-    <summary type="html">JavaScript高级程序设计（第4版）</summary>
-    <content type="html"><![CDATA[<CountView></CountView>
-
-<i>Content not supported</i>]]></content>
-    <category term="PDF" scheme=""/>
-    <category term="JavaScript" scheme=""/>
-    <published>2022-07-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">javascript面向对象编程</title>
-    <id>https://ivwv.github.io/posts/PDF/front-end/javascript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html</id>
-    <link href="https://ivwv.github.io/posts/PDF/front-end/javascript%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
-    <summary type="html">javascript面向对象编程</summary>
-    <content type="html"><![CDATA[<CountView></CountView>
-
-<i>Content not supported</i>]]></content>
-    <category term="PDF" scheme=""/>
-    <category term="JavaScript" scheme=""/>
-    <published>2022-07-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">你不知道的JavaScript（上卷）</title>
-    <id>https://ivwv.github.io/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8A%E5%8D%B7%EF%BC%89.html</id>
-    <link href="https://ivwv.github.io/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8A%E5%8D%B7%EF%BC%89.html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
-    <summary type="html">你不知道的JavaScript（上卷）</summary>
-    <content type="html"><![CDATA[<CountView></CountView>
-
-<i>Content not supported</i>]]></content>
-    <category term="PDF" scheme=""/>
-    <category term="JavaScript" scheme=""/>
-    <published>2022-07-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">你不知道的JavaScript（下卷）</title>
-    <id>https://ivwv.github.io/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8B%E5%8D%B7%EF%BC%89.html</id>
-    <link href="https://ivwv.github.io/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8B%E5%8D%B7%EF%BC%89.html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
-    <summary type="html">你不知道的JavaScript（下卷）</summary>
-    <content type="html"><![CDATA[<CountView></CountView>
-
-<i>Content not supported</i>]]></content>
-    <category term="PDF" scheme=""/>
-    <category term="JavaScript" scheme=""/>
-    <published>2022-07-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">你不知道的JavaScript（中卷）</title>
-    <id>https://ivwv.github.io/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%AD%E5%8D%B7%EF%BC%89.html</id>
-    <link href="https://ivwv.github.io/posts/PDF/front-end/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%AD%E5%8D%B7%EF%BC%89.html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
-    <summary type="html">你不知道的JavaScript（中卷）</summary>
-    <content type="html"><![CDATA[<CountView></CountView>
-
-<i>Content not supported</i>]]></content>
-    <category term="PDF" scheme=""/>
-    <category term="JavaScript" scheme=""/>
-    <published>2022-07-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">学习JavaScript数据结构与算法（第3版）</title>
-    <id>https://ivwv.github.io/posts/PDF/front-end/%E5%AD%A6%E4%B9%A0JavaScript%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%EF%BC%88%E7%AC%AC3%E7%89%88%EF%BC%89.html</id>
-    <link href="https://ivwv.github.io/posts/PDF/front-end/%E5%AD%A6%E4%B9%A0JavaScript%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%EF%BC%88%E7%AC%AC3%E7%89%88%EF%BC%89.html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
-    <summary type="html">学习JavaScript数据结构与算法（第3版）</summary>
-    <content type="html"><![CDATA[<CountView></CountView>
-
-<i>Content not supported</i>]]></content>
-    <category term="PDF" scheme=""/>
-    <category term="JavaScript" scheme=""/>
-    <published>2022-07-27T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="html">图解TCPIP（第五版）</title>
-    <id>https://ivwv.github.io/posts/PDF/network/%E5%9B%BE%E8%A7%A3TCPIP%EF%BC%88%E7%AC%AC%E4%BA%94%E7%89%88%EF%BC%89.html</id>
-    <link href="https://ivwv.github.io/posts/PDF/network/%E5%9B%BE%E8%A7%A3TCPIP%EF%BC%88%E7%AC%AC%E4%BA%94%E7%89%88%EF%BC%89.html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
-    <summary type="html">图解TCPIP（第五版）</summary>
-    <content type="html"><![CDATA[<CountView></CountView>
-
-<i>Content not supported</i>]]></content>
-    <category term="PDF" scheme=""/>
-    <published>2022-07-27T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="html">process.env环境变量配置</title>
