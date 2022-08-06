@@ -40,7 +40,7 @@ npm i axios
 2. 为`axios`配置请求的根路径
    - `axios.defaults.baseURL = 'https://api.server.com'`
 3. 将`axios`挂载为`app`的全局自定义属性之后，每个组件可以通过`this`直接访问到全局挂载的自定义属性
-4. 自定义属性名可自定义，不冲突即可，这里挂载的是`$http`只定义属性名
+4. 自定义属性名可自定义，不冲突即可，这里挂载的是`$http`自定义属性名
 
 **代码:arrow_down:**
 
