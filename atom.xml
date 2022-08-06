@@ -3,7 +3,7 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-05T15:49:53.190Z</updated>
+  <updated>2022-08-06T01:10:24.649Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
@@ -16,11 +16,10 @@
   <category term="Node"/>
   <category term="Markdown"/>
   <category term="Vuepress"/>
-  <category term="demo"/>
+  <category term="我的项目整合"/>
   <category term="Linux"/>
   <category term="HTML"/>
   <category term="CSS"/>
-  <category term="我的项目整合"/>
   <category term="Puppeteer"/>
   <category term="使用指南"/>
   <contributor>
@@ -2272,7 +2271,7 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
     <title type="html">黑马案例大事件项目</title>
     <id>https://ivwv.github.io/posts/project/api-server/</id>
     <link href="https://ivwv.github.io/posts/project/api-server/"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
+    <updated>2022-08-06T01:09:33.000Z</updated>
     <summary type="html">黑马案例大事件项目</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
@@ -2283,7 +2282,8 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
 <p><a href="https://gitee.com/isyv/api_server" target="_blank" rel="noopener noreferrer">Gitee</a></p>
 </div>
 ]]></content>
-    <category term="demo" scheme=""/>
+    <category term="我的项目整合" scheme=""/>
+    <category term="Node" scheme=""/>
     <published>2022-08-02T00:00:00.000Z</published>
   </entry>
   <entry>

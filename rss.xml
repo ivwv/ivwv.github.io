@@ -6,8 +6,8 @@
     <link>https://ivwv.github.io/</link>
     <description>SY's Blog</description>
     <language>zh-CN</language>
-    <pubDate>Fri, 05 Aug 2022 15:49:53 GMT</pubDate>
-    <lastBuildDate>Fri, 05 Aug 2022 15:49:53 GMT</lastBuildDate>
+    <pubDate>Sat, 06 Aug 2022 01:10:24 GMT</pubDate>
+    <lastBuildDate>Sat, 06 Aug 2022 01:10:24 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>图床</category>
@@ -19,11 +19,10 @@
     <category>Node</category>
     <category>Markdown</category>
     <category>Vuepress</category>
-    <category>demo</category>
+    <category>我的项目整合</category>
     <category>Linux</category>
     <category>HTML</category>
     <category>CSS</category>
-    <category>我的项目整合</category>
     <category>Puppeteer</category>
     <category>使用指南</category>
     <item>
@@ -2276,7 +2275,8 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
       <guid>https://ivwv.github.io/posts/project/api-server/</guid>
       <source url="https://ivwv.github.io/rss.xml">黑马案例大事件项目</source>
       <description>黑马案例大事件项目</description>
-      <category>demo</category>
+      <category>我的项目整合</category>
+      <category>Node</category>
       <pubDate>Tue, 02 Aug 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<CountView></CountView>
 <blockquote>

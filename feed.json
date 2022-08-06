@@ -97,10 +97,11 @@
       "summary": "黑马案例大事件项目",
       "content_html": "<CountView></CountView>\n<blockquote>\n<p>黑马视频教程-大事件项目后台接口项目 使用 <code>node</code>+<code>express</code>+<code>mysql</code>+<code>Postman</code>+<code>JsonWebToken</code>+<code>joi</code>+<code>bcryptjs</code>+<code>multer</code></p>\n</blockquote>\n\n<div><p>源码</p>\n<p><a href=\"https://gitee.com/isyv/api_server\" target=\"_blank\" rel=\"noopener noreferrer\">Gitee</a></p>\n</div>\n",
       "date_published": "2022-08-02T00:00:00.000Z",
-      "date_modified": "2022-08-05T13:35:32.000Z",
+      "date_modified": "2022-08-06T01:09:33.000Z",
       "authors": [],
       "tags": [
-        "demo"
+        "我的项目整合",
+        "Node"
       ]
     },
     {
