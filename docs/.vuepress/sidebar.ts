@@ -108,6 +108,28 @@ export default sidebar([
           },
         ],
       },
+      {
+        text: "Vue",
+        icon: "vue",
+        collapsable: true,
+        prefix: "vue/",
+        children: [
+          {
+            text: "Vue2",
+            icon: "vue",
+            collapsable: true,
+            prefix: "vue2/",
+            children: [],
+          },
+          {
+            text: "Vue3",
+            icon: "vue",
+            collapsable: true,
+            prefix: "vue3/",
+            children: ["vue3-global-axios"],
+          },
+        ],
+      },
     ],
   },
   {

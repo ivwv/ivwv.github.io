@@ -3,7 +3,7 @@ title: vue3全局挂载axios
 description: vue3全局挂载axios
 isOriginal: true
 icon: vue
-date: 2022-08-03
+date: 2022-08-06
 category:
   - Vue3
   - Axios
