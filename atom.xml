@@ -3,10 +3,12 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-06T08:49:45.418Z</updated>
+  <updated>2022-08-06T10:17:38.158Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
+  <category term="Vue3"/>
+  <category term="Axios"/>
   <category term="图床"/>
   <category term="Picgo"/>
   <category term="GitHub"/>
@@ -22,6 +24,67 @@
   <contributor>
     <name>Ms.Hope</name>
   </contributor>
+  <entry>
+    <title type="html">vue3全局挂载axios</title>
+    <id>https://ivwv.github.io/posts/vue/vue3/vue3-global-axios.html</id>
+    <link href="https://ivwv.github.io/posts/vue/vue3/vue3-global-axios.html"/>
+    <updated>2022-08-06T10:16:40.000Z</updated>
+    <summary type="html">vue3全局挂载axios</summary>
+    <content type="html"><![CDATA[<CountView></CountView>
+<blockquote>
+<p>如何在vue3项目中全局配置axios</p>
+</blockquote>
+
+<h2 id="配置" tabindex="-1"> 配置</h2>
+<blockquote>
+<p><code>main.js</code></p>
+</blockquote>
+<div><pre><code><span>npm</span> i axios
+</code></pre><div aria-hidden="true"><div></div></div></div><ol>
+<li>导入<code>axiso</code></li>
+<li>为<code>axios</code>配置请求的根路径
+<ul>
+<li><code>axios.defaults.baseURL = 'https://api.server.com'</code></li>
+</ul>
+</li>
+<li>将<code>axios</code>挂载为<code>app</code>的全局自定义属性之后，每个组件可以通过<code>this</code>直接访问到全局挂载的自定义属性</li>
+<li>自定义属性名可自定义，不冲突即可，这里挂载的是<code>$http</code>只定义属性名</li>
+</ol>
+<p><strong>代码⬇️</strong></p>
+<div><pre><code>import { createApp } from 'vue'
+import App from './App.vue'
+
+import axios from 'axios'
+
+const app = createApp(App)
+
+axios.defaults.baseURL = 'https://www.escook.cn'
+app.config.globalProperties.$http = axios
+
+app.mount('#app')
+</code></pre><div><br><br><br><div>&nbsp;</div><br><br><br><div>&nbsp;</div><div>&nbsp;</div><br><br></div><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="使用" tabindex="-1"> 使用</h2>
+<blockquote>
+<p>组件以及子组件内无需导入<code>axios</code></p>
+</blockquote>
+<ol>
+<li>使用可以通过<code>this.$http</code>使用，如下代码⬇️</li>
+</ol>
+<div><pre><code>&lt;script>
+export default {
+  name: 'Post',
+  methods: {
+    async postInfo() {
+      const { data: res } = await this.$http.post('/api/post', { name: 'zs', age: 20 })
+      console.log(res)
+    },
+  },
+}
+&lt;/script>
+</code></pre><div><br><br><br><br><br><div>&nbsp;</div><br><br><br><br><br></div><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>]]></content>
+    <category term="Vue3" scheme=""/>
+    <category term="Axios" scheme=""/>
+    <published>2022-08-03T00:00:00.000Z</published>
+  </entry>
   <entry>
     <title type="html">PicGo+Typora 配合 Github 创建个人图床</title>
     <id>https://ivwv.github.io/posts/share/imgur/typora-picgo-github-picur.html</id>
