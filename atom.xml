@@ -3,7 +3,7 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-06T10:17:38.158Z</updated>
+  <updated>2022-08-06T10:19:14.287Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
@@ -28,7 +28,7 @@
     <title type="html">vue3全局挂载axios</title>
     <id>https://ivwv.github.io/posts/vue/vue3/vue3-global-axios.html</id>
     <link href="https://ivwv.github.io/posts/vue/vue3/vue3-global-axios.html"/>
-    <updated>2022-08-06T10:16:40.000Z</updated>
+    <updated>2022-08-06T10:18:24.000Z</updated>
     <summary type="html">vue3全局挂载axios</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
@@ -83,7 +83,7 @@ export default {
 </code></pre><div><br><br><br><br><br><div>&nbsp;</div><br><br><br><br><br></div><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>]]></content>
     <category term="Vue3" scheme=""/>
     <category term="Axios" scheme=""/>
-    <published>2022-08-03T00:00:00.000Z</published>
+    <published>2022-08-06T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="html">PicGo+Typora 配合 Github 创建个人图床</title>

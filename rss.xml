@@ -6,8 +6,8 @@
     <link>https://ivwv.github.io/</link>
     <description>SY's Blog</description>
     <language>zh-CN</language>
-    <pubDate>Sat, 06 Aug 2022 10:17:38 GMT</pubDate>
-    <lastBuildDate>Sat, 06 Aug 2022 10:17:38 GMT</lastBuildDate>
+    <pubDate>Sat, 06 Aug 2022 10:19:14 GMT</pubDate>
+    <lastBuildDate>Sat, 06 Aug 2022 10:19:14 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>Vue3</category>
@@ -32,7 +32,7 @@
       <description>vue3全局挂载axios</description>
       <category>Vue3</category>
       <category>Axios</category>
-      <pubDate>Wed, 03 Aug 2022 00:00:00 GMT</pubDate>
+      <pubDate>Sat, 06 Aug 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<CountView></CountView>
 <blockquote>
 <p>如何在vue3项目中全局配置axios</p>
