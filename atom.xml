@@ -3,11 +3,12 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-07T08:53:51.696Z</updated>
+  <updated>2022-08-07T09:52:50.381Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
   <category term="JavaScript"/>
+  <category term="Node"/>
   <category term="FrontEnd"/>
   <category term="Vue2"/>
   <category term="Vue3"/>
@@ -16,7 +17,6 @@
   <category term="Picgo"/>
   <category term="GitHub"/>
   <category term="OAuth"/>
-  <category term="Node"/>
   <category term="Markdown"/>
   <category term="Vuepress"/>
   <category term="我的项目整合"/>
@@ -28,9 +28,9 @@
   </contributor>
   <entry>
     <title type="html">你不知道的 console.log 替代品😮</title>
-    <id>https://ivwv.github.io/posts/javascript/you-dont-know-console.html</id>
-    <link href="https://ivwv.github.io/posts/javascript/you-dont-know-console.html"/>
-    <updated>2022-08-07T08:53:03.000Z</updated>
+    <id>https://ivwv.github.io/posts/technology/javascript/you-dont-know-console.html</id>
+    <link href="https://ivwv.github.io/posts/technology/javascript/you-dont-know-console.html"/>
+    <updated>2022-08-07T09:51:54.000Z</updated>
     <summary type="html">你不知道的 console.log 替代品😮</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
@@ -133,6 +133,60 @@ console<span>.</span><span>log</span><span>(</span><span>"World"</span><span>)</
 <p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/https/user-images.githubusercontent.com/76736580/2022-08-07-16:45:52*182373345-a98e989b-545c-41a7-ae4a-c0ba55f6ea4c*6.png" alt="img"></p>
 ]]></content>
     <category term="JavaScript" scheme=""/>
+    <published>2022-08-07T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">如何将命令行参数传递给 Node.js 应用程序？</title>
+    <id>https://ivwv.github.io/posts/technology/node/how-to-pass-cmd-line-args-to-node.html</id>
+    <link href="https://ivwv.github.io/posts/technology/node/how-to-pass-cmd-line-args-to-node.html"/>
+    <updated>2022-08-07T09:51:54.000Z</updated>
+    <summary type="html">如何将命令行参数传递给 Node.js 应用程序？</summary>
+    <content type="html"><![CDATA[<CountView></CountView>
+<blockquote>
+<p>与可以使用语法将参数传递给脚本的 <code>Bash</code> 脚本类似，您也可以将参数<code>$1</code>传递给 <code>Node.js</code> 应用程序。</p>
+</blockquote>
+
+<h3 id="介绍" tabindex="-1"> 介绍</h3>
+<p>在本快速教程中，您将学习如何使用<a href="https://nodejs.org/docs/latest/api/process.html#process_process_argv" target="_blank" rel="noopener noreferrer"><code>process.argv</code>数组</a>将参数传递给 <code>Node.js</code> 应用程序。</p>
+<h3 id="条件" tabindex="-1"> 条件</h3>
+<p>在开始之前，您需要安装 <code>Node.js</code>：</p>
+<ul>
+<li><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener noreferrer">下载 Node.js</a></li>
+</ul>
+<h3 id="将参数传递给-node-js-应用程序" tabindex="-1"> 将参数传递给 <code>Node.js</code> 应用程序</h3>
+<p>让我们首先创建一个名为的新文件<code>script.js</code>并向其中添加以下代码：</p>
+<div><pre><code>const process = require('process');
+
+console.log(process.argv[2]);
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div></div></div><p><code>process.argv</code>数组的快速概述：</p>
+<ul>
+<li><code>process.argv[0]</code>是 <code>Node.js</code> 可执行文件的路径</li>
+<li><code>process.argv[1]</code>是脚本文件的路径</li>
+<li><code>process.argv[2]</code>是传递给脚本的第一个参数</li>
+<li><code>process.argv[3]</code>是传递给脚本的第二个参数，依此类推</li>
+</ul>
+<p>让我们使用以下命令运行脚本：</p>
+<div><pre><code><span>node</span> script.js ivwv
+
+<span># 输出:</span>
+ivwv
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div></div></div><h4 id="打印所有参数" tabindex="-1"> 打印所有参数</h4>
+<p>要打印所有参数，您可以像使用<code>forEach</code>标准数组一样使用循环：</p>
+<div><pre><code><span>const</span> process <span>=</span> <span>require</span><span>(</span><span>'process'</span><span>)</span><span>;</span>
+
+process<span>.</span>argv<span>.</span><span>forEach</span><span>(</span><span>(</span><span>val<span>,</span> index</span><span>)</span> <span>=></span> <span>{</span>
+  console<span>.</span><span>log</span><span>(</span><span><span>`</span><span><span>${</span>index<span>}</span></span><span>: </span><span><span>${</span>val<span>}</span></span><span>`</span></span><span>)</span><span>;</span>
+<span>}</span><span>)</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div></div></div><p>让我们使用以下命令运行脚本：</p>
+<div><pre><code><span>node</span> script.js hi there devs
+</code></pre><div aria-hidden="true"><div></div></div></div><p>我们现在将 3 个参数传递给脚本，在这种情况下，该脚本的输出将是：</p>
+<div><pre><code><span>0</span>: /opt/homebrew/Cellar/node@16/16.16.0/bin/node
+<span>1</span>: /Users/bobby/dev/script.js
+<span>2</span>: hi
+<span>3</span>: there
+<span>4</span>: devs
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div></div></div>]]></content>
+    <category term="Node" scheme=""/>
     <published>2022-08-07T00:00:00.000Z</published>
   </entry>
   <entry>
