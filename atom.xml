@@ -3,10 +3,11 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-07T02:26:47.488Z</updated>
+  <updated>2022-08-07T02:51:47.646Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
+  <category term="Vue2"/>
   <category term="JavaScript"/>
   <category term="Vue3"/>
   <category term="Axios"/>
@@ -24,6 +25,570 @@
   <contributor>
     <name>Ms.Hope</name>
   </contributor>
+  <entry>
+    <title type="html">Vue2学习笔记</title>
+    <id>https://ivwv.github.io/posts/vue/vue2/vue2-node-part.html</id>
+    <link href="https://ivwv.github.io/posts/vue/vue2/vue2-node-part.html"/>
+    <updated>2022-08-07T02:50:59.000Z</updated>
+    <summary type="html">ES6中数组过滤的四种方法</summary>
+    <content type="html"><![CDATA[<CountView></CountView>
+<blockquote>
+<p>组件之间的数据共享、$refs引用DOM、动态组件、插槽、自定义指令</p>
+</blockquote>
+
+<h2 id="子向父传值" tabindex="-1"> 子向父传值</h2>
+<h3 id="通过自定义事件" tabindex="-1"> 通过自定义事件</h3>
+<blockquote>
+<p>子组件</p>
+</blockquote>
+<div><pre><code><span>export</span> <span>default</span> <span>{</span>
+  <span>data</span><span>(</span><span>)</span> <span>{</span>
+    <span>return</span> <span>{</span>
+      <span>count</span><span>:</span> <span>0</span><span>,</span>
+    <span>}</span><span>;</span>
+  <span>}</span><span>,</span>
+  <span>methods</span><span>:</span> <span>{</span>
+      <span>//测试方法</span>
+    <span>add</span><span>(</span><span>)</span> <span>{</span>
+      <span>this</span><span>.</span>count<span>++</span><span>;</span>
+      <span>//向父传值</span>
+      <span>//修改数据时，通过$emit()触发自定义事件</span>
+      <span>//1.$emit可以写入数字或者字符串</span>
+      <span>this</span><span>.</span><span>$emit</span><span>(</span><span>"numChange"</span><span>,</span> <span>this</span><span>.</span>count<span>)</span><span>;</span>
+      <span>//2.也可以传入多个数据,也可以传入对象</span>
+      <span>// 后期ajax数据也可以传递</span>
+      <span>//this.$emit("numChange", 1, 2, 3, 4, 5, {</span>
+      <span>// name: "张三",</span>
+      <span>//age: 18,</span>
+      <span>//});</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><blockquote>
+<p>父组件</p>
+</blockquote>
+<div><pre><code><span>//监听@numChange事件</span>
+<span>//自定义事件跟vue规定的 @click="show" 原理一样</span>
+<span>&lt;</span>Count @numChange<span>=</span><span>"getCount"</span><span>></span><span>&lt;</span><span>/</span>Count<span>></span>
+
+<span>export</span> <span>default</span> <span>{</span>
+  <span>components</span><span>:</span> <span>{</span>
+    Count<span>,</span>
+  <span>}</span><span>,</span>
+  <span>data</span><span>(</span><span>)</span> <span>{</span>
+    <span>return</span> <span>{</span>
+      <span>//创建对象数据，用于接收自定义事件赋值</span>
+      <span>countFromSon</span><span>:</span> <span>0</span><span>,</span>
+    <span>}</span><span>;</span>
+  <span>}</span><span>,</span>
+  <span>methods</span><span>:</span> <span>{</span>
+      <span>//getCount 为使用组件时的方法名，携带一个参数</span>
+      <span>//1.参数是子组件传递过来的数据</span>
+    <span>getCount</span><span>(</span><span>val</span><span>)</span> <span>{</span>
+        <span>//将参数的值重新赋值给当前vue实例的对象</span>
+      <span>this</span><span>.</span>countFromSon <span>=</span> val<span>;</span>
+    <span>}</span><span>,</span>
+      <span>//2.也可以接收多个数据</span>
+      <span>//getCount(a, b, c, d, e) {</span>
+      <span>//	console.log(a, b, c, d, e);</span>
+      <span>//},</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="兄弟组件之间的数据共享" tabindex="-1"> 兄弟组件之间的数据共享</h2>
+<blockquote>
+<p><strong>在<code>vue2.x</code>中，兄弟组件之间数据共享的方案是<code>EventBus</code>。</strong></p>
+<p><strong><code>EventBus</code>的使用步骤</strong>⬇️</p>
+</blockquote>
+<p>① 创建 <code>eventBus.js</code> 模块，并向外共享一个 <code>Vue </code>的实例对象
+② 在数据发送方，调用 <code>bus.$emit('事件名称', 要发送的数据)</code> 方法触发自定义事件
+③ 在数据接收方，调用 <code>bus.$on('事件名称', 事件处理函数)</code> 方法注册一个自定义事件</p>
+<blockquote>
+<p><code>eventBus.js</code></p>
+</blockquote>
+<div><pre><code><span>import</span> Vue <span>from</span> <span>'vue'</span><span>;</span> 
+<span>export</span> <span>default</span> <span>new</span> <span>Vue</span><span>(</span><span>)</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div></div></div><blockquote>
+<p>数据发送方</p>
+</blockquote>
+<div><pre><code><span>//兄弟组件都需要引入eventBus.js</span>
+<span>import</span> bus <span>from</span> <span>"./eventBus.js"</span><span>;</span>
+<span>export</span> <span>default</span> <span>{</span>
+  <span>data</span><span>(</span><span>)</span> <span>{</span>
+    <span>return</span> <span>{</span>
+      <span>sendCount</span><span>:</span> <span>12</span><span>,</span>
+      <span>sendObj</span><span>:</span> <span>{</span>
+        <span>name</span><span>:</span> <span>"xz"</span><span>,</span>
+        <span>age</span><span>:</span> <span>"18"</span><span>,</span>
+      <span>}</span><span>,</span>
+    <span>}</span><span>;</span>
+  <span>}</span><span>,</span>
+  <span>methods</span><span>:</span> <span>{</span>
+    <span>send</span><span>(</span><span>)</span> <span>{</span>
+        <span>//同样可以传入多个参数，只需要接收时使用</span>
+      bus<span>.</span><span>$emit</span><span>(</span><span>"share"</span><span>,</span> <span>this</span><span>.</span>sendCount<span>,</span> <span>this</span><span>.</span>sendObj<span>)</span><span>;</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><blockquote>
+<p>数据接收方</p>
+</blockquote>
+<div><pre><code><span>//兄弟组件都需要引入eventBus.js</span>
+<span>import</span> bus <span>from</span> <span>"./eventBus.js"</span><span>;</span>
+<span>export</span> <span>default</span> <span>{</span>
+  <span>data</span><span>(</span><span>)</span> <span>{</span>
+    <span>return</span> <span>{</span>
+      <span>count</span><span>:</span> <span>0</span><span>,</span>
+      <span>obj</span><span>:</span> <span>{</span><span>}</span><span>,</span>
+    <span>}</span><span>;</span>
+  <span>}</span><span>,</span>
+  <span>methods</span><span>:</span> <span>{</span>
+    <span>getData</span><span>(</span><span>)</span> <span>{</span>
+        <span>//固定方案，使用箭头函数，以及兄弟之间传递 </span>
+      bus<span>.</span><span>$on</span><span>(</span><span>"share"</span><span>,</span> <span>(</span><span>count<span>,</span> obj</span><span>)</span> <span>=></span> <span>{</span>
+        <span>this</span><span>.</span>count <span>=</span> count<span>;</span>
+        <span>this</span><span>.</span>obj <span>=</span> obj<span>;</span>
+      <span>}</span><span>)</span><span>;</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>,</span>
+  <span>created</span><span>(</span><span>)</span> <span>{</span>
+      <span>//created调用</span>
+    <span>this</span><span>.</span><span>getData</span><span>(</span><span>)</span><span>;</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="refs-引用dom" tabindex="-1"> <code>$refs </code>引用<code>DOM</code></h2>
+<div><pre><code><span>//组件内元素添加ref自定义属性</span>
+<span>&lt;</span>h3 ref<span>=</span><span>"myh1"</span><span>></span>Left 组件<span>&lt;</span><span>/</span>h3<span>></span>
+<span>//使用前要加this</span>
+console<span>.</span><span>log</span><span>(</span><span>this</span><span>.</span>$refs<span>.</span>myh1<span>.</span>innerText<span>)</span><span>;</span>
+<span>//注意 在created里面使用会报错（undefind）</span>
+<span>// mounted 当页面元素加载完毕后即可调用$refs</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h3 id="使用-refs-引用组件实例" tabindex="-1"> 使用<code>$refs</code> 引用组件实例</h3>
+<div><pre><code><span>//父组件</span>
+<span>// 设置ref自定义属性</span>
+<span>&lt;</span>Left ref<span>=</span><span>"comLeft"</span><span>></span><span>&lt;</span><span>/</span>Left<span>></span>
+<span>//父组件打印this</span>
+<span>//如下图显示-在$refs 内出现了comLeft实例</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-15:02:58*01*8.jpg" alt="01"></p>
+<blockquote>
+<p>展开后发现是子组件的实例，也可以看到子组件引用的<code>dom</code>元素</p>
+</blockquote>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-15:02:58*02*c.jpg" alt="02"></p>
+<blockquote>
+<p><strong>展开后有看到<code>send</code>方法</strong></p>
+</blockquote>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-15:02:58*03*4.jpg" alt="03"></p>
+<blockquote>
+<p><strong>父组件操作子组件方法</strong></p>
+</blockquote>
+<div><pre><code><span>//父组件</span>
+<span>&lt;</span>button @click<span>=</span><span>"sendLeft"</span><span>></span>发送<span>&lt;</span><span>/</span>button<span>></span>
+
+<span>export</span> <span>default</span> <span>{</span>
+  <span>methods</span><span>:</span> <span>{</span>
+    <span>logthis</span><span>(</span><span>)</span> <span>{</span>
+      console<span>.</span><span>log</span><span>(</span><span>this</span><span>)</span><span>;</span>
+    <span>}</span><span>,</span>
+    <span>//点击按钮执行Left组件中的send方法</span>
+    <span>//也可也直接操作里面的数据</span>
+    <span>sendLeft</span><span>(</span><span>)</span> <span>{</span>
+      <span>this</span><span>.</span>$refs<span>.</span>comLeft<span>.</span><span>send</span><span>(</span><span>)</span><span>;</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h3 id="控制文本框和按钮的按需切换-案例" tabindex="-1"> 控制文本框和按钮的按需切换-案例</h3>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-15:02:58*togipt*3.gif" alt="togipt"></p>
+<blockquote>
+<p><strong>组件的 <code>$nextTick(cb)</code> 方法，会把 <code>cb</code> 回调推迟到下一个 <code>DOM </code>更新周期之后执行。通俗的理解是：等组件的<code>DOM </code>更新完成之后，再执行 <code>cb</code> 回调函数。从而能保证 <code>cb</code> 回调函数可以操作到最新的 DOM 元素。</strong></p>
+</blockquote>
+<div><pre><code><span>//组件代码</span>
+<span>&lt;</span>input type<span>=</span><span>"text"</span> v<span>-</span><span>if</span><span>=</span><span>"inputVisible"</span> @blur<span>=</span><span>"showButton"</span> ref<span>=</span><span>"iptRef"</span> <span>/</span><span>></span>
+<span>&lt;</span>button v<span>-</span><span>else</span> @click<span>=</span><span>"showInput"</span><span>></span>展示输入框<span>&lt;</span><span>/</span>button<span>></span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div></div></div><div><pre><code><span>export</span> <span>default</span> <span>{</span>
+  <span>data</span><span>(</span><span>)</span> <span>{</span>
+    <span>return</span> <span>{</span>
+      <span>inputVisible</span><span>:</span> <span>false</span><span>,</span>
+    <span>}</span><span>;</span>
+  <span>}</span><span>,</span>
+  <span>methods</span><span>:</span> <span>{</span>
+    <span>showInput</span><span>(</span><span>)</span> <span>{</span>
+      <span>this</span><span>.</span>inputVisible <span>=</span> <span>true</span><span>;</span>
+      <span>//$nextTick(cb)</span>
+      <span>//当</span>
+      <span>this</span><span>.</span><span>$nextTick</span><span>(</span><span>(</span><span>)</span> <span>=></span> <span>{</span>
+        <span>this</span><span>.</span>$refs<span>.</span>iptRef<span>.</span><span>focus</span><span>(</span><span>)</span><span>;</span>
+      <span>}</span><span>)</span><span>;</span>
+    <span>}</span><span>,</span>
+    <span>showButton</span><span>(</span><span>)</span> <span>{</span>
+      <span>this</span><span>.</span>inputVisible <span>=</span> <span>false</span><span>;</span>
+    <span>}</span><span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="动态组件" tabindex="-1"> 动态组件</h2>
+<h3 id="_1-什么是动态组件" tabindex="-1"> 1.什么是动态组件</h3>
+<p>动态组件指的是动态切换组件的显示与隐藏。</p>
+<h3 id="_2-如何实现动态组件渲染" tabindex="-1"> 2. 如何实现动态组件渲染</h3>
+<p><code>vue </code>提供了一个内置的  组件，专门用来实现动态组件的渲染。</p>
+<ul>
+<li><code>component </code>标签是<code>vue</code>内置的，作用：组件的占位符</li>
+<li><code>is</code> 属性的值，表示要渲染的名字</li>
+</ul>
+<div><pre><code> <span>&lt;</span><span>!</span><span>--</span> 渲染 Left 组件和 Right 组件 <span>--</span><span>></span>
+      <span>&lt;</span><span>!</span><span>--</span> <span>&lt;</span>Left<span>></span><span>&lt;</span><span>/</span>Left<span>></span>
+      <span>&lt;</span>Right<span>></span><span>&lt;</span><span>/</span>Right<span>></span> <span>--</span><span>></span>
+<span>//这样写会报错，写法写死了。不能动态修改</span>
+  <span>&lt;</span>component is<span>=</span><span>"Left"</span><span>></span><span>&lt;</span><span>/</span>component<span>></span>
+<span>//根据data内有的属性动态绑定，is前需要加v-bind 或 :</span>
+<span>//可以动态切换</span>
+  <span>&lt;</span>component <span>:</span>is<span>=</span><span>"comLeft"</span><span>></span><span>&lt;</span><span>/</span>component<span>></span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><div><pre><code><span>import</span> Left <span>from</span> <span>"@/components/Left.vue"</span><span>;</span>
+<span>import</span> Right <span>from</span> <span>"@/components/Right.vue"</span><span>;</span>
+<span>export</span> <span>default</span> <span>{</span>
+  <span>data</span><span>(</span><span>)</span> <span>{</span>
+    <span>return</span> <span>{</span>
+      <span>comLeft</span><span>:</span> <span>"Left"</span><span>,</span>
+      <span>comRight</span><span>:</span> <span>"Right"</span><span>,</span>
+    <span>}</span><span>;</span>
+  <span>}</span><span>,</span>
+  <span>components</span><span>:</span> <span>{</span>
+    Left<span>,</span>
+    Right<span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h3 id="案例" tabindex="-1"> 案例</h3>
+<h4 id="_1-点击按钮切换组件" tabindex="-1"> 1.点击按钮切换组件</h4>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-15:02:58*09*9.gif" alt="09"></p>
+<p>通过点击按钮，修改<code>comName</code>的属性值</p>
+<div><pre><code><span>&lt;</span>button @click<span>=</span><span>"comName = 'Left'"</span><span>></span>展示Left<span>&lt;</span><span>/</span>button<span>></span>
+<span>&lt;</span>button @click<span>=</span><span>"comName = 'Right'"</span><span>></span>展示Right<span>&lt;</span><span>/</span>button<span>></span>
+<span>&lt;</span>div <span>class</span><span>=</span><span>"box"</span><span>></span>
+      <span>&lt;</span>component <span>:</span>is<span>=</span><span>"comName"</span><span>></span><span>&lt;</span><span>/</span>component<span>></span>
+<span>&lt;</span><span>/</span>div<span>></span>
+
+<span>export</span> <span>default</span> <span>{</span>
+  <span>data</span><span>(</span><span>)</span> <span>{</span>
+    <span>return</span> <span>{</span>
+      <span>comName</span><span>:</span> <span>"Left"</span><span>,</span>
+      <span>// comLeft: "Left",</span>
+      <span>// comRight: "Right",</span>
+    <span>}</span><span>;</span>
+  <span>}</span><span>,</span>
+  <span>components</span><span>:</span> <span>{</span>
+    Left<span>,</span>
+    Right<span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h4 id="_2-left组件添加-1按钮-再来回切换组件" tabindex="-1"> 2.<code>Left</code>组件添加<code>+1</code>按钮，再来回切换组件</h4>
+<div><pre><code><span>//Left</span>
+<span>&lt;</span>h3<span>></span>Left 组件<span>--</span><span>-</span><span>{</span><span>{</span> count <span>}</span><span>}</span><span>&lt;</span><span>/</span>h3<span>></span>
+<span>&lt;</span>button @click<span>=</span><span>"count++"</span><span>></span><span>+</span><span>1</span><span>&lt;</span><span>/</span>button<span>></span>
+
+<span>export</span> <span>default</span> <span>{</span>
+  <span>data</span><span>(</span><span>)</span> <span>{</span>
+    <span>return</span> <span>{</span>
+      <span>count</span><span>:</span> <span>0</span><span>,</span>
+    <span>}</span><span>;</span>
+  <span>}</span><span>,</span>
+  <span>destroyed</span><span>(</span><span>)</span> <span>{</span>
+    console<span>.</span><span>log</span><span>(</span><span>"Left 组件销毁"</span><span>)</span><span>;</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-15:02:58*10*3.gif" alt="10"></p>
+<blockquote>
+<ul>
+<li>
+<p><strong>缺点，却换后 组件原来的内容会被销毁，相当于被刷新</strong></p>
+</li>
+<li>
+<p><strong>重新切换会重新创建组件</strong></p>
+</li>
+<li>
+<p><strong>被隐藏的组件会被销毁</strong></p>
+</li>
+<li>
+<p><strong>解决办法？有！ 使用 <code>keep-alive </code>标签</strong></p>
+</li>
+</ul>
+</blockquote>
+<h4 id="解决办法" tabindex="-1"> 解决办法</h4>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-15:02:58*11*9.gif" alt="11"></p>
+<p><strong>使用<code>&lt;keep-alive&gt;</code>标签将<code>&lt;component&gt;</code>标签包裹起来即可解决</strong></p>
+<p><strong>使用后也并不会经过销毁</strong></p>
+<p><strong><code>keep-alive</code> 可以把内部的组件进行缓存，而不是销毁组件</strong></p>
+<div><pre><code>App<span>.</span>vue
+<span>&lt;</span>keep<span>-</span>alive<span>></span>
+    <span>&lt;</span>component <span>:</span>is<span>=</span><span>"comName"</span><span>></span><span>&lt;</span><span>/</span>component<span>></span>
+<span>&lt;</span><span>/</span>keep<span>-</span>alive<span>></span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div></div></div><h4 id="_4-keep-alive-对应的生命周期函数" tabindex="-1"> 4. keep-alive 对应的生命周期函数</h4>
+<p>当组件被缓存时，会自动触发组件的 <code>deactivated </code>生命周期函数。
+当组件被激活时，会自动触发组件的 <code>activated </code>生命周期函数。</p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-15:02:58*12*8.gif" alt="12"></p>
+<h4 id="_5-keep-alive-的-include-属性" tabindex="-1"> 5. <code>keep-alive</code> 的 <code>include</code> 属性</h4>
+<p><code>include </code>属性用来指定：只有名称匹配的组件会被缓存。多个组件名之间使用英文的逗号分隔：</p>
+<p><strong>只有在include属性内有的组件，才会被缓存，反之则不会进行缓存</strong></p>
+<p><strong>注意：<code>include</code>属性值是我们 <code>components </code>注册组件时的名称</strong></p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-15:02:58*13*a.gif" alt="13"></p>
+<div><pre><code><span>&lt;</span>keep<span>-</span>alive include<span>=</span><span>"Right"</span><span>></span>
+    <span>&lt;</span>component <span>:</span>is<span>=</span><span>"comName"</span><span>></span><span>&lt;</span><span>/</span>component<span>></span>
+<span>&lt;</span><span>/</span>keep<span>-</span>alive<span>></span>
+<span>export</span> <span>default</span> <span>{</span>
+  <span>data</span><span>(</span><span>)</span> <span>{</span>
+    <span>return</span> <span>{</span>
+      <span>comName</span><span>:</span> <span>"Left"</span><span>,</span>
+      <span>// comLeft: "Left",</span>
+      <span>// comRight: "Right",</span>
+    <span>}</span><span>;</span>
+  <span>}</span><span>,</span>
+  <span>components</span><span>:</span> <span>{</span>
+    Left<span>,</span>
+    Right<span>,</span>
+  <span>}</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p>如需多个进行缓存 只需通过英文逗号<code>,</code>进行分割</p>
+<div><pre><code><span>&lt;</span>keep<span>-</span>alive include<span>=</span><span>"Left,Right"</span><span>></span>
+     <span>&lt;</span>component <span>:</span>is<span>=</span><span>"comName"</span><span>></span><span>&lt;</span><span>/</span>component<span>></span>
+<span>&lt;</span><span>/</span>keep<span>-</span>alive<span>></span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div></div></div><h4 id="扩展" tabindex="-1"> 扩展</h4>
+<p>1.跟<code>include</code>相反的<code>exclude</code></p>
+<ul>
+<li>两个只能存在一个，只能使用一个</li>
+<li><code>exclude</code>是排除不需要缓存的组件</li>
+<li>两个互补使用</li>
+</ul>
+<div><pre><code><span>&lt;</span>keep<span>-</span>alive exclude<span>=</span><span>"Left"</span><span>></span>
+        <span>&lt;</span>component <span>:</span>is<span>=</span><span>"comName"</span><span>></span><span>&lt;</span><span>/</span>component<span>></span>
+      <span>&lt;</span><span>/</span>keep<span>-</span>alive<span>></span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div></div></div><p>2.当子组件提供了 <code>name </code>属性之后，组件的名称，就是 <code>name </code>属性的值</p>
+<div><pre><code>Right组件
+<span>export</span> <span>default</span> <span>{</span>
+  <span>//当子组件提供了 name 属性之后，组件的名称，就是 name 属性的值</span>
+  <span>name</span><span>:</span> <span>"MyRight"</span><span>,</span>
+<span>}</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-15:02:58*14*f.jpg" alt="14"></p>
+<h2 id="插槽" tabindex="-1"> 插槽</h2>
+<h3 id="_1-什么是插槽" tabindex="-1"> 1.什么是插槽</h3>
+<blockquote>
+<p>插槽（<code>slot</code>）是 <code>vue </code>为组件的封装者提供的能力。允许开发者在封装组件时，把不确定的、希望由用户指定的
+部分定义为插槽。</p>
+</blockquote>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-15:02:58*15*f.jpg" alt="15"></p>
+<p>可以把插槽认为是组件封装期间，为用户预留的内容的占位符。</p>
+<h3 id="_2-体验插槽的基础用法" tabindex="-1"> 2. 体验插槽的基础用法</h3>
+<blockquote>
+<p>在封装组件时，可以通过  元素定义插槽，从而为用户预留内容占位符。示例代码如下：</p>
+</blockquote>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-15:02:58*16*f.jpg" alt="16"></p>
+<div><pre><code>!父组件
+<span><span><span>&lt;</span>Left</span><span>></span></span>
+        <span>&lt;!-- 默认情况下，在使用组建的时候，提供的内容都会被
+         填充到名字为default的插槽中 --></span>
+        <span>&lt;!-- 1.如果要把内容填充到指定名称的插槽中，需要使用v-slot：这个
+         指令 --></span>
+        <span>&lt;!-- 2.v-slot:后面要跟上插槽的 --></span>
+        <span>&lt;!-- 3.v-slot：指令不能直接使用在元素身上,必须用在 template 标签上 --></span>
+        <span>&lt;!-- 4.template 这个标签，她在一个虚拟的标签，只起到包裹性质的作用，但是，不会被渲染为
+         任何实质性的 html元素 --></span>
+        <span>&lt;!-- &lt;template v-slot:default> --></span>
+        <span>&lt;!-- `v-slot:` 等于 `#` --></span>
+        <span>&lt;!--简写为 `#`  --></span>
+        <span><span><span>&lt;</span>template</span> <span>#default</span><span>></span></span>
+          <span><span><span>&lt;</span>p</span><span>></span></span>Left组件插槽内容<span><span><span>&lt;/</span>p</span><span>></span></span>
+        <span><span><span>&lt;/</span>template</span><span>></span></span>
+      <span><span><span>&lt;/</span>Left</span><span>></span></span>
+
+
+!子组件
+<span>&lt;!-- 声明一个插槽区域 --></span>
+    <span>&lt;!-- Vue官方规定：每一个 solt 插槽，都要有一个 name 名称 --></span>
+    <span>&lt;!-- 如果省略了 solt 属性，则有一个默认名称叫做default --></span>
+    <span>&lt;!-- &lt;slot>&lt;/slot> --></span>
+<span><span><span>&lt;</span>slot</span> <span>name</span><span><span>=</span><span>"</span>default<span>"</span></span><span>></span></span>
+      <span>&lt;!-- 以用户指定的为准 --></span>
+    <span><span><span>&lt;</span>p</span><span>></span></span>这是 default 插槽的默认内容<span><span><span>&lt;/</span>p</span><span>></span></span>
+<span><span><span>&lt;/</span>slot</span><span>></span></span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h3 id="具名插槽" tabindex="-1"> 具名插槽</h3>
+<p>如果在封装组件时需要预留多个插槽节点，则需要为每个  插槽指定具体的 <code>name </code>名称。这种带有具体
+名称的插槽叫做“具名插槽”。</p>
+<p><strong>注意：没有指定 <code>name </code>名称的插槽，会有隐含的名称叫做 <code>default</code></strong></p>
+<h4 id="为具名插槽提供内容" tabindex="-1"> 为具名插槽提供内容</h4>
+<p>在向具名插槽提供内容的时候，我们可以在一个 <code>&lt;template&gt;</code> 元素上使用 <code>v-slot </code>指令，并以 v-slot 的参数的形式提供其名称。示例代码如下：</p>
+<p>跟 <code>v-on</code> 和 <code>v-bind</code> 一样，<code>v-slot</code> 也有缩写，即把参数之前的所有内容 (<code>v-slot:</code>) 替换为字符 <code>#</code>。例如 <code>v-slot:header</code>
+可以被重写为 <code>#header</code>：</p>
+<div><pre><code>父组件
+
+<span><span><span>&lt;</span>Article</span><span>></span></span>
+      <span><span><span>&lt;</span>template</span> <span>#title</span><span>></span></span>
+        <span><span><span>&lt;</span>h3</span><span>></span></span>一首诗<span><span><span>&lt;/</span>h3</span><span>></span></span>
+      <span><span><span>&lt;/</span>template</span><span>></span></span>
+      <span><span><span>&lt;</span>template</span> <span>#content</span><span>></span></span>
+        <span><span><span>&lt;</span>div</span><span>></span></span>
+          <span><span><span>&lt;</span>p</span><span>></span></span>啊，大海<span><span><span>&lt;/</span>p</span><span>></span></span>
+          <span><span><span>&lt;</span>p</span><span>></span></span>啊，大海<span><span><span>&lt;/</span>p</span><span>></span></span>
+          <span><span><span>&lt;</span>p</span><span>></span></span>啊，大海<span><span><span>&lt;/</span>p</span><span>></span></span>
+        <span><span><span>&lt;/</span>div</span><span>></span></span>
+      <span><span><span>&lt;/</span>template</span><span>></span></span>
+      <span><span><span>&lt;</span>template</span> <span>#footer</span><span>></span></span>
+        <span><span><span>&lt;</span>div</span><span>></span></span>
+          作者：李白
+        <span><span><span>&lt;/</span>div</span><span>></span></span>
+      <span><span><span>&lt;/</span>template</span><span>></span></span>
+    <span><span><span>&lt;/</span>Article</span><span>></span></span>
+
+export default {
+  components: {
+    Left,
+    Article,
+  },
+};
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><div><pre><code>Article子组件
+<span><span><span>&lt;</span>template</span><span>></span></span>
+  <span><span><span>&lt;</span>div</span> <span>class</span><span><span>=</span><span>"</span>article-container<span>"</span></span><span>></span></span>
+    <span>&lt;!-- 文章的标题 --></span>
+    <span><span><span>&lt;</span>div</span> <span>class</span><span><span>=</span><span>"</span>header-box<span>"</span></span><span>></span></span>
+      <span><span><span>&lt;</span>slot</span> <span>name</span><span><span>=</span><span>"</span>title<span>"</span></span><span>></span></span><span><span><span>&lt;/</span>slot</span><span>></span></span>
+    <span><span><span>&lt;/</span>div</span><span>></span></span>
+
+    <span>&lt;!-- 文章的内容 --></span>
+    <span><span><span>&lt;</span>div</span> <span>class</span><span><span>=</span><span>"</span>content-box<span>"</span></span><span>></span></span>
+      <span><span><span>&lt;</span>slot</span> <span>name</span><span><span>=</span><span>"</span>content<span>"</span></span><span>></span></span><span><span><span>&lt;/</span>slot</span><span>></span></span>
+    <span><span><span>&lt;/</span>div</span><span>></span></span>
+
+    <span>&lt;!-- 文章的作者 --></span>
+    <span><span><span>&lt;</span>div</span> <span>class</span><span><span>=</span><span>"</span>footer-box<span>"</span></span><span>></span></span>
+      <span><span><span>&lt;</span>slot</span> <span>name</span><span><span>=</span><span>"</span>footer<span>"</span></span><span>></span></span><span><span><span>&lt;/</span>slot</span><span>></span></span>
+    <span><span><span>&lt;/</span>div</span><span>></span></span>
+  <span><span><span>&lt;/</span>div</span><span>></span></span>
+<span><span><span>&lt;/</span>template</span><span>></span></span>
+
+<span><span><span>&lt;</span>script</span><span>></span></span><span><span>
+<span>export</span> <span>default</span> <span>{</span>
+  <span>//首字母大写</span>
+  <span>name</span><span>:</span> <span>"Article"</span><span>,</span>
+<span>}</span><span>;</span>
+</span></span><span><span><span>&lt;/</span>script</span><span>></span></span>
+
+<span><span><span>&lt;</span>style</span> <span>lang</span><span><span>=</span><span>"</span>less<span>"</span></span> <span>scoped</span><span>></span></span><span><span>
+<span>.article-container</span> <span>{</span>
+  <span>> div</span> <span>{</span>
+    <span>min-height</span><span>:</span> 150px<span>;</span>
+  <span>}</span>
+<span>}</span>
+<span>.header-box</span> <span>{</span>
+  <span>background-color</span><span>:</span> pink<span>;</span>
+<span>}</span>
+<span>.content-box</span> <span>{</span>
+  <span>background-color</span><span>:</span> lightblue<span>;</span>
+<span>}</span>
+<span>.footer-box</span> <span>{</span>
+  <span>background-color</span><span>:</span> lightsalmon<span>;</span>
+<span>}</span>
+</span></span><span><span><span>&lt;/</span>style</span><span>></span></span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-15:02:58*17*2.jpg" alt="17"></p>
+<h4 id="作用域插槽" tabindex="-1"> 作用域插槽</h4>
+<blockquote>
+<p>在封装组件时，为预留的<code>&lt;slot&gt;</code>提供属性对应的值，这种用法，叫做 “作用域插槽 ”</p>
+</blockquote>
+<div><pre><code>父组件
+<span><span><span>&lt;</span>template</span> <span>#content</span><span><span>=</span><span>"</span>scope<span>"</span></span><span>></span></span>
+        <span><span><span>&lt;</span>div</span><span>></span></span>
+          <span><span><span>&lt;</span>p</span><span>></span></span>啊，大海<span><span><span>&lt;/</span>p</span><span>></span></span>
+          <span><span><span>&lt;</span>p</span><span>></span></span>啊，大海<span><span><span>&lt;/</span>p</span><span>></span></span>
+          <span><span><span>&lt;</span>p</span><span>></span></span>啊，大海<span><span><span>&lt;/</span>p</span><span>></span></span>
+          <span><span><span>&lt;</span>p</span><span>></span></span>{{ scope }}<span><span><span>&lt;/</span>p</span><span>></span></span>
+        <span><span><span>&lt;/</span>div</span><span>></span></span>
+      <span><span><span>&lt;/</span>template</span><span>></span></span>
+
+子组件
+<span><span><span>&lt;</span>div</span> <span>class</span><span><span>=</span><span>"</span>content-box<span>"</span></span><span>></span></span>
+      <span>&lt;!-- 在封装组件时，为预留的&lt;slot>提供属性对应的值，这种用法，叫做 “作用域插槽 ” --></span>
+      <span><span><span>&lt;</span>slot</span> <span>name</span><span><span>=</span><span>"</span>content<span>"</span></span> <span>msg</span><span><span>=</span><span>"</span>hello vue<span>"</span></span><span>></span></span><span><span><span>&lt;/</span>slot</span><span>></span></span>
+<span><span><span>&lt;/</span>div</span><span>></span></span>
+
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-15:02:58*18*5.jpg" alt="18"></p>
+<h4 id="作用域插槽的解构赋值" tabindex="-1"> 作用域插槽的解构赋值</h4>
+<div><pre><code>父组件
+<span>&lt;!-- &lt;template #content="scope"> --></span>
+      <span>&lt;!-- 可以使用解构赋值使用 --></span>
+      <span><span><span>&lt;</span>template</span> <span>#content</span><span><span>=</span><span>"</span>{msg,user}<span>"</span></span><span>></span></span>
+        <span><span><span>&lt;</span>div</span><span>></span></span>
+          <span><span><span>&lt;</span>p</span><span>></span></span>啊，大海<span><span><span>&lt;/</span>p</span><span>></span></span>
+          <span><span><span>&lt;</span>p</span><span>></span></span>啊，大海<span><span><span>&lt;/</span>p</span><span>></span></span>
+          <span><span><span>&lt;</span>p</span><span>></span></span>啊，大海<span><span><span>&lt;/</span>p</span><span>></span></span>
+          <span>&lt;!-- &lt;p>{{ scope }}&lt;/p> --></span>
+          <span>&lt;!-- 解构赋值使用 --></span>
+          <span><span><span>&lt;</span>p</span><span>></span></span>{{ msg }}<span><span><span>&lt;/</span>p</span><span>></span></span>
+          <span><span><span>&lt;</span>p</span><span>></span></span>{{ user }}<span><span><span>&lt;/</span>p</span><span>></span></span>
+        <span><span><span>&lt;/</span>div</span><span>></span></span>
+      <span><span><span>&lt;/</span>template</span><span>></span></span>
+
+
+子组件
+<span>&lt;!-- 文章的内容 --></span>
+    <span><span><span>&lt;</span>div</span> <span>class</span><span><span>=</span><span>"</span>content-box<span>"</span></span><span>></span></span>
+      <span>&lt;!-- 在封装组件时，为预留的&lt;slot>提供属性对应的值，这种用法，叫做 “作用域插槽 ” --></span>
+      <span><span><span>&lt;</span>slot</span> <span>name</span><span><span>=</span><span>"</span>content<span>"</span></span> <span>msg</span><span><span>=</span><span>"</span>hello vue<span>"</span></span>   <span>:user</span><span><span>=</span><span>"</span>userinfo<span>"</span></span><span>></span></span><span><span><span>&lt;/</span>slot</span><span>></span></span>
+    <span><span><span>&lt;/</span>div</span><span>></span></span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="自定义指令" tabindex="-1"> 自定义指令</h2>
+<h3 id="_1-什么是自定义指令" tabindex="-1"> 1. 什么是自定义指令</h3>
+<p><code>vue </code>官方提供了 <code>v-text</code>、<code>v-for</code>、<code>v-model</code>、<code>v-if </code>等常用的指令。除此之外 <code>vue </code>还允许开发者自定义指令。</p>
+<h3 id="_2-自定义指令的分类" tabindex="-1"> 2. 自定义指令的分类</h3>
+<p><code>vue </code>中的自定义指令分为两类，分别是：</p>
+<ul>
+<li>私有自定义指令</li>
+<li>全局自定义指令</li>
+</ul>
+<h3 id="_3-私有自定义指令" tabindex="-1"> 3. 私有自定义指令</h3>
+<p>在每个 <code>vue </code>组件中，可以在 <code>directives </code>节点下声明私有自定义指令。示例代码如下：</p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-15:02:58*19*7.jpg" alt="19"></p>
+<h3 id="_4-使用自定义指令" tabindex="-1"> 4. 使用自定义指令</h3>
+<p>在使用自定义指令时，需要加上<code> v-</code> 前缀。示例代码如下：</p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-15:02:58*20*6.jpg" alt="20"></p>
+<h3 id="_5-为自定义指令动态绑定参数值" tabindex="-1"> 5. 为自定义指令动态绑定参数值</h3>
+<p>在 <code>template </code>结构中使用自定义指令时，可以通过等号（=）的方式，为当前指令动态绑定参数值：</p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-15:02:58*21*a.jpg" alt="21"></p>
+<h3 id="_6-通过-binding-获取指令的参数值" tabindex="-1"> 6. 通过 <code>binding </code>获取指令的参数值</h3>
+<p>在声明自定义指令时，可以通过形参中的第二个参数，来接收指令的参数值：</p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-15:02:58*22*3.jpg" alt="22"></p>
+<h3 id="_7-update-函数" tabindex="-1"> 7. <code>update </code>函数</h3>
+<p><code>bind </code>函数只调用 1 次：当指令第一次绑定到元素时调用，当 <code>DOM </code>更新时 <code>bind </code>函数不会被触发。 <code>update </code>函
+数会在每次 <code>DOM </code>更新时被调用。示例代码如下：</p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-15:02:58*23*7.jpg" alt="23"></p>
+<h3 id="_8-函数简写" tabindex="-1"> 8. 函数简写</h3>
+<p>如果 <code>insert </code>和<code>update </code>函数中的逻辑完全相同，则对象格式的自定义指令可以简写成函数格式：</p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-15:02:58*24*c.jpg" alt="24"></p>
+<h3 id="_9-全局自定义指令" tabindex="-1"> 9. 全局自定义指令</h3>
+<p>全局共享的自定义指令需要通过<code>Vue.directive()</code>进行声明，示例代码如下：</p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-15:02:58*25*7.jpg" alt="25"></p>
+<h2 id="总结" tabindex="-1"> 总结</h2>
+<ol>
+<li>
+<p>能够掌握 <code>keep-alive</code> 元素的基本使用</p>
+<ul>
+<li>标签、<code>include </code>属性</li>
+</ul>
+</li>
+<li>
+<p>能够掌握插槽的基本用</p>
+<ul>
+<li>标签、具名插槽、作用域插槽、后备内容</li>
+</ul>
+</li>
+<li>
+<p>能够知道如何自定义指令</p>
+<ul>
+<li>
+<p>私有自定义指令 <code>directives: { }</code></p>
+</li>
+<li>
+<p>全局自定义指令<code> Vue.directive()</code></p>
+</li>
+</ul>
+</li>
+</ol>
+]]></content>
+    <category term="Vue2" scheme=""/>
+    <published>2022-08-07T00:00:00.000Z</published>
+  </entry>
   <entry>
     <title type="html">ES6中数组过滤的四种方法</title>
     <id>https://ivwv.github.io/posts/javascript/es6/array-filter.html</id>
