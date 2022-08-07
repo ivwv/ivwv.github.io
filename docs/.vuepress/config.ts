@@ -80,16 +80,6 @@ export default defineUserConfig({
         content: "",
       },
     ],
-    /**AddThis */
-    // <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62efc142600743a3"></script>
-    [
-      "meta",
-      {
-        type: "text/javascript",
-        src: "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-62efc142600743a3",
-      },
-    ],
-    /**AddThis */
     // <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     [
       "meta",
