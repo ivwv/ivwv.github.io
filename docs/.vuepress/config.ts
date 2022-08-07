@@ -42,6 +42,44 @@ export default defineUserConfig({
         href: "https://at.alicdn.com/t/c/font_3572268_mc5bbxe1h2l.css",
       },
     ],
+    // ---------------------------
+    //            Twitter
+    // ---------------------------
+    [
+      "meta",
+      {
+        property: "twitter:card",
+        content: "summary_large_image",
+      },
+    ],
+    [
+      "meta",
+      {
+        property: "twitter:url",
+        content: "https://ivwv.github.io/",
+      },
+    ],
+    [
+      "meta",
+      {
+        property: "twitter:title",
+        content: "❤努力提升自己❤ | SY's Blog",
+      },
+    ],
+    [
+      "meta",
+      {
+        property: "twitter:description",
+        content: "分享自己的学习日常✨",
+      },
+    ],
+    [
+      "meta",
+      {
+        property: "twitter:image",
+        content: "",
+      },
+    ],
     // <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     [
       "meta",
@@ -63,7 +101,7 @@ export default defineUserConfig({
       "meta",
       {
         name: "description",
-        content: "分享自己的学习日常---努力成就更好的自己✨",
+        content: "分享自己的学习日常✨",
       },
     ],
 
@@ -125,9 +163,9 @@ export default defineUserConfig({
       componentsDir: path.resolve(__dirname, "./components"),
     }),
     // google analytics 统计
-    googleAnalyticsPlugin({
-      id: "G-3115GBP5VH",
-    }),
+    // googleAnalyticsPlugin({
+    //   id: "G-3115GBP5VH",
+    // }),
     // 图片预览
     photoSwipePlugin({
       selector: ".theme-hope-content img",
