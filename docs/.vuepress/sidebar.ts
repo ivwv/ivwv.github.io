@@ -7,14 +7,14 @@ export default sidebar([
   "/posts/project/",
   {
     text: "PDF书籍",
-    icon: "creative",
+    icon: "pdf",
     collapsable: true,
     prefix: "/posts/PDF/",
     children: [
       "/posts/PDF/",
       {
         text: "前端相关书籍",
-        icon: "creative",
+        icon: "pdf",
         collapsable: true,
         prefix: "front-end/",
         children: [
@@ -38,21 +38,21 @@ export default sidebar([
       },
       {
         text: "后端相关书籍",
-        icon: "creative",
+        icon: "pdf",
         collapsable: true,
         prefix: "back-end/",
         children: ["深入浅出Node.js", "NODE.js入门手册", "Node.js实战"],
       },
       {
         text: "网络相关书籍",
-        icon: "creative",
+        icon: "pdf",
         collapsable: true,
         prefix: "network/",
         children: ["图解HTTP(上野宣)", "图解TCPIP（第五版）"],
       },
       {
         text: "Linux运维相关书籍",
-        icon: "creative",
+        icon: "pdf",
         collapsable: true,
         prefix: "linux/",
         children: ["阮一峰-Bash-脚本教程"],
@@ -61,7 +61,7 @@ export default sidebar([
   },
   {
     text: "学习笔记",
-    icon: "note",
+    icon: "biji",
     prefix: "/posts/",
     collapsable: true,
     children: [

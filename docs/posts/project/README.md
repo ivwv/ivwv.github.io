@@ -2,7 +2,7 @@
 title: 我的项目整合
 description: 我的项目整合
 isOriginal: true
-icon: list
+icon: PROJECT
 # YYYY-MM-DD
 date: 2022-07-31
 # 分类
