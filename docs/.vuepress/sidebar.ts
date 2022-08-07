@@ -175,6 +175,13 @@ export default sidebar([
         prefix: "mark-down/",
         children: ["emoji"],
       },
+      {
+        text: "前端开发",
+        icon: "launch",
+        collapsable: true,
+        prefix: "frontend/",
+        children: ["frontend-dev-god-web-site"],
+      },
     ],
   },
 ]);
