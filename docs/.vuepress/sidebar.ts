@@ -104,6 +104,7 @@ export default sidebar([
               "类的本质",
               "对象方法：Object.defineProperty",
               "ES6在前端的模块导入与导出",
+              "array-filter",
             ],
           },
         ],
