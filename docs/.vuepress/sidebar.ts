@@ -107,7 +107,6 @@ export default sidebar([
               "array-filter",
             ],
           },
-          "you-dont-know-console",
         ],
       },
       {
@@ -153,6 +152,20 @@ export default sidebar([
         icon: "lock",
         prefix: "oauth/",
         children: ["github-oauth"],
+      },
+      {
+        text: "Node相关",
+        collapsable: true,
+        icon: "lock",
+        prefix: "node/",
+        children: ["how-to-pass-cmd-line-args-to-node"],
+      },
+      {
+        text: "JavaScript相关",
+        collapsable: true,
+        icon: "javascript",
+        prefix: "javascript/",
+        children: ["you-dont-know-console"],
       },
     ],
   },
