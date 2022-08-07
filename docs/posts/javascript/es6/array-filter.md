@@ -30,13 +30,6 @@ timeline: true
 
 
 
-
-
-
-
-
-
-
 ## forEach
 
 > forEach循环一旦被执行，会从头执行到尾，不会中间被停止

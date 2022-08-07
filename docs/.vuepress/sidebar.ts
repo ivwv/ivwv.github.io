@@ -107,6 +107,7 @@ export default sidebar([
               "array-filter",
             ],
           },
+          "you-dont-know-console",
         ],
       },
       {
