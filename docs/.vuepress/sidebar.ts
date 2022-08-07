@@ -120,7 +120,7 @@ export default sidebar([
             icon: "vue",
             collapsable: true,
             prefix: "vue2/",
-            children: [],
+            children: ["vue2-node-part"],
           },
           {
             text: "Vue3",
