@@ -2,7 +2,7 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
-  "/home",
+  // "/home",
   /**
    * 导航栏
    * 分类
