@@ -6,8 +6,8 @@
     <link>https://ivwv.github.io/</link>
     <description>SY's Blog</description>
     <language>zh-CN</language>
-    <pubDate>Mon, 08 Aug 2022 02:16:59 GMT</pubDate>
-    <lastBuildDate>Mon, 08 Aug 2022 02:16:59 GMT</lastBuildDate>
+    <pubDate>Mon, 08 Aug 2022 09:33:17 GMT</pubDate>
+    <lastBuildDate>Mon, 08 Aug 2022 09:33:17 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>JavaScript</category>
@@ -1087,11 +1087,11 @@ export default {
 </code></pre><div><br><br><br><br><br><div>&nbsp;</div><br><br><br><br><br></div><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>]]></content:encoded>
     </item>
     <item>
-      <title>PicGo+Typora 配合 Github 创建个人图床</title>
+      <title>PicGo+Typora 配合 Github 搭建个人图床</title>
       <link>https://ivwv.github.io/posts/share/imgur/typora-picgo-github-picur.html</link>
       <guid>https://ivwv.github.io/posts/share/imgur/typora-picgo-github-picur.html</guid>
-      <source url="https://ivwv.github.io/rss.xml">PicGo+Typora 配合 Github 创建个人图床</source>
-      <description>PicGo+Typora 配合 Github 创建个人图床</description>
+      <source url="https://ivwv.github.io/rss.xml">PicGo+Typora 配合 Github 搭建个人图床</source>
+      <description>PicGo+Typora 配合 Github 搭建个人图床</description>
       <category>图床</category>
       <category>Picgo</category>
       <category>GitHub</category>
@@ -1131,7 +1131,7 @@ export default {
 <li>默认仓库为<code>public</code></li>
 <li>创建仓库</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/ivwv/PicGoImgs@main/img/typora-user-images/2022-08-05-22:12:26*image-20220805221226154*f.png" alt="image-20220805221226154"></p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/桌面/2022-08-08-10:55:00*hdjkhawkjdhjn*b.png" alt="hdjkhawkjdhjn"></p>
 <blockquote>
 <p>这里我创建的仓库名为 <code>ivwv/PicGoImgs</code></p>
 </blockquote>

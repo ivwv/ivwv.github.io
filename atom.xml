@@ -3,7 +3,7 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-08T02:16:59.800Z</updated>
+  <updated>2022-08-08T09:33:17.034Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
@@ -1083,11 +1083,11 @@ export default {
     <published>2022-08-06T00:00:00.000Z</published>
   </entry>
   <entry>
-    <title type="html">PicGo+Typora 配合 Github 创建个人图床</title>
+    <title type="html">PicGo+Typora 配合 Github 搭建个人图床</title>
     <id>https://ivwv.github.io/posts/share/imgur/typora-picgo-github-picur.html</id>
     <link href="https://ivwv.github.io/posts/share/imgur/typora-picgo-github-picur.html"/>
-    <updated>2022-08-05T15:19:25.000Z</updated>
-    <summary type="html">PicGo+Typora 配合 Github 创建个人图床</summary>
+    <updated>2022-08-08T09:32:10.000Z</updated>
+    <summary type="html">PicGo+Typora 配合 Github 搭建个人图床</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
 <p>图床是什么?</p>
@@ -1123,7 +1123,7 @@ export default {
 <li>默认仓库为<code>public</code></li>
 <li>创建仓库</li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/ivwv/PicGoImgs@main/img/typora-user-images/2022-08-05-22:12:26*image-20220805221226154*f.png" alt="image-20220805221226154"></p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/桌面/2022-08-08-10:55:00*hdjkhawkjdhjn*b.png" alt="hdjkhawkjdhjn"></p>
 <blockquote>
 <p>这里我创建的仓库名为 <code>ivwv/PicGoImgs</code></p>
 </blockquote>
