@@ -153,19 +153,10 @@ export default defineUserConfig({
   theme,
   plugins: [
     // 插件
-    componentsPlugin({
-      addThis: "ra-62efc142600743a3",
-      backToTop: true,
-      components: [
-        "Badge",
-        "CodePen",
-        "FontIcon",
-        "PDF",
-        "StackBlitz",
-        "YouTube",
-      ],
-      iconAssets: "iconfont",
-    }),
+    // componentsPlugin({
+    // 需要全局 代理vpn访问
+    //   addThis: "ra-62efc142600743a3",
+    // }),
     // gitPlugin
     gitPlugin({
       createdTime: true,

@@ -1,6 +1,6 @@
 ---
-title: PicGo+Typora 配合 Github 创建个人图床
-description: PicGo+Typora 配合 Github 创建个人图床
+title: PicGo+Typora 配合 Github 搭建个人图床
+description: PicGo+Typora 配合 Github 搭建个人图床
 isOriginal: true
 icon: pic
 # YYYY-MM-DD
@@ -75,7 +75,7 @@ timeline: true
 - 默认仓库为`public`
 - 创建仓库
 
-![image-20220805221226154](https://cdn.jsdelivr.net/gh/ivwv/PicGoImgs@main/img/typora-user-images/2022-08-05-22:12:26*image-20220805221226154*f.png)
+![hdjkhawkjdhjn](https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/%E6%A1%8C%E9%9D%A2/2022-08-08-10:55:00*hdjkhawkjdhjn*b.png)
 
 > 这里我创建的仓库名为 `ivwv/PicGoImgs`
 
