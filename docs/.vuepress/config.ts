@@ -152,6 +152,20 @@ export default defineUserConfig({
 
   theme,
   plugins: [
+    // 插件
+    componentsPlugin({
+      addThis: "ra-62efc142600743a3",
+      backToTop: true,
+      components: [
+        "Badge",
+        "CodePen",
+        "FontIcon",
+        "PDF",
+        "StackBlitz",
+        "YouTube",
+      ],
+      iconAssets: "iconfont",
+    }),
     // gitPlugin
     gitPlugin({
       createdTime: true,
