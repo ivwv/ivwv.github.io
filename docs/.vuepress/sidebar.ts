@@ -62,7 +62,7 @@ export default sidebar([
   {
     text: "学习笔记",
     icon: "biji",
-    prefix: "/posts/",
+    prefix: "/posts/notes/",
     collapsable: true,
     children: [
       {
