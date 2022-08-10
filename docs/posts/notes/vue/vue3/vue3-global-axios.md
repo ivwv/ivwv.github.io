@@ -5,6 +5,7 @@ isOriginal: true
 icon: vue
 date: 2022-08-06
 category:
+  - 我的学习笔记
   - Vue3
   - Axios
 tag:

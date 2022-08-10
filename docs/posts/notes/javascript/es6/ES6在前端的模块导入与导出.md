@@ -5,6 +5,7 @@ description: ES6在前端的模块导入与导出
 isOriginal: true
 date: 2022-07-30
 category:
+  - 我的学习笔记
   - JavaScript
 tag:
   - es6

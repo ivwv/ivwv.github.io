@@ -5,6 +5,7 @@ isOriginal: true
 icon: nodeJS
 date: 2022-07-30
 category:
+  - 我的学习笔记
   - Node
 tag:
   - process.env

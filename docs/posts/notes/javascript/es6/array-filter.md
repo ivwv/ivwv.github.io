@@ -5,6 +5,7 @@ isOriginal: true
 icon: Nodejs
 date: 2022-08-07
 category:
+  - 我的学习笔记
   - JavaScript
 tag:
   - es6

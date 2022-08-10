@@ -5,6 +5,7 @@ isOriginal: true
 icon: Nodejs
 date: 2022-08-07
 category:
+  - 技术文章
   - Node
 tag:
   - process

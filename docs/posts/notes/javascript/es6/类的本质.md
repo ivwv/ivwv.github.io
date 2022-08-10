@@ -6,6 +6,7 @@ isOriginal: true
 icon: javascript
 date: 2022-07-30
 category:
+  - 我的学习笔记
   - JavaScript
 tag:
   - es6

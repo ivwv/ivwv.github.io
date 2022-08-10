@@ -7,6 +7,7 @@ icon: pic
 date: 2022-08-05
 # 分类
 category:
+  - 实用分享
   - 图床
   - Picgo
   - GitHub

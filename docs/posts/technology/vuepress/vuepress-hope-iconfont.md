@@ -5,6 +5,7 @@ isOriginal: true
 icon: vue
 date: 2022-08-02
 category:
+  - 技术文章
   - Vuepress
 tag:
   - icon

@@ -5,6 +5,7 @@ isOriginal: true
 icon: javascript
 date: 2022-08-07
 category:
+  - 技术文章
   - JavaScript
 tag:
   - console
