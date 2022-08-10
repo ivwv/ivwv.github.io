@@ -23,7 +23,8 @@ timeline: true
 <CountView></CountView>
 
 
-> 如何在vue3项目中全局配置axios
+> 使用`Promise`封装一个一个方法，将`File` 对象转化为`Base64`编码格式。
+
 
 <!-- more -->
 
