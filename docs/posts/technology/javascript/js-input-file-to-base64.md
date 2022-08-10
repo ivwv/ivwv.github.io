@@ -29,10 +29,6 @@ timeline: true
 <!-- more -->
 
 
-
-
-## 使用`js`将`input:file `文件转换成`Base64`编码格式
-
 > 使用`Promise`封装一个将File对象转化为`Base64`格式的方法
 
 ```js
