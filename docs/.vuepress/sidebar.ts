@@ -165,7 +165,7 @@ export default sidebar([
         collapsable: true,
         icon: "javascript",
         prefix: "javascript/",
-        children: ["you-dont-know-console"],
+        children: ["you-dont-know-console", "js-input-file-to-base64"],
       },
     ],
   },
