@@ -3,15 +3,19 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-09T13:14:59.088Z</updated>
+  <updated>2022-08-10T05:15:47.106Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
+  <category term="技术文章"/>
   <category term="JavaScript"/>
+  <category term="Base64"/>
+  <category term="我的学习笔记"/>
   <category term="Node"/>
   <category term="Vue2"/>
   <category term="Vue3"/>
   <category term="Axios"/>
+  <category term="实用分享"/>
   <category term="FrontEnd"/>
   <category term="图床"/>
   <category term="Picgo"/>
@@ -27,10 +31,58 @@
     <name>Ms.Hope</name>
   </contributor>
   <entry>
+    <title type="html">如何使用js将表单选中的文件转化为Base64编码格式</title>
+    <id>https://ivwv.github.io/posts/technology/javascript/js-input-file-to-base64.html</id>
+    <link href="https://ivwv.github.io/posts/technology/javascript/js-input-file-to-base64.html"/>
+    <updated>2022-08-10T05:14:52.000Z</updated>
+    <summary type="html">如何使用js将表单选中的文件转化为Base64编码格式</summary>
+    <content type="html"><![CDATA[<CountView></CountView>
+<blockquote>
+<p>如何在vue3项目中全局配置axios</p>
+</blockquote>
+
+<h2 id="使用js将input-file-文件转换成base64编码格式" tabindex="-1"> 使用<code>js</code>将<code>input:file </code>文件转换成<code>Base64</code>编码格式</h2>
+<blockquote>
+<p>使用<code>Promise</code>封装一个将File对象转化为<code>Base64</code>格式的方法</p>
+</blockquote>
+<div><pre><code><span>const</span> <span>fileToBase64</span> <span>=</span> <span>(</span><span>file</span><span>)</span> <span>=></span> <span>{</span>
+      <span>return</span> <span>new</span> <span>Promise</span><span>(</span><span>(</span><span>resolve<span>,</span> reject</span><span>)</span> <span>=></span> <span>{</span>
+        <span>const</span> reader <span>=</span> <span>new</span> <span>FileReader</span><span>(</span><span>)</span><span>;</span>
+        reader<span>.</span><span>readAsDataURL</span><span>(</span>file<span>)</span><span>;</span>
+        reader<span>.</span><span>onload</span> <span>=</span> <span>function</span> <span>(</span><span>)</span> <span>{</span>
+          <span>resolve</span><span>(</span>reader<span>.</span>result<span>)</span><span>;</span>
+        <span>}</span><span>;</span>
+        reader<span>.</span><span>onerror</span> <span>=</span> <span>function</span> <span>(</span><span>error</span><span>)</span> <span>{</span>
+          <span>reject</span><span>(</span>error<span>)</span><span>;</span>
+        <span>}</span>
+      <span>}</span><span>)</span><span>;</span>
+    <span>}</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><blockquote>
+<p>使用</p>
+</blockquote>
+<div><pre><code><span><span><span>&lt;</span>input</span> <span>type</span><span><span>=</span><span>"</span>file<span>"</span></span> <span>multiple</span> <span>id</span><span><span>=</span><span>"</span>input<span>"</span></span><span>></span></span>
+</code></pre><div aria-hidden="true"><div></div></div></div><div><pre><code>const selectedFile = document.getElementById('input');
+    selectedFile.addEventListener("change", async function () {
+      for (let i = 0; i &lt; this.files.length; i++) {
+        const file = this.files[i];
+        // console.log(fileList);
+        // 将文件转换为base64格式
+        const base64 = await fileToBase64(file);
+        console.log(base64);
+      }
+    });
+</code></pre><div><br><br><br><br><br><br><div>&nbsp;</div><br><br><br></div><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/桌面/2022-08-10-13:08:24*file*4.gif" alt="file"></p>
+]]></content>
+    <category term="技术文章" scheme=""/>
+    <category term="JavaScript" scheme=""/>
+    <category term="Base64" scheme=""/>
+    <published>2022-08-10T00:00:00.000Z</published>
+  </entry>
+  <entry>
     <title type="html">ES6在前端的模块导入与导出</title>
     <id>https://ivwv.github.io/posts/notes/javascript/es6/ES6%E5%9C%A8%E5%89%8D%E7%AB%AF%E7%9A%84%E6%A8%A1%E5%9D%97%E5%AF%BC%E5%85%A5%E4%B8%8E%E5%AF%BC%E5%87%BA.html</id>
     <link href="https://ivwv.github.io/posts/notes/javascript/es6/ES6%E5%9C%A8%E5%89%8D%E7%AB%AF%E7%9A%84%E6%A8%A1%E5%9D%97%E5%AF%BC%E5%85%A5%E4%B8%8E%E5%AF%BC%E5%87%BA.html"/>
-    <updated>2022-08-09T13:14:02.000Z</updated>
+    <updated>2022-08-10T05:14:52.000Z</updated>
     <summary type="html">ES6在前端的模块导入与导出</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <div><p>导读</p>
@@ -131,6 +183,7 @@
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h5 id="运行结果" tabindex="-1"> 运行结果</h5>
 <p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-22-22:04:13*image-20220722220413190*7.png" alt="image-20220722220413190"></p>
 ]]></content>
+    <category term="我的学习笔记" scheme=""/>
     <category term="JavaScript" scheme=""/>
     <published>2022-07-30T00:00:00.000Z</published>
   </entry>
@@ -138,7 +191,7 @@
     <title type="html">Javascript面对对象编程</title>
     <id>https://ivwv.github.io/posts/notes/javascript/es6/Javascript%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html</id>
     <link href="https://ivwv.github.io/posts/notes/javascript/es6/Javascript%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html"/>
-    <updated>2022-08-09T13:14:02.000Z</updated>
+    <updated>2022-08-10T05:14:52.000Z</updated>
     <summary type="html">Javascript面对对象编程</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <div><p>导读</p>
@@ -269,6 +322,7 @@ son<span>.</span><span>say</span><span>(</span><span>)</span><span>;</span> <spa
 <p><strong>点击按钮</strong></p>
 <p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-19-12:49:49*image-20220719124949852*d.png" alt="image-20220719124949852"></p>
 ]]></content>
+    <category term="我的学习笔记" scheme=""/>
     <category term="JavaScript" scheme=""/>
     <published>2022-07-30T00:00:00.000Z</published>
   </entry>
@@ -276,7 +330,7 @@ son<span>.</span><span>say</span><span>(</span><span>)</span><span>;</span> <spa
     <title type="html">ES6中数组过滤的四种方法</title>
     <id>https://ivwv.github.io/posts/notes/javascript/es6/array-filter.html</id>
     <link href="https://ivwv.github.io/posts/notes/javascript/es6/array-filter.html"/>
-    <updated>2022-08-09T13:14:02.000Z</updated>
+    <updated>2022-08-10T05:14:52.000Z</updated>
     <summary type="html">ES6中数组过滤的四种方法</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
@@ -436,6 +490,7 @@ console<span>.</span><span>log</span><span>(</span>amt<span>)</span><span>;</spa
 <p><strong>reduce 简写方法</strong></p>
 <div><pre><code><span>const</span> result <span>=</span> arr<span>.</span><span>filter</span><span>(</span><span>item</span> <span>=></span> item<span>.</span>state<span>)</span><span>.</span><span>reduce</span><span>(</span><span>(</span><span>amt<span>,</span> item</span><span>)</span> <span>=></span> amt <span>+=</span> item<span>.</span>price <span>*</span> item<span>.</span>count<span>,</span> <span>0</span><span>)</span>
 </code></pre><div aria-hidden="true"><div></div></div></div>]]></content>
+    <category term="我的学习笔记" scheme=""/>
     <category term="JavaScript" scheme=""/>
     <published>2022-08-07T00:00:00.000Z</published>
   </entry>
@@ -443,7 +498,7 @@ console<span>.</span><span>log</span><span>(</span>amt<span>)</span><span>;</spa
     <title type="html">原型</title>
     <id>https://ivwv.github.io/posts/notes/javascript/es6/%E5%8E%9F%E5%9E%8B.html</id>
     <link href="https://ivwv.github.io/posts/notes/javascript/es6/%E5%8E%9F%E5%9E%8B.html"/>
-    <updated>2022-08-09T13:14:02.000Z</updated>
+    <updated>2022-08-10T05:14:52.000Z</updated>
     <summary type="html">JavaScript原型链</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <div><p>导读</p>
@@ -738,6 +793,7 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
         console<span>.</span><span>log</span><span>(</span><span>Son</span><span>.</span>prototype <span>===</span> <span>Father</span><span>.</span>prototype<span>)</span><span>;</span>
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-20-13:17:49*image-20220720131749583*6.png" alt="image-20220720131749583"></p>
 ]]></content>
+    <category term="我的学习笔记" scheme=""/>
     <category term="JavaScript" scheme=""/>
     <published>2022-07-30T00:00:00.000Z</published>
   </entry>
@@ -745,7 +801,7 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
     <title type="html">对象方法：Object.defineProperty</title>
     <id>https://ivwv.github.io/posts/notes/javascript/es6/%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%9AObject.defineProperty.html</id>
     <link href="https://ivwv.github.io/posts/notes/javascript/es6/%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%9AObject.defineProperty.html"/>
-    <updated>2022-08-09T13:14:02.000Z</updated>
+    <updated>2022-08-10T05:14:52.000Z</updated>
     <summary type="html">对象方法：Object.defineProperty</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <div><p>导读</p>
@@ -775,6 +831,7 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
 </li>
 </ul>
 ]]></content>
+    <category term="我的学习笔记" scheme=""/>
     <category term="JavaScript" scheme=""/>
     <published>2022-07-30T00:00:00.000Z</published>
   </entry>
@@ -782,7 +839,7 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
     <title type="html">类的本质</title>
     <id>https://ivwv.github.io/posts/notes/javascript/es6/%E7%B1%BB%E7%9A%84%E6%9C%AC%E8%B4%A8.html</id>
     <link href="https://ivwv.github.io/posts/notes/javascript/es6/%E7%B1%BB%E7%9A%84%E6%9C%AC%E8%B4%A8.html"/>
-    <updated>2022-08-09T13:14:02.000Z</updated>
+    <updated>2022-08-10T05:14:52.000Z</updated>
     <summary type="html">类的本质</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <div><p>导读</p>
@@ -828,6 +885,7 @@ console<span>.</span><span>dir</span><span>(</span>ldh<span>)</span><span>;</spa
 console<span>.</span><span>log</span><span>(</span>ldh<span>.</span>__proto__ <span>===</span> <span>Star</span><span>.</span>prototype<span>)</span><span>;</span>
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/typora-user-images/2022-07-20-13:34:56*image-20220720133456588*9.png" alt="image-20220720133456588"></p>
 ]]></content>
+    <category term="我的学习笔记" scheme=""/>
     <category term="JavaScript" scheme=""/>
     <published>2022-07-30T00:00:00.000Z</published>
   </entry>
@@ -835,7 +893,7 @@ console<span>.</span><span>log</span><span>(</span>ldh<span>.</span>__proto__ <s
     <title type="html">Express中jwt验证的简单使用</title>
     <id>https://ivwv.github.io/posts/notes/node/express/Express%E4%B8%ADjwt%E9%AA%8C%E8%AF%81%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8.html</id>
     <link href="https://ivwv.github.io/posts/notes/node/express/Express%E4%B8%ADjwt%E9%AA%8C%E8%AF%81%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8.html"/>
-    <updated>2022-08-09T13:14:02.000Z</updated>
+    <updated>2022-08-10T05:14:52.000Z</updated>
     <summary type="html">Express中jwt验证的简单使用</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <div><p>导读</p>
@@ -1045,6 +1103,7 @@ app<span>.</span><span>listen</span><span>(</span><span>8888</span><span>,</span
 <span>}</span><span>)</span>
 
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>]]></content>
+    <category term="我的学习笔记" scheme=""/>
     <category term="Node" scheme=""/>
     <published>2022-07-30T00:00:00.000Z</published>
   </entry>
@@ -1052,7 +1111,7 @@ app<span>.</span><span>listen</span><span>(</span><span>8888</span><span>,</span
     <title type="html">process.env环境变量配置</title>
     <id>https://ivwv.github.io/posts/notes/node/other/process.env%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html</id>
     <link href="https://ivwv.github.io/posts/notes/node/other/process.env%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html"/>
-    <updated>2022-08-09T13:14:02.000Z</updated>
+    <updated>2022-08-10T05:14:52.000Z</updated>
     <summary type="html">process.env环境变量配置</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <div><p>导读</p>
@@ -1176,6 +1235,7 @@ unset NODE_ENV
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><p>这样，不管你的电脑是 Windows 系统还是 Mac 系统 ，不管你用的 Powershell 还是 Git，你都可以正常设置 Nodejs 环境变量了。</p>
 <p>注意，<code>cross-env NODE_ENV=production &amp;&amp; npm run clean &amp;&amp; webpack</code> 此类的设置不能使环境变量生效。原因是 <code>&amp;&amp;</code> 符号把命令语句分离成了多个，每一个命令执行的环境都是隔离的，而 <code>cross-env</code> 无法作用于其他环境的命令。</p>
 ]]></content>
+    <category term="我的学习笔记" scheme=""/>
     <category term="Node" scheme=""/>
     <published>2022-07-30T00:00:00.000Z</published>
   </entry>
@@ -1183,7 +1243,7 @@ unset NODE_ENV
     <title type="html">Vue2学习笔记</title>
     <id>https://ivwv.github.io/posts/notes/vue/vue2/vue2-node-part.html</id>
     <link href="https://ivwv.github.io/posts/notes/vue/vue2/vue2-node-part.html"/>
-    <updated>2022-08-09T13:14:02.000Z</updated>
+    <updated>2022-08-10T05:14:52.000Z</updated>
     <summary type="html">ES6中数组过滤的四种方法</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
@@ -1740,6 +1800,7 @@ export default {
 </li>
 </ol>
 ]]></content>
+    <category term="我的学习笔记" scheme=""/>
     <category term="Vue2" scheme=""/>
     <published>2022-08-07T00:00:00.000Z</published>
   </entry>
@@ -1747,7 +1808,7 @@ export default {
     <title type="html">vue3全局挂载axios</title>
     <id>https://ivwv.github.io/posts/notes/vue/vue3/vue3-global-axios.html</id>
     <link href="https://ivwv.github.io/posts/notes/vue/vue3/vue3-global-axios.html"/>
-    <updated>2022-08-09T13:14:02.000Z</updated>
+    <updated>2022-08-10T05:14:52.000Z</updated>
     <summary type="html">vue3全局挂载axios</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
@@ -1800,6 +1861,7 @@ export default {
 }
 &lt;/script>
 </code></pre><div><br><br><br><br><br><div>&nbsp;</div><br><br><br><br><br></div><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>]]></content>
+    <category term="我的学习笔记" scheme=""/>
     <category term="Vue3" scheme=""/>
     <category term="Axios" scheme=""/>
     <published>2022-08-06T00:00:00.000Z</published>
@@ -1808,7 +1870,7 @@ export default {
     <title type="html">你不知道的 console.log 替代品😮</title>
     <id>https://ivwv.github.io/posts/technology/javascript/you-dont-know-console.html</id>
     <link href="https://ivwv.github.io/posts/technology/javascript/you-dont-know-console.html"/>
-    <updated>2022-08-07T10:07:16.000Z</updated>
+    <updated>2022-08-10T05:14:52.000Z</updated>
     <summary type="html">你不知道的 console.log 替代品😮</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
@@ -1910,6 +1972,7 @@ console<span>.</span><span>log</span><span>(</span><span>"World"</span><span>)</
 <p>它会告诉您调试器的调用位置。</p>
 <p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/https/user-images.githubusercontent.com/76736580/2022-08-07-16:45:52*182373345-a98e989b-545c-41a7-ae4a-c0ba55f6ea4c*6.png" alt="img"></p>
 ]]></content>
+    <category term="技术文章" scheme=""/>
     <category term="JavaScript" scheme=""/>
     <published>2022-08-07T00:00:00.000Z</published>
   </entry>
@@ -1917,7 +1980,7 @@ console<span>.</span><span>log</span><span>(</span><span>"World"</span><span>)</
     <title type="html">如何将命令行参数传递给 Node.js 应用程序？</title>
     <id>https://ivwv.github.io/posts/technology/node/how-to-pass-cmd-line-args-to-node.html</id>
     <link href="https://ivwv.github.io/posts/technology/node/how-to-pass-cmd-line-args-to-node.html"/>
-    <updated>2022-08-07T10:07:16.000Z</updated>
+    <updated>2022-08-10T05:14:52.000Z</updated>
     <summary type="html">如何将命令行参数传递给 Node.js 应用程序？</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
@@ -1964,6 +2027,7 @@ process<span>.</span>argv<span>.</span><span>forEach</span><span>(</span><span>(
 <span>3</span>: there
 <span>4</span>: devs
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div></div></div>]]></content>
+    <category term="技术文章" scheme=""/>
     <category term="Node" scheme=""/>
     <published>2022-08-07T00:00:00.000Z</published>
   </entry>
@@ -1971,7 +2035,7 @@ process<span>.</span>argv<span>.</span><span>forEach</span><span>(</span><span>(
     <title type="html">那些前端开发神级网站</title>
     <id>https://ivwv.github.io/posts/share/frontend/frontend-dev-god-web-site.html</id>
     <link href="https://ivwv.github.io/posts/share/frontend/frontend-dev-god-web-site.html"/>
-    <updated>2022-08-07T10:07:16.000Z</updated>
+    <updated>2022-08-10T05:14:52.000Z</updated>
     <summary type="html">那些前端开发神级网站</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
@@ -2065,6 +2129,7 @@ Smartmockup能够根据你上传的图片(产品素材)，直接在网页上生�
 </blockquote>
 <p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/typora-user-images/2022-08-07-13:10:39*image-20220807131035935*a.png" alt="image-20220807131035935"></p>
 ]]></content>
+    <category term="实用分享" scheme=""/>
     <category term="FrontEnd" scheme=""/>
     <published>2022-08-07T00:00:00.000Z</published>
   </entry>
@@ -2072,7 +2137,7 @@ Smartmockup能够根据你上传的图片(产品素材)，直接在网页上生�
     <title type="html">PicGo+Typora 配合 Github 搭建个人图床</title>
     <id>https://ivwv.github.io/posts/share/imgur/typora-picgo-github-picur.html</id>
     <link href="https://ivwv.github.io/posts/share/imgur/typora-picgo-github-picur.html"/>
-    <updated>2022-08-08T09:32:10.000Z</updated>
+    <updated>2022-08-10T05:14:52.000Z</updated>
     <summary type="html">PicGo+Typora 配合 Github 搭建个人图床</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
@@ -2173,6 +2238,7 @@ Smartmockup能够根据你上传的图片(产品素材)，直接在网页上生�
 <h2 id="结束" tabindex="-1"> 结束</h2>
 <p>🌟到此为止，以后你的笔记就可以直接分享给你的小伙伴了✨💖🌟</p>
 ]]></content>
+    <category term="实用分享" scheme=""/>
     <category term="图床" scheme=""/>
     <category term="Picgo" scheme=""/>
     <category term="GitHub" scheme=""/>
@@ -2182,7 +2248,7 @@ Smartmockup能够根据你上传的图片(产品素材)，直接在网页上生�
     <title type="html">GitHub OAuth第三方登录示例教程(Node后端)</title>
     <id>https://ivwv.github.io/posts/technology/oauth/github-oauth.html</id>
     <link href="https://ivwv.github.io/posts/technology/oauth/github-oauth.html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
+    <updated>2022-08-10T05:14:52.000Z</updated>
     <summary type="html">GitHub OAuth第三方登录示例教程(Node后端)</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
@@ -2420,6 +2486,7 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
 </blockquote>
 <p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-03-18:24:50*image-20220803182450628*1.png" alt="image-20220803182450628"></p>
 ]]></content>
+    <category term="技术文章" scheme=""/>
     <category term="OAuth" scheme=""/>
     <category term="Node" scheme=""/>
     <published>2022-08-03T00:00:00.000Z</published>
@@ -2428,7 +2495,7 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
     <title type="html">markdown通用Emoji表情大全</title>
     <id>https://ivwv.github.io/posts/share/mark-down/emoji.html</id>
     <link href="https://ivwv.github.io/posts/share/mark-down/emoji.html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
+    <updated>2022-08-10T05:14:52.000Z</updated>
     <summary type="html">markdown通用Emoji表情大全</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
@@ -4269,6 +4336,7 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
 </tbody>
 </table>
 ]]></content>
+    <category term="实用分享" scheme=""/>
     <category term="Markdown" scheme=""/>
     <published>2022-08-02T00:00:00.000Z</published>
   </entry>
@@ -4276,11 +4344,12 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
     <title type="html">Vuepress-theme-hope-iconfont 图标大全</title>
     <id>https://ivwv.github.io/posts/technology/vuepress/vuepress-hope-iconfont.html</id>
     <link href="https://ivwv.github.io/posts/technology/vuepress/vuepress-hope-iconfont.html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
+    <updated>2022-08-10T05:14:52.000Z</updated>
     <summary type="html">Vuepress-theme-hope-iconfont 图标大全</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 
 <Iconfont></Iconfont>]]></content>
+    <category term="技术文章" scheme=""/>
     <category term="Vuepress" scheme=""/>
     <published>2022-08-02T00:00:00.000Z</published>
   </entry>
@@ -4307,7 +4376,7 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
     <title type="html">Vuepress2中如何在md文件中添加自定义组件</title>
     <id>https://ivwv.github.io/posts/technology/vuepress/vuepress-register-components.html</id>
     <link href="https://ivwv.github.io/posts/technology/vuepress/vuepress-register-components.html"/>
-    <updated>2022-08-05T13:35:32.000Z</updated>
+    <updated>2022-08-10T05:14:52.000Z</updated>
     <summary type="html">Vuepress2中如何在md文件中添加自定义组件</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 
@@ -4347,6 +4416,7 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
 <div><pre><code><span><span><span>&lt;</span>Demo</span><span>></span></span><span><span><span>&lt;/</span>Demo</span><span>></span></span>
 </code></pre><div aria-hidden="true"><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-02-13:25:22*image-20220802132522080*c.png" alt="image-20220802132522080"></p>
 ]]></content>
+    <category term="技术文章" scheme=""/>
     <category term="Vuepress" scheme=""/>
     <published>2022-08-02T00:00:00.000Z</published>
   </entry>
