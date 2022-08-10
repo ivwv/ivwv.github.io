@@ -127,7 +127,7 @@ export default sidebar([
             icon: "vue",
             collapsable: true,
             prefix: "vue3/",
-            children: ["vue3-global-axios"],
+            children: ["vue3-global-axios", "vuex-use"],
           },
         ],
       },
