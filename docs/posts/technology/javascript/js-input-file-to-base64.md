@@ -29,7 +29,6 @@ timeline: true
 <!-- more -->
 
 
-> 使用`Promise`封装一个将File对象转化为`Base64`格式的方法
 
 ```js
 const fileToBase64 = (file) => {
