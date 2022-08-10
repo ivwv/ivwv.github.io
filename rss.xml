@@ -6,8 +6,8 @@
     <link>https://ivwv.github.io/</link>
     <description>SY's Blog</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 10 Aug 2022 05:17:52 GMT</pubDate>
-    <lastBuildDate>Wed, 10 Aug 2022 05:17:52 GMT</lastBuildDate>
+    <pubDate>Wed, 10 Aug 2022 05:18:13 GMT</pubDate>
+    <lastBuildDate>Wed, 10 Aug 2022 05:18:13 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>技术文章</category>
@@ -45,7 +45,6 @@
 <p>使用<code>Promise</code>封装一个一个方法，将<code>File</code> 对象转化为<code>Base64</code>编码格式。</p>
 </blockquote>
 
-<h2 id="使用js将input-file-文件转换成base64编码格式" tabindex="-1"> 使用<code>js</code>将<code>input:file </code>文件转换成<code>Base64</code>编码格式</h2>
 <blockquote>
 <p>使用<code>Promise</code>封装一个将File对象转化为<code>Base64</code>格式的方法</p>
 </blockquote>

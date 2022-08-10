@@ -3,7 +3,7 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-10T05:17:52.621Z</updated>
+  <updated>2022-08-10T05:18:13.328Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
@@ -34,14 +34,13 @@
     <title type="html">如何使用js将表单选中的文件转化为Base64编码格式</title>
     <id>https://ivwv.github.io/posts/technology/javascript/js-input-file-to-base64.html</id>
     <link href="https://ivwv.github.io/posts/technology/javascript/js-input-file-to-base64.html"/>
-    <updated>2022-08-10T05:16:42.000Z</updated>
+    <updated>2022-08-10T05:17:21.000Z</updated>
     <summary type="html">如何使用js将表单选中的文件转化为Base64编码格式</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
 <p>使用<code>Promise</code>封装一个一个方法，将<code>File</code> 对象转化为<code>Base64</code>编码格式。</p>
 </blockquote>
 
-<h2 id="使用js将input-file-文件转换成base64编码格式" tabindex="-1"> 使用<code>js</code>将<code>input:file </code>文件转换成<code>Base64</code>编码格式</h2>
 <blockquote>
 <p>使用<code>Promise</code>封装一个将File对象转化为<code>Base64</code>格式的方法</p>
 </blockquote>
