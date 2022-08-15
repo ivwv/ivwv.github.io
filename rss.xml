@@ -6,17 +6,18 @@
     <link>https://ivwv.github.io/</link>
     <description>SY's Blog</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 10 Aug 2022 10:29:05 GMT</pubDate>
-    <lastBuildDate>Wed, 10 Aug 2022 10:29:05 GMT</lastBuildDate>
+    <pubDate>Mon, 15 Aug 2022 03:36:42 GMT</pubDate>
+    <lastBuildDate>Mon, 15 Aug 2022 03:36:42 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+    <category>我的项目整合</category>
+    <category>Node</category>
     <category>我的学习笔记</category>
     <category>Vue3</category>
     <category>Vuex</category>
     <category>技术文章</category>
     <category>JavaScript</category>
     <category>Base64</category>
-    <category>Node</category>
     <category>Vue2</category>
     <category>Axios</category>
     <category>实用分享</category>
@@ -27,10 +28,35 @@
     <category>OAuth</category>
     <category>Markdown</category>
     <category>Vuepress</category>
-    <category>我的项目整合</category>
     <category>PDF</category>
     <category>Puppeteer</category>
     <category>使用指南</category>
+    <item>
+      <title>Bilibili 视频下载</title>
+      <link>https://ivwv.github.io/posts/project/bilibili-video-download/</link>
+      <guid>https://ivwv.github.io/posts/project/bilibili-video-download/</guid>
+      <source url="https://ivwv.github.io/rss.xml">Bilibili 视频下载</source>
+      <description>Bilibili 视频下载,可以下载多集数视频</description>
+      <category>我的项目整合</category>
+      <category>Node</category>
+      <pubDate>Tue, 02 Aug 2022 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<CountView></CountView>
+<blockquote>
+<p>使用Node将 Bilibili 视频下载,可以下载多集数视频,修改配置即可</p>
+</blockquote>
+
+<p>由于b站上好的学习视频很多，我们一下子又看不过来，但是又怕视频被下架，所以将视频保存下来就显得尤为重要。</p>
+<blockquote>
+<p>项目有两个版本，<code>v1 &amp;&amp; v2</code></p>
+<p><code>v1</code> 是初始版本，代码比较乱</p>
+<p><code>v2</code>是重构了一下，使用面向对象的方式，同步下载视频</p>
+</blockquote>
+<p><strong>源码地址</strong></p>
+<p><a href="https://github.com/ivwv/bilibili-video-download" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+<p><a href="https://gitee.com/isyv/bilibili-video-download" target="_blank" rel="noopener noreferrer">Gitee</a></p>
+<p>下载的视频容量很大，可以配合阿里网盘使用，阿里网盘可以在线播放Flv格式的视频，播放速度比较快。</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Vuex使用</title>
       <link>https://ivwv.github.io/posts/notes/vue/vue3/vuex-use.html</link>
@@ -5089,6 +5115,12 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
 <li><a href="/posts/project/puppeteer-electron-pdf/"><code>puppeteer</code>爬取 <code>electron</code>官网文档，保存为<code>pdf</code>格式(2022/07.21)</a></li>
 </ol>
 <p>使用技术:<code>node</code>+<code>puppeteero</code></p>
+</blockquote>
+<blockquote>
+<ol start="6">
+<li><a href="/posts/project/bilibili-video-download/">Bilibili视频多集下载2022/08</a></li>
+</ol>
+<p>使用技术:<code>node</code>+<code>axios</code></p>
 </blockquote>
 ]]></content:encoded>
     </item>

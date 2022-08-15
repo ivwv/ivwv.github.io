@@ -3,17 +3,18 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-10T10:29:05.288Z</updated>
+  <updated>2022-08-15T03:36:42.404Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
+  <category term="我的项目整合"/>
+  <category term="Node"/>
   <category term="我的学习笔记"/>
   <category term="Vue3"/>
   <category term="Vuex"/>
   <category term="技术文章"/>
   <category term="JavaScript"/>
   <category term="Base64"/>
-  <category term="Node"/>
   <category term="Vue2"/>
   <category term="Axios"/>
   <category term="实用分享"/>
@@ -24,13 +25,38 @@
   <category term="OAuth"/>
   <category term="Markdown"/>
   <category term="Vuepress"/>
-  <category term="我的项目整合"/>
   <category term="PDF"/>
   <category term="Puppeteer"/>
   <category term="使用指南"/>
   <contributor>
     <name>Ms.Hope</name>
   </contributor>
+  <entry>
+    <title type="html">Bilibili 视频下载</title>
+    <id>https://ivwv.github.io/posts/project/bilibili-video-download/</id>
+    <link href="https://ivwv.github.io/posts/project/bilibili-video-download/"/>
+    <updated>2022-08-15T03:35:45.000Z</updated>
+    <summary type="html">Bilibili 视频下载,可以下载多集数视频</summary>
+    <content type="html"><![CDATA[<CountView></CountView>
+<blockquote>
+<p>使用Node将 Bilibili 视频下载,可以下载多集数视频,修改配置即可</p>
+</blockquote>
+
+<p>由于b站上好的学习视频很多，我们一下子又看不过来，但是又怕视频被下架，所以将视频保存下来就显得尤为重要。</p>
+<blockquote>
+<p>项目有两个版本，<code>v1 &amp;&amp; v2</code></p>
+<p><code>v1</code> 是初始版本，代码比较乱</p>
+<p><code>v2</code>是重构了一下，使用面向对象的方式，同步下载视频</p>
+</blockquote>
+<p><strong>源码地址</strong></p>
+<p><a href="https://github.com/ivwv/bilibili-video-download" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+<p><a href="https://gitee.com/isyv/bilibili-video-download" target="_blank" rel="noopener noreferrer">Gitee</a></p>
+<p>下载的视频容量很大，可以配合阿里网盘使用，阿里网盘可以在线播放Flv格式的视频，播放速度比较快。</p>
+]]></content>
+    <category term="我的项目整合" scheme=""/>
+    <category term="Node" scheme=""/>
+    <published>2022-08-02T00:00:00.000Z</published>
+  </entry>
   <entry>
     <title type="html">Vuex使用</title>
     <id>https://ivwv.github.io/posts/notes/vue/vue3/vuex-use.html</id>
@@ -5036,7 +5062,7 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
     <title type="html">我的项目整合</title>
     <id>https://ivwv.github.io/posts/project/</id>
     <link href="https://ivwv.github.io/posts/project/"/>
-    <updated>2022-08-07T13:53:25.000Z</updated>
+    <updated>2022-08-15T03:35:45.000Z</updated>
     <summary type="html">我的项目整合</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <div><p>导读</p>
@@ -5073,6 +5099,12 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
 <li><a href="/posts/project/puppeteer-electron-pdf/"><code>puppeteer</code>爬取 <code>electron</code>官网文档，保存为<code>pdf</code>格式(2022/07.21)</a></li>
 </ol>
 <p>使用技术:<code>node</code>+<code>puppeteero</code></p>
+</blockquote>
+<blockquote>
+<ol start="6">
+<li><a href="/posts/project/bilibili-video-download/">Bilibili视频多集下载2022/08</a></li>
+</ol>
+<p>使用技术:<code>node</code>+<code>axios</code></p>
 </blockquote>
 ]]></content>
     <category term="我的项目整合" scheme=""/>
