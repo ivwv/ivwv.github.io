@@ -3,7 +3,7 @@ title: Bilibili 视频下载
 description: Bilibili 视频下载,可以下载多集数视频
 isOriginal: true
 icon: license
-date: 2022-08-02
+date: 2022-08-15
 category:
   - 我的项目整合
   - Node
