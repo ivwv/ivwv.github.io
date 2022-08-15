@@ -3,7 +3,7 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-15T03:41:33.229Z</updated>
+  <updated>2022-08-15T03:51:46.893Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
@@ -35,7 +35,7 @@
     <title type="html">Bilibili 视频下载</title>
     <id>https://ivwv.github.io/posts/project/bilibili-video-download/</id>
     <link href="https://ivwv.github.io/posts/project/bilibili-video-download/"/>
-    <updated>2022-08-15T03:35:45.000Z</updated>
+    <updated>2022-08-15T03:50:32.000Z</updated>
     <summary type="html">Bilibili 视频下载,可以下载多集数视频</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
@@ -55,7 +55,7 @@
 ]]></content>
     <category term="我的项目整合" scheme=""/>
     <category term="Node" scheme=""/>
-    <published>2022-08-02T00:00:00.000Z</published>
+    <published>2022-08-15T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="html">Vuex使用</title>

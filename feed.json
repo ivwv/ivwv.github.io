@@ -11,8 +11,8 @@
       "id": "https://ivwv.github.io/posts/project/bilibili-video-download/",
       "summary": "Bilibili 视频下载,可以下载多集数视频",
       "content_html": "<CountView></CountView>\n<blockquote>\n<p>使用Node将 Bilibili 视频下载,可以下载多集数视频,修改配置即可</p>\n</blockquote>\n\n<p>由于b站上好的学习视频很多，我们一下子又看不过来，但是又怕视频被下架，所以将视频保存下来就显得尤为重要。</p>\n<blockquote>\n<p>项目有两个版本，<code>v1 &amp;&amp; v2</code></p>\n<p><code>v1</code> 是初始版本，代码比较乱</p>\n<p><code>v2</code>是重构了一下，使用面向对象的方式，同步下载视频</p>\n</blockquote>\n<p><strong>源码地址</strong></p>\n<p><a href=\"https://github.com/ivwv/bilibili-video-download\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a></p>\n<p><a href=\"https://gitee.com/isyv/bilibili-video-download\" target=\"_blank\" rel=\"noopener noreferrer\">Gitee</a></p>\n<p>下载的视频容量很大，可以配合阿里网盘使用，阿里网盘可以在线播放Flv格式的视频，播放速度比较快。</p>\n",
-      "date_published": "2022-08-02T00:00:00.000Z",
-      "date_modified": "2022-08-15T03:35:45.000Z",
+      "date_published": "2022-08-15T00:00:00.000Z",
+      "date_modified": "2022-08-15T03:50:32.000Z",
       "authors": [],
       "tags": [
         "我的项目整合",
