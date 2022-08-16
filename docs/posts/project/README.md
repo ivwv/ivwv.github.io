@@ -52,7 +52,7 @@ timeline: true
 >
 > 使用技术:`node`+`puppeteero`
 
-> 6. [Bilibili视频多集下载2022/08](/posts/project/bilibili-video-download/)
+> 6. [Bilibili视频多集下载(2022/08)](/posts/project/bilibili-video-download/)
 >
 > 使用技术:`node`+`axios`
 
