@@ -6,8 +6,8 @@
     <link>https://ivwv.github.io/</link>
     <description>SY's Blog</description>
     <language>zh-CN</language>
-    <pubDate>Mon, 15 Aug 2022 03:51:46 GMT</pubDate>
-    <lastBuildDate>Mon, 15 Aug 2022 03:51:46 GMT</lastBuildDate>
+    <pubDate>Tue, 16 Aug 2022 05:05:37 GMT</pubDate>
+    <lastBuildDate>Tue, 16 Aug 2022 05:05:37 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>我的项目整合</category>
@@ -5118,7 +5118,7 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
 </blockquote>
 <blockquote>
 <ol start="6">
-<li><a href="/posts/project/bilibili-video-download/">Bilibili视频多集下载2022/08</a></li>
+<li><a href="/posts/project/bilibili-video-download/">Bilibili视频多集下载(2022/08)</a></li>
 </ol>
 <p>使用技术:<code>node</code>+<code>axios</code></p>
 </blockquote>
