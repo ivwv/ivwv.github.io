@@ -15,4 +15,12 @@
 //   alert("2");
 // }, 4000);
 // alert("2");
-
+// 监听网络请求情况 如果在5秒内没有加载完毕 那么就会跳转到备用网址
+setInterval(function () {
+  setInterval(() => {
+    console.log(document.readyState);
+  }, 1000);
+  if (document.readyState != "complete") {
+    window.location.href = `https://ivwv.netlify.app${window.location.pathname}`;
+  }
+}, 5000);
