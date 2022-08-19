@@ -85,7 +85,7 @@ export default defineUserConfig({
       "meta",
       { name: "Content-Security-Policy", content: "upgrade-insecure-requests" },
     ],
-    // 全局js
+    // 全局 js
     ["script", { src: "/js/global.js" }],
     // <meta name="google-site-verification" content="LeFBm40tk1ztZLlPI1zHgbAyplU_l0lSRrjpUkqmtKw" />
     // google站长验证
