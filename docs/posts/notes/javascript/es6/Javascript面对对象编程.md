@@ -1,6 +1,6 @@
 ---
 title: Javascript面对对象编程
-description: Javascript面对对象编程
+description: Javascript面对对象编程  面向对象相关的笔记
 isOriginal: true
 icon: javascript
 date: 2022-07-30
