@@ -6,8 +6,8 @@
     <link>https://ivwv.github.io/</link>
     <description>SY's Blog</description>
     <language>zh-CN</language>
-    <pubDate>Sat, 20 Aug 2022 08:30:32 GMT</pubDate>
-    <lastBuildDate>Sat, 20 Aug 2022 08:30:32 GMT</lastBuildDate>
+    <pubDate>Sat, 20 Aug 2022 08:34:37 GMT</pubDate>
+    <lastBuildDate>Sat, 20 Aug 2022 08:34:37 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>实用分享</category>
@@ -641,7 +641,7 @@ export default {
       <link>https://ivwv.github.io/posts/project/bilibili-video-download/</link>
       <guid>https://ivwv.github.io/posts/project/bilibili-video-download/</guid>
       <source url="https://ivwv.github.io/rss.xml">Bilibili 视频下载</source>
-      <description>Bilibili 视频下载,可以下载多集数视频</description>
+      <description>Bilibili 视频下载,可以下载多集数视频   使用Node将 Bilibili 视频下载,可以下载多集数视频,修改配置即可</description>
       <category>我的项目整合</category>
       <category>Node</category>
       <pubDate>Mon, 15 Aug 2022 00:00:00 GMT</pubDate>
@@ -1234,7 +1234,7 @@ export default {
       <link>https://ivwv.github.io/posts/technology/javascript/js-input-file-to-base64.html</link>
       <guid>https://ivwv.github.io/posts/technology/javascript/js-input-file-to-base64.html</guid>
       <source url="https://ivwv.github.io/rss.xml">如何使用js将表单选中的文件转化为Base64编码格式</source>
-      <description>如何使用js将表单选中的文件转化为Base64编码格式</description>
+      <description>如何使用js将表单选中的文件转化为Base64编码格式  使用`Promise`封装一个一个方法，将`File` 对象转化为`Base64`编码格式。</description>
       <category>技术文章</category>
       <category>JavaScript</category>
       <category>Base64</category>
@@ -2508,7 +2508,7 @@ export default {
       <link>https://ivwv.github.io/posts/technology/javascript/you-dont-know-console.html</link>
       <guid>https://ivwv.github.io/posts/technology/javascript/you-dont-know-console.html</guid>
       <source url="https://ivwv.github.io/rss.xml">你不知道的 console.log 替代品😮</source>
-      <description>你不知道的 console.log 替代品😮</description>
+      <description>你不知道的 console.log 替代品😮   这篇文章介绍了`console`意想不到的使用方法。</description>
       <category>技术文章</category>
       <category>JavaScript</category>
       <pubDate>Sun, 07 Aug 2022 00:00:00 GMT</pubDate>
@@ -2619,7 +2619,7 @@ console<span>.</span><span>log</span><span>(</span><span>"World"</span><span>)</
       <link>https://ivwv.github.io/posts/technology/node/how-to-pass-cmd-line-args-to-node.html</link>
       <guid>https://ivwv.github.io/posts/technology/node/how-to-pass-cmd-line-args-to-node.html</guid>
       <source url="https://ivwv.github.io/rss.xml">如何将命令行参数传递给 Node.js 应用程序？</source>
-      <description>如何将命令行参数传递给 Node.js 应用程序？</description>
+      <description>如何将命令行参数传递给 Node.js 应用程序？   与可以使用语法将参数传递给脚本的 `Bash` 脚本类似，您也可以将参数`$1`传递给 `Node.js` 应用程序。</description>
       <category>技术文章</category>
       <category>Node</category>
       <pubDate>Sun, 07 Aug 2022 00:00:00 GMT</pubDate>
@@ -2889,7 +2889,7 @@ Smartmockup能够根据你上传的图片(产品素材)，直接在网页上生�
       <link>https://ivwv.github.io/posts/technology/oauth/github-oauth.html</link>
       <guid>https://ivwv.github.io/posts/technology/oauth/github-oauth.html</guid>
       <source url="https://ivwv.github.io/rss.xml">GitHub OAuth第三方登录示例教程(Node后端)</source>
-      <description>GitHub OAuth第三方登录示例教程(Node后端)</description>
+      <description>GitHub OAuth第三方登录示例教程(Node后端)  很多网站登录时，允许使用第三方网站的身份，这称为"第三方登录"。</description>
       <category>技术文章</category>
       <category>OAuth</category>
       <category>Node</category>
@@ -4999,7 +4999,7 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
       <link>https://ivwv.github.io/posts/project/api-server/</link>
       <guid>https://ivwv.github.io/posts/project/api-server/</guid>
       <source url="https://ivwv.github.io/rss.xml">黑马案例大事件项目</source>
-      <description>黑马案例大事件项目</description>
+      <description>黑马案例大事件项目  黑马视频教程-大事件项目后台接口项目 使用 `node`+`express`+`mysql`+`Postman`+`JsonWebToken`+`joi`+`bcryptjs`+`multer`</description>
       <category>我的项目整合</category>
       <category>Node</category>
       <pubDate>Tue, 02 Aug 2022 00:00:00 GMT</pubDate>
@@ -5116,7 +5116,7 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
       <link>https://ivwv.github.io/posts/project/</link>
       <guid>https://ivwv.github.io/posts/project/</guid>
       <source url="https://ivwv.github.io/rss.xml">我的项目整合</source>
-      <description>我的项目整合</description>
+      <description>我的项目整合  我的项目列表</description>
       <category>我的项目整合</category>
       <pubDate>Sun, 31 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<CountView></CountView>
@@ -5168,7 +5168,7 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
       <link>https://ivwv.github.io/posts/project/newsinfo/</link>
       <guid>https://ivwv.github.io/posts/project/newsinfo/</guid>
       <source url="https://ivwv.github.io/rss.xml">新闻门户网站</source>
-      <description>新闻门户网站</description>
+      <description>新闻门户网站   该项目是在大二期间，学校举办的技能节，参加了`web`项目。比赛内容是做出一个新闻门户网站，两人一组。犹豫队友平时比较忙，我就让他帮我找找素材啥的，然后让他做了一个`index.html`首页</description>
       <category>我的项目整合</category>
       <pubDate>Mon, 01 Aug 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<CountView></CountView>
@@ -5480,7 +5480,7 @@ module<span>.</span>exports <span>=</span> <span>class</span> <span>PdfUtils</sp
       <link>https://ivwv.github.io/posts/project/socket-chat/</link>
       <guid>https://ivwv.github.io/posts/project/socket-chat/</guid>
       <source url="https://ivwv.github.io/rss.xml">Node socket.io 聊天室</source>
-      <description>Node socket.io 聊天室</description>
+      <description>Node socket.io 聊天室   Node socket.io 聊天室 包含用户名自定义、多人房间、用户进入房间全局提示、用户退出全局提示、用户打字中全局提示</description>
       <category>我的项目整合</category>
       <category>Node</category>
       <pubDate>Tue, 02 Aug 2022 00:00:00 GMT</pubDate>
@@ -5504,7 +5504,7 @@ module<span>.</span>exports <span>=</span> <span>class</span> <span>PdfUtils</sp
       <link>https://ivwv.github.io/posts/project/vue-shop/</link>
       <guid>https://ivwv.github.io/posts/project/vue-shop/</guid>
       <source url="https://ivwv.github.io/rss.xml">电商后台管理项目</source>
-      <description>电商后台管理项目</description>
+      <description>电商后台管理项目  Vue2+ElementUi+Node+Axios 电商后台管理项目。</description>
       <category>我的项目整合</category>
       <pubDate>Sun, 31 Jul 2022 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<CountView></CountView>

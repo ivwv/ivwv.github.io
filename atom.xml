@@ -3,7 +3,7 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-20T08:30:32.564Z</updated>
+  <updated>2022-08-20T08:34:37.202Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
@@ -638,8 +638,8 @@ export default {
     <title type="html">Bilibili 视频下载</title>
     <id>https://ivwv.github.io/posts/project/bilibili-video-download/</id>
     <link href="https://ivwv.github.io/posts/project/bilibili-video-download/"/>
-    <updated>2022-08-20T07:36:32.000Z</updated>
-    <summary type="html">Bilibili 视频下载,可以下载多集数视频</summary>
+    <updated>2022-08-20T08:33:47.000Z</updated>
+    <summary type="html">Bilibili 视频下载,可以下载多集数视频   使用Node将 Bilibili 视频下载,可以下载多集数视频,修改配置即可</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
 <p>使用Node将 Bilibili 视频下载,可以下载多集数视频,修改配置即可</p>
@@ -1230,8 +1230,8 @@ export default {
     <title type="html">如何使用js将表单选中的文件转化为Base64编码格式</title>
     <id>https://ivwv.github.io/posts/technology/javascript/js-input-file-to-base64.html</id>
     <link href="https://ivwv.github.io/posts/technology/javascript/js-input-file-to-base64.html"/>
-    <updated>2022-08-20T07:36:32.000Z</updated>
-    <summary type="html">如何使用js将表单选中的文件转化为Base64编码格式</summary>
+    <updated>2022-08-20T08:33:47.000Z</updated>
+    <summary type="html">如何使用js将表单选中的文件转化为Base64编码格式  使用`Promise`封装一个一个方法，将`File` 对象转化为`Base64`编码格式。</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
 <p>使用<code>Promise</code>封装一个一个方法，将<code>File</code> 对象转化为<code>Base64</code>编码格式。</p>
@@ -2497,8 +2497,8 @@ export default {
     <title type="html">你不知道的 console.log 替代品😮</title>
     <id>https://ivwv.github.io/posts/technology/javascript/you-dont-know-console.html</id>
     <link href="https://ivwv.github.io/posts/technology/javascript/you-dont-know-console.html"/>
-    <updated>2022-08-20T07:36:32.000Z</updated>
-    <summary type="html">你不知道的 console.log 替代品😮</summary>
+    <updated>2022-08-20T08:33:47.000Z</updated>
+    <summary type="html">你不知道的 console.log 替代品😮   这篇文章介绍了`console`意想不到的使用方法。</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
 <p>这篇文章介绍了<code>console</code>意想不到的使用方法。</p>
@@ -2607,8 +2607,8 @@ console<span>.</span><span>log</span><span>(</span><span>"World"</span><span>)</
     <title type="html">如何将命令行参数传递给 Node.js 应用程序？</title>
     <id>https://ivwv.github.io/posts/technology/node/how-to-pass-cmd-line-args-to-node.html</id>
     <link href="https://ivwv.github.io/posts/technology/node/how-to-pass-cmd-line-args-to-node.html"/>
-    <updated>2022-08-20T07:36:32.000Z</updated>
-    <summary type="html">如何将命令行参数传递给 Node.js 应用程序？</summary>
+    <updated>2022-08-20T08:33:47.000Z</updated>
+    <summary type="html">如何将命令行参数传递给 Node.js 应用程序？   与可以使用语法将参数传递给脚本的 `Bash` 脚本类似，您也可以将参数`$1`传递给 `Node.js` 应用程序。</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
 <p>与可以使用语法将参数传递给脚本的 <code>Bash</code> 脚本类似，您也可以将参数<code>$1</code>传递给 <code>Node.js</code> 应用程序。</p>
@@ -2875,8 +2875,8 @@ Smartmockup能够根据你上传的图片(产品素材)，直接在网页上生�
     <title type="html">GitHub OAuth第三方登录示例教程(Node后端)</title>
     <id>https://ivwv.github.io/posts/technology/oauth/github-oauth.html</id>
     <link href="https://ivwv.github.io/posts/technology/oauth/github-oauth.html"/>
-    <updated>2022-08-20T07:36:32.000Z</updated>
-    <summary type="html">GitHub OAuth第三方登录示例教程(Node后端)</summary>
+    <updated>2022-08-20T08:33:47.000Z</updated>
+    <summary type="html">GitHub OAuth第三方登录示例教程(Node后端)  很多网站登录时，允许使用第三方网站的身份，这称为"第三方登录"。</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
 <p>很多网站登录时，允许使用第三方网站的身份，这称为&quot;第三方登录&quot;。</p>
@@ -4984,8 +4984,8 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
     <title type="html">黑马案例大事件项目</title>
     <id>https://ivwv.github.io/posts/project/api-server/</id>
     <link href="https://ivwv.github.io/posts/project/api-server/"/>
-    <updated>2022-08-20T07:36:32.000Z</updated>
-    <summary type="html">黑马案例大事件项目</summary>
+    <updated>2022-08-20T08:33:47.000Z</updated>
+    <summary type="html">黑马案例大事件项目  黑马视频教程-大事件项目后台接口项目 使用 `node`+`express`+`mysql`+`Postman`+`JsonWebToken`+`joi`+`bcryptjs`+`multer`</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
 <p>黑马视频教程-大事件项目后台接口项目 使用 <code>node</code>+<code>express</code>+<code>mysql</code>+<code>Postman</code>+<code>JsonWebToken</code>+<code>joi</code>+<code>bcryptjs</code>+<code>multer</code></p>
@@ -5100,8 +5100,8 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
     <title type="html">我的项目整合</title>
     <id>https://ivwv.github.io/posts/project/</id>
     <link href="https://ivwv.github.io/posts/project/"/>
-    <updated>2022-08-20T07:36:32.000Z</updated>
-    <summary type="html">我的项目整合</summary>
+    <updated>2022-08-20T08:33:47.000Z</updated>
+    <summary type="html">我的项目整合  我的项目列表</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <div><p>导读</p>
 <p>我的项目列表</p>
@@ -5152,8 +5152,8 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
     <title type="html">新闻门户网站</title>
     <id>https://ivwv.github.io/posts/project/newsinfo/</id>
     <link href="https://ivwv.github.io/posts/project/newsinfo/"/>
-    <updated>2022-08-20T07:36:32.000Z</updated>
-    <summary type="html">新闻门户网站</summary>
+    <updated>2022-08-20T08:33:47.000Z</updated>
+    <summary type="html">新闻门户网站   该项目是在大二期间，学校举办的技能节，参加了`web`项目。比赛内容是做出一个新闻门户网站，两人一组。犹豫队友平时比较忙，我就让他帮我找找素材啥的，然后让他做了一个`index.html`首页</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <div><p>导读</p>
 <p>该项目是在大二期间，学校举办的技能节，参加了<code>web</code>项目。比赛内容是做出一个新闻门户网站，两人一组。犹豫队友平时比较忙，我就让他帮我找找素材啥的，然后让他做了一个<code>index.html</code>首页</p>
@@ -5462,8 +5462,8 @@ module<span>.</span>exports <span>=</span> <span>class</span> <span>PdfUtils</sp
     <title type="html">Node socket.io 聊天室</title>
     <id>https://ivwv.github.io/posts/project/socket-chat/</id>
     <link href="https://ivwv.github.io/posts/project/socket-chat/"/>
-    <updated>2022-08-20T07:36:32.000Z</updated>
-    <summary type="html">Node socket.io 聊天室</summary>
+    <updated>2022-08-20T08:33:47.000Z</updated>
+    <summary type="html">Node socket.io 聊天室   Node socket.io 聊天室 包含用户名自定义、多人房间、用户进入房间全局提示、用户退出全局提示、用户打字中全局提示</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
 <p>Node socket.io 聊天室 包含用户名自定义、多人房间、用户进入房间全局提示、用户退出全局提示、用户打字中全局提示</p>
@@ -5485,8 +5485,8 @@ module<span>.</span>exports <span>=</span> <span>class</span> <span>PdfUtils</sp
     <title type="html">电商后台管理项目</title>
     <id>https://ivwv.github.io/posts/project/vue-shop/</id>
     <link href="https://ivwv.github.io/posts/project/vue-shop/"/>
-    <updated>2022-08-20T07:36:32.000Z</updated>
-    <summary type="html">电商后台管理项目</summary>
+    <updated>2022-08-20T08:33:47.000Z</updated>
+    <summary type="html">电商后台管理项目  Vue2+ElementUi+Node+Axios 电商后台管理项目。</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <div><p>导读</p>
 <p>Vue2+ElementUi+Node+Axios 电商后台管理项目。
