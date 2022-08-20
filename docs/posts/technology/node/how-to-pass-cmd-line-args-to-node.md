@@ -1,6 +1,6 @@
 ---
 title: 如何将命令行参数传递给 Node.js 应用程序？
-description: 如何将命令行参数传递给 Node.js 应用程序？
+description: 如何将命令行参数传递给 Node.js 应用程序？  与可以使用语法将参数传递给脚本的 `Bash` 脚本类似，您也可以将参数`$1`传递给 `Node.js` 应用程序。
 isOriginal: true
 icon: Nodejs
 date: 2022-08-07

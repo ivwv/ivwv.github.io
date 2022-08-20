@@ -1,6 +1,6 @@
 ---
 title: 如何使用js将表单选中的文件转化为Base64编码格式
-description: 如何使用js将表单选中的文件转化为Base64编码格式
+description: 如何使用js将表单选中的文件转化为Base64编码格式  使用`Promise`封装一个一个方法，将`File` 对象转化为`Base64`编码格式。
 isOriginal: true
 icon: vue
 date: 2022-08-10

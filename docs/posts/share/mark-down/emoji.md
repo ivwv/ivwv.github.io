@@ -1,6 +1,6 @@
 ---
 title: markdown通用Emoji表情大全
-description: markdown通用Emoji表情大全
+description: markdown通用Emoji表情大全  超多Emoji表情，欢迎使用！
 isOriginal: false
 icon: markdown
 date: 2022-08-02

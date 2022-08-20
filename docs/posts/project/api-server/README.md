@@ -1,6 +1,6 @@
 ---
 title: 黑马案例大事件项目
-description: 黑马案例大事件项目
+description: 黑马案例大事件项目  黑马视频教程-大事件项目后台接口项目 使用 `node`+`express`+`mysql`+`Postman`+`JsonWebToken`+`joi`+`bcryptjs`+`multer`
 isOriginal: true
 icon: license
 date: 2022-08-02

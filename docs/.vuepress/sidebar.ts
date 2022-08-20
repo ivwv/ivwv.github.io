@@ -120,7 +120,7 @@ export default sidebar([
             icon: "vue",
             collapsable: true,
             prefix: "vue2/",
-            children: ["vue2-node-part"],
+            children: ["vue2-note-part"],
           },
           {
             text: "Vue3",
@@ -194,7 +194,10 @@ export default sidebar([
         icon: "launch",
         collapsable: true,
         prefix: "frontend/",
-        children: ["frontend-dev-god-web-site"],
+        children: [
+          "frontend-dev-god-web-site",
+          "stackblitz-script-with-github",
+        ],
       },
     ],
   },
