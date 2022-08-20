@@ -3,7 +3,7 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-20T08:21:51.041Z</updated>
+  <updated>2022-08-20T08:26:49.672Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
@@ -73,8 +73,8 @@
     <title type="html">Vue2学习笔记</title>
     <id>https://ivwv.github.io/posts/notes/vue/vue2/vue2-note-part.html</id>
     <link href="https://ivwv.github.io/posts/notes/vue/vue2/vue2-note-part.html"/>
-    <updated>2022-08-20T07:36:32.000Z</updated>
-    <summary type="html">Vue2学习笔记</summary>
+    <updated>2022-08-20T08:25:54.000Z</updated>
+    <summary type="html">Vue2学习笔记  组件之间的数据共享、$refs引用DOM、动态组件、插槽、自定义指令</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
 <p>组件之间的数据共享、$refs引用DOM、动态组件、插槽、自定义指令</p>
@@ -1274,8 +1274,8 @@ export default {
     <title type="html">ES6在前端的模块导入与导出</title>
     <id>https://ivwv.github.io/posts/notes/javascript/es6/ES6%E5%9C%A8%E5%89%8D%E7%AB%AF%E7%9A%84%E6%A8%A1%E5%9D%97%E5%AF%BC%E5%85%A5%E4%B8%8E%E5%AF%BC%E5%87%BA.html</id>
     <link href="https://ivwv.github.io/posts/notes/javascript/es6/ES6%E5%9C%A8%E5%89%8D%E7%AB%AF%E7%9A%84%E6%A8%A1%E5%9D%97%E5%AF%BC%E5%85%A5%E4%B8%8E%E5%AF%BC%E5%87%BA.html"/>
-    <updated>2022-08-20T07:36:32.000Z</updated>
-    <summary type="html">ES6在前端的模块导入与导出</summary>
+    <updated>2022-08-20T08:25:54.000Z</updated>
+    <summary type="html">ES6在前端的模块导入与导出  es6模块化导入与导出自己的整理</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <div><p>导读</p>
 <p>es6模块化导入与导出自己的整理</p>
@@ -1383,8 +1383,8 @@ export default {
     <title type="html">Javascript面对对象编程</title>
     <id>https://ivwv.github.io/posts/notes/javascript/es6/Javascript%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html</id>
     <link href="https://ivwv.github.io/posts/notes/javascript/es6/Javascript%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html"/>
-    <updated>2022-08-20T07:36:32.000Z</updated>
-    <summary type="html">Javascript面对对象编程</summary>
+    <updated>2022-08-20T08:25:54.000Z</updated>
+    <summary type="html">Javascript面对对象编程  面向对象相关的笔记</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <div><p>导读</p>
 <p>面向对象相关的笔记</p>
@@ -1522,8 +1522,8 @@ son<span>.</span><span>say</span><span>(</span><span>)</span><span>;</span> <spa
     <title type="html">ES6中数组过滤的四种方法</title>
     <id>https://ivwv.github.io/posts/notes/javascript/es6/array-filter.html</id>
     <link href="https://ivwv.github.io/posts/notes/javascript/es6/array-filter.html"/>
-    <updated>2022-08-20T07:36:32.000Z</updated>
-    <summary type="html">ES6中数组过滤的四种方法</summary>
+    <updated>2022-08-20T08:25:54.000Z</updated>
+    <summary type="html">ES6中数组过滤的四种方法  `forEach` `some` `every` `reduce` 数组过滤的四种方法</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
 <p><code>forEach</code> <code>some</code> <code>every</code> <code>reduce</code> 数组过滤的四种方法</p>
@@ -1690,8 +1690,8 @@ console<span>.</span><span>log</span><span>(</span>amt<span>)</span><span>;</spa
     <title type="html">原型</title>
     <id>https://ivwv.github.io/posts/notes/javascript/es6/%E5%8E%9F%E5%9E%8B.html</id>
     <link href="https://ivwv.github.io/posts/notes/javascript/es6/%E5%8E%9F%E5%9E%8B.html"/>
-    <updated>2022-08-20T07:36:32.000Z</updated>
-    <summary type="html">JavaScript原型链</summary>
+    <updated>2022-08-20T08:25:54.000Z</updated>
+    <summary type="html">JavaScript原型链  原型相关的笔记</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <div><p>导读</p>
 <p>原型相关的笔记</p>
@@ -2031,8 +2031,8 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
     <title type="html">类的本质</title>
     <id>https://ivwv.github.io/posts/notes/javascript/es6/%E7%B1%BB%E7%9A%84%E6%9C%AC%E8%B4%A8.html</id>
     <link href="https://ivwv.github.io/posts/notes/javascript/es6/%E7%B1%BB%E7%9A%84%E6%9C%AC%E8%B4%A8.html"/>
-    <updated>2022-08-20T07:36:32.000Z</updated>
-    <summary type="html">类的本质</summary>
+    <updated>2022-08-20T08:25:54.000Z</updated>
+    <summary type="html">类的本质  面向对象相关的笔记</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <div><p>导读</p>
 <p>面向对象相关的笔记</p>
@@ -2085,8 +2085,8 @@ console<span>.</span><span>log</span><span>(</span>ldh<span>.</span>__proto__ <s
     <title type="html">Express中jwt验证的简单使用</title>
     <id>https://ivwv.github.io/posts/notes/node/express/Express%E4%B8%ADjwt%E9%AA%8C%E8%AF%81%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8.html</id>
     <link href="https://ivwv.github.io/posts/notes/node/express/Express%E4%B8%ADjwt%E9%AA%8C%E8%AF%81%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8.html"/>
-    <updated>2022-08-20T07:36:32.000Z</updated>
-    <summary type="html">Express中jwt验证的简单使用</summary>
+    <updated>2022-08-20T08:25:54.000Z</updated>
+    <summary type="html">Express中jwt验证的简单使用  express框架和jsonwebtoken插件的应用</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <div><p>导读</p>
 <p>express框架和jsonwebtoken插件的应用</p>
@@ -2303,8 +2303,8 @@ app<span>.</span><span>listen</span><span>(</span><span>8888</span><span>,</span
     <title type="html">process.env环境变量配置</title>
     <id>https://ivwv.github.io/posts/notes/node/other/process.env%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html</id>
     <link href="https://ivwv.github.io/posts/notes/node/other/process.env%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html"/>
-    <updated>2022-08-20T07:36:32.000Z</updated>
-    <summary type="html">process.env环境变量配置</summary>
+    <updated>2022-08-20T08:25:54.000Z</updated>
+    <summary type="html">process.env环境变量配置  Node 环境变量配置</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <div><p>导读</p>
 <p>Node 环境变量配置</p>
@@ -2435,8 +2435,8 @@ unset NODE_ENV
     <title type="html">vue3全局挂载axios</title>
     <id>https://ivwv.github.io/posts/notes/vue/vue3/vue3-global-axios.html</id>
     <link href="https://ivwv.github.io/posts/notes/vue/vue3/vue3-global-axios.html"/>
-    <updated>2022-08-20T07:36:32.000Z</updated>
-    <summary type="html">vue3全局挂载axios</summary>
+    <updated>2022-08-20T08:25:54.000Z</updated>
+    <summary type="html">vue3全局挂载axios  如何在vue3项目中全局配置axios</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
 <p>如何在vue3项目中全局配置axios</p>

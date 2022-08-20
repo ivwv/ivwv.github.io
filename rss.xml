@@ -6,8 +6,8 @@
     <link>https://ivwv.github.io/</link>
     <description>SY's Blog</description>
     <language>zh-CN</language>
-    <pubDate>Sat, 20 Aug 2022 08:21:51 GMT</pubDate>
-    <lastBuildDate>Sat, 20 Aug 2022 08:21:51 GMT</lastBuildDate>
+    <pubDate>Sat, 20 Aug 2022 08:26:49 GMT</pubDate>
+    <lastBuildDate>Sat, 20 Aug 2022 08:26:49 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>实用分享</category>
@@ -75,7 +75,7 @@
       <link>https://ivwv.github.io/posts/notes/vue/vue2/vue2-note-part.html</link>
       <guid>https://ivwv.github.io/posts/notes/vue/vue2/vue2-note-part.html</guid>
       <source url="https://ivwv.github.io/rss.xml">Vue2学习笔记</source>
-      <description>Vue2学习笔记</description>
+      <description>Vue2学习笔记  组件之间的数据共享、$refs引用DOM、动态组件、插槽、自定义指令</description>
       <category>我的学习笔记</category>
       <category>Vue2</category>
       <pubDate>Sun, 07 Aug 2022 00:00:00 GMT</pubDate>
@@ -1279,7 +1279,7 @@ export default {
       <link>https://ivwv.github.io/posts/notes/javascript/es6/ES6%E5%9C%A8%E5%89%8D%E7%AB%AF%E7%9A%84%E6%A8%A1%E5%9D%97%E5%AF%BC%E5%85%A5%E4%B8%8E%E5%AF%BC%E5%87%BA.html</link>
       <guid>https://ivwv.github.io/posts/notes/javascript/es6/ES6%E5%9C%A8%E5%89%8D%E7%AB%AF%E7%9A%84%E6%A8%A1%E5%9D%97%E5%AF%BC%E5%85%A5%E4%B8%8E%E5%AF%BC%E5%87%BA.html</guid>
       <source url="https://ivwv.github.io/rss.xml">ES6在前端的模块导入与导出</source>
-      <description>ES6在前端的模块导入与导出</description>
+      <description>ES6在前端的模块导入与导出  es6模块化导入与导出自己的整理</description>
       <category>我的学习笔记</category>
       <category>JavaScript</category>
       <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
@@ -1389,7 +1389,7 @@ export default {
       <link>https://ivwv.github.io/posts/notes/javascript/es6/Javascript%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html</link>
       <guid>https://ivwv.github.io/posts/notes/javascript/es6/Javascript%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B.html</guid>
       <source url="https://ivwv.github.io/rss.xml">Javascript面对对象编程</source>
-      <description>Javascript面对对象编程</description>
+      <description>Javascript面对对象编程  面向对象相关的笔记</description>
       <category>我的学习笔记</category>
       <category>JavaScript</category>
       <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
@@ -1529,7 +1529,7 @@ son<span>.</span><span>say</span><span>(</span><span>)</span><span>;</span> <spa
       <link>https://ivwv.github.io/posts/notes/javascript/es6/array-filter.html</link>
       <guid>https://ivwv.github.io/posts/notes/javascript/es6/array-filter.html</guid>
       <source url="https://ivwv.github.io/rss.xml">ES6中数组过滤的四种方法</source>
-      <description>ES6中数组过滤的四种方法</description>
+      <description>ES6中数组过滤的四种方法  `forEach` `some` `every` `reduce` 数组过滤的四种方法</description>
       <category>我的学习笔记</category>
       <category>JavaScript</category>
       <pubDate>Sun, 07 Aug 2022 00:00:00 GMT</pubDate>
@@ -1698,7 +1698,7 @@ console<span>.</span><span>log</span><span>(</span>amt<span>)</span><span>;</spa
       <link>https://ivwv.github.io/posts/notes/javascript/es6/%E5%8E%9F%E5%9E%8B.html</link>
       <guid>https://ivwv.github.io/posts/notes/javascript/es6/%E5%8E%9F%E5%9E%8B.html</guid>
       <source url="https://ivwv.github.io/rss.xml">原型</source>
-      <description>JavaScript原型链</description>
+      <description>JavaScript原型链  原型相关的笔记</description>
       <category>我的学习笔记</category>
       <category>JavaScript</category>
       <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
@@ -2040,7 +2040,7 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
       <link>https://ivwv.github.io/posts/notes/javascript/es6/%E7%B1%BB%E7%9A%84%E6%9C%AC%E8%B4%A8.html</link>
       <guid>https://ivwv.github.io/posts/notes/javascript/es6/%E7%B1%BB%E7%9A%84%E6%9C%AC%E8%B4%A8.html</guid>
       <source url="https://ivwv.github.io/rss.xml">类的本质</source>
-      <description>类的本质</description>
+      <description>类的本质  面向对象相关的笔记</description>
       <category>我的学习笔记</category>
       <category>JavaScript</category>
       <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
@@ -2095,7 +2095,7 @@ console<span>.</span><span>log</span><span>(</span>ldh<span>.</span>__proto__ <s
       <link>https://ivwv.github.io/posts/notes/node/express/Express%E4%B8%ADjwt%E9%AA%8C%E8%AF%81%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8.html</link>
       <guid>https://ivwv.github.io/posts/notes/node/express/Express%E4%B8%ADjwt%E9%AA%8C%E8%AF%81%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8.html</guid>
       <source url="https://ivwv.github.io/rss.xml">Express中jwt验证的简单使用</source>
-      <description>Express中jwt验证的简单使用</description>
+      <description>Express中jwt验证的简单使用  express框架和jsonwebtoken插件的应用</description>
       <category>我的学习笔记</category>
       <category>Node</category>
       <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
@@ -2314,7 +2314,7 @@ app<span>.</span><span>listen</span><span>(</span><span>8888</span><span>,</span
       <link>https://ivwv.github.io/posts/notes/node/other/process.env%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html</link>
       <guid>https://ivwv.github.io/posts/notes/node/other/process.env%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html</guid>
       <source url="https://ivwv.github.io/rss.xml">process.env环境变量配置</source>
-      <description>process.env环境变量配置</description>
+      <description>process.env环境变量配置  Node 环境变量配置</description>
       <category>我的学习笔记</category>
       <category>Node</category>
       <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
@@ -2446,7 +2446,7 @@ unset NODE_ENV
       <link>https://ivwv.github.io/posts/notes/vue/vue3/vue3-global-axios.html</link>
       <guid>https://ivwv.github.io/posts/notes/vue/vue3/vue3-global-axios.html</guid>
       <source url="https://ivwv.github.io/rss.xml">vue3全局挂载axios</source>
-      <description>vue3全局挂载axios</description>
+      <description>vue3全局挂载axios  如何在vue3项目中全局配置axios</description>
       <category>我的学习笔记</category>
       <category>Vue3</category>
       <category>Axios</category>
