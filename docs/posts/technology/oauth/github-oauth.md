@@ -1,6 +1,7 @@
 ---
 title: GitHub OAuth第三方登录示例教程(Node后端)
 description: GitHub OAuth第三方登录示例教程(Node后端)  很多网站登录时，允许使用第三方网站的身份，这称为"第三方登录"。
+# 是否为原创
 isOriginal: true
 icon: lock
 date: 2022-08-03

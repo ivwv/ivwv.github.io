@@ -1,6 +1,7 @@
 ---
 title: Vuex使用
 description: 如何使用js将表单选中的文件转化为Base64编码格式  `Vuex `是一个专为 `Vue.js` 应用程序开发的**状态管理模式 + 库**。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。
+# 是否为原创
 isOriginal: true
 icon: vue
 date: 2022-08-10

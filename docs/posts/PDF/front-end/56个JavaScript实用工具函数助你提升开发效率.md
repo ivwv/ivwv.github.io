@@ -1,6 +1,7 @@
 ---
 title: 56个JavaScript实用工具函数助你提升开发效率
 description: 56个JavaScript实用工具函数助你提升开发效率
+# 是否为原创
 isOriginal: false
 icon: file
 date: 2022-08-04

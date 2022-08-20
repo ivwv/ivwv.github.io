@@ -1,6 +1,7 @@
 ---
 title: 33个非常实用的JavaScript一行代码
 description: 33个非常实用的JavaScript一行代码
+# 是否为原创
 isOriginal: false
 icon: file
 date: 2022-08-04

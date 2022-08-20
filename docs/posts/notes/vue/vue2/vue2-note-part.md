@@ -1,6 +1,7 @@
 ---
 title: Vue2学习笔记
 description: Vue2学习笔记  组件之间的数据共享、$refs引用DOM、动态组件、插槽、自定义指令
+# 是否为原创
 isOriginal: true
 icon: Nodejs
 date: 2022-08-07

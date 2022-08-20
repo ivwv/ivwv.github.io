@@ -2,6 +2,7 @@
 title: Puppeteer爬取Eletron官网文档并保存为pdf格式
 description: Puppeteer爬取Eletron官网文档并保存为pdf格式  为什么要做这个小爬虫？ 说起来是个艰辛的路程...  当我接触到`electron`时，被这强大的用处深深吸引！ 但是官网确老是抽风！
 时不时的不能翻译成中文， 恰好有一天，发现能翻译 中文了，就萌生了一个使用`puppeteer`将文档爬取下来保存！
+# 是否为原创
 isOriginal: true
 icon: license
 # YYYY-MM-DD
