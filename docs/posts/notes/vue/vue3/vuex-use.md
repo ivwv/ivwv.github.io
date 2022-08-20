@@ -1,6 +1,6 @@
 ---
 title: Vuex使用
-description: 如何使用js将表单选中的文件转化为Base64编码格式
+description: 如何使用js将表单选中的文件转化为Base64编码格式  Vuex学习笔记
 isOriginal: true
 icon: vue
 date: 2022-08-10
