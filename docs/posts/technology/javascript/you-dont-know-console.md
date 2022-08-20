@@ -1,6 +1,6 @@
 ---
 title: 你不知道的 console.log 替代品😮
-description: 你不知道的 console.log 替代品😮
+description: 你不知道的 console.log 替代品😮   这篇文章介绍了`console`意想不到的使用方法。
 isOriginal: true
 icon: javascript
 date: 2022-08-07

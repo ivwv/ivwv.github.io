@@ -1,6 +1,6 @@
 ---
 title: 我的项目整合
-description: 我的项目整合
+description: 我的项目整合  我的项目列表
 isOriginal: true
 icon: PROJECT
 # YYYY-MM-DD
