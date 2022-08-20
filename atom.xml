@@ -3,7 +3,7 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-20T08:26:49.672Z</updated>
+  <updated>2022-08-20T08:30:32.564Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
@@ -664,8 +664,8 @@ export default {
     <title type="html">Vuex使用</title>
     <id>https://ivwv.github.io/posts/notes/vue/vue3/vuex-use.html</id>
     <link href="https://ivwv.github.io/posts/notes/vue/vue3/vuex-use.html"/>
-    <updated>2022-08-20T07:36:32.000Z</updated>
-    <summary type="html">如何使用js将表单选中的文件转化为Base64编码格式</summary>
+    <updated>2022-08-20T08:29:21.000Z</updated>
+    <summary type="html">如何使用js将表单选中的文件转化为Base64编码格式  Vuex学习笔记</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
 <p>Vuex学习笔记</p>
