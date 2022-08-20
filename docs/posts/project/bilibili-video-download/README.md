@@ -1,7 +1,6 @@
 ---
 title: Bilibili 视频下载
-description: Bilibili 视频下载,可以下载多集数视频  使用Node将 Bilibili 视频下载,可以下载多集数视频,修改配置即可
-# 是否为原创
+description: Bilibili 视频下载,可以下载多集数视频
 isOriginal: true
 icon: license
 date: 2022-08-15

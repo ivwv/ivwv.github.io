@@ -1,7 +1,6 @@
 ---
 title: vue3全局挂载axios
-description: vue3全局挂载axios  如何在vue3项目中全局配置axios
-# 是否为原创
+description: vue3全局挂载axios
 isOriginal: true
 icon: vue
 date: 2022-08-06

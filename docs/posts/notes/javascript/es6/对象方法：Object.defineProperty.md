@@ -1,6 +1,6 @@
 ---
 title: 对象方法：Object.defineProperty
-description: 对象方法：Object.defineProperty  面向对象相关的笔记
+description: 对象方法：Object.defineProperty
 # 是否为原创
 isOriginal: true
 icon: javascript

@@ -3,8 +3,7 @@ home: true
 layout: Blog
 # icon: home
 title: ❤努力提升自己❤
-description: 分享自己的学习日常✨ 分享一些技术文章✨，学习笔记✨，PDF书籍✨，个人项目✨ 会持续更新✨
-# 是否为原创
+description: 分享自己的学习日常✨
 isOriginal: true
 heroImage: /logo.svg
 heroText: SY's Blog

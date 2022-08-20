@@ -1,7 +1,6 @@
 ---
 title: 电商后台管理项目
-description: 电商后台管理项目  Vue2+ElementUi+Node+Axios 电商后台管理项目。 这个项目将vue2学完后完成的一个项目
-# 是否为原创
+description: 电商后台管理项目
 isOriginal: true
 icon: license
 # YYYY-MM-DD

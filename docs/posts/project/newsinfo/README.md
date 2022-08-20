@@ -1,7 +1,6 @@
 ---
 title: 新闻门户网站
-description: 新闻门户网站  该项目是在大二期间，学校举办的技能节，参加了`web`项目。比赛内容是做出一个新闻门户网站，两人一组。犹豫队友平时比较忙，我就让他帮我找找素材啥的，然后让他做了一个`index.html`首页
-# 是否为原创
+description: 新闻门户网站
 isOriginal: true
 icon: license
 # YYYY-MM-DD

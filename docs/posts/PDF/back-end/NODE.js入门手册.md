@@ -1,7 +1,6 @@
 ---
 title: NODE.js入门手册
 description: NODE.js入门手册
-# 是否为原创
 isOriginal: false
 
 icon: file

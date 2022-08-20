@@ -1,7 +1,6 @@
 ---
 title: PicGo+Typora 配合 Github 搭建个人图床
-description: PicGo+Typora 配合 Github 搭建个人图床  图床是什么? \n  当我们在使用`Typora`做笔记时，可能想要分享给自己的同事，但是笔记的图片是保存在自己的本地的，那么就需要同时把图片也一起打包发送。
-# 是否为原创
+description: PicGo+Typora 配合 Github 搭建个人图床
 isOriginal: true
 icon: pic
 # YYYY-MM-DD

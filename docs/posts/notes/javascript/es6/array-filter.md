@@ -1,7 +1,6 @@
 ---
 title: ES6中数组过滤的四种方法
-description: ES6中数组过滤的四种方法  `forEach` `some` `every` `reduce` 数组过滤的四种方法
-# 是否为原创
+description: ES6中数组过滤的四种方法
 isOriginal: true
 icon: Nodejs
 date: 2022-08-07

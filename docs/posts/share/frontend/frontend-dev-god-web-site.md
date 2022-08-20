@@ -1,7 +1,6 @@
 ---
 title: 那些前端开发神级网站
-description: 那些前端开发神级网站   包含了各种前端开发神级网站(后续会继续添加)
-# 是否为原创
+description: 那些前端开发神级网站
 isOriginal: true
 icon: launch
 date: 2022-08-07
