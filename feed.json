@@ -145,10 +145,10 @@
       "title": "对象方法：Object.defineProperty",
       "url": "https://ivwv.github.io/posts/notes/javascript/es6/%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%9AObject.defineProperty.html",
       "id": "https://ivwv.github.io/posts/notes/javascript/es6/%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%9AObject.defineProperty.html",
-      "summary": "对象方法：Object.defineProperty",
+      "summary": "对象方法：Object.defineProperty  面向对象相关的笔记",
       "content_html": "<CountView></CountView>\n<div><p>导读</p>\n<p>面向对象相关的笔记</p>\n</div>\n\n<h1 id=\"对象方法-object-defineproperty\" tabindex=\"-1\"> 对象方法：Object.defineProperty</h1>\n<div><pre><code>Object<span>.</span><span>defineProperty</span><span>(</span>obj<span>,</span> prop<span>,</span> descriptor<span>)</span>\n</code></pre><div aria-hidden=\"true\"><div></div></div></div><ul>\n<li><code>obj</code>：必需。目标对象</li>\n<li><code>prop</code>：必需。需定义或修改的属性的名字</li>\n<li><code>descriptor</code>：必需。目标属性所拥有的特性</li>\n</ul>\n<p><code>Object.defineProperty()</code>  第三个参数 <code>descriptor </code>说明： 以对象形式 <code>{ } </code>书写</p>\n<ul>\n<li>\n<p><code>value</code>: 设置属性的值 默认为<code>undefined</code></p>\n</li>\n<li>\n<p><code>writable</code>: 值是否可以重写。<code>true </code>| <code>false </code>默认为<code>false</code></p>\n</li>\n<li>\n<p><code>enumerable</code>: 目标属性是否可以被枚举。<code>true </code>| <code>false </code>默认为<code>false</code></p>\n</li>\n<li>\n<p><code>configurable</code>: 目标属性是否可以被删除或是否可以再次修改特性 <code>true </code>| <code>false </code>默认为<code>false</code></p>\n</li>\n</ul>\n",
       "date_published": "2022-07-30T00:00:00.000Z",
-      "date_modified": "2022-08-20T07:36:32.000Z",
+      "date_modified": "2022-08-20T08:20:59.000Z",
       "authors": [],
       "tags": [
         "我的学习笔记",

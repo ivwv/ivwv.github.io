@@ -6,8 +6,8 @@
     <link>https://ivwv.github.io/</link>
     <description>SY's Blog</description>
     <language>zh-CN</language>
-    <pubDate>Sat, 20 Aug 2022 07:39:14 GMT</pubDate>
-    <lastBuildDate>Sat, 20 Aug 2022 07:39:14 GMT</lastBuildDate>
+    <pubDate>Sat, 20 Aug 2022 08:21:51 GMT</pubDate>
+    <lastBuildDate>Sat, 20 Aug 2022 08:21:51 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>实用分享</category>
@@ -2002,7 +2002,7 @@ zxy<span>.</span><span>sing</span><span>(</span><span>)</span><span>;</span>
       <link>https://ivwv.github.io/posts/notes/javascript/es6/%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%9AObject.defineProperty.html</link>
       <guid>https://ivwv.github.io/posts/notes/javascript/es6/%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95%EF%BC%9AObject.defineProperty.html</guid>
       <source url="https://ivwv.github.io/rss.xml">对象方法：Object.defineProperty</source>
-      <description>对象方法：Object.defineProperty</description>
+      <description>对象方法：Object.defineProperty  面向对象相关的笔记</description>
       <category>我的学习笔记</category>
       <category>JavaScript</category>
       <pubDate>Sat, 30 Jul 2022 00:00:00 GMT</pubDate>
