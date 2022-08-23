@@ -70,7 +70,8 @@ export default defineUserConfig({
       "meta",
       {
         property: "twitter:description",
-        content: "分享自己的学习日常✨",
+        content:
+          "分享自己的学习日常✨ 分享自己的学习心得✨ 分享自己的学习经验✨ 分享技术文章✨ 分享学习笔记✨ 分享好用资源✨",
       },
     ],
     [
@@ -102,7 +103,8 @@ export default defineUserConfig({
       "meta",
       {
         name: "description",
-        content: "分享自己的学习日常✨",
+        content:
+          "分享自己的学习日常✨ 分享自己的学习心得✨ 分享自己的学习经验✨ 分享技术文章✨ 分享学习笔记✨ 分享好用资源✨",
       },
     ],
 
