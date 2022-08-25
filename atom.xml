@@ -3,7 +3,7 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-23T06:10:39.256Z</updated>
+  <updated>2022-08-25T05:02:05.652Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
@@ -2875,7 +2875,7 @@ Smartmockup能够根据你上传的图片(产品素材)，直接在网页上生�
     <title type="html">GitHub OAuth第三方登录示例教程(Node后端)</title>
     <id>https://ivwv.github.io/posts/technology/oauth/github-oauth.html</id>
     <link href="https://ivwv.github.io/posts/technology/oauth/github-oauth.html"/>
-    <updated>2022-08-20T08:33:47.000Z</updated>
+    <updated>2022-08-25T05:00:58.000Z</updated>
     <summary type="html">GitHub OAuth第三方登录示例教程(Node后端)  很多网站登录时，允许使用第三方网站的身份，这称为"第三方登录"。</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
@@ -3112,6 +3112,9 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
 <p>需要进入<a href="https://github.com/settings/applications" target="_blank" rel="noopener noreferrer">应用管理</a> 将状态移除，再执行授权</p>
 </blockquote>
 <p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-03-18:24:50*image-20220803182450628*1.png" alt="image-20220803182450628"></p>
+<blockquote>
+<p><a href="https://stackblitz.com/github/ivwv/GitHub-OAuth-Demo" target="_blank" rel="noopener noreferrer">在线运行</a></p>
+</blockquote>
 ]]></content>
     <category term="技术文章" scheme=""/>
     <category term="OAuth" scheme=""/>
@@ -5462,7 +5465,7 @@ module<span>.</span>exports <span>=</span> <span>class</span> <span>PdfUtils</sp
     <title type="html">Node socket.io 聊天室</title>
     <id>https://ivwv.github.io/posts/project/socket-chat/</id>
     <link href="https://ivwv.github.io/posts/project/socket-chat/"/>
-    <updated>2022-08-20T08:33:47.000Z</updated>
+    <updated>2022-08-25T05:00:58.000Z</updated>
     <summary type="html">Node socket.io 聊天室   Node socket.io 聊天室 包含用户名自定义、多人房间、用户进入房间全局提示、用户退出全局提示、用户打字中全局提示</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
@@ -5476,6 +5479,9 @@ module<span>.</span>exports <span>=</span> <span>class</span> <span>PdfUtils</sp
 <p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-02-15:57:56*image-20220802155756267*f.png" alt="image-20220802155756267"></p>
 <hr>
 <p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-02-15:58:29*image-20220802155829081*5.png" alt="image-20220802155829081"></p>
+<blockquote>
+<p><a href="https://stackblitz.com/github/ivwv/socket_io_chat" target="_blank" rel="noopener noreferrer">在线运行</a></p>
+</blockquote>
 ]]></content>
     <category term="我的项目整合" scheme=""/>
     <category term="Node" scheme=""/>

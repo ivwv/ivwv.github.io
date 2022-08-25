@@ -6,8 +6,8 @@
     <link>https://ivwv.github.io/</link>
     <description>SY's Blog</description>
     <language>zh-CN</language>
-    <pubDate>Tue, 23 Aug 2022 06:10:39 GMT</pubDate>
-    <lastBuildDate>Tue, 23 Aug 2022 06:10:39 GMT</lastBuildDate>
+    <pubDate>Thu, 25 Aug 2022 05:02:05 GMT</pubDate>
+    <lastBuildDate>Thu, 25 Aug 2022 05:02:05 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>实用分享</category>
@@ -3129,6 +3129,9 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
 <p>需要进入<a href="https://github.com/settings/applications" target="_blank" rel="noopener noreferrer">应用管理</a> 将状态移除，再执行授权</p>
 </blockquote>
 <p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-03-18:24:50*image-20220803182450628*1.png" alt="image-20220803182450628"></p>
+<blockquote>
+<p><a href="https://stackblitz.com/github/ivwv/GitHub-OAuth-Demo" target="_blank" rel="noopener noreferrer">在线运行</a></p>
+</blockquote>
 ]]></content:encoded>
       <enclosure url="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-03-17:17:12*image-20220803171712178*a.png" type="image/png"/>
     </item>
@@ -5496,6 +5499,9 @@ module<span>.</span>exports <span>=</span> <span>class</span> <span>PdfUtils</sp
 <p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-02-15:57:56*image-20220802155756267*f.png" alt="image-20220802155756267"></p>
 <hr>
 <p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-02-15:58:29*image-20220802155829081*5.png" alt="image-20220802155829081"></p>
+<blockquote>
+<p><a href="https://stackblitz.com/github/ivwv/socket_io_chat" target="_blank" rel="noopener noreferrer">在线运行</a></p>
+</blockquote>
 ]]></content:encoded>
       <enclosure url="https://public-1310720021.cos.ap-shanghai.myqcloud.com/headimg/typora-user-images/2022-08-02-15:57:56*image-20220802155756267*f.png" type="image/png"/>
     </item>
