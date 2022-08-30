@@ -6,8 +6,8 @@
     <link>https://ivwv.github.io/</link>
     <description>SY's Blog</description>
     <language>zh-CN</language>
-    <pubDate>Thu, 25 Aug 2022 05:02:05 GMT</pubDate>
-    <lastBuildDate>Thu, 25 Aug 2022 05:02:05 GMT</lastBuildDate>
+    <pubDate>Tue, 30 Aug 2022 12:31:49 GMT</pubDate>
+    <lastBuildDate>Tue, 30 Aug 2022 12:31:49 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>实用分享</category>
@@ -2105,16 +2105,20 @@ console<span>.</span><span>log</span><span>(</span>ldh<span>.</span>__proto__ <s
 </div>
 
 <h2 id="安装jwt相关包" tabindex="-1"> 安装JWT相关包</h2>
-<div><pre><code>npm install jsonwebtoken express<span>-</span>jwt
+<div><pre><code><span>npm</span> <span>install</span> jsonwebtoken express-jwt
 </code></pre><div aria-hidden="true"><div></div></div></div><ul>
 <li><code>jsonwebtoken</code><strong>用于生成JWT字符串</strong></li>
 <li><code>express-jwt</code><strong>用于将JWT字符串解析还原成JSON对象</strong></li>
 </ul>
 <h2 id="_01-导包" tabindex="-1"> 01：导包</h2>
 <p><strong>安装并导入 JWT 相关的两个包，分别是 jsonwebtoken 和 express-jwt</strong></p>
-<div><pre><code><span>const</span> jwt <span>=</span> <span>require</span><span>(</span><span>'jsonwebtoken'</span><span>)</span>
-<span>const</span> expressJWT <span>=</span> <span>require</span><span>(</span><span>'express-jwt'</span><span>)</span>
-</code></pre><div aria-hidden="true"><div></div><div></div></div></div><h2 id="_02-定义-secret-密钥" tabindex="-1"> 02：定义 secret 密钥</h2>
+<div><pre><code><span>const</span> jwt <span>=</span> <span>require</span><span>(</span><span>"jsonwebtoken"</span><span>)</span><span>;</span>
+<span>const</span> <span>{</span> expressjwt <span>}</span> <span>=</span> <span>require</span><span>(</span><span>"express-jwt"</span><span>)</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div></div></div><blockquote>
+<p>注意：<code>express-jwt</code>跟进查看<code>index.d.ts</code>文件，看到导出的是一个变量，所以我们需要解构得到这个变量，否者会报错。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/4e464f8a548b7677a9220499903779dd.png" alt="image-20220830202131092"></p>
+</blockquote>
+<h2 id="_02-定义-secret-密钥" tabindex="-1"> 02：定义 secret 密钥</h2>
 <p><strong>定义 secret 密钥，建议将密钥命名为 secretKey</strong></p>
 <div><pre><code><span>//简易随机生成</span>
 <span>const</span> secretKey <span>=</span> <span>'hello'</span>
@@ -2135,7 +2139,7 @@ console<span>.</span><span>log</span><span>(</span>ldh<span>.</span>__proto__ <s
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><ul>
 <li><strong>用户接收</strong>
 <ul>
-<li><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-14:58:00*01*e.jpg" alt="01"></li>
+<li><img src="https://img-blog.csdnimg.cn/img_convert/8964196a750c1534ccb5bbfc67a0f726.jpeg" alt="01"></li>
 </ul>
 </li>
 </ul>
@@ -2146,8 +2150,12 @@ console<span>.</span><span>log</span><span>(</span>ldh<span>.</span>__proto__ <s
 <li><strong>中间件，应放在路有前</strong></li>
 </ul>
 <div><pre><code><span>// 注意：只要配置成功了 express-jwt 这个中间件，就可以把解析出来的用户信息，挂载到 `req.user` 属性上</span>
-app<span>.</span><span>use</span><span>(</span><span>expressJWT</span><span>(</span><span>{</span> <span>secret</span><span>:</span> secretKey <span>}</span><span>)</span><span>.</span><span>unless</span><span>(</span><span>{</span> <span>path</span><span>:</span> <span>[</span><span><span>/</span><span>^\/api\/</span><span>/</span></span><span>]</span> <span>}</span><span>)</span><span>)</span>
-</code></pre><div aria-hidden="true"><div></div><div></div></div></div><ul>
+app<span>.</span><span>use</span><span>(</span>
+  <span>expressjwt</span><span>(</span><span>{</span> <span>secret</span><span>:</span> secretKey<span>,</span> <span>algorithms</span><span>:</span> <span>[</span><span>"HS256"</span><span>]</span> <span>}</span><span>)</span><span>.</span><span>unless</span><span>(</span><span>{</span>
+    <span>path</span><span>:</span> <span>[</span><span><span>/</span><span>^\/api\/</span><span>/</span></span><span>]</span><span>,</span>
+  <span>}</span><span>)</span>
+<span>)</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div></div></div><ul>
 <li>
 <p><strong>将解析完成后的信息挂在到<code>req.user</code></strong></p>
 <ul>
@@ -2186,7 +2194,7 @@ value为<span><span>`</span><span>Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.ey
 <li>
 <p><strong>用户接收</strong>-<strong>成功</strong></p>
 <ul>
-<li><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-14:58:00*02*3.jpg" alt="02"></li>
+<li><img src="https://img-blog.csdnimg.cn/img_convert/74c6d62e84220d5fdf41a11bfe2504c0.jpeg" alt="02"></li>
 </ul>
 </li>
 </ul>
@@ -2195,7 +2203,7 @@ value为<span><span>`</span><span>Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.ey
 <ul>
 <li><strong>当用户的token错误时</strong>
 <ul>
-<li><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-14:58:00*03*9.jpg" alt="03"></li>
+<li><img src="https://img-blog.csdnimg.cn/img_convert/8126af8c45e9d22677498c5354335e26.jpeg" alt="03"></li>
 <li><strong>会返回一个错误</strong></li>
 <li><strong>此时需要添加一个全局的错误处理中间件</strong></li>
 <li><strong>判断<code>err.name</code>是否为<code>UnauthorizedError</code></strong></li>
@@ -2221,45 +2229,49 @@ value为<span><span>`</span><span>Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.ey
 </code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><ul>
 <li>
 <ul>
-<li><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-14:58:00*04*3.jpg" alt="04"></li>
+<li><img src="https://img-blog.csdnimg.cn/img_convert/ae3575c9333c42bc2195be0be04a97bc.jpeg" alt="04"></li>
 </ul>
 </li>
 </ul>
 <h2 id="演示代码" tabindex="-1"> 演示代码</h2>
 <div><pre><code><span>// 导入 express 模块</span>
-<span>const</span> express <span>=</span> <span>require</span><span>(</span><span>'express'</span><span>)</span>
+<span>const</span> express <span>=</span> <span>require</span><span>(</span><span>"express"</span><span>)</span><span>;</span>
 <span>// 创建 express 的服务器实例</span>
-<span>const</span> app <span>=</span> <span>express</span><span>(</span><span>)</span>
+<span>const</span> app <span>=</span> <span>express</span><span>(</span><span>)</span><span>;</span>
 
 <span>// TODO_01：安装并导入 JWT 相关的两个包，分别是 jsonwebtoken 和 express-jwt</span>
-<span>const</span> jwt <span>=</span> <span>require</span><span>(</span><span>'jsonwebtoken'</span><span>)</span>
-<span>const</span> expressJWT <span>=</span> <span>require</span><span>(</span><span>'express-jwt'</span><span>)</span>
+<span>const</span> jwt <span>=</span> <span>require</span><span>(</span><span>"jsonwebtoken"</span><span>)</span><span>;</span>
+<span>const</span> <span>{</span> expressjwt <span>}</span> <span>=</span> <span>require</span><span>(</span><span>"express-jwt"</span><span>)</span><span>;</span>
 
 <span>// 允许跨域资源共享</span>
-<span>const</span> cors <span>=</span> <span>require</span><span>(</span><span>'cors'</span><span>)</span>
-app<span>.</span><span>use</span><span>(</span><span>cors</span><span>(</span><span>)</span><span>)</span>
+<span>const</span> cors <span>=</span> <span>require</span><span>(</span><span>"cors"</span><span>)</span><span>;</span>
+app<span>.</span><span>use</span><span>(</span><span>cors</span><span>(</span><span>)</span><span>)</span><span>;</span>
 
 <span>// 解析 post 表单数据的中间件</span>
-<span>const</span> bodyParser <span>=</span> <span>require</span><span>(</span><span>'body-parser'</span><span>)</span>
-app<span>.</span><span>use</span><span>(</span>bodyParser<span>.</span><span>urlencoded</span><span>(</span><span>{</span> <span>extended</span><span>:</span> <span>false</span> <span>}</span><span>)</span><span>)</span>
+<span>const</span> bodyParser <span>=</span> <span>require</span><span>(</span><span>"body-parser"</span><span>)</span><span>;</span>
+app<span>.</span><span>use</span><span>(</span>bodyParser<span>.</span><span>urlencoded</span><span>(</span><span>{</span> <span>extended</span><span>:</span> <span>false</span> <span>}</span><span>)</span><span>)</span><span>;</span>
 
 <span>// TODO_02：定义 secret 密钥，建议将密钥命名为 secretKey</span>
-<span>const</span> secretKey <span>=</span> <span>'itheima No1 ^_^'</span>
+<span>const</span> secretKey <span>=</span> <span>"itheima No1 ^_^"</span><span>;</span>
 
 <span>// TODO_04：注册将 JWT 字符串解析还原成 JSON 对象的中间件</span>
 <span>// 注意：只要配置成功了 express-jwt 这个中间件，就可以把解析出来的用户信息，挂载到 req.user 属性上</span>
-app<span>.</span><span>use</span><span>(</span><span>expressJWT</span><span>(</span><span>{</span> <span>secret</span><span>:</span> secretKey <span>}</span><span>)</span><span>.</span><span>unless</span><span>(</span><span>{</span> <span>path</span><span>:</span> <span>[</span><span><span>/</span><span>^\/api\/</span><span>/</span></span><span>]</span> <span>}</span><span>)</span><span>)</span>
+app<span>.</span><span>use</span><span>(</span>
+  <span>expressjwt</span><span>(</span><span>{</span> <span>secret</span><span>:</span> secretKey<span>,</span> <span>algorithms</span><span>:</span> <span>[</span><span>"HS256"</span><span>]</span> <span>}</span><span>)</span><span>.</span><span>unless</span><span>(</span><span>{</span>
+    <span>path</span><span>:</span> <span>[</span><span><span>/</span><span>^\/api\/</span><span>/</span></span><span>]</span><span>,</span>
+  <span>}</span><span>)</span>
+<span>)</span><span>;</span>
 
 <span>// 登录接口</span>
-app<span>.</span><span>post</span><span>(</span><span>'/api/login'</span><span>,</span> <span>function</span> <span>(</span><span>req<span>,</span> res</span><span>)</span> <span>{</span>
+app<span>.</span><span>post</span><span>(</span><span>"/api/login"</span><span>,</span> <span>function</span> <span>(</span><span>req<span>,</span> res</span><span>)</span> <span>{</span>
   <span>// 将 req.body 请求体中的数据，转存为 userinfo 常量</span>
-  <span>const</span> userinfo <span>=</span> req<span>.</span>body
+  <span>const</span> userinfo <span>=</span> req<span>.</span>body<span>;</span>
   <span>// 登录失败</span>
-  <span>if</span> <span>(</span>userinfo<span>.</span>username <span>!==</span> <span>'admin'</span> <span>||</span> userinfo<span>.</span>password <span>!==</span> <span>'000000'</span><span>)</span> <span>{</span>
+  <span>if</span> <span>(</span>userinfo<span>.</span>username <span>!==</span> <span>"admin"</span> <span>||</span> userinfo<span>.</span>password <span>!==</span> <span>"000000"</span><span>)</span> <span>{</span>
     <span>return</span> res<span>.</span><span>send</span><span>(</span><span>{</span>
       <span>status</span><span>:</span> <span>400</span><span>,</span>
-      <span>message</span><span>:</span> <span>'登录失败！'</span><span>,</span>
-    <span>}</span><span>)</span>
+      <span>message</span><span>:</span> <span>"登录失败！"</span><span>,</span>
+    <span>}</span><span>)</span><span>;</span>
   <span>}</span>
   <span>// 登录成功</span>
   <span>// TODO_03：在登录成功之后，调用 jwt.sign() 方法生成 JWT 字符串。并通过 token 属性发送给客户端</span>
@@ -2267,47 +2279,49 @@ app<span>.</span><span>post</span><span>(</span><span>'/api/login'</span><span>,
   <span>// 参数2：加密的秘钥</span>
   <span>// 参数3：配置对象，可以配置当前 token 的有效期</span>
   <span>// 记住：千万不要把密码加密到 token 字符中</span>
-  <span>const</span> tokenStr <span>=</span> jwt<span>.</span><span>sign</span><span>(</span><span>{</span> <span>username</span><span>:</span> userinfo<span>.</span>username <span>}</span><span>,</span> secretKey<span>,</span> <span>{</span> <span>expiresIn</span><span>:</span> <span>'30s'</span> <span>}</span><span>)</span>
+  <span>const</span> tokenStr <span>=</span> jwt<span>.</span><span>sign</span><span>(</span><span>{</span> <span>username</span><span>:</span> userinfo<span>.</span>username <span>}</span><span>,</span> secretKey<span>,</span> <span>{</span>
+    <span>expiresIn</span><span>:</span> <span>"30s"</span><span>,</span>
+  <span>}</span><span>)</span><span>;</span>
   res<span>.</span><span>send</span><span>(</span><span>{</span>
     <span>status</span><span>:</span> <span>200</span><span>,</span>
-    <span>message</span><span>:</span> <span>'登录成功！'</span><span>,</span>
+    <span>message</span><span>:</span> <span>"登录成功！"</span><span>,</span>
     <span>token</span><span>:</span> tokenStr<span>,</span> <span>// 要发送给客户端的 token 字符串</span>
-  <span>}</span><span>)</span>
-<span>}</span><span>)</span>
+  <span>}</span><span>)</span><span>;</span>
+<span>}</span><span>)</span><span>;</span>
 
 <span>// 这是一个有权限的 API 接口</span>
-app<span>.</span><span>get</span><span>(</span><span>'/admin/getinfo'</span><span>,</span> <span>function</span> <span>(</span><span>req<span>,</span> res</span><span>)</span> <span>{</span>
+app<span>.</span><span>get</span><span>(</span><span>"/admin/getinfo"</span><span>,</span> <span>function</span> <span>(</span><span>req<span>,</span> res</span><span>)</span> <span>{</span>
   <span>// TODO_05：使用 req.user 获取用户信息，并使用 data 属性将用户信息发送给客户端</span>
-  console<span>.</span><span>log</span><span>(</span>req<span>.</span>user<span>)</span>
+  console<span>.</span><span>log</span><span>(</span>req<span>.</span>user<span>)</span><span>;</span>
   res<span>.</span><span>send</span><span>(</span><span>{</span>
     <span>status</span><span>:</span> <span>200</span><span>,</span>
-    <span>message</span><span>:</span> <span>'获取用户信息成功！'</span><span>,</span>
+    <span>message</span><span>:</span> <span>"获取用户信息成功！"</span><span>,</span>
     <span>data</span><span>:</span> req<span>.</span>user<span>,</span> <span>// 要发送给客户端的用户信息</span>
-  <span>}</span><span>)</span>
-<span>}</span><span>)</span>
+  <span>}</span><span>)</span><span>;</span>
+<span>}</span><span>)</span><span>;</span>
 
 <span>// TODO_06：使用全局错误处理中间件，捕获解析 JWT 失败后产生的错误</span>
 app<span>.</span><span>use</span><span>(</span><span>(</span><span>err<span>,</span> req<span>,</span> res<span>,</span> next</span><span>)</span> <span>=></span> <span>{</span>
   <span>// 这次错误是由 token 解析失败导致的</span>
-  <span>if</span> <span>(</span>err<span>.</span>name <span>===</span> <span>'UnauthorizedError'</span><span>)</span> <span>{</span>
+  <span>if</span> <span>(</span>err<span>.</span>name <span>===</span> <span>"UnauthorizedError"</span><span>)</span> <span>{</span>
     <span>return</span> res<span>.</span><span>send</span><span>(</span><span>{</span>
       <span>status</span><span>:</span> <span>401</span><span>,</span>
-      <span>message</span><span>:</span> <span>'无效的token'</span><span>,</span>
-    <span>}</span><span>)</span>
+      <span>message</span><span>:</span> <span>"无效的token"</span><span>,</span>
+    <span>}</span><span>)</span><span>;</span>
   <span>}</span>
   res<span>.</span><span>send</span><span>(</span><span>{</span>
     <span>status</span><span>:</span> <span>500</span><span>,</span>
-    <span>message</span><span>:</span> <span>'未知的错误'</span><span>,</span>
-  <span>}</span><span>)</span>
-<span>}</span><span>)</span>
+    <span>message</span><span>:</span> <span>"未知的错误"</span><span>,</span>
+  <span>}</span><span>)</span><span>;</span>
+<span>}</span><span>)</span><span>;</span>
 
 <span>// 调用 app.listen 方法，指定端口号并启动web服务器</span>
 app<span>.</span><span>listen</span><span>(</span><span>8888</span><span>,</span> <span>function</span> <span>(</span><span>)</span> <span>{</span>
-  console<span>.</span><span>log</span><span>(</span><span>'Express server running at http://127.0.0.1:8888'</span><span>)</span>
-<span>}</span><span>)</span>
+  console<span>.</span><span>log</span><span>(</span><span>"Express server running at http://127.0.0.1:8888"</span><span>)</span><span>;</span>
+<span>}</span><span>)</span><span>;</span>
 
-</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>]]></content:encoded>
-      <enclosure url="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/md/img/2022-07-03-14:58:00*01*e.jpg" type="image/jpeg"/>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>]]></content:encoded>
+      <enclosure url="https://img-blog.csdnimg.cn/img_convert/4e464f8a548b7677a9220499903779dd.png" type="image/png"/>
     </item>
     <item>
       <title>process.env环境变量配置</title>
