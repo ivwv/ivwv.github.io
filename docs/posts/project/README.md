@@ -64,4 +64,8 @@ timeline: true
 >
 > 使用技术：`Node`+`express`
 
+> 4. [使用Nodejs批量爬取某网站 Gif动图(2022/09-01)](/posts/project/demo/spider-get-gif)
+>
+> 使用技术：`Node`-`axios`+`cheerio`
+
 
