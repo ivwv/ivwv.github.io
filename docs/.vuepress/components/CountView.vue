@@ -4,7 +4,7 @@
 export default {
   data() {
     return {
-      apiServer: "https://count-blog-view.herokuapp.com/",
+      apiServer: "https://count-blog-view.herokuapp.com",
       ipinfo: {},
       clientInfo: {
         href: "",
