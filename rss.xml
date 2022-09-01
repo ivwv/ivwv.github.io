@@ -6,8 +6,8 @@
     <link>https://ivwv.github.io/</link>
     <description>SY's Blog</description>
     <language>zh-CN</language>
-    <pubDate>Thu, 01 Sep 2022 02:24:08 GMT</pubDate>
-    <lastBuildDate>Thu, 01 Sep 2022 02:24:08 GMT</lastBuildDate>
+    <pubDate>Thu, 01 Sep 2022 02:32:10 GMT</pubDate>
+    <lastBuildDate>Thu, 01 Sep 2022 02:32:10 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>我的项目整合</category>
@@ -49,11 +49,9 @@
 <p>基于Nodejs的视频流播放,按需请求视频流片段，做到省流量，省带宽。</p>
 </blockquote>
 
-<blockquote>
 <p><strong>源码</strong></p>
 <p><a href="https://github.com/ivwv/video-stream-demo" target="_blank" rel="noopener noreferrer"><code>GitHub</code></a></p>
 <p><a href="https://gitee.com/isyv/video-stream-demo" target="_blank" rel="noopener noreferrer"><code>Gitee</code></a></p>
-</blockquote>
 <div><pre><code><span>const</span> express <span>=</span> <span>require</span><span>(</span><span>"express"</span><span>)</span><span>;</span>
 <span>const</span> app <span>=</span> <span>express</span><span>(</span><span>)</span><span>;</span>
 <span>const</span> fs <span>=</span> <span>require</span><span>(</span><span>"fs"</span><span>)</span><span>;</span>
