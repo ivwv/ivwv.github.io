@@ -3,16 +3,18 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-08-30T12:31:49.198Z</updated>
+  <updated>2022-09-01T02:14:29.876Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
+  <category term="我的项目整合"/>
+  <category term="案例"/>
+  <category term="Demo"/>
+  <category term="Node"/>
   <category term="实用分享"/>
   <category term="FrontEnd"/>
   <category term="我的学习笔记"/>
   <category term="Vue2"/>
-  <category term="我的项目整合"/>
-  <category term="Node"/>
   <category term="Vue3"/>
   <category term="Vuex"/>
   <category term="技术文章"/>
@@ -31,6 +33,85 @@
   <contributor>
     <name>Ms.Hope</name>
   </contributor>
+  <entry>
+    <title type="html">基于Nodejs的视频流播放</title>
+    <id>https://ivwv.github.io/posts/project/demo/video-stream-demo.html</id>
+    <link href="https://ivwv.github.io/posts/project/demo/video-stream-demo.html"/>
+    <updated>2022-09-01T02:13:14.000Z</updated>
+    <summary type="html">基于Nodejs的视频流播放</summary>
+    <content type="html"><![CDATA[<CountView></CountView>
+<blockquote>
+<p>基于Nodejs的视频流播放,按需请求视频流片段，做到省流量，省带宽。</p>
+</blockquote>
+
+<blockquote>
+<p><strong>源码</strong></p>
+<p><a href="https://github.com/ivwv/video-stream-demo" target="_blank" rel="noopener noreferrer"><code>GitHub</code></a></p>
+<p><a href="https://gitee.com/isyv/video-stream-demo" target="_blank" rel="noopener noreferrer"><code>Gitee</code></a></p>
+</blockquote>
+<div><pre><code><span>const</span> express <span>=</span> <span>require</span><span>(</span><span>"express"</span><span>)</span><span>;</span>
+<span>const</span> app <span>=</span> <span>express</span><span>(</span><span>)</span><span>;</span>
+<span>const</span> fs <span>=</span> <span>require</span><span>(</span><span>"fs"</span><span>)</span><span>;</span>
+<span>const</span> <span>{</span> stat <span>}</span> <span>=</span> <span>require</span><span>(</span><span>"fs"</span><span>)</span><span>.</span>promises<span>;</span>
+<span>const</span> port <span>=</span> process<span>.</span>env<span>.</span><span>PORT</span> <span>||</span> <span>3000</span><span>;</span>
+<span>const</span> videoPath <span>=</span> <span>"./video.mp4"</span><span>;</span>
+app<span>.</span><span>get</span><span>(</span><span>"/"</span><span>,</span> <span>(</span><span>req<span>,</span> res</span><span>)</span> <span>=></span> <span>{</span>
+  <span>// res.writeHead(200, { "Content-Type": "text/html" });</span>
+  res<span>.</span><span>send</span><span>(</span><span><span>`</span><span>&lt;video src="/video"  width=800 controls>&lt;/video></span><span>`</span></span><span>)</span><span>;</span>
+<span>}</span><span>)</span><span>;</span>
+app<span>.</span><span>get</span><span>(</span><span>"/video"</span><span>,</span> <span>async</span> <span>(</span><span>req<span>,</span> res</span><span>)</span> <span>=></span> <span>{</span>
+  <span>// console.log(req.headers);</span>
+  <span>// 提取 headers 中的 range</span>
+  <span>let</span> range <span>=</span> req<span>.</span>headers<span>.</span>range<span>;</span>
+  <span>// console.log("range", range);</span>
+  <span>if</span> <span>(</span>range<span>)</span> <span>{</span>
+    <span>// 获取 文件相关信息，主要获取文件大小 stat.size()</span>
+    <span>let</span> stats <span>=</span> <span>await</span> <span>stat</span><span>(</span>videoPath<span>)</span><span>;</span>
+    <span>// console.log("stats", stats);</span>
+    <span>// 匹配 range 中的 `bytes=24281089-` 数值</span>
+    <span>let</span> r <span>=</span> range<span>.</span><span>match</span><span>(</span><span><span>/</span><span>=(\d+)-(\d+)?</span><span>/</span></span><span>)</span><span>;</span>
+    <span>// console.log("r", r);</span>
+    <span>// 转化为 10 进制</span>
+    <span>let</span> start <span>=</span> <span>parseInt</span><span>(</span>r<span>[</span><span>1</span><span>]</span><span>,</span> <span>10</span><span>)</span><span>;</span>
+    <span>// console.log("start", start);</span>
+    <span>// 表示 切片大小 这里是 1M</span>
+    <span>let</span> end <span>=</span> start <span>+</span> <span>1024</span> <span>*</span> <span>1024</span><span>;</span>
+    <span>// console.log("end", end);</span>
+    <span>// console.log("stats.size", stats.size);</span>
+    <span>// 判断 end 是否超出文件大小</span>
+    <span>if</span> <span>(</span>end <span>></span> stats<span>.</span>size <span>-</span> <span>1</span><span>)</span> end <span>=</span> stats<span>.</span>size <span>-</span> <span>1</span><span>;</span>
+
+    <span>// 设置 headers 重要</span>
+    <span>let</span> head <span>=</span> <span>{</span>
+      <span>// 设置 content-type</span>
+      <span>"Content-Type"</span><span>:</span> <span>"video/mp4"</span><span>,</span>
+      <span>// 设置切片范围</span>
+      <span>"Content-Range"</span><span>:</span> <span><span>`</span><span>bytes </span><span><span>${</span>start<span>}</span></span><span>-</span><span><span>${</span>end<span>}</span></span><span>/</span><span><span>${</span>stats<span>.</span>size<span>}</span></span><span>`</span></span><span>,</span>
+      <span>// 设置切片长度</span>
+      <span>"Content-Length"</span><span>:</span> end <span>-</span> start <span>+</span> <span>1</span><span>,</span>
+      <span>// 设置支持切片</span>
+      <span>"Accept-Ranges"</span><span>:</span> <span>"bytes"</span><span>,</span>
+    <span>}</span><span>;</span>
+    <span>// HTTP 206 Partial Content 成功状态响应代码表示请求已成功，</span>
+    <span>// 并且主体包含所请求的数据区间，该数据区间是在请求的 Range 首部指定的。</span>
+    res<span>.</span><span>writeHead</span><span>(</span><span>206</span><span>,</span> head<span>)</span><span>;</span>
+    <span>// 第二个参数设置切片范围</span>
+    fs<span>.</span><span>createReadStream</span><span>(</span>videoPath<span>,</span> <span>{</span> start<span>,</span> end <span>}</span><span>)</span><span>.</span><span>pipe</span><span>(</span>res<span>)</span><span>;</span>
+  <span>}</span> <span>else</span> <span>{</span>
+    fs<span>.</span><span>createReadStream</span><span>(</span>videoPath<span>)</span><span>.</span><span>pipe</span><span>(</span>res<span>)</span><span>;</span>
+  <span>}</span>
+<span>}</span><span>)</span><span>;</span>
+app<span>.</span><span>listen</span><span>(</span>port<span>,</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
+  console<span>.</span><span>log</span><span>(</span><span><span>`</span><span>http://localhost:</span><span><span>${</span>port<span>}</span></span><span>`</span></span><span>)</span><span>;</span>
+<span>}</span><span>)</span><span>;</span>
+
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>]]></content>
+    <category term="我的项目整合" scheme=""/>
+    <category term="案例" scheme=""/>
+    <category term="Demo" scheme=""/>
+    <category term="Node" scheme=""/>
+    <published>2022-09-01T00:00:00.000Z</published>
+  </entry>
   <entry>
     <title type="html">stackblitz 在线编辑器实用技巧</title>
     <id>https://ivwv.github.io/posts/share/frontend/stackblitz-script-with-github.html</id>
@@ -5117,14 +5198,14 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
     <title type="html">我的项目整合</title>
     <id>https://ivwv.github.io/posts/project/</id>
     <link href="https://ivwv.github.io/posts/project/"/>
-    <updated>2022-08-20T08:33:47.000Z</updated>
+    <updated>2022-09-01T02:13:14.000Z</updated>
     <summary type="html">我的项目整合  我的项目列表</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <div><p>导读</p>
 <p>我的项目列表</p>
 </div>
 
-<h1 id="我的项目" tabindex="-1"> 我的项目</h1>
+<h2 id="项目" tabindex="-1"> 项目</h2>
 <blockquote>
 <ol>
 <li><a href="/posts/project/api-server/">黑马视频教程-大事件项目(2022/05.15--2022/05.25)</a></li>
@@ -5149,17 +5230,24 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
 </ol>
 <p>使用技术:<code>node</code>+<code>socket.io</code></p>
 </blockquote>
+<h2 id="案例" tabindex="-1"> 案例</h2>
 <blockquote>
-<ol start="5">
+<ol>
 <li><a href="/posts/project/puppeteer-electron-pdf/"><code>puppeteer</code>爬取 <code>electron</code>官网文档，保存为<code>pdf</code>格式(2022/07.21)</a></li>
 </ol>
-<p>使用技术:<code>node</code>+<code>puppeteero</code></p>
+<p>使用技术:<code>node</code>+<code>puppeteer</code></p>
 </blockquote>
 <blockquote>
-<ol start="6">
+<ol start="2">
 <li><a href="/posts/project/bilibili-video-download/">Bilibili视频多集下载(2022/08)</a></li>
 </ol>
 <p>使用技术:<code>node</code>+<code>axios</code></p>
+</blockquote>
+<blockquote>
+<ol start="3">
+<li><a href="/posts/project/demo/video-stream-demo">基于Nodejs的视频流播放(2022/08-31)</a></li>
+</ol>
+<p>使用技术：<code>Node</code>+<code>express</code></p>
 </blockquote>
 ]]></content>
     <category term="我的项目整合" scheme=""/>
