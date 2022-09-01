@@ -77,13 +77,13 @@ node app.js
 > - 接下来就修改 `app.js` 从295+2的位置 297 开始
 > - 避免下载296页时因为文件名冲突报错
 
-![](./mdimg/err.jpg)
+![](https://github.com/ivwv/spider-get-gif/raw/main/mdimg/err.jpg)
 
 **最终效果**
 
-![](./mdimg/show1.jpg)
+![](https://github.com/ivwv/spider-get-gif/raw/main/mdimg/show1.jpg)
 
 ---
 
-![](./mdimg/show2.jpg)
+![](https://github.com/ivwv/spider-get-gif/raw/main/mdimg/show2.jpg)
 
