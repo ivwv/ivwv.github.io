@@ -30,7 +30,9 @@ timeline: true
 
 <!-- more -->
 
-# 我的项目
+
+
+## 项目
 
 > 1. [黑马视频教程-大事件项目(2022/05.15--2022/05.25)](/posts/project/api-server/)
 >
@@ -48,12 +50,17 @@ timeline: true
 >
 > 使用技术:`node`+`socket.io`
 
-> 5. [`puppeteer`爬取 `electron`官网文档，保存为`pdf`格式(2022/07.21)](/posts/project/puppeteer-electron-pdf/)
->
-> 使用技术:`node`+`puppeteero`
+## 案例
 
-> 6. [Bilibili视频多集下载(2022/08)](/posts/project/bilibili-video-download/)
+> 1. [`puppeteer`爬取 `electron`官网文档，保存为`pdf`格式(2022/07.21)](/posts/project/puppeteer-electron-pdf/)
+>
+> 使用技术:`node`+`puppeteer`
+
+> 2. [Bilibili视频多集下载(2022/08)](/posts/project/bilibili-video-download/)
 >
 > 使用技术:`node`+`axios`
 
+> 3. [基于Nodejs的视频流播放(2022/08-31)](/posts/project/demo/video-stream-demo)
+>
+> 使用技术：`Node`+`express`
 
