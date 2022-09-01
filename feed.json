@@ -6,6 +6,23 @@
   "description": "SY's Blog",
   "items": [
     {
+      "title": "使用Node - axios+cheerio 批量爬取某网站 Gif动图",
+      "url": "https://ivwv.github.io/posts/project/demo/spider-get-gif.html",
+      "id": "https://ivwv.github.io/posts/project/demo/spider-get-gif.html",
+      "summary": "使用Node - axios+cheerio 批量爬取某网站 Gif动图",
+      "content_html": "<CountView></CountView>\n<blockquote>\n<p>批量爬取某网站 Gif动图</p>\n</blockquote>\n\n<div><pre><code><span>git</span> clone https://github.com/ivwv/spider-get-gif.git\n<span># or</span>\n<span># git clone https://gitee.com/isyv/spider-get-gif.git</span>\n</code></pre><div aria-hidden=\"true\"><div></div><div></div><div></div></div></div><p><strong>使用</strong></p>\n<blockquote>\n<p>修改 <code>app.js</code>内 <code>GetGif</code>参数</p>\n<ul>\n<li>参数为 <code>from</code>， <code>to</code></li>\n<li><code>from</code>表示开始页数</li>\n<li><code>to</code>表示结束页数</li>\n<li>每一页有38张动图</li>\n</ul>\n</blockquote>\n<div><pre><code><span>const</span> GetGif <span>=</span> <span>require</span><span>(</span><span>\"./GetGif.js\"</span><span>)</span><span>;</span>\n<span>(</span><span>async</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>\n  <span>const</span> getGif <span>=</span> <span>new</span> <span>GetGif</span><span>(</span><span>1</span><span>,</span> <span>300</span><span>)</span><span>;</span>\n<span>}</span><span>)</span><span>(</span><span>)</span><span>;</span>\n</code></pre><div aria-hidden=\"true\"><div></div><div></div><div></div><div></div></div></div><div><pre><code><span>npm</span> i\n<span>mkdir</span> imgs\n<span>node</span> app.js\n</code></pre><div aria-hidden=\"true\"><div></div><div></div><div></div></div></div><blockquote>\n<p><strong>注意</strong></p>\n<p>下载时会由于网络请求太多会报错</p>\n<p>如下图：</p>\n<ul>\n<li>当295页下载完毕，然后报错了</li>\n<li>接下来就修改 <code>app.js</code> 从295+2的位置 297 开始</li>\n<li>避免下载296页时因为文件名冲突报错</li>\n</ul>\n</blockquote>\n<p><img src=\"https://github.com/ivwv/spider-get-gif/raw/main/mdimg/err.jpg\" alt=\"\"></p>\n<p><strong>最终效果</strong></p>\n<p><img src=\"https://github.com/ivwv/spider-get-gif/raw/main/mdimg/show1.jpg\" alt=\"\"></p>\n<hr>\n<p><img src=\"https://github.com/ivwv/spider-get-gif/raw/main/mdimg/show2.jpg\" alt=\"\"></p>\n",
+      "image": "https://github.com/ivwv/spider-get-gif/raw/main/mdimg/err.jpg",
+      "date_published": "2022-09-01T00:00:00.000Z",
+      "date_modified": "2022-09-01T12:53:59.000Z",
+      "authors": [],
+      "tags": [
+        "我的项目整合",
+        "案例",
+        "Demo",
+        "Node"
+      ]
+    },
+    {
       "title": "基于Nodejs的视频流播放",
       "url": "https://ivwv.github.io/posts/project/demo/video-stream-demo.html",
       "id": "https://ivwv.github.io/posts/project/demo/video-stream-demo.html",
@@ -382,9 +399,9 @@
       "url": "https://ivwv.github.io/posts/project/",
       "id": "https://ivwv.github.io/posts/project/",
       "summary": "我的项目整合  我的项目列表",
-      "content_html": "<CountView></CountView>\n<div><p>导读</p>\n<p>我的项目列表</p>\n</div>\n\n<h2 id=\"项目\" tabindex=\"-1\"> 项目</h2>\n<blockquote>\n<ol>\n<li><a href=\"/posts/project/api-server/\">黑马视频教程-大事件项目(2022/05.15--2022/05.25)</a></li>\n</ol>\n<p>使用技术:<code>node</code>+<code>express</code>+<code>mysql</code>+<code>Postman</code>+<code>JsonWebToken</code>+<code>joi</code>+<code>bcryptjs</code>+<code>multer</code></p>\n</blockquote>\n<blockquote>\n<ol start=\"2\">\n<li><a href=\"/posts/project/vue-shop/\">电商后台管理系统(2022/07.08--2022/07.18)</a></li>\n</ol>\n<p>使用技术:<code>vue2</code>+<code>ElementUi</code>+<code>axiso</code></p>\n</blockquote>\n<blockquote>\n<ol start=\"3\">\n<li><a href=\"/posts/project/newsinfo/\">新闻门户网站(2022/05.02--2022/05.18)</a></li>\n</ol>\n<p>使用技术:<code>node</code>+<code>bootstrap</code>+<code>axios</code>+<code>ejs</code></p>\n</blockquote>\n<blockquote>\n<ol start=\"4\">\n<li><a href=\"/posts/project/socket-chat/\"><code>Node+Socket.io</code>聊天程序 </a></li>\n</ol>\n<p>使用技术:<code>node</code>+<code>socket.io</code></p>\n</blockquote>\n<h2 id=\"案例\" tabindex=\"-1\"> 案例</h2>\n<blockquote>\n<ol>\n<li><a href=\"/posts/project/puppeteer-electron-pdf/\"><code>puppeteer</code>爬取 <code>electron</code>官网文档，保存为<code>pdf</code>格式(2022/07.21)</a></li>\n</ol>\n<p>使用技术:<code>node</code>+<code>puppeteer</code></p>\n</blockquote>\n<blockquote>\n<ol start=\"2\">\n<li><a href=\"/posts/project/bilibili-video-download/\">Bilibili视频多集下载(2022/08)</a></li>\n</ol>\n<p>使用技术:<code>node</code>+<code>axios</code></p>\n</blockquote>\n<blockquote>\n<ol start=\"3\">\n<li><a href=\"/posts/project/demo/video-stream-demo\">基于Nodejs的视频流播放(2022/08-31)</a></li>\n</ol>\n<p>使用技术：<code>Node</code>+<code>express</code></p>\n</blockquote>\n",
+      "content_html": "<CountView></CountView>\n<div><p>导读</p>\n<p>我的项目列表</p>\n</div>\n\n<h2 id=\"项目\" tabindex=\"-1\"> 项目</h2>\n<blockquote>\n<ol>\n<li><a href=\"/posts/project/api-server/\">黑马视频教程-大事件项目(2022/05.15--2022/05.25)</a></li>\n</ol>\n<p>使用技术:<code>node</code>+<code>express</code>+<code>mysql</code>+<code>Postman</code>+<code>JsonWebToken</code>+<code>joi</code>+<code>bcryptjs</code>+<code>multer</code></p>\n</blockquote>\n<blockquote>\n<ol start=\"2\">\n<li><a href=\"/posts/project/vue-shop/\">电商后台管理系统(2022/07.08--2022/07.18)</a></li>\n</ol>\n<p>使用技术:<code>vue2</code>+<code>ElementUi</code>+<code>axiso</code></p>\n</blockquote>\n<blockquote>\n<ol start=\"3\">\n<li><a href=\"/posts/project/newsinfo/\">新闻门户网站(2022/05.02--2022/05.18)</a></li>\n</ol>\n<p>使用技术:<code>node</code>+<code>bootstrap</code>+<code>axios</code>+<code>ejs</code></p>\n</blockquote>\n<blockquote>\n<ol start=\"4\">\n<li><a href=\"/posts/project/socket-chat/\"><code>Node+Socket.io</code>聊天程序 </a></li>\n</ol>\n<p>使用技术:<code>node</code>+<code>socket.io</code></p>\n</blockquote>\n<h2 id=\"案例\" tabindex=\"-1\"> 案例</h2>\n<blockquote>\n<ol>\n<li><a href=\"/posts/project/puppeteer-electron-pdf/\"><code>puppeteer</code>爬取 <code>electron</code>官网文档，保存为<code>pdf</code>格式(2022/07.21)</a></li>\n</ol>\n<p>使用技术:<code>node</code>+<code>puppeteer</code></p>\n</blockquote>\n<blockquote>\n<ol start=\"2\">\n<li><a href=\"/posts/project/bilibili-video-download/\">Bilibili视频多集下载(2022/08)</a></li>\n</ol>\n<p>使用技术:<code>node</code>+<code>axios</code></p>\n</blockquote>\n<blockquote>\n<ol start=\"3\">\n<li><a href=\"/posts/project/demo/video-stream-demo\">基于Nodejs的视频流播放(2022/08-31)</a></li>\n</ol>\n<p>使用技术：<code>Node</code>+<code>express</code></p>\n</blockquote>\n<blockquote>\n<ol start=\"4\">\n<li><a href=\"/posts/project/demo/spider-get-gif\">使用Nodejs批量爬取某网站 Gif动图(2022/09-01)</a></li>\n</ol>\n<p>使用技术：<code>Node</code>-<code>axios</code>+<code>cheerio</code></p>\n</blockquote>\n",
       "date_published": "2022-07-31T00:00:00.000Z",
-      "date_modified": "2022-09-01T02:22:53.000Z",
+      "date_modified": "2022-09-01T12:36:54.000Z",
       "authors": [],
       "tags": [
         "我的项目整合"

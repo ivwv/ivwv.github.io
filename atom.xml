@@ -3,7 +3,7 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-09-01T07:37:54.270Z</updated>
+  <updated>2022-09-01T12:54:50.662Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
@@ -33,6 +33,59 @@
   <contributor>
     <name>Ms.Hope</name>
   </contributor>
+  <entry>
+    <title type="html">使用Node - axios+cheerio 批量爬取某网站 Gif动图</title>
+    <id>https://ivwv.github.io/posts/project/demo/spider-get-gif.html</id>
+    <link href="https://ivwv.github.io/posts/project/demo/spider-get-gif.html"/>
+    <updated>2022-09-01T12:53:59.000Z</updated>
+    <summary type="html">使用Node - axios+cheerio 批量爬取某网站 Gif动图</summary>
+    <content type="html"><![CDATA[<CountView></CountView>
+<blockquote>
+<p>批量爬取某网站 Gif动图</p>
+</blockquote>
+
+<div><pre><code><span>git</span> clone https://github.com/ivwv/spider-get-gif.git
+<span># or</span>
+<span># git clone https://gitee.com/isyv/spider-get-gif.git</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div></div></div><p><strong>使用</strong></p>
+<blockquote>
+<p>修改 <code>app.js</code>内 <code>GetGif</code>参数</p>
+<ul>
+<li>参数为 <code>from</code>， <code>to</code></li>
+<li><code>from</code>表示开始页数</li>
+<li><code>to</code>表示结束页数</li>
+<li>每一页有38张动图</li>
+</ul>
+</blockquote>
+<div><pre><code><span>const</span> GetGif <span>=</span> <span>require</span><span>(</span><span>"./GetGif.js"</span><span>)</span><span>;</span>
+<span>(</span><span>async</span> <span>(</span><span>)</span> <span>=></span> <span>{</span>
+  <span>const</span> getGif <span>=</span> <span>new</span> <span>GetGif</span><span>(</span><span>1</span><span>,</span> <span>300</span><span>)</span><span>;</span>
+<span>}</span><span>)</span><span>(</span><span>)</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div></div></div><div><pre><code><span>npm</span> i
+<span>mkdir</span> imgs
+<span>node</span> app.js
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div></div></div><blockquote>
+<p><strong>注意</strong></p>
+<p>下载时会由于网络请求太多会报错</p>
+<p>如下图：</p>
+<ul>
+<li>当295页下载完毕，然后报错了</li>
+<li>接下来就修改 <code>app.js</code> 从295+2的位置 297 开始</li>
+<li>避免下载296页时因为文件名冲突报错</li>
+</ul>
+</blockquote>
+<p><img src="https://github.com/ivwv/spider-get-gif/raw/main/mdimg/err.jpg" alt=""></p>
+<p><strong>最终效果</strong></p>
+<p><img src="https://github.com/ivwv/spider-get-gif/raw/main/mdimg/show1.jpg" alt=""></p>
+<hr>
+<p><img src="https://github.com/ivwv/spider-get-gif/raw/main/mdimg/show2.jpg" alt=""></p>
+]]></content>
+    <category term="我的项目整合" scheme=""/>
+    <category term="案例" scheme=""/>
+    <category term="Demo" scheme=""/>
+    <category term="Node" scheme=""/>
+    <published>2022-09-01T00:00:00.000Z</published>
+  </entry>
   <entry>
     <title type="html">基于Nodejs的视频流播放</title>
     <id>https://ivwv.github.io/posts/project/demo/video-stream-demo.html</id>
@@ -5196,7 +5249,7 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
     <title type="html">我的项目整合</title>
     <id>https://ivwv.github.io/posts/project/</id>
     <link href="https://ivwv.github.io/posts/project/"/>
-    <updated>2022-09-01T02:22:53.000Z</updated>
+    <updated>2022-09-01T12:36:54.000Z</updated>
     <summary type="html">我的项目整合  我的项目列表</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <div><p>导读</p>
@@ -5246,6 +5299,12 @@ console<span>.</span><span>log</span><span>(</span>response<span>.</span>data<sp
 <li><a href="/posts/project/demo/video-stream-demo">基于Nodejs的视频流播放(2022/08-31)</a></li>
 </ol>
 <p>使用技术：<code>Node</code>+<code>express</code></p>
+</blockquote>
+<blockquote>
+<ol start="4">
+<li><a href="/posts/project/demo/spider-get-gif">使用Nodejs批量爬取某网站 Gif动图(2022/09-01)</a></li>
+</ol>
+<p>使用技术：<code>Node</code>-<code>axios</code>+<code>cheerio</code></p>
 </blockquote>
 ]]></content>
     <category term="我的项目整合" scheme=""/>
