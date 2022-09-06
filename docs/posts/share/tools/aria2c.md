@@ -34,7 +34,11 @@ timeline: true
 
 [GithHub下载地址](https://github.com/aria2/aria2/releases/tag/release-1.36.0)
 
+
+
 > 下载完毕后解压，可以将解压目录添加到环境变量中,共全局使用`aria2c`命令
+
+
 
 ![image-20220906105506893](https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/typora-user-images/2022-09-06-10:55:08*image-20220906105506893*4.png)
 
@@ -47,6 +51,8 @@ timeline: true
 - -l  指定输出的日志
 - -j  线程数 默认5
 - -x  每次下载到一台服务器的最大连接数。默认：`1` 最大 ：16
+
+
 
 > [更多选项](https://aria2.github.io/manual/en/html/aria2c.html#options)
 
