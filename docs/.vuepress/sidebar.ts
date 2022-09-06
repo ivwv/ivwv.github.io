@@ -199,6 +199,13 @@ export default sidebar([
           "stackblitz-script-with-github",
         ],
       },
+      {
+        text: "实用工具",
+        icon: "tool",
+        collapsable: true,
+        prefix: "tools/",
+        children: ["aria2c"],
+      },
     ],
   },
 ]);
