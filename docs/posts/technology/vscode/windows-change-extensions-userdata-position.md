@@ -41,7 +41,9 @@ timeline: true
 
 ## `VSCode`便携版(不推荐)
 
+
 [官方有一个`zip`版本的`VSCode`](https://code.visualstudio.com/docs/editor/portable)
+
 
 当我们解压完毕后:
 
@@ -61,7 +63,9 @@ timeline: true
 
 ## `VSCode`安装版(推荐)
 
+
 [安装版网址](https://code.visualstudio.com/#alt-downloads)
+
 
 选择 **System Installer** 再根据自己的系统选择，下面的`.zip`就是上面说的便携版
 
