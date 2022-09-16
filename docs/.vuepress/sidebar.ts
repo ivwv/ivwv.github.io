@@ -167,6 +167,13 @@ export default sidebar([
         prefix: "javascript/",
         children: ["you-dont-know-console", "js-input-file-to-base64"],
       },
+      {
+        text: "VSCode技巧",
+        collapsable: true,
+        icon: "strong",
+        prefix: "vscode/",
+        children: ["windows-change-extensions-userdata-position"],
+      },
     ],
   },
   {
