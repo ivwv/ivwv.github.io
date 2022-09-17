@@ -120,3 +120,43 @@ timeline: true
 ![image-20220916162649864](https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/typora-user-images/2022-09-16-16:26:50*image-20220916162649864*d.png)
 
 **将四个注册表位置的数值数据一一添加即可，当然主要的是这四个位置，还有一些其他的文件打开可以执行添加**
+
+
+
+### 终端使用`code .`  命令打开项目
+
+> 当使用`code .` 命令时，又发现了一个小问题，通过此命令打开的`VSCode` 还是不能找到扩展和用户文件夹
+>
+> 解决办法如下:arrow_down:
+
+`code .` 命令，是通过环境变量`PATH` 中配置的路径找到`VSCode`的安装位置，下面的`bin`目录里面有一个`code.cmd`
+
+![image-20220917151557064](https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/typora-user-images/2022-09-17-15:15:57*image-20220917151557064*8.png)
+
+安装版的`VSCode`会默认帮我们添加环境变量
+
+检查一下`code.cmd`文件
+
+```sh
+@echo off
+setlocal
+set VSCODE_DEV=
+set ELECTRON_RUN_AS_NODE=1
+"%~dp0..\Code.exe" "%~dp0..\resources\app\out\cli.js" --ms-enable-electron-run-as-node %*
+endlocal
+```
+
+- 可以发现第五行有一个`..\Code.exe`，表示运行上一个目录的`Code.exe`程序
+
+- 再往后面看,可以发现`--ms-enable-electron-run-as-node`有点像高级`CLI`选项，我们可以将上面提到的`--extensions-dir`和`--user-data-dir`继续添加在后面。下面是我添加后的代码，自行更换路径即可
+
+  - ```sh
+    @echo off
+    setlocal
+    set VSCODE_DEV=
+    set ELECTRON_RUN_AS_NODE=1
+    "%~dp0..\Code.exe" "%~dp0..\resources\app\out\cli.js" --ms-enable-electron-run-as-node  --extensions-dir "D:\.vscode\extensions"  --user-data-dir "D:\.vscode\user-data" %*
+    endlocal
+    ```
+
+最后再使用`code .` 命令就可以找到扩展和用户信息文件夹了
