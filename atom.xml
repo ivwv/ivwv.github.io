@@ -3,7 +3,7 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-09-16T08:53:18.658Z</updated>
+  <updated>2022-09-17T07:27:22.650Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
@@ -39,7 +39,7 @@
     <title type="html">VSCode修改扩展和用户文件夹目录位置(Windows)</title>
     <id>https://ivwv.github.io/posts/technology/vscode/windows-change-extensions-userdata-position.html</id>
     <link href="https://ivwv.github.io/posts/technology/vscode/windows-change-extensions-userdata-position.html"/>
-    <updated>2022-09-16T08:52:25.000Z</updated>
+    <updated>2022-09-17T07:26:30.000Z</updated>
     <summary type="html">VSCode修改扩展和用户文件夹目录位置(Windows)  Windows修改extensions扩展目录以及user-data用户文件夹目录位置，减少C盘压力</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
@@ -112,6 +112,40 @@
 <div><pre><code>"D:\.Software\Microsoft VS Code\Code.exe" --extensions-dir "D:\.vscode\extensions"  --user-data-dir "D:\.vscode\user-data" "%1"
 </code></pre><div aria-hidden="true"><div></div></div></div><p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/typora-user-images/2022-09-16-16:26:50*image-20220916162649864*d.png" alt="image-20220916162649864"></p>
 <p><strong>将四个注册表位置的数值数据一一添加即可，当然主要的是这四个位置，还有一些其他的文件打开可以执行添加</strong></p>
+<h3 id="终端使用code-命令打开项目" tabindex="-1"> 终端使用<code>code .</code>  命令打开项目</h3>
+<blockquote>
+<p>当使用<code>code .</code> 命令时，又发现了一个小问题，通过此命令打开的<code>VSCode</code> 还是不能找到扩展和用户文件夹</p>
+<p>解决办法如下⬇️</p>
+</blockquote>
+<p><code>code .</code> 命令，是通过环境变量<code>PATH</code> 中配置的路径找到<code>VSCode</code>的安装位置，下面的<code>bin</code>目录里面有一个<code>code.cmd</code></p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/typora-user-images/2022-09-17-15:15:57*image-20220917151557064*8.png" alt="image-20220917151557064"></p>
+<p>安装版的<code>VSCode</code>会默认帮我们添加环境变量</p>
+<p>检查一下<code>code.cmd</code>文件</p>
+<div><pre><code>@echo off
+setlocal
+<span>set</span> <span>VSCODE_DEV</span><span>=</span>
+<span>set</span> <span>ELECTRON_RUN_AS_NODE</span><span>=</span><span>1</span>
+<span>"%~dp0..\Code.exe"</span> <span>"%~dp0..<span title="\r">\r</span>esources<span title="\a">\a</span>pp\out<span title="\c">\c</span>li.js"</span> --ms-enable-electron-run-as-node %*
+endlocal
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div></div></div><ul>
+<li>
+<p>可以发现第五行有一个<code>..\Code.exe</code>，表示运行上一个目录的<code>Code.exe</code>程序</p>
+</li>
+<li>
+<p>再往后面看,可以发现<code>--ms-enable-electron-run-as-node</code>有点像高级<code>CLI</code>选项，我们可以将上面提到的<code>--extensions-dir</code>和<code>--user-data-dir</code>继续添加在后面。下面是我添加后的代码，自行更换路径即可</p>
+<ul>
+<li>
+<div><pre><code>@echo off
+setlocal
+<span>set</span> <span>VSCODE_DEV</span><span>=</span>
+<span>set</span> <span>ELECTRON_RUN_AS_NODE</span><span>=</span><span>1</span>
+<span>"%~dp0..\Code.exe"</span> <span>"%~dp0..<span title="\r">\r</span>esources<span title="\a">\a</span>pp\out<span title="\c">\c</span>li.js"</span> --ms-enable-electron-run-as-node  --extensions-dir <span>"D:\.vscode<span title="\e">\e</span>xtensions"</span>  --user-data-dir <span>"D:\.vscode\user-data"</span> %*
+endlocal
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div></div></div></li>
+</ul>
+</li>
+</ul>
+<p>最后再使用<code>code .</code> 命令就可以找到扩展和用户信息文件夹了</p>
 ]]></content>
     <category term="技术文章" scheme=""/>
     <category term="VSCode" scheme=""/>
