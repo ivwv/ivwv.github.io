@@ -1,10 +1,8 @@
-<template></template>
-
 <script>
 export default {
   data() {
     return {
-      apiServer: "https://count-blog-view.herokuapp.com",
+      apiServer: "https://count-blog-view.onrender.com",
       ipinfo: {},
       clientInfo: {
         href: "",
@@ -45,5 +43,3 @@ export default {
   },
 };
 </script>
-
-<style></style>
