@@ -39,12 +39,12 @@ export default navbar([
       {
         text: "电商后台管理项目",
         icon: "creative",
-        link: "https://client-vue-shop.herokuapp.com/",
+        link: "http://124.221.62.120:5002/",
       },
       {
         text: "新闻门户网站(前后端项目)",
         icon: "creative",
-        link: "https://client--news.herokuapp.com/",
+        link: "http://124.221.62.120:5000/",
       },
     ],
   },
