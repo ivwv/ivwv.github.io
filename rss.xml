@@ -6,8 +6,8 @@
     <link>https://ivwv.github.io/</link>
     <description>SY's Blog</description>
     <language>zh-CN</language>
-    <pubDate>Mon, 03 Oct 2022 12:53:51 GMT</pubDate>
-    <lastBuildDate>Mon, 03 Oct 2022 12:53:51 GMT</lastBuildDate>
+    <pubDate>Fri, 07 Oct 2022 05:52:17 GMT</pubDate>
+    <lastBuildDate>Fri, 07 Oct 2022 05:52:17 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>技术文章</category>
@@ -149,7 +149,60 @@ endlocal
 </li>
 </ul>
 <p>最后再使用<code>code .</code> 命令就可以找到扩展和用户信息文件夹了</p>
-]]></content:encoded>
+<h3 id="问题" tabindex="-1"> 问题</h3>
+<p>更新之后，VSCode会重置注册表</p>
+<h4 id="解决办法" tabindex="-1"> 解决办法</h4>
+<p>使用注册表 <code>.reg</code> 文件一键修改</p>
+<blockquote>
+<p>注意！</p>
+<ul>
+<li>地址值有些符号需要使用 <code>\</code> 转译，可通过将复制下来的未转译字符串路径使用<code>IDEA</code> 自动转译</li>
+<li>路径修改为自己的本地路径</li>
+</ul>
+<div><pre><code><span>String</span> str <span>=</span> <span>"路径"</span>
+</code></pre><div aria-hidden="true"><div></div></div></div></blockquote>
+<div><pre><code>Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\VSCode]
+@="通过 Code 打开"
+"Icon"="D:\\.Software\\Microsoft VS Code\\Code.exe"
+
+[HKEY_CLASSES_ROOT\*\shell\VSCode\command]
+@="\"D:\\.Software\\Microsoft VS Code\\Code.exe\" --extensions-dir \"D:\\.vscode\\extensions\"  --user-data-dir \"D:\\.vscode\\user-data\" \"%1\""
+  
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\shell\VSCode]
+@="通过 Code 打开"
+"Icon"="D:\\.Software\\Microsoft VS Code\\Code.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\VSCode\command]
+@="\"D:\\.Software\\Microsoft VS Code\\Code.exe\" --extensions-dir \"D:\\.vscode\\extensions\"  --user-data-dir \"D:\\.vscode\\user-data\" \"%V\""
+
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode]
+@="通过 Code 打开"
+"Icon"="D:\\.Software\\Microsoft VS Code\\Code.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode\command]
+@="\"D:\\.Software\\Microsoft VS Code\\Code.exe\" --extensions-dir \"D:\\.vscode\\extensions\"  --user-data-dir \"D:\\.vscode\\user-data\" \"%V\""
+
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Drive\shell\VSCode]
+@="通过 Code 打开"
+"Icon"="D:\\.Software\\Microsoft VS Code\\Code.exe"
+
+[HKEY_CLASSES_ROOT\Drive\shell\VSCode\command]
+@="\"D:\\.Software\\Microsoft VS Code\\Code.exe\" --extensions-dir \"D:\\.vscode\\extensions\"  --user-data-dir \"D:\\.vscode\\user-data\" \"%V\""
+
+[HKEY_CLASSES_ROOT\vscode\shell\open\command]
+@="\"D:\\.Software\\Microsoft VS Code\\Code.exe\" --extensions-dir \"D:\\.vscode\\extensions\" --user-data-dir \"D:\\.vscode\\user-data\" \"--open-url\"  \"--\" \"%1\""
+
+[HKEY_CLASSES_ROOT\VSCodeSourceFile\shell\open\command]
+@="\"D:\\.Software\\Microsoft VS Code\\Code.exe\" --extensions-dir \"D:\\.vscode\\extensions\"  --user-data-dir \"D:\\.vscode\\user-data\" \"%1\""
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>]]></content:encoded>
       <enclosure url="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/typora-user-images/2022-09-16-15:38:10*image-20220916153810529*b.png" type="image/png"/>
     </item>
     <item>
