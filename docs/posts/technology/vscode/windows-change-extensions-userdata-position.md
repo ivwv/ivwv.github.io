@@ -160,3 +160,67 @@ endlocal
     ```
 
 最后再使用`code .` 命令就可以找到扩展和用户信息文件夹了
+
+
+
+### 问题
+
+更新之后，VSCode会重置注册表
+
+#### 解决办法
+
+使用注册表 `.reg` 文件一键修改
+
+> 注意！ 
+>
+> - 地址值有些符号需要使用 `\` 转译，可通过将复制下来的未转译字符串路径使用`IDEA` 自动转译
+> - 路径修改为自己的本地路径
+>
+> ```java
+> String str = "路径"
+> ```
+
+```
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\VSCode]
+@="通过 Code 打开"
+"Icon"="D:\\.Software\\Microsoft VS Code\\Code.exe"
+
+[HKEY_CLASSES_ROOT\*\shell\VSCode\command]
+@="\"D:\\.Software\\Microsoft VS Code\\Code.exe\" --extensions-dir \"D:\\.vscode\\extensions\"  --user-data-dir \"D:\\.vscode\\user-data\" \"%1\""
+  
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\shell\VSCode]
+@="通过 Code 打开"
+"Icon"="D:\\.Software\\Microsoft VS Code\\Code.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\VSCode\command]
+@="\"D:\\.Software\\Microsoft VS Code\\Code.exe\" --extensions-dir \"D:\\.vscode\\extensions\"  --user-data-dir \"D:\\.vscode\\user-data\" \"%V\""
+
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode]
+@="通过 Code 打开"
+"Icon"="D:\\.Software\\Microsoft VS Code\\Code.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode\command]
+@="\"D:\\.Software\\Microsoft VS Code\\Code.exe\" --extensions-dir \"D:\\.vscode\\extensions\"  --user-data-dir \"D:\\.vscode\\user-data\" \"%V\""
+
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Drive\shell\VSCode]
+@="通过 Code 打开"
+"Icon"="D:\\.Software\\Microsoft VS Code\\Code.exe"
+
+[HKEY_CLASSES_ROOT\Drive\shell\VSCode\command]
+@="\"D:\\.Software\\Microsoft VS Code\\Code.exe\" --extensions-dir \"D:\\.vscode\\extensions\"  --user-data-dir \"D:\\.vscode\\user-data\" \"%V\""
+
+[HKEY_CLASSES_ROOT\vscode\shell\open\command]
+@="\"D:\\.Software\\Microsoft VS Code\\Code.exe\" --extensions-dir \"D:\\.vscode\\extensions\" --user-data-dir \"D:\\.vscode\\user-data\" \"--open-url\"  \"--\" \"%1\""
+
+[HKEY_CLASSES_ROOT\VSCodeSourceFile\shell\open\command]
+@="\"D:\\.Software\\Microsoft VS Code\\Code.exe\" --extensions-dir \"D:\\.vscode\\extensions\"  --user-data-dir \"D:\\.vscode\\user-data\" \"%1\""
+```
+
