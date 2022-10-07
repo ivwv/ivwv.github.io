@@ -3,7 +3,7 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-10-07T05:52:17.417Z</updated>
+  <updated>2022-10-07T05:55:49.848Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
@@ -39,7 +39,7 @@
     <title type="html">VSCode修改扩展和用户文件夹目录位置(Windows)</title>
     <id>https://ivwv.github.io/posts/technology/vscode/windows-change-extensions-userdata-position.html</id>
     <link href="https://ivwv.github.io/posts/technology/vscode/windows-change-extensions-userdata-position.html"/>
-    <updated>2022-10-07T05:50:23.000Z</updated>
+    <updated>2022-10-07T05:54:58.000Z</updated>
     <summary type="html">VSCode修改扩展和用户文件夹目录位置(Windows)  Windows修改extensions扩展目录以及user-data用户文件夹目录位置，减少C盘压力</summary>
     <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
@@ -153,8 +153,16 @@ endlocal
 <blockquote>
 <p>注意！</p>
 <ul>
-<li>地址值有些符号需要使用 <code>\</code> 转译，可通过将复制下来的未转译字符串路径使用<code>IDEA</code> 自动转译</li>
-<li>路径修改为自己的本地路径</li>
+<li>
+<p>地址值有些符号需要使用 <code>\</code> 转译，可通过将复制下来的未转译字符串路径使用<code>IDEA</code> 自动转译</p>
+</li>
+<li>
+<p>路径修改为自己的本地路径</p>
+</li>
+<li>
+<p>由于内容出现 <code>通过 Code 打开</code> 中文，需要将文件另存为<code>UTF-16 LE</code>注册表默认编码，否则会出现乱码</p>
+<p><img src="https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/https/public-1310720021.cos.ap-shanghai.myqcloud.com/img/typora-user-images/2022-10-07-13:54:08*2022-10-07-13-53-30-image-20221007135329840-b*7.png" alt="image-20221007135329840"></p>
+</li>
 </ul>
 <div><pre><code><span>String</span> str <span>=</span> <span>"路径"</span>
 </code></pre><div aria-hidden="true"><div></div></div></div></blockquote>
