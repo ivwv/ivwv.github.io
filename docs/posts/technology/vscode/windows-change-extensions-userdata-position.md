@@ -174,7 +174,12 @@ endlocal
 > 注意！ 
 >
 > - 地址值有些符号需要使用 `\` 转译，可通过将复制下来的未转译字符串路径使用`IDEA` 自动转译
+>
 > - 路径修改为自己的本地路径
+>
+> - 由于内容出现 `通过 Code 打开` 中文，需要将文件另存为`UTF-16 LE`注册表默认编码，否则会出现乱码
+>
+>   ![image-20221007135329840](https://public-1310720021.cos.ap-shanghai.myqcloud.com/img/https/public-1310720021.cos.ap-shanghai.myqcloud.com/img/typora-user-images/2022-10-07-13:54:08*2022-10-07-13-53-30-image-20221007135329840-b*7.png)
 >
 > ```java
 > String str = "路径"
