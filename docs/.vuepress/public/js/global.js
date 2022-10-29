@@ -22,7 +22,7 @@ setInterval(function () {
   }
 }, 5000);
 
-// 动态小人物
+// 动态小人物 女
 
 /*https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json*/
 L2Dwidget.init({

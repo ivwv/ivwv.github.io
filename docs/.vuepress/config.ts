@@ -30,7 +30,7 @@ export default defineUserConfig({
 
   base: "/",
   head: [
-    // 添加动态小人物
+    // 添加动态小人物 女
     [
       "script",
       {
