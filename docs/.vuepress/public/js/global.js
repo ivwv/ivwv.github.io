@@ -21,3 +21,25 @@ setInterval(function () {
     window.location.href = `https://ivwv.netlify.app${window.location.pathname}`;
   }
 }, 5000);
+
+// 动态小人物
+
+/*https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json*/
+L2Dwidget.init({
+  model: {
+    jsonPath:
+      // "https://unpkg.com/live2d-widget-model-shizuku@1.0.5/assets/shizuku.model.json",
+      // 'https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json',
+      "https://unpkg.com/live2d-widget-model-miku@1.0.5/assets/miku.model.json",
+    scale: 1,
+  },
+  display: {
+    position: "right",
+    width: 80,
+    height: 100,
+    hOffset: 0,
+    vOffset: -20,
+  },
+  mobile: { show: true, scale: 0.5 },
+  react: { opacityDefault: 0.8, opacityOnHover: 0.1 },
+});

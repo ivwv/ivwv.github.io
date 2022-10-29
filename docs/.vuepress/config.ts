@@ -30,6 +30,13 @@ export default defineUserConfig({
 
   base: "/",
   head: [
+    // 添加动态小人物
+    [
+      "script",
+      {
+        src: "https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js",
+      },
+    ],
     ["link", { rel: "icon", href: "/logo.png" }],
     /**
      * 自定义阿里巴巴适量图标图 //at.alicdn.com/t/c/font_3572268_h0ey3d84gim.css
