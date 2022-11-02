@@ -3,11 +3,13 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-10-29T15:34:14.759Z</updated>
+  <updated>2022-11-02T14:57:53.621Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
   <category term="技术文章"/>
+  <category term="JavaScript"/>
+  <category term="ES6"/>
   <category term="VSCode"/>
   <category term="实用分享"/>
   <category term="Tools"/>
@@ -20,7 +22,6 @@
   <category term="Vue2"/>
   <category term="Vue3"/>
   <category term="Vuex"/>
-  <category term="JavaScript"/>
   <category term="Base64"/>
   <category term="Axios"/>
   <category term="图床"/>
@@ -35,6 +36,664 @@
   <contributor>
     <name>Ms.Hope</name>
   </contributor>
+  <entry>
+    <title type="html">JavaScript手写Array的39个内置函数</title>
+    <id>https://ivwv.github.io/posts/technology/javascript/write-array.html</id>
+    <link href="https://ivwv.github.io/posts/technology/javascript/write-array.html"/>
+    <updated>2022-11-02T14:56:37.000Z</updated>
+    <summary type="html">JavaScript手写Array的39个内置函数(特全)</summary>
+    <content type="html"><![CDATA[<p><code>&lt;CountView&gt;&lt;/CountView&gt;</code></p>
+<blockquote>
+<p>JavaScript 手写 Array 的 39 个内置函数(特全)</p>
+</blockquote>
+
+<p><strong>定义一个测试数据</strong></p>
+<div><pre><code><span>let</span> arr <span>=</span> <span>[</span><span>1</span><span>,</span> <span>2</span><span>,</span> <span>3</span><span>,</span> <span>4</span><span>,</span> <span>5</span><span>]</span><span>;</span>
+</code></pre><div aria-hidden="true"><div></div></div></div><h2 id="array-prototype-at" tabindex="-1"> Array.prototype.at()</h2>
+<div><pre><code><span>/*
+Array.prototype.at()
+at() 方法接收一个整数值并返回该索引对应的元素，允许正数和负数。
+    负整数从数组中的最后一个元素开始倒数。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_at</span> <span>=</span> <span>function</span> <span>(</span><span>index</span><span>)</span> <span>{</span>
+  <span>let</span> len <span>=</span> <span>this</span><span>.</span>length<span>;</span>
+  <span>if</span> <span>(</span>index <span>>=</span> <span>0</span><span>)</span> <span>{</span>
+    <span>return</span> <span>this</span><span>[</span>index<span>]</span><span>;</span>
+  <span>}</span> <span>else</span> <span>{</span>
+    <span>return</span> <span>this</span><span>[</span>len <span>+</span> index<span>]</span><span>;</span>
+  <span>}</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._at(0)); // 1</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-concat" tabindex="-1"> Array.prototype.concat()</h2>
+<div><pre><code><span>/*
+Array.prototype.concat()
+concat() 方法用于合并两个或多个数组。
+        此方法不会更改现有数组，而是返回一个新数组。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_concat</span> <span>=</span> <span>function</span> <span>(</span><span><span>...</span>args</span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> args<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>if</span> <span>(</span>Array<span>.</span><span>isArray</span><span>(</span>args<span>[</span>i<span>]</span><span>)</span><span>)</span> <span>{</span>
+      <span>for</span> <span>(</span><span>let</span> j <span>=</span> <span>0</span><span>;</span> j <span>&lt;</span> args<span>[</span>i<span>]</span><span>.</span>length<span>;</span> j<span>++</span><span>)</span> <span>{</span>
+        newArr<span>.</span><span>push</span><span>(</span>args<span>[</span>i<span>]</span><span>[</span>j<span>]</span><span>)</span><span>;</span>
+      <span>}</span>
+    <span>}</span> <span>else</span> <span>{</span>
+      newArr<span>.</span><span>push</span><span>(</span>args<span>[</span>i<span>]</span><span>)</span><span>;</span>
+    <span>}</span>
+  <span>}</span>
+  <span>return</span> newArr<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._concat(1, 2, 3, [4, 5, 6])); // [1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6]</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-copywithin" tabindex="-1"> Array.prototype.copyWithin()</h2>
+<div><pre><code><span>/*
+Array.prototype.copyWithin()
+copyWithin() 方法浅复制数组的一部分到同一数组中的另一个位置，并返回它，不会改变原数组的长度。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_copyWithin</span> <span>=</span> <span>function</span> <span>(</span><span>target<span>,</span> start <span>=</span> <span>0</span><span>,</span> end <span>=</span> <span>this</span><span>.</span>length</span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>let</span> len <span>=</span> newArr<span>.</span>length<span>;</span>
+  <span>let</span> count <span>=</span> <span>0</span><span>;</span>
+  <span>if</span> <span>(</span>target <span>&lt;</span> <span>0</span><span>)</span> <span>{</span>
+    target <span>=</span> len <span>+</span> target<span>;</span>
+  <span>}</span>
+  <span>if</span> <span>(</span>start <span>&lt;</span> <span>0</span><span>)</span> <span>{</span>
+    start <span>=</span> len <span>+</span> start<span>;</span>
+  <span>}</span>
+  <span>if</span> <span>(</span>end <span>&lt;</span> <span>0</span><span>)</span> <span>{</span>
+    end <span>=</span> len <span>+</span> end<span>;</span>
+  <span>}</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> start<span>;</span> i <span>&lt;</span> end<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    newArr<span>[</span>target <span>+</span> count<span>]</span> <span>=</span> <span>this</span><span>[</span>i<span>]</span><span>;</span>
+    count<span>++</span><span>;</span>
+  <span>}</span>
+  <span>return</span> newArr<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._copyWithin(0, 3)); // [4, 5, 3, 4, 5]</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-entries" tabindex="-1"> Array.prototype.entries()</h2>
+<div><pre><code><span>/*
+Array.prototype.entries()
+entries() 方法返回一个新的数组迭代器对象，该对象包含数组中每个索引的键/值对。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_entries</span> <span>=</span> <span>function</span> <span>(</span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>let</span> len <span>=</span> newArr<span>.</span>length<span>;</span>
+  <span>let</span> obj <span>=</span> <span>{</span><span>}</span><span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> len<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    obj<span>[</span>i<span>]</span> <span>=</span> newArr<span>[</span>i<span>]</span><span>;</span>
+  <span>}</span>
+  <span>return</span> obj<span>;</span>
+<span>}</span><span>;</span>
+
+<span>// console.log(arr._entries()); // {0: 1, 1: 2, 2: 3, 3: 4, 4: 5}</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-every" tabindex="-1"> Array.prototype.every()</h2>
+<div><pre><code><span>/*
+Array.prototype.every()
+every() 方法测试一个数组内的所有元素是否都能通过某个指定函数的测试。它返回一个布尔值。
+ */</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_every</span> <span>=</span> <span>function</span> <span>(</span><span>callback</span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>let</span> len <span>=</span> newArr<span>.</span>length<span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> len<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>if</span> <span>(</span><span>!</span><span>callback</span><span>(</span>newArr<span>[</span>i<span>]</span><span>,</span> i<span>,</span> newArr<span>)</span><span>)</span> <span>{</span>
+      <span>return</span> <span>false</span><span>;</span>
+    <span>}</span>
+  <span>}</span>
+  <span>return</span> <span>true</span><span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._every((item) => item > 0)); // true</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-fill" tabindex="-1"> Array.prototype.fill()</h2>
+<div><pre><code><span>/*
+Array.prototype.fill()
+fill() 方法用一个固定值填充一个数组中从起始索引到终止索引内的全部元素。不包括终止索引。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_fill</span> <span>=</span> <span>function</span> <span>(</span><span>value<span>,</span> start <span>=</span> <span>0</span><span>,</span> end <span>=</span> <span>this</span><span>.</span>length</span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>let</span> len <span>=</span> newArr<span>.</span>length<span>;</span>
+  <span>if</span> <span>(</span>start <span>&lt;</span> <span>0</span><span>)</span> <span>{</span>
+    start <span>=</span> len <span>+</span> start<span>;</span>
+  <span>}</span>
+  <span>if</span> <span>(</span>end <span>&lt;</span> <span>0</span><span>)</span> <span>{</span>
+    end <span>=</span> len <span>+</span> end<span>;</span>
+  <span>}</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> start<span>;</span> i <span>&lt;</span> end<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    newArr<span>[</span>i<span>]</span> <span>=</span> value<span>;</span>
+  <span>}</span>
+  <span>return</span> newArr<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._fill(0, 1, 3)); // [1, 0, 0, 4, 5]</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-filter" tabindex="-1"> Array.prototype.filter()</h2>
+<div><pre><code><span>/*
+Array.prototype.filter()
+filter() 方法创建给定数组一部分的浅拷贝 (en-US)，其包含通过所提供函数实现的测试的所有元素。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_filter</span> <span>=</span> <span>function</span> <span>(</span><span>callback</span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>let</span> len <span>=</span> newArr<span>.</span>length<span>;</span>
+  <span>let</span> result <span>=</span> <span>[</span><span>]</span><span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> len<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>if</span> <span>(</span><span>callback</span><span>(</span>newArr<span>[</span>i<span>]</span><span>,</span> i<span>,</span> newArr<span>)</span><span>)</span> <span>{</span>
+      result<span>.</span><span>push</span><span>(</span>newArr<span>[</span>i<span>]</span><span>)</span><span>;</span>
+    <span>}</span>
+  <span>}</span>
+  <span>return</span> result<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._filter((item) => item > 2)); // [3, 4, 5]</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-find" tabindex="-1"> Array.prototype.find()</h2>
+<div><pre><code><span>/*
+Array.prototype.find()
+find() 方法返回数组中满足提供的测试函数的第一个元素的值。否则返回 undefined。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_find</span> <span>=</span> <span>function</span> <span>(</span><span>callback</span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>let</span> len <span>=</span> newArr<span>.</span>length<span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> len<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>if</span> <span>(</span><span>callback</span><span>(</span>newArr<span>[</span>i<span>]</span><span>,</span> i<span>,</span> newArr<span>)</span><span>)</span> <span>{</span>
+      <span>return</span> newArr<span>[</span>i<span>]</span><span>;</span>
+    <span>}</span>
+  <span>}</span>
+  <span>return</span> <span>undefined</span><span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._find((item) => item > 2)); // 3</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-findindex" tabindex="-1"> Array.prototype.findIndex()</h2>
+<div><pre><code><span>/*
+Array.prototype.findIndex()
+findIndex()方法返回数组中满足提供的测试函数的第一个元素的索引。若没有找到对应元素则返回 -1。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_findIndex</span> <span>=</span> <span>function</span> <span>(</span><span>callback</span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>let</span> len <span>=</span> newArr<span>.</span>length<span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> len<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>if</span> <span>(</span><span>callback</span><span>(</span>newArr<span>[</span>i<span>]</span><span>,</span> i<span>,</span> newArr<span>)</span><span>)</span> <span>{</span>
+      <span>return</span> i<span>;</span>
+    <span>}</span>
+  <span>}</span>
+  <span>return</span> <span>-</span><span>1</span><span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._findIndex((item) => item > 2)); // 2</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-findlast" tabindex="-1"> Array.prototype.findLast()</h2>
+<div><pre><code><span>/*
+Array.prototype.findLast()
+findLast() 方法返回数组中满足提供的测试函数条件的最后一个元素的值。如果没有找到对应元素，则返回 undefined。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_findLast</span> <span>=</span> <span>function</span> <span>(</span><span>callback</span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>let</span> len <span>=</span> newArr<span>.</span>length<span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> len <span>-</span> <span>1</span><span>;</span> i <span>>=</span> <span>0</span><span>;</span> i<span>--</span><span>)</span> <span>{</span>
+    <span>if</span> <span>(</span><span>callback</span><span>(</span>newArr<span>[</span>i<span>]</span><span>,</span> i<span>,</span> newArr<span>)</span><span>)</span> <span>{</span>
+      <span>return</span> newArr<span>[</span>i<span>]</span><span>;</span>
+    <span>}</span>
+  <span>}</span>
+  <span>return</span> <span>undefined</span><span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._findLast((item) => item > 2)); // 5</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-findlastindex" tabindex="-1"> Array.prototype.findLastIndex()</h2>
+<div><pre><code><span>/*
+Array.prototype.findLastIndex()
+findLastIndex() 方法返回数组中满足提供的测试函数条件的最后一个元素的索引。若没有找到对应元素，则返回 -1。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_findLastIndex</span> <span>=</span> <span>function</span> <span>(</span><span>callback</span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>let</span> len <span>=</span> newArr<span>.</span>length<span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> len <span>-</span> <span>1</span><span>;</span> i <span>>=</span> <span>0</span><span>;</span> i<span>--</span><span>)</span> <span>{</span>
+    <span>if</span> <span>(</span><span>callback</span><span>(</span>newArr<span>[</span>i<span>]</span><span>,</span> i<span>,</span> newArr<span>)</span><span>)</span> <span>{</span>
+      <span>return</span> i<span>;</span>
+    <span>}</span>
+  <span>}</span>
+  <span>return</span> <span>-</span><span>1</span><span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._findLastIndex((item) => item > 2)); // 4</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-flat" tabindex="-1"> Array.prototype.flat()</h2>
+<div><pre><code><span>/*
+Array.prototype.flat()
+flat() 方法会按照一个可指定的深度递归遍历数组，并将所有元素与遍历到的子数组中的元素合并为一个新数组返回。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_flat</span> <span>=</span> <span>function</span> <span>(</span><span>depth <span>=</span> <span>1</span></span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>let</span> result <span>=</span> <span>[</span><span>]</span><span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> newArr<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>if</span> <span>(</span>Array<span>.</span><span>isArray</span><span>(</span>newArr<span>[</span>i<span>]</span><span>)</span> <span>&amp;&amp;</span> depth <span>></span> <span>0</span><span>)</span> <span>{</span>
+      result<span>.</span><span>push</span><span>(</span><span>...</span>newArr<span>[</span>i<span>]</span><span>.</span><span>_flat</span><span>(</span>depth <span>-</span> <span>1</span><span>)</span><span>)</span><span>;</span>
+    <span>}</span> <span>else</span> <span>{</span>
+      result<span>.</span><span>push</span><span>(</span>newArr<span>[</span>i<span>]</span><span>)</span><span>;</span>
+    <span>}</span>
+  <span>}</span>
+  <span>return</span> result<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._flat(2)); // [1, 2, 3, 4, 5]</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-flatmap" tabindex="-1"> Array.prototype.flatMap()</h2>
+<div><pre><code><span>/*
+Array.prototype.flatMap()
+flatMap() 方法首先使用映射函数映射每个元素，然后将结果压缩成一个新数组。它与 map 连着深度值为 1 的 flat 几乎相同，但 flatMap 通常在合并成一种方法的效率稍微高一些。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_flatMap</span> <span>=</span> <span>function</span> <span>(</span><span>callback</span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>let</span> result <span>=</span> <span>[</span><span>]</span><span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> newArr<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    result<span>.</span><span>push</span><span>(</span><span>callback</span><span>(</span>newArr<span>[</span>i<span>]</span><span>,</span> i<span>,</span> newArr<span>)</span><span>)</span><span>;</span>
+  <span>}</span>
+  <span>return</span> result<span>.</span><span>_flat</span><span>(</span><span>)</span><span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._flatMap((item) => [item, item * 2])); // [1, 2, 2, 4, 3, 6, 4, 8, 5, 10]</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-foreach" tabindex="-1"> Array.prototype.forEach()</h2>
+<div><pre><code><span>/*
+Array.prototype.forEach()
+forEach() 方法对数组的每个元素执行一次给定的函数。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_forEach</span> <span>=</span> <span>function</span> <span>(</span><span>callback</span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>let</span> len <span>=</span> newArr<span>.</span>length<span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> len<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>callback</span><span>(</span>newArr<span>[</span>i<span>]</span><span>,</span> i<span>,</span> newArr<span>)</span><span>;</span>
+  <span>}</span>
+<span>}</span><span>;</span>
+<span>// arr._forEach((item) => console.log(item)); // 1 2 3 4 5</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-from" tabindex="-1"> Array.from()</h2>
+<div><pre><code><span>/*
+Array.from()
+Array.from() 方法对一个类似数组或可迭代对象创建一个新的，浅拷贝的数组实例。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_from</span> <span>=</span> <span>function</span> <span>(</span><span>obj</span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>let</span> result <span>=</span> <span>[</span><span>]</span><span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> newArr<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    result<span>.</span><span>push</span><span>(</span>newArr<span>[</span>i<span>]</span><span>)</span><span>;</span>
+  <span>}</span>
+  <span>return</span> result<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(Array._from); // [1, 2, 3, 4, 5]</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-group" tabindex="-1"> Array.prototype.group()</h2>
+<div><pre><code><span>/*
+Array.prototype.group()
+group() 方法将数组中的元素分组，返回一个对象，对象的键是回调函数的返回值，值是对应的元素组成的数组。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_group</span> <span>=</span> <span>function</span> <span>(</span><span>callback</span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>let</span> result <span>=</span> <span>{</span><span>}</span><span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> newArr<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>let</span> key <span>=</span> <span>callback</span><span>(</span>newArr<span>[</span>i<span>]</span><span>,</span> i<span>,</span> newArr<span>)</span><span>;</span>
+    <span>if</span> <span>(</span>result<span>[</span>key<span>]</span><span>)</span> <span>{</span>
+      result<span>[</span>key<span>]</span><span>.</span><span>push</span><span>(</span>newArr<span>[</span>i<span>]</span><span>)</span><span>;</span>
+    <span>}</span> <span>else</span> <span>{</span>
+      result<span>[</span>key<span>]</span> <span>=</span> <span>[</span>newArr<span>[</span>i<span>]</span><span>]</span><span>;</span>
+    <span>}</span>
+  <span>}</span>
+  <span>return</span> result<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._group((item) => item % 2)); // {0: Array(2), 1: Array(3)} /  { '0': [ 2, 4 ], '1': [ 1, 3, 5 ] }</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-grouptomap" tabindex="-1"> Array.prototype.groupToMap()</h2>
+<div><pre><code><span>/*
+Array.prototype.groupToMap()
+groupToMap() 方法将数组中的元素分组，返回一个 Map 对象，Map 对象的键是回调函数的返回值，值是对应的元素组成的数组。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_groupToMap</span> <span>=</span> <span>function</span> <span>(</span><span>callback</span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>let</span> result <span>=</span> <span>new</span> <span>Map</span><span>(</span><span>)</span><span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> newArr<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>let</span> key <span>=</span> <span>callback</span><span>(</span>newArr<span>[</span>i<span>]</span><span>,</span> i<span>,</span> newArr<span>)</span><span>;</span>
+    <span>if</span> <span>(</span>result<span>.</span><span>has</span><span>(</span>key<span>)</span><span>)</span> <span>{</span>
+      result<span>.</span><span>get</span><span>(</span>key<span>)</span><span>.</span><span>push</span><span>(</span>newArr<span>[</span>i<span>]</span><span>)</span><span>;</span>
+    <span>}</span> <span>else</span> <span>{</span>
+      result<span>.</span><span>set</span><span>(</span>key<span>,</span> <span>[</span>newArr<span>[</span>i<span>]</span><span>]</span><span>)</span><span>;</span>
+    <span>}</span>
+  <span>}</span>
+  <span>return</span> result<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._groupToMap((item) => item % 2)); // Map(2) { 0 => [ 2, 4 ], 1 => [ 1, 3, 5 ] }</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-includes" tabindex="-1"> Array.prototype.includes()</h2>
+<div><pre><code><span>/*
+Array.prototype.includes()
+includes() 方法用来判断一个数组是否包含一个指定的值，根据情况，如果包含则返回 true，否则返回 false。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_includes</span> <span>=</span> <span>function</span> <span>(</span><span>value<span>,</span> fromIndex <span>=</span> <span>0</span></span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>let</span> len <span>=</span> newArr<span>.</span>length<span>;</span>
+  <span>if</span> <span>(</span>fromIndex <span>>=</span> len<span>)</span> <span>{</span>
+    <span>return</span> <span>false</span><span>;</span>
+  <span>}</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> fromIndex<span>;</span> i <span>&lt;</span> len<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>if</span> <span>(</span>newArr<span>[</span>i<span>]</span> <span>===</span> value<span>)</span> <span>{</span>
+      <span>return</span> <span>true</span><span>;</span>
+    <span>}</span>
+  <span>}</span>
+  <span>return</span> <span>false</span><span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._includes(3)); // true</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-indexof" tabindex="-1"> Array.prototype.indexOf()</h2>
+<div><pre><code><span>/*
+Array.prototype.indexOf()
+indexOf() 方法返回在数组中可以找到给定元素的第一个索引，如果不存在，则返回 -1。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_indexOf</span> <span>=</span> <span>function</span> <span>(</span><span>value<span>,</span> fromIndex <span>=</span> <span>0</span></span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>let</span> len <span>=</span> newArr<span>.</span>length<span>;</span>
+  <span>if</span> <span>(</span>fromIndex <span>>=</span> len<span>)</span> <span>{</span>
+    <span>return</span> <span>-</span><span>1</span><span>;</span>
+  <span>}</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> fromIndex<span>;</span> i <span>&lt;</span> len<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>if</span> <span>(</span>newArr<span>[</span>i<span>]</span> <span>===</span> value<span>)</span> <span>{</span>
+      <span>return</span> i<span>;</span>
+    <span>}</span>
+  <span>}</span>
+  <span>return</span> <span>-</span><span>1</span><span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._indexOf(3)); // 2</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-isarray" tabindex="-1"> Array.isArray()</h2>
+<div><pre><code><span>/*
+Array.isArray()
+Array.isArray() 用于确定传递的值是否是一个 Array。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_isArray</span> <span>=</span> <span>function</span> <span>(</span><span>obj</span><span>)</span> <span>{</span>
+  <span>return</span> <span>Object</span><span>.</span>prototype<span>.</span><span>toString</span><span>.</span><span>call</span><span>(</span>newArr<span>)</span> <span>===</span> <span>"[object Array]"</span><span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(Array._isArray(arr)); // true</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-join" tabindex="-1"> Array.prototype.join()</h2>
+<div><pre><code><span>/*
+Array.prototype.join()
+join() 方法将一个数组（或一个类数组对象）的所有元素连接成一个字符串并返回这个字符串，用逗号或指定的分隔符字符串分隔。如果数组只有一个元素，那么将返回该元素而不使用分隔符。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_join</span> <span>=</span> <span>function</span> <span>(</span>separator <span>=</span> <span>","</span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>let</span> result <span>=</span> <span>""</span><span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> newArr<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>if</span> <span>(</span>i <span>===</span> newArr<span>.</span>length <span>-</span> <span>1</span><span>)</span> <span>{</span>
+      result <span>+=</span> newArr<span>[</span>i<span>]</span><span>;</span>
+    <span>}</span> <span>else</span> <span>{</span>
+      result <span>+=</span> newArr<span>[</span>i<span>]</span> <span>+</span> separator<span>;</span>
+    <span>}</span>
+  <span>}</span>
+  <span>return</span> result<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._join("-")); // 1-2-3-4-5</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-keys" tabindex="-1"> Array.prototype.keys()</h2>
+<div><pre><code><span>/*
+Array.prototype.keys()
+keys() 方法返回一个包含数组中每个索引键的 Array Iterator 对象。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_keys</span> <span>=</span> <span>function</span> <span>(</span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>let</span> result <span>=</span> <span>[</span><span>]</span><span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> newArr<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    result<span>.</span><span>push</span><span>(</span>i<span>)</span><span>;</span>
+  <span>}</span>
+  <span>return</span> result<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._keys()); // [ 0, 1, 2, 3, 4 ]</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-lastindexof" tabindex="-1"> Array.prototype.lastIndexOf()</h2>
+<div><pre><code><span>/*
+Array.prototype.lastIndexOf()
+lastIndexOf() 方法返回指定元素（也即有效的 JavaScript 值或变量）在数组中的最后一个的索引，如果不存在则返回 -1。从数组的后面向前查找，从 fromIndex 处开始。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_lastIndexOf</span> <span>=</span> <span>function</span> <span>(</span><span>value<span>,</span> fromIndex <span>=</span> <span>this</span><span>.</span>length <span>-</span> <span>1</span></span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>if</span> <span>(</span>fromIndex <span>>=</span> newArr<span>.</span>length<span>)</span> <span>{</span>
+    fromIndex <span>=</span> newArr<span>.</span>length <span>-</span> <span>1</span><span>;</span>
+  <span>}</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> fromIndex<span>;</span> i <span>>=</span> <span>0</span><span>;</span> i<span>--</span><span>)</span> <span>{</span>
+    <span>if</span> <span>(</span>newArr<span>[</span>i<span>]</span> <span>===</span> value<span>)</span> <span>{</span>
+      <span>return</span> i<span>;</span>
+    <span>}</span>
+  <span>}</span>
+  <span>return</span> <span>-</span><span>1</span><span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._lastIndexOf(3)); // 2</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-map" tabindex="-1"> Array.prototype.map()</h2>
+<div><pre><code><span>/*
+Array.prototype.map()
+map() 方法创建一个新数组，这个新数组由原数组中的每个元素都调用一次提供的函数后的返回值组成。
+ */</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_map</span> <span>=</span> <span>function</span> <span>(</span><span>callback</span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>let</span> result <span>=</span> <span>[</span><span>]</span><span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> newArr<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    result<span>.</span><span>push</span><span>(</span><span>callback</span><span>(</span>newArr<span>[</span>i<span>]</span><span>,</span> i<span>,</span> newArr<span>)</span><span>)</span><span>;</span>
+  <span>}</span>
+  <span>return</span> result<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._map((item) => item * 2)); // [ 2, 4, 6, 8, 10 ]</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-of" tabindex="-1"> Array.of()</h2>
+<div><pre><code><span>/*
+Array.of()
+Array.of() 方法通过可变数量的参数创建一个新的 Array 实例，而不考虑参数的数量或类型。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_of</span> <span>=</span> <span>function</span> <span>(</span><span><span>...</span>args</span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>let</span> result <span>=</span> <span>[</span><span>]</span><span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> args<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    result<span>.</span><span>push</span><span>(</span>args<span>[</span>i<span>]</span><span>)</span><span>;</span>
+  <span>}</span>
+  <span>return</span> result<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(Array._of(1, 2, 3)); // [ 1, 2, 3 ]</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-pop" tabindex="-1"> Array.prototype.pop()</h2>
+<div><pre><code><span>/*
+Array.prototype.pop()
+pop() 方法从数组中删除最后一个元素，并返回该元素的值。此方法会更改数组的长度。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_pop</span> <span>=</span> <span>function</span> <span>(</span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>let</span> result <span>=</span> newArr<span>[</span>newArr<span>.</span>length <span>-</span> <span>1</span><span>]</span><span>;</span>
+  newArr<span>.</span>length <span>=</span> newArr<span>.</span>length <span>-</span> <span>1</span><span>;</span>
+  <span>return</span> result<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._pop()); // 5</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-push" tabindex="-1"> Array.prototype.push()</h2>
+<div><pre><code><span>/*
+Array.prototype.push()
+push() 方法将一个或多个元素添加到数组的末尾，并返回该数组的新长度。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_push</span> <span>=</span> <span>function</span> <span>(</span><span><span>...</span>args</span><span>)</span> <span>{</span>
+  <span>let</span> newArr <span>=</span> <span>[</span><span>...</span><span>this</span><span>]</span><span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> args<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    newArr<span>[</span>newArr<span>.</span>length<span>]</span> <span>=</span> args<span>[</span>i<span>]</span><span>;</span>
+  <span>}</span>
+  <span>return</span> newArr<span>.</span>length<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._push(6, 7, 8)); // 8</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-reduce" tabindex="-1"> Array.prototype.reduce()</h2>
+<div><pre><code><span>/*
+Array.prototype.reduce()
+reduce() 方法对数组中的每个元素按序执行一个由您提供的 reducer 函数，每一次运行 reducer 会将先前元素的计算结果作为参数传入，最后将其结果汇总为单个返回值。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_reduce</span> <span>=</span> <span>function</span> <span>(</span><span>callback<span>,</span> initialValue</span><span>)</span> <span>{</span>
+  <span>let</span> arr <span>=</span> <span>this</span><span>;</span>
+  <span>let</span> res <span>=</span> initialValue<span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> arr<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    res <span>=</span> <span>callback</span><span>(</span>res<span>,</span> arr<span>[</span>i<span>]</span><span>,</span> i<span>,</span> arr<span>)</span><span>;</span>
+  <span>}</span>
+  <span>return</span> res<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log([1, 2, 3, 4, 5]._reduce((a, b) => a + b, 0)); // 15</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-reduceright" tabindex="-1"> Array.prototype.reduceRight()</h2>
+<div><pre><code><span>/*
+Array.prototype.reduceRight()
+reduceRight() 方法接受一个函数作为累加器（accumulator）和数组的每个值（从右到左）将其减少为单个值。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_reduceRight</span> <span>=</span> <span>function</span> <span>(</span><span>callback<span>,</span> initialValue</span><span>)</span> <span>{</span>
+  <span>let</span> arr <span>=</span> <span>this</span><span>;</span>
+  <span>let</span> res <span>=</span> initialValue<span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> arr<span>.</span>length <span>-</span> <span>1</span><span>;</span> i <span>>=</span> <span>0</span><span>;</span> i<span>--</span><span>)</span> <span>{</span>
+    res <span>=</span> <span>callback</span><span>(</span>res<span>,</span> arr<span>[</span>i<span>]</span><span>,</span> i<span>,</span> arr<span>)</span><span>;</span>
+  <span>}</span>
+  <span>return</span> res<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._reduceRight((a, b) => a + b, 0)); // 15</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-reverse" tabindex="-1"> Array.prototype.reverse()</h2>
+<div><pre><code><span>/*
+Array.prototype.reverse()
+reverse() 方法将数组中元素的位置颠倒，并返回该数组。数组的第一个元素会变成最后一个，数组的最后一个元素变成第一个。该方法会改变原数组。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_reverse</span> <span>=</span> <span>function</span> <span>(</span><span>)</span> <span>{</span>
+  <span>let</span> arr <span>=</span> <span>this</span><span>;</span>
+  <span>let</span> res <span>=</span> <span>[</span><span>]</span><span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> arr<span>.</span>length <span>-</span> <span>1</span><span>;</span> i <span>>=</span> <span>0</span><span>;</span> i<span>--</span><span>)</span> <span>{</span>
+    res<span>.</span><span>push</span><span>(</span>arr<span>[</span>i<span>]</span><span>)</span><span>;</span>
+  <span>}</span>
+  <span>return</span> res<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._reverse()); // [5, 4, 3, 2, 1]</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-shift" tabindex="-1"> Array.prototype.shift()</h2>
+<div><pre><code><span>/*
+Array.prototype.shift()
+shift() 方法从数组中删除第一个元素，并返回该元素的值。此方法更改数组的长度。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_shift</span> <span>=</span> <span>function</span> <span>(</span><span>)</span> <span>{</span>
+  <span>let</span> arr <span>=</span> <span>this</span><span>;</span>
+  <span>let</span> res <span>=</span> arr<span>[</span><span>0</span><span>]</span><span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> arr<span>.</span>length <span>-</span> <span>1</span><span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    arr<span>[</span>i<span>]</span> <span>=</span> arr<span>[</span>i <span>+</span> <span>1</span><span>]</span><span>;</span>
+  <span>}</span>
+  arr<span>.</span>length<span>--</span><span>;</span>
+  <span>return</span> res<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._shift()); // 1</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-slice" tabindex="-1"> Array.prototype.slice()</h2>
+<div><pre><code><span>/*
+Array.prototype.slice()
+slice() 方法返回一个新的数组对象，这一对象是一个由 begin 和 end 决定的原数组的浅拷贝（包括 begin，不包括end）。原始数组不会被改变。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_slice</span> <span>=</span> <span>function</span> <span>(</span><span>start<span>,</span> end</span><span>)</span> <span>{</span>
+  <span>let</span> arr <span>=</span> <span>this</span><span>;</span>
+  <span>let</span> res <span>=</span> <span>[</span><span>]</span><span>;</span>
+  <span>let</span> len <span>=</span> arr<span>.</span>length<span>;</span>
+  start <span>=</span> start <span>||</span> <span>0</span><span>;</span>
+  end <span>=</span> end <span>||</span> len<span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> start<span>;</span> i <span>&lt;</span> end<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    res<span>.</span><span>push</span><span>(</span>arr<span>[</span>i<span>]</span><span>)</span><span>;</span>
+  <span>}</span>
+  <span>return</span> res<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._slice(1, 3)); // [2, 3]</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-some" tabindex="-1"> Array.prototype.some()</h2>
+<div><pre><code><span>/*
+Array.prototype.some()
+some() 方法测试数组中是不是至少有 1 个元素通过了被提供的函数测试。它返回的是一个 Boolean 类型的值。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_some</span> <span>=</span> <span>function</span> <span>(</span><span>callback</span><span>)</span> <span>{</span>
+  <span>let</span> arr <span>=</span> <span>this</span><span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> arr<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>if</span> <span>(</span><span>callback</span><span>(</span>arr<span>[</span>i<span>]</span><span>,</span> i<span>,</span> arr<span>)</span><span>)</span> <span>{</span>
+      <span>return</span> <span>true</span><span>;</span>
+    <span>}</span>
+  <span>}</span>
+  <span>return</span> <span>false</span><span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._some((item) => item > 3)); // true</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-sort" tabindex="-1"> Array.prototype.sort()</h2>
+<div><pre><code><span>/*
+Array.prototype.sort()
+sort() 方法用原地算法对数组的元素进行排序，并返回数组。默认排序顺序是在将元素转换为字符串，然后比较它们的 UTF-16 代码单元值序列时构建的
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_sort</span> <span>=</span> <span>function</span> <span>(</span><span>callback</span><span>)</span> <span>{</span>
+  <span>let</span> arr <span>=</span> <span>this</span><span>;</span>
+  <span>let</span> len <span>=</span> arr<span>.</span>length<span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> len<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    <span>for</span> <span>(</span><span>let</span> j <span>=</span> <span>0</span><span>;</span> j <span>&lt;</span> len <span>-</span> i <span>-</span> <span>1</span><span>;</span> j<span>++</span><span>)</span> <span>{</span>
+      <span>if</span> <span>(</span><span>callback</span><span>(</span>arr<span>[</span>j<span>]</span><span>,</span> arr<span>[</span>j <span>+</span> <span>1</span><span>]</span><span>)</span> <span>></span> <span>0</span><span>)</span> <span>{</span>
+        <span>[</span>arr<span>[</span>j<span>]</span><span>,</span> arr<span>[</span>j <span>+</span> <span>1</span><span>]</span><span>]</span> <span>=</span> <span>[</span>arr<span>[</span>j <span>+</span> <span>1</span><span>]</span><span>,</span> arr<span>[</span>j<span>]</span><span>]</span><span>;</span>
+      <span>}</span>
+    <span>}</span>
+  <span>}</span>
+  <span>return</span> arr<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._sort((a, b) => a - b)); // [1, 2, 3, 4, 5]</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-splice" tabindex="-1"> Array.prototype.splice()</h2>
+<div><pre><code><span>/*
+Array.prototype.splice()
+splice() 方法通过删除或替换现有元素或者原地添加新的元素来修改数组，并以数组形式返回被修改的内容。此方法会改变原数组。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_splice</span> <span>=</span> <span>function</span> <span>(</span><span>start<span>,</span> deleteCount<span>,</span> <span>...</span>items</span><span>)</span> <span>{</span>
+  <span>let</span> arr <span>=</span> <span>this</span><span>;</span>
+  <span>let</span> len <span>=</span> arr<span>.</span>length<span>;</span>
+  <span>let</span> res <span>=</span> <span>[</span><span>]</span><span>;</span>
+  <span>let</span> addCount <span>=</span> items<span>.</span>length<span>;</span>
+  <span>let</span> deleteArr <span>=</span> <span>[</span><span>]</span><span>;</span>
+  start <span>=</span> start <span>||</span> <span>0</span><span>;</span>
+  deleteCount <span>=</span> deleteCount <span>||</span> len<span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> deleteCount<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    deleteArr<span>.</span><span>push</span><span>(</span>arr<span>[</span>start <span>+</span> i<span>]</span><span>)</span><span>;</span>
+  <span>}</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> len <span>-</span> start <span>-</span> deleteCount<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    arr<span>[</span>start <span>+</span> i<span>]</span> <span>=</span> arr<span>[</span>start <span>+</span> deleteCount <span>+</span> i<span>]</span><span>;</span>
+  <span>}</span>
+  arr<span>.</span>length <span>=</span> len <span>-</span> deleteCount <span>+</span> addCount<span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> addCount<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    arr<span>[</span>start <span>+</span> i<span>]</span> <span>=</span> items<span>[</span>i<span>]</span><span>;</span>
+  <span>}</span>
+  <span>return</span> deleteArr<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._splice(1, 2, 6, 7)); // [2, 3]</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-tolocalestring" tabindex="-1"> Array.prototype.toLocaleString()</h2>
+<div><pre><code><span>/*
+Array.prototype.toLocaleString()
+toLocaleString() 返回一个字符串表示数组中的元素。数组中的元素将使用各自的 toLocaleString 方法转成字符串，这些字符串将使用一个特定语言环境的字符串（例如一个逗号 ","）隔开。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_toLocaleString</span> <span>=</span> <span>function</span> <span>(</span><span>)</span> <span>{</span>
+  <span>let</span> arr <span>=</span> <span>this</span><span>;</span>
+  <span>let</span> res <span>=</span> <span>""</span><span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> arr<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    res <span>+=</span> arr<span>[</span>i<span>]</span><span>.</span><span>toLocaleString</span><span>(</span><span>)</span><span>;</span>
+    <span>if</span> <span>(</span>i <span>&lt;</span> arr<span>.</span>length <span>-</span> <span>1</span><span>)</span> <span>{</span>
+      res <span>+=</span> <span>","</span><span>;</span>
+    <span>}</span>
+  <span>}</span>
+  <span>return</span> res<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._toLocaleString()); // 1,2,3,4,5</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-tostring" tabindex="-1"> Array.prototype.toString()</h2>
+<div><pre><code><span>/*
+Array.prototype.toString()
+toString() 方法返回一个字符串，表示指定的数组及其元素。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_toString</span> <span>=</span> <span>function</span> <span>(</span><span>)</span> <span>{</span>
+  <span>let</span> arr <span>=</span> <span>this</span><span>;</span>
+  <span>let</span> res <span>=</span> <span>""</span><span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> arr<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    res <span>+=</span> arr<span>[</span>i<span>]</span><span>;</span>
+    <span>if</span> <span>(</span>i <span>&lt;</span> arr<span>.</span>length <span>-</span> <span>1</span><span>)</span> <span>{</span>
+      res <span>+=</span> <span>","</span><span>;</span>
+    <span>}</span>
+  <span>}</span>
+  <span>return</span> res<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._toString()); // 1,2,3,4,5</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-unshift" tabindex="-1"> Array.prototype.unshift()</h2>
+<div><pre><code><span>/*
+Array.prototype.unshift()
+unshift() 方法将一个或多个元素添加到数组的开头，并返回该数组的新长度。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_unshift</span> <span>=</span> <span>function</span> <span>(</span><span><span>...</span>items</span><span>)</span> <span>{</span>
+  <span>let</span> arr <span>=</span> <span>this</span><span>;</span>
+  <span>let</span> len <span>=</span> arr<span>.</span>length<span>;</span>
+  <span>let</span> addCount <span>=</span> items<span>.</span>length<span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> len <span>-</span> <span>1</span><span>;</span> i <span>>=</span> <span>0</span><span>;</span> i<span>--</span><span>)</span> <span>{</span>
+    arr<span>[</span>i <span>+</span> addCount<span>]</span> <span>=</span> arr<span>[</span>i<span>]</span><span>;</span>
+  <span>}</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> addCount<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    arr<span>[</span>i<span>]</span> <span>=</span> items<span>[</span>i<span>]</span><span>;</span>
+  <span>}</span>
+  <span>return</span> arr<span>.</span>length<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._unshift(6, 7)); // 7</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><h2 id="array-prototype-values" tabindex="-1"> Array.prototype.values()</h2>
+<div><pre><code><span>/*
+Array.prototype.values()
+values() 方法返回一个新的 Array Iterator 对象，该对象包含数组每个索引的值。
+*/</span>
+<span>Array</span><span>.</span>prototype<span>.</span><span>_values</span> <span>=</span> <span>function</span> <span>(</span><span>)</span> <span>{</span>
+  <span>let</span> arr <span>=</span> <span>this</span><span>;</span>
+  <span>let</span> res <span>=</span> <span>[</span><span>]</span><span>;</span>
+  <span>for</span> <span>(</span><span>let</span> i <span>=</span> <span>0</span><span>;</span> i <span>&lt;</span> arr<span>.</span>length<span>;</span> i<span>++</span><span>)</span> <span>{</span>
+    res<span>.</span><span>push</span><span>(</span>arr<span>[</span>i<span>]</span><span>)</span><span>;</span>
+  <span>}</span>
+  <span>return</span> res<span>;</span>
+<span>}</span><span>;</span>
+<span>// console.log(arr._values());  // [1, 2, 3, 4, 5]</span>
+</code></pre><div aria-hidden="true"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>]]></content>
+    <category term="技术文章" scheme=""/>
+    <category term="JavaScript" scheme=""/>
+    <category term="ES6" scheme=""/>
+    <published>2022-11-02T00:00:00.000Z</published>
+  </entry>
   <entry>
     <title type="html">VSCode修改扩展和用户文件夹目录位置(Windows)</title>
     <id>https://ivwv.github.io/posts/technology/vscode/windows-change-extensions-userdata-position.html</id>
