@@ -3,7 +3,7 @@
   <id>https://ivwv.github.io/</id>
   <title>SY's Blog</title>
   <subtitle>SY's Blog</subtitle>
-  <updated>2022-11-02T14:57:53.621Z</updated>
+  <updated>2022-11-02T15:05:52.130Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://ivwv.github.io/atom.xml"/>
   <link rel="alternate" href="https://ivwv.github.io/"/>
@@ -40,9 +40,9 @@
     <title type="html">JavaScript手写Array的39个内置函数</title>
     <id>https://ivwv.github.io/posts/technology/javascript/write-array.html</id>
     <link href="https://ivwv.github.io/posts/technology/javascript/write-array.html"/>
-    <updated>2022-11-02T14:56:37.000Z</updated>
+    <updated>2022-11-02T15:04:33.000Z</updated>
     <summary type="html">JavaScript手写Array的39个内置函数(特全)</summary>
-    <content type="html"><![CDATA[<p><code>&lt;CountView&gt;&lt;/CountView&gt;</code></p>
+    <content type="html"><![CDATA[<CountView></CountView>
 <blockquote>
 <p>JavaScript 手写 Array 的 39 个内置函数(特全)</p>
 </blockquote>

@@ -6,8 +6,8 @@
     <link>https://ivwv.github.io/</link>
     <description>SY's Blog</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 02 Nov 2022 14:57:53 GMT</pubDate>
-    <lastBuildDate>Wed, 02 Nov 2022 14:57:53 GMT</lastBuildDate>
+    <pubDate>Wed, 02 Nov 2022 15:05:52 GMT</pubDate>
+    <lastBuildDate>Wed, 02 Nov 2022 15:05:52 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>技术文章</category>
@@ -46,7 +46,7 @@
       <category>JavaScript</category>
       <category>ES6</category>
       <pubDate>Wed, 02 Nov 2022 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p><code>&lt;CountView&gt;&lt;/CountView&gt;</code></p>
+      <content:encoded><![CDATA[<CountView></CountView>
 <blockquote>
 <p>JavaScript 手写 Array 的 39 个内置函数(特全)</p>
 </blockquote>
