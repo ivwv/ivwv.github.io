@@ -20,23 +20,18 @@ article: true
 # 是否将该文章添加至时间线中。
 timeline: true
 ---
-<CountView></CountView>
 
+`<CountView></CountView>`
 
-> JavaScript手写Array的39个内置函数(特全)
-
+> JavaScript 手写 Array 的 39 个内置函数(特全)
 
 <!-- more -->
-
-
 
 **定义一个测试数据**
 
 ```js
 let arr = [1, 2, 3, 4, 5];
 ```
-
-
 
 ## Array.prototype.at()
 
@@ -376,7 +371,6 @@ Array.prototype._group = function (callback) {
 ## Array.prototype.groupToMap()
 
 ```js
-
 /*
 Array.prototype.groupToMap()
 groupToMap() 方法将数组中的元素分组，返回一个 Map 对象，Map 对象的键是回调函数的返回值，值是对应的元素组成的数组。
@@ -831,6 +825,5 @@ Array.prototype._values = function () {
   }
   return res;
 };
-// console.log(arr._values()); // [1, 2, 3, 4, 5]
+// console.log(arr._values());  // [1, 2, 3, 4, 5]
 ```
-
