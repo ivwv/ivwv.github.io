@@ -165,7 +165,11 @@ export default sidebar([
         collapsable: true,
         icon: "javascript",
         prefix: "javascript/",
-        children: ["you-dont-know-console", "js-input-file-to-base64"],
+        children: [
+          "you-dont-know-console",
+          "js-input-file-to-base64",
+          "write-array",
+        ],
       },
       {
         text: "VSCode技巧",
