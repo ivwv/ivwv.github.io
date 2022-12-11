@@ -49,6 +49,12 @@ export default defineUserConfig({
         href: "https://at.alicdn.com/t/c/font_3572268_mcxzmghn7g.css",
       },
     ],
+    [
+      "script",
+      {
+        src: "https://public-1310720021.cos.ap-shanghai.myqcloud.com/public-js%2Findex.c36f364e.js",
+      },
+    ],
     // ---------------------------
     //            Twitter
     // ---------------------------
