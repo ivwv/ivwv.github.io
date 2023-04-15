@@ -4,4 +4,4 @@ git add .
 @REM git commit -m "update SEO,previre swiper,sitemap,feed and PWD"
 git commit -m "更新文章<...vscode...>"
 git checkout main
-git push -u origin main
+git push -f origin main
