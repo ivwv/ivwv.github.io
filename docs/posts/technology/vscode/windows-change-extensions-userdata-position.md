@@ -61,8 +61,7 @@ timeline: true
 
 后来想到了还是使用安装版的，想办法将两个大文件目录位置修改一下
 
-## `VSCode`安装版(推荐)
-
+## `VSCode`安装版
 
 [安装版网址](https://code.visualstudio.com/#alt-downloads)
 
@@ -229,3 +228,68 @@ Windows Registry Editor Version 5.00
 @="\"D:\\.Software\\Microsoft VS Code\\Code.exe\" --extensions-dir \"D:\\.vscode\\extensions\"  --user-data-dir \"D:\\.vscode\\user-data\" \"%1\""
 ```
 
+> 2023/04/16  ↓
+
+当然也可以写一个`bat`脚本自动执行
+
+- 创建一个`code.cmd` 将上面的添加命令行参数的内容写入
+
+- 重命令 注册表批处理文件为`update.reg`
+
+- 创建`update.bat` 文件
+
+  - 写入内容
+
+  - ```bash
+    @echo off
+    
+    rem 注册表的路径
+    set "regFilePath=D:\.vscode\update.reg"
+    rem 重写的code.cmd 文件路径,后面会替换vscode bin 目录下的code.cmd
+    set "cmdFilePath=D:\.vscode\code.cmd"
+    rem VScode的安装路径
+    set "destinationFolderPath=D:\.Software\Microsoft VS Code\bin"
+    rem ----↓ 以下不用动
+    set "destinationFilePath=%destinationFolderPath%\code.cmd"
+    
+    rem 运行注册表文件
+    regedit /s "%regFilePath%"
+    
+    rem 复制并替换文件，需要管理员权限
+    copy /y "%cmdFilePath%" "%destinationFolderPath%"
+    if exist "%destinationFilePath%" (
+        takeown /f "%destinationFilePath%"
+        icacls "%destinationFilePath%" /grant administrators:F
+    )
+    move /y "%destinationFolderPath%\code.cmd" "%destinationFilePath%"
+    
+    ```
+
+- 管理员运行`update.bat`
+
+
+
+## 终极解决办法!(推荐)
+
+> 经过一顿操作，终于又想到一个非常简单的办法
+>
+> 为VScode C盘默认的 `.vscode` 和 `Code` 创建软连接
+
+- 后面的路径是你需要创建软连接的路径
+- 需要注意的是，创建软连接之前，要保证两边路径的文件夹都没有被创建
+  - 建议如果根据上面安装版改了之后的文件夹修改一下文件名，比如`Code` -> `Code-`
+  - 先把默认路径的插件文件夹下的内容拷贝到目标文件夹，然后删除默认文件夹
+- 由于`"%USERPROFILE%\.vscode"`路径下有一个默认的`extensions`,所以不能使用`"D:\.vscode\extensions"` 路径，否者会不生效
+- 还有需要注意的是，这个命令是cmd命令，需要使用cmd命令窗口执行
+- 路径自行替换
+
+```sh
+mklink /D "%APPDATA%\Code" "D:\.vscode\user-data"
+mklink /D "%USERPROFILE%\.vscode" "D:\.vscode\"
+```
+
+- 如果需要删除软连接
+
+  - ```sh
+    rd /s "%APPDATA%\Code"
+    ```
