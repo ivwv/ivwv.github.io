@@ -5,7 +5,11 @@
 // icon 图标
 // document.querySelector('head > link[rel="apple-touch-icon"]').href;
 // 'https://ivwv.github.io/logo.png'
-// console.log("2");
+// console.log("2"); 
+// 跳转到新的博客
+document.addEventListener("DOMContentLoaded", function() {
+  window.location.href = "https://blog.ivwv.site";
+});
 
 /**
  * 注意
